@@ -1,0 +1,13 @@
+---
+category: people
+---
+{% include head.html %}
+<section id="thumbnails">
+  {% for post in site.categories.[page.category] %}
+  <a href="{{ post.url | prepend: site.baseurl }}" class="item">
+    <img src="/assets/{{ post.img.small | replace: '!SITE_URL!', site.url }}" class="img-responsive" />
+    <h1>{{ post.title }}</h1>
+  </a>
+  {% endfor %}
+</section>
+{% include footer.html %}

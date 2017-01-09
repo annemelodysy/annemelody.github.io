@@ -1,0 +1,333 @@
+/*** Iphone (portrait and landscape) ***/
+@media only screen
+and (min-width : 320px)
+and (max-width : 568px) {
+  body { font-size: 0.9rem; }
+  h1 { margin-top: 0; }
+  h2 { font-size: 1.2rem; margin-top: 0.5rem; }
+  h3 {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  h4 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  h5 {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  p { margin-bottom: 1rem; }
+  .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 { width: 100%; }
+  .offset1, .offset2, .offset3, .offset4, .offset5, .offset6, .offset7,
+  .offset8, .offset9, .offset10, .offset11, .offset12 { margin-left: 0; }
+  .mtop2, .mtop4, .mtop15, .mtop8, .mtop30 { margin-top: 0; }
+  .mbottom2, .mbottom8, .mbottom15 { margin-bottom: 0; }
+  .spanxs-25 { width: 25%; }
+  .spanxs-50 { width: 50%; }
+  .spanxs-75 { width: 75%; }
+  .menu {
+    padding: 10px 1rem;
+    top: 0;
+    justify-content: space-between;
+    background: $white;
+  }
+  .grid { padding: 0 1rem; }
+
+  //Home
+  #thumbnails {
+    margin-top: 46px;
+    height: auto;
+    .item {
+      width: 100%;
+      padding: 0 1rem;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      display: block;
+      margin-top: 0.5rem;
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+  //Contact
+  .contact-page { padding: 0 1rem; }
+
+  //Themes
+  .theme-bordered {
+    padding: 0;
+    h1 { font-size: 1rem; letter-spacing: 8px; }
+    h2 { font-size: 1.2rem; }
+  }
+  .wide-cover {
+    margin-top: 46px;
+    .cover { top: 2rem; }
+    img { margin-bottom: 1rem; }
+  }
+  #journal-cover {
+    height: 250px;
+    margin-top: 43px;
+    margin-bottom: 1rem;
+    background-attachment: scroll;
+    .posBR { width: 60%; }
+    h1 { font-size: 1rem; letter-spacing: 8px; }
+  }
+  #dark-cover {
+    background: $white;
+    margin-top: 43px;
+    color: darken($white, 80%);
+    h1 { font-size: 1.2rem; }
+    h1, h2, h3, h4, h5 { color: darken($white, 80%); }
+  }
+  .dark-bg {
+    background: $white;
+    color: darken($white, 80%);
+    h3 {
+      color: darken($white, 80%);
+    }
+  }
+  #journal-cover-padded {
+    margin-bottom: 1rem;
+  }
+
+  .social, .related { margin-bottom: 1rem; }
+  .full-bleed { padding: 0 1rem; }
+  #journal-content {
+    .row { margin-left: 0; margin-right: 0; }
+    .text-center { text-align: left; }
+    img { margin-bottom: 1rem; }
+  }
+  #journal-template {
+    .menu .logo polyline { stroke: darken($white, 80%); }
+    .menu a { color: darken($white, 80%); }
+  }
+  .parallax {
+    box-shadow: none;
+    background-image: none !important;
+    height: auto;
+    img {
+      display: block !important;
+      padding: 0 1rem;
+    }
+    .caption {
+      position: static;
+      text-align: left;
+      padding: 0 1rem;
+      transform: rotate(0deg) !important;
+      opacity: 1 !important;
+      text-shadow: none;
+      color: darken($white, 80%);
+    }
+  }
+  #fog, .guide { display: none; }
+  .horizontal-outer {
+    margin: 0 auto;
+    max-width: 65%;
+    .horizontal-inner { padding: 0; }
+    img {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+  .volume .control { font-size: 15px; right: 8%; }
+  .highlight { padding: 0 15px; background: transparent; }
+  .blastable:nth-child(2) { display: none; }
+  footer .text-right { text-align: left; }
+}
+
+/*** iphone landscape ***/
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation : landscape) {
+  h1 { margin-top: 0; }
+  h2 { font-size: 1.2rem; }
+  h3 {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  h4 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  h5 {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  ul, ol { padding-left: 0; }
+  p { margin-bottom: 1rem; }
+  .grid {
+    max-width: 65%;
+    img { margin-bottom: 2rem; }
+  }
+  .mtop2, .mtop4, .mtop15, .mtop8, .mtop30 { margin-top: 0; }
+  .mbottom2, .mbottom8, .mbottom15 { margin-bottom: 0; }
+  .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 { width: 100%; }
+  .offset1, .offset2, .offset3, .offset4, .offset5, .offset6, .offset7,
+  .offset8, .offset9, .offset10, .offset11, .offset12 { margin-left: 0; }
+  .mtop2, .mtop4, .mtop15, .mtop8, .mtop30 { margin-top: 0; }
+  .mbottom2, .mbottom8, .mbottom15 { margin-bottom: 0; }
+  .spanxs-25 { width: 25%; }
+  .spanxs-50 { width: 50%; }
+  .spanxs-75 { width: 75%; }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .menu {
+    top: 0;
+    justify-content: space-between;
+  }
+  #thumbnails {
+    height: 100vh;
+    overflow-y: hidden;
+    .item {
+      width: 16rem;
+      padding: 2rem;
+    }
+  }
+  //Themes
+  .theme-bordered {
+    h1 { font-size: 1rem; letter-spacing: 8px; }
+    h2 { font-size: 1.2rem; }
+    #journal-cover-padded { padding: 0; margin-bottom: 1rem; }
+  }
+  .wide-cover .cover { top: 4rem; }
+  #journal-cover {
+    margin-bottom: 1rem;
+    .posBR { width: 50%; }
+    h1 { font-size: 1rem; letter-spacing: 8px; }
+  }
+  #dark-cover {
+    background: $white;
+    margin-top: 43px;
+    color: darken($white, 80%);
+    h1 { font-size: 1.2rem; }
+    h1, h2, h3, h4, h5 { color: darken($white, 80%); }
+  }
+  .dark-bg {
+    background: $white;
+    color: darken($white, 80%);
+    h3 {
+      color: darken($white, 80%);
+    }
+  }
+  #journal-content img { margin-bottom: 1rem; }
+  .full-bleed { padding: 0 1rem; }
+  .parallax {
+    box-shadow: none;
+    max-width: 65%;
+    margin: 0 auto;
+    background-image: none !important;
+    height: auto;
+    img {
+      display: block !important;
+    }
+    .caption {
+      position: static;
+      text-align: left;
+      transform: rotate(0deg) !important;
+      opacity: 1 !important;
+      text-shadow: none;
+      color: darken($white, 80%);
+    }
+  }
+  .horizontal-outer {
+    margin: 0 auto;
+    max-width: 65%;
+    .horizontal-inner { padding: 0; }
+    img {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+  #fog, .guide { display: none; }
+  footer .text-right { text-align: left; }
+}
+
+/*** iPad (portrait and landscape) ***/
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+  .menu { justify-content: space-between; top: 0; }
+  .row { margin-left: 0; margin-right: 0; }
+  .grid { max-width: 500px; }
+  .mtop2, .mtop4, .mtop15, .mtop8, .mtop30 { margin-top: 0; }
+  .mbottom2, .mbottom8, .mbottom15 { margin-bottom: 0; }
+  img, p { margin-bottom: 1rem; }
+  h2 { font-size: 1.6rem; }
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 { width: 100%; }
+  .offset1, .offset2, .offset3, .offset4, .offset5, .offset6, .offset7,
+  .offset8, .offset9, .offset10, .offset11, .offset12 { margin-left: 0; }
+  .spansm-25 { width: 25%; }
+  .spansm-50 { width: 50%; }
+  .spansm-75 { width: 75%; }
+  .spansm-100 { width: 100%; }
+  .text-right { text-align: left; }
+  #thumbnails .item {
+    width: 18rem;
+    padding: 3rem;
+  }
+  //Themes
+  .wide-cover .cover { top: 5rem; }
+  .theme-bordered {
+    #journal-cover-padded { padding: 0; margin-bottom: 1rem; }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.8rem; }
+  }
+  #dark-cover {
+    background: $white;
+    margin-top: 43px;
+    color: darken($white, 80%);
+    h1 { font-size: 1.2rem; }
+    h1, h2, h3, h4, h5 { color: darken($white, 80%); }
+  }
+  .dark-bg {
+    background: $white;
+    color: darken($white, 80%);
+    h3 {
+      color: darken($white, 80%);
+    }
+  }
+  #journal-cover {
+    height: 500px;
+    margin-bottom: 1rem;
+    background-attachment: scroll;
+    .title { width: 60%; }
+    .posTM { margin-left: -30%; left: 50%; }
+  }
+  .parallax {
+    box-shadow: none;
+    background-image: none !important;
+    height: auto;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      display: block !important;
+      padding: 0 0.8%;
+    }
+    .caption {
+      position: static;
+      text-align: left;
+      padding: 0 0.8%;
+      transform: rotate(0deg) !important;
+      opacity: 1 !important;
+      text-shadow: none;
+      color: darken($white, 80%);
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .pagination { display: none; }
+  @keyframes jump { 0% { bottom: 10px; } 100% { bottom: 20px; } }
+}

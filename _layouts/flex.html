@@ -1,0 +1,26 @@
+{% include head.html %}
+{{content}}
+<footer>
+  <div class="grid">
+    <div class="row">
+      <div class="span4 offset1">
+        <ul class="social">
+          <li>Share this on: </li>
+          <li><a href="http://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}/&title={{ page.title }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="http://twitter.com/intent/tweet?status={{ page.title }}+{{ page.url | prepend: site.url }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <div class="span6 text-right">
+        <ul class="related">
+        {% if page.previous.url %}
+          <li>Previous: <a href="{{ BASE_PATH }}{{ page.previous.url }}">{{ page.previous.title }}</a></li>
+        {% endif %}
+        {% if page.next.url %}
+          <li>Next: <a href="{{ BASE_PATH }}{{ page.next.url }}">{{ page.next.title }}</a></li>
+        {% endif %}
+        </ul>
+      </div>
+    </div> <!-- /row -->
+  </div> <!-- /grid -->
+</footer>
+{% include footer.html %}

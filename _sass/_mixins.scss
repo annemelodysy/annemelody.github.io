@@ -1,0 +1,48 @@
+$seafoam: #c9d9ce;
+$brown: #A69A89;
+$white: #fff;
+
+/** Margins **/
+.mtop30 { margin-top: 30%; }
+.mtop15 { margin-top: 15%; }
+.mbottom15 { margin-bottom: 15%; }
+.mtop8 { margin-top: 8%; }
+.mtop4 { margin-top: 4%; }
+.mtop2 { margin-top: 2%; }
+.mtop0 { margin-top: 0; }
+.mbottom2 { margin-bottom: 2%; }
+.mbottom8 { margin-bottom: 8%; }
+.m0 { margin: 0 !important; }
+.p8 { padding: 8em 0; }
+
+/** Enhancing **/
+.highlight {
+  background: $seafoam;
+  padding:0 5px;
+  text-shadow: none;
+  color: darken($white, 80%);
+}
+.opacity { opacity: 0; }
+
+/** Blocks **/
+.block {
+  background: $seafoam;
+  img { opacity: 0; }
+}
+[class^="col-md-"]:nth-child(even) .block, [class*=" col-md-"]:nth-child(even) .block { background: $brown; }
+.full-bleed { padding: 0 !important; }
+.fade-visible img { opacity: 1; }
+
+@mixin cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100%;
+  height: 100vh;
+}
+@mixin contain { background-size: contain; background-position: 0 0; }

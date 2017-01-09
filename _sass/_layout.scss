@@ -1,0 +1,263 @@
+/** Home **/
+#thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  .item {
+    width: 17rem;
+    padding: 3rem;
+  }
+  h1 {
+    display: none;
+    color: darken($white, 80%);
+  }
+}
+#journal-cover {
+  @include cover;
+  .title { position: absolute; }
+  h1 {
+    color: $white;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+  }
+}
+.posBR { bottom: 25%; right: 10%; width: 40%; }
+.posTM { top: 35%; width: 100%; }
+.posBL { bottom: 25%; left: 10%; width: 40%; }
+.line {
+  border-bottom: 2px darken($white, 70%) solid;
+  width: 20%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.pagination { display: none; }
+
+/**Blast **/
+.blastable, .blast {opacity:0;}
+
+/** Horizontal view **/
+.horizontal-outer {
+  overflow: scroll;
+  .horizontal-inner { padding: 0 10px; }
+  img {
+    padding: 0 10px;
+    float: left;
+    display: none;
+  }
+  .message {
+    color: $white;
+    padding: 0 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-height: 350px;
+    width: 300px !important;
+    margin-right: 0;
+  }
+}
+
+/** Parallax **/
+.parallax {
+  @include cover;
+  height: 100vh;
+  -webkit-box-shadow: inset 0px -7px 10px 2px rgba(0,0,0,0.1);
+  -moz-box-shadow: inset 0px -7px 10px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0px -7px 10px 2px rgba(0,0,0,0.1);
+  color: $white;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  .caption { position: absolute; }
+}
+.invert { color: darken($white, 80%); text-shadow: none; }
+#fog { @include cover; opacity: 0.8; width: 100%; }
+
+/** Loading Infinite Scroll **/
+#infscr-loading {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 1.4rem;
+  img { margin: 10px auto; width: 30px; }
+}
+
+.volume {
+  position: relative;
+  .control {
+    position: absolute;
+    font-size: 20px;
+    right: 5%;
+    top: 5%;
+    color: $white;
+    z-index: 100;
+    cursor: pointer;
+  }
+}
+.module { opacity: 0; }
+.come-in {
+  transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+  animation: come-in 1s ease-in-out forwards;
+  -webkit-animation: come-in 1s ease-in-out forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+}
+.already-visible { transform: translateY(0); -webkit-transform: translateY(0px); animation: none; opacity: 1; }
+@-webkit-keyframes come-in { to { -webkit-transform: translateY(0); opacity: 1; } }
+@keyframes come-in { to { transform: translateY(0); opacity: 1; } }
+
+.fade-in img {
+  -webkit-animation: fadein 1s forwards 0.3s;
+     -moz-animation: fadein 1s forwards 0.3s;
+      -ms-animation: fadein 1s forwards 0.3s;
+          animation: fadein 1s forwards 0.3s;
+}
+[class^="col-md-"]:nth-child(2) .fade-in img, [class*=" col-md-"]:nth-child(2) .fade-in img {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+[class^="col-md-"]:nth-child(3) .fade-in img, [class*=" col-md-"]:nth-child(3) .fade-in img {
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+}
+[class^="col-md-"]:nth-child(4) .fade-in img, [class*=" col-md-"]:nth-child(4) .fade-in img {
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+}
+@keyframes fadein { to { opacity: 1; } }
+@-moz-keyframes fadein { to { opacity: 1; } }
+@-webkit-keyframes fadein { to { opacity: 1; } }
+@-ms-keyframes fadein { to { opacity: 1; } }
+
+/** Contact Page **/
+.contact-page {
+  background: $seafoam;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  input, textarea {
+    width: 100%;
+    border: none;
+    padding: 6px 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px $white solid;
+    background: transparent;
+    color: darken($white, 80%);
+    &:focus { outline: none; }
+  }
+  ::-webkit-input-placeholder { color: lighten($seafoam, 10%); }
+  :-moz-placeholder { color: lighten($seafoam, 10%); }
+  ::-moz-placeholder { color: lighten($seafoam, 10%); }
+  :-ms-input-placeholder { color: lighten($seafoam, 10%); }
+  .btn {
+    background: transparent;
+    border: 1px $white solid;
+    color: $white;
+    padding: 5px 10px;
+  }
+  .social {
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    a {
+      color: $white;
+      margin-left: 0.5rem;
+      font-size: 1.2rem;
+    }
+    li:first-child {
+      margin-first-child: 0;
+    }
+  }
+}
+#thanks {
+  background: url('/assets/thanks-bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .message {
+    .logo {
+      display: block;
+      width: 50px;
+      margin: 0 auto;
+      polyline { stroke: $seafoam; stroke-width: 20; stroke-miterlimit: 10; fill: none; }
+    }
+    h1 { color: $seafoam; }
+  }
+}
+.overlay-close {
+  width: 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: 0;
+  background: transparent;
+  line {
+    stroke: $white;
+    fill: none;
+    stroke-miterlimit: 10;
+    stroke-width: 2;
+  }
+  &:focus { outline: 0; }
+}
+
+/** Grid system **/
+.grid {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.row {
+  margin-left: -0.8%;
+  margin-right: -0.8%;
+  clear: both;
+  zoom:1; /* For IE 6/7 */
+  &:before, &:after { content: ""; display: table; }
+  &:after { clear: both; }
+}
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
+	display: block;
+	float: left;
+	padding-left: 0.8%;
+  padding-right: 0.8%
+}
+.span12 { width: 100%; }
+.span11 { width: 91.6666666667%; }
+.span10 { width: 83.3333333333%; }
+.span9 { width: 75%; }
+.span8 { width: 66.6666666667%; }
+.span7 { width: 58.3333333333%; }
+.span6 { width: 50%; }
+.span5 { width: 41.6666666667%; }
+.span4 { width: 33.3333333333%; }
+.span3 { width: 25%; }
+.span2 { width: 16.6666666667%; }
+.span1 { width: 8.33333333333%; }
+
+.offset11 { margin-left: 91.6666666667%; }
+.offset10 { margin-left: 83.3333333333%; }
+.offset9 { margin-left: 75%; }
+.offset8 { margin-left: 66.6666666667%; }
+.offset7 { margin-left: 58.3333333333%; }
+.offset6 { margin-left: 50%; }
+.offset5 { margin-left: 41.6666666667%; }
+.offset4 { margin-left: 33.3333333333%; }
+.offset3 { margin-left: 25%; }
+.offset2 { margin-left: 16.6666666667%; }
+.offset1 { margin-left: 8.33333333333%; }
