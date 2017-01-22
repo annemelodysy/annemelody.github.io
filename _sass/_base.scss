@@ -9,32 +9,37 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  font-family: 'Noto Sans', sans-serif;
-  line-height: 1.65;
-  font-size: 1rem;
+  font-family: 'Noto Serif', serif;
+  line-height: 1.9;
+  font-size: 1.1rem;
   color: darken($white, 80%);
 }
 h1, h2, h3, h4, h5 {
-  font-weight: 400;
-  font-family: 'Noto Serif', serif;
+  font-weight: 600;
+  font-family: 'Noto Sans', sans-serif;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
-h1 { font-size: 1rem; font-family: 'Noto Sans', sans-serif; }
+h1 { font-size: 1rem; }
 h2 { font-size: 1.296rem; }
 h3 { font-size: 1.215rem; }
 h4 { font-size: 1.138rem; margin-top: 0.5rem; }
-h5 { font-size: 1.067rem; }
+h5 { font-size: 1.067rem; font-weight: 400; }
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.7rem;
 }
 a {
   color: saturate($brown, 30%);
   text-decoration: none;
 }
 a:hover { color: $seafoam; }
-ul, ol { padding-left: 1rem; }
+ul, ol {
+  padding-left: 1rem;
+  li {
+    margin-bottom: 1.7rem;
+  }
+}
 svg { width: 100%; }
 .footnote {
   margin-top: 1rem;
