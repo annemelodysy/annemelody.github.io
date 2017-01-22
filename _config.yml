@@ -12,3 +12,4 @@ sass:
 sass_dir:      _sass
 markdown:      kramdown
 gems:          [jekyll-paginate]
+future:        true
