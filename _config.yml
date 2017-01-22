@@ -10,3 +10,4 @@ paginate_path: "/page:num/"
 sass:
   style:       compressed
 markdown:      kramdown
+gems:          [jekyll-paginate]
