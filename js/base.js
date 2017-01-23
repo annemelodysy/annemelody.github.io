@@ -80,37 +80,3 @@ $(document).ready(function() {
 
 //Horizontal Scroll
 $(window).on("load",function(){var i=$(window).width();$(".horizontal-inner img").css("display","block"),i>700&&$(".horizontal-inner").each(function(){var i=$(window).height()/2.5,n=23;$(this).find("img").each(function(){$(this).css("height",i),n+=$(this).outerWidth(!0)}),$(this).css("width",n)})});
-
-//Transform on mouse hover
-$(function(){
-		boxRollovers();
-	});
-
-	function boxRollovers()
-	{
-		$selector = $(".item");
-		XAngle = 0;
-		YAngle = 0;
-		Z = 50;
-
-		$selector.on("mousemove",function(e){
-			var $this = $(this);
-			var XRel = e.pageX - $this.offset().left;
-			var YRel = e.pageY - $this.offset().top;
-			var width = $this.width();
-
-			YAngle = -(0.5 - (XRel / width)) * 20;
-			XAngle = (0.5 - (YRel / width)) * 20;
-			updateView($this.children("img"));
-		});
-
-		$selector.on("mouseleave",function(){
-			oLayer = $(this).children("img");
-			oLayer.css({"transform":"perspective(525px) translateZ(0) rotateX(0deg) rotateY(0deg) scale(1)","transition":"all 150ms linear 0s"});
-		});
-	}
-
-	function updateView(oLayer)
-	{
-		oLayer.css({"transform":"perspective(525px) translateZ(" + Z + "px) rotateX(" + XAngle + "deg) rotateY(" + YAngle + "deg) scale(1.05)"});
-	}
