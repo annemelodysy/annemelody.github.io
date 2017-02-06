@@ -34,40 +34,26 @@ and (max-width : 767px) {
     padding: 0 1rem;
     .item {
       width: 100%;
-      position: relative;
-      margin-bottom: 1rem;
-      padding: 0;
-      display: block;
+      padding-bottom: 0;
+      text-align: center;
     }
     h1 {
       display: block;
-      position: absolute;
-      top: 0.5rem;
-      left: 1rem;
-      color: $white;
-      width: 90%;
+      margin-top: 1rem;
     }
   }
   //Contact
   .contact-page { padding: 0 1rem; }
 
   //Themes
+  .abril {
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    margin-top: 1rem;
+  }
   .theme-bordered {
     padding: 0;
-    h1 {
-      font-size: 1rem;
-      letter-spacing: 8px;
-      &.abril {
-        font-size: 2rem;
-        letter-spacing: 0;
-      }
-    }
     h2 { font-size: 1.2rem; }
-  }
-  .wide-cover {
-    margin-top: 46px;
-    .cover { top: 2rem; }
-    img { margin-bottom: 1rem; }
   }
   #journal-cover {
     height: 250px;
@@ -80,6 +66,7 @@ and (max-width : 767px) {
   #dark-cover {
     background: $white;
     margin-top: 43px;
+    padding: 0 1rem;
     color: darken($white, 80%);
     h1 { font-size: 1.2rem; }
     h1, h2, h3, h4, h5 { color: darken($white, 80%); }
@@ -98,6 +85,7 @@ and (max-width : 767px) {
   .social, .related { margin-bottom: 1rem; }
   .full-bleed { padding: 0 1rem; }
   #journal-content {
+    padding: 0 1rem;
     .row { margin-left: 0; margin-right: 0; }
     .text-center { text-align: left; }
     img { margin-bottom: 1rem; }
@@ -112,12 +100,10 @@ and (max-width : 767px) {
     height: auto;
     img {
       display: block !important;
-      padding: 0 1rem;
     }
     .caption {
       position: static;
       text-align: left;
-      padding: 0 1rem;
       transform: rotate(0deg) !important;
       opacity: 1 !important;
       text-shadow: none;
@@ -127,7 +113,6 @@ and (max-width : 767px) {
   #fog, .guide { display: none; }
   .horizontal-outer {
     margin: 0 auto;
-    padding: 0 1rem;
     max-width: 100%;
     .horizontal-inner { padding: 0; }
     img {
@@ -138,7 +123,10 @@ and (max-width : 767px) {
   .volume .control { font-size: 15px; right: 8%; }
   .highlight { padding: 0 15px; background: transparent; }
   .blastable:nth-child(2) { display: none; }
-  footer .text-right { text-align: left; }
+  footer {
+    padding: 0 1rem;
+    .text-right { text-align: left; }
+  }
 }
 
 /*** iPad (portrait and landscape) ***/
@@ -161,10 +149,11 @@ and (max-width : 1024px) {
     padding: 3rem;
   }
   //Themes
-  .wide-cover .cover { top: 5rem; }
+  .abril {
+    font-size: 3rem;
+  }
   .theme-bordered {
     #journal-cover-padded { padding: 0; margin-bottom: 1rem; }
-    h1 { font-size: 2rem; }
     h2 { font-size: 1.8rem; }
   }
   #dark-cover {
