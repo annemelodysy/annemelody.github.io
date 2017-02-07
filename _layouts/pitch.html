@@ -1,4 +1,4 @@
-{% include head.html %}
+{% include head-post.html %}
 <section id="journal-cover">
   <div class="title text-right posBR">
     <h1 class="blastable">{{ page.title }}</h1>
@@ -23,7 +23,7 @@
     <div class="span3 offset1">
       <ul class="social">
         <li>Share this on: </li>
-        <li><a href="http://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}/&title={{ page.title }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="http://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}&title={{ page.title }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
         <li><a href="http://twitter.com/intent/tweet?status={{ page.title }}+{{ page.url | prepend: site.url }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
       </ul>
     </div>
