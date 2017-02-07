@@ -10,8 +10,8 @@ body {
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased;
   font-family: 'Noto Serif', serif;
-  line-height: 1.9;
-  font-size: 1.1rem;
+  line-height: 1.7;
+  font-size: 1rem;
   color: darken($white, 80%);
 }
 h1, h2, h3, h4, h5 {
@@ -79,7 +79,8 @@ blockquote {
   }
 }
 footer {
-  padding: 20px 0;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
   background: $white;
   ul { margin: 0; }
 }
@@ -110,4 +111,8 @@ footer {
 }
 .text-right {
   text-align: right;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
 }
