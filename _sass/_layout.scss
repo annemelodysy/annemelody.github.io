@@ -10,10 +10,20 @@
   .item {
     width: 17rem;
     padding: 3rem;
-  }
-  h1 {
-    display: none;
-    color: darken($white, 80%);
+    position: relative;
+    h1 {
+      color: $seafoam;
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1rem;
+      font-size: 0.8rem;
+      display: none;
+    }
+    &:hover {
+      h1 {
+        display: block;
+      }
+    }
   }
 }
 #journal-cover {

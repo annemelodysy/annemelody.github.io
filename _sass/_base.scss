@@ -30,10 +30,10 @@ p {
   margin-bottom: 1.7rem;
 }
 a {
-  color: saturate($brown, 30%);
+  color: $seafoam;
   text-decoration: none;
 }
-a:hover { color: $seafoam; }
+a:hover { color: $brown; }
 ul, ol {
   padding-left: 1rem;
   li {
