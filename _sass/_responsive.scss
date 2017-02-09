@@ -36,10 +36,13 @@ and (max-width : 767px) {
       width: 100%;
       padding-bottom: 0;
       text-align: center;
-    }
-    h1 {
-      display: block;
-      margin-top: 1rem;
+      h1 {
+        display: block;
+        margin-top: 1rem;
+        position: static;
+        color: darken($white, 80%);
+        font-size: 1rem;
+      }
     }
   }
   //Contact
@@ -129,7 +132,7 @@ and (max-width : 767px) {
   }
 }
 
-/*** iPad (portrait and landscape) ***/
+/*** Tablet ***/
 @media only screen
 and (min-width : 768px)
 and (max-width : 1024px) {
@@ -147,6 +150,9 @@ and (max-width : 1024px) {
   #thumbnails .item {
     width: 18rem;
     padding: 3rem;
+    h1 {
+      display: block;
+    }
   }
   //Themes
   .abril {
