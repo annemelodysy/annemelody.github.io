@@ -35,9 +35,10 @@ a {
 }
 a:hover { color: $brown; }
 ul, ol {
+  margin-bottom: 1.7rem;
   padding-left: 1rem;
   li {
-    margin-bottom: 1.7rem;
+    margin-bottom: 1rem;
   }
 }
 svg { width: 100%; }
