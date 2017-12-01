@@ -1,0 +1,13 @@
+{% include head-post.html %}
+<section id="journal-cover">
+  <div class="title text-center">
+    <h1 class="blastable">{{ page.title }}</h1>
+  </div>
+  <div class="thumb">
+    <img class="img-responsive" src="/assets/{{ page.img.large | replace: '!SITE_URL!', site.url }}">
+  </div>
+</section> <!-- /#journal-cover -->
+<section class="split">
+  {{content}}
+</section> <!-- /split -->
+{% include footer.html %}

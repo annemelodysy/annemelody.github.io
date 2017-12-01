@@ -14,9 +14,10 @@
     h1 {
       color: $seafoam;
       position: absolute;
-      bottom: 1.5rem;
+      bottom: 0rem;
       left: 1rem;
       font-size: 0.8rem;
+      letter-spacing: 0.4rem;
       display: none;
     }
     &:hover {
@@ -26,23 +27,37 @@
     }
   }
 }
+.scroll-text {
+  margin: 0;
+  position: absolute;
+  right: -1.7%;
+  top: 45%;
+  transform: rotate(90deg);
+  letter-spacing: 0.05rem;
+  background: darken($white, 1%);
+  i {
+    margin-left: 0.5rem;
+  }
+}
 #journal-cover {
   @include cover;
-  .title { position: absolute; }
+  .title {
+    position: absolute;
+    top: 45%;
+    width: 40%;
+    left: 50%;
+    margin-left: -20%;
+  }
   h1 {
     color: $white;
-    font-size: 1.5rem;
-    line-height: 1.8;
-    text-transform: uppercase;
-    letter-spacing: 15px;
   }
 }
 .posBR { bottom: 25%; right: 10%; width: 40%; }
 .posTM { top: 35%; width: 100%; }
 .posBL { bottom: 25%; left: 10%; width: 40%; }
 .line {
-  border-bottom: 2px darken($white, 70%) solid;
-  width: 20%;
+  border-bottom: 3px darken($white, 80%) solid;
+  width: 7%;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -84,7 +99,6 @@
   box-shadow: inset 0px -7px 10px 2px rgba(0,0,0,0.1);
   color: $white;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
-  .caption { position: absolute; }
 }
 .invert { color: darken($white, 80%); text-shadow: none; }
 #fog { @include cover; opacity: 0.8; width: 100%; }
@@ -155,6 +169,7 @@
   background: $seafoam;
   width: 100vw;
   height: 100vh;
+  z-index: 5;
   position: absolute;
   top: 0;
   left: 0;
@@ -217,17 +232,9 @@
   }
 }
 .overlay-close {
-  width: 20px;
+  font-size: 2rem;
   position: absolute;
   right: 20px;
   top: 20px;
-  border: 0;
-  background: transparent;
-  line {
-    stroke: $white;
-    fill: none;
-    stroke-miterlimit: 10;
-    stroke-width: 2;
-  }
-  &:focus { outline: 0; }
+  color: $white;
 }

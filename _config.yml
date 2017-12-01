@@ -1,6 +1,6 @@
 # Site settings
 title:         Anne Melody
-description:   Annemelody.com are stories about the travels and personal experiences of a human from the sunny island of Cebu.
+description:   Annemelody.com is about the travels and personal experiences of a human from the sunny island of Cebu.
 email:         annemelodysy@gmail.com
 url:           http://annemelody.com
 base.url:      journal
@@ -11,5 +11,11 @@ sass:
   style:       compressed
 sass_dir:      _sass
 markdown:      kramdown
-gems:          [jekyll-paginate]
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
 future:        true
+repository:    annemelodysy/annemelodysy.github.io

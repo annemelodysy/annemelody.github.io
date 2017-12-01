@@ -1,7 +1,10 @@
 /** Grid system **/
 .grid {
-  max-width: 1200px;
+  max-width: 1680px;
   margin: 0 auto;
+}
+.container {
+  margin: 0 0.8%;
 }
 .row {
   margin-left: -0.8%;
@@ -45,7 +48,8 @@
 @media only screen
 and (min-width : 320px)
 and (max-width : 767px) {
-  .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 { width: 100%; }
+  .row { margin-left: 0; margin-right: 0; }
+  .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 { width: 100%; padding: 0; }
   .offset1, .offset2, .offset3, .offset4, .offset5, .offset6, .offset7,
   .offset8, .offset9, .offset10, .offset11, .offset12 { margin-left: 0; }
   .spanxs-25 { width: 25%; }

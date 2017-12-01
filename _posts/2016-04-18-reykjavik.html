@@ -6,30 +6,35 @@ categories: travel
 permalink:  /:categories/:title
 excerpt:    If you gazed up at the light, you would see the wind blowing away snowflakes making them dance, twirling around in circles, before landing on the window.
 img:
-  small:    2016/reykjavik/reykjavik-cover.jpg
-  large:    2016/reykjavik/3.jpg
+  small:    2016/reykjavik/reykjavik-small.jpg
+  large:    2016/reykjavik/reykjavik-cover.jpg
 ---
 <section id="dark-cover">
-  <div class="grid">
-    <div class="row">
-      <div class="span6 offset5 mtop2 mbottom2">
-        <h2>{{ page.title }}</h2>
-        <h3>{{ page.excerpt | replace: '!SITE_URL!', site.url }}</h3>
-        <h5>{{ page.date | date: "%B %-d, %Y" }}</h5>
-      </div>
-    </div> <!-- /row -->
-  </div> <!-- /grid -->
-</section> <!-- /#journal-cover -->
-<section id="journal-content">
-  <div class="dark-bg">
-    <div class="parallax module">
-      <img src="/assets/2016/reykjavik/1.jpg" class="img-responsive" />
-      <div class="caption opacity offset1 span4" style="bottom: 15%;">
-        <h3>Dark Mornings</h3>
-        <p>It was already 8 in the morning when we stepped out of the airport. I remember it was the first time I felt snow on my face &mdash; cold and soft and wet. I covered my head with my faux fur hoodie and adjusted the scarf on my neck to help keep me dry.</p>
-      </div>
-    </div> <!-- /row -->
+  <div class="container">
     <div class="grid">
+      <div class="row">
+        <div class="span6 offset5 mtop2 mbottom2">
+          <h2>{{ page.title }}</h2>
+          <h3>{{ page.excerpt | replace: '!SITE_URL!', site.url }}</h3>
+          <h5>{{ page.date | date: "%B %-d, %Y" }}</h5>
+        </div>
+      </div> <!-- /row -->
+    </div> <!-- /grid -->
+  </div> <!-- /container -->
+</section> <!-- /#dark-cover -->
+
+<section class="dark-bg">
+  <div class="container">
+    <div class="grid">
+      <div class="row">
+        <div class="parallax">
+          <img src="/assets/2016/reykjavik/1.jpg" class="img-responsive" />
+          <div class="opacity offset1 span4 mtop15">
+            <h3>Dark Mornings</h3>
+            <p>It was already 8 in the morning when we stepped out of the airport. I remember it was the first time I felt snow on my face &mdash; cold and soft and wet. I covered my head with my faux fur hoodie and adjusted the scarf on my neck to help keep me dry.</p>
+          </div>
+        </div> <!-- /parallax -->
+      </div> <!-- /row -->
       <div class="row mtop30">
         <div class="span5 offset2">
           <p>"We are heading to Half-naf-jor-dour?" I said with uncertainty as we stepped inside the bus. I spent hours watching videos before the trip so I could pronounce it properly but I still did not get it right. Suffice it to say, Icelandic words look to me like random characters being joined together to form a word.</p>
@@ -84,11 +89,11 @@ img:
           <p>Halfway down the stairs, I heard a slow but steady snoring in the living room. <i>Was there someone sleeping in the couch?</i> I quietly finished the rest of the steps and took a peek in the living room.</p>
         </div>
       </div> <!-- /row -->
-    </div> <!--/grid -->
-    <div class="parallax module mtop30">
-      <img src="/assets/2016/reykjavik/17.jpg" class="img-responsive" />
-    </div>
-    <div class="grid">
+      <div class="row mtop4">
+        <div class="parallax">
+          <img src="/assets/2016/reykjavik/17.jpg" class="img-responsive" />
+        </div>
+      </div> <!-- /row -->
       <div class="row mtop15">
         <div class="span4 offset4">
           <div class="block">
@@ -103,8 +108,10 @@ img:
           </div>
         </div>
       </div> <!-- /row -->
-    </div> <!-- /grid-->
-  </div> <!-- /dark-bg -->
+    </div> <!-- /grid -->
+  </div> <!-- /container -->
+</section> <!-- /dark-bg -->
+<div class="container">
   <div class="grid">
     <div class="row mtop15">
       <div class="span6 offset3">
@@ -209,17 +216,17 @@ img:
         </div>
       </div>
     </div> <!-- /row -->
-    <div class="row mtop15">
-      <div class="span6 full-bleed">
+    <div class="row mtop15 mbottom15">
+      <div class="span4 offset1">
         <div class="block">
           <img src="/assets/2016/reykjavik/15.jpg" class="img-responsive" />
         </div>
       </div>
-      <div class="span6 full-bleed">
+      <div class="span4 offset2">
         <div class="block">
           <img src="/assets/2016/reykjavik/29.jpg" class="img-responsive" />
         </div>
       </div>
     </div> <!-- /row -->
   </div> <!-- /grid -->
-</section> <!-- /#journal-content -->
+</div> <!-- /container -->

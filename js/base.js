@@ -4,6 +4,32 @@ var bgHeight = $(window).height();
 var bgWidth = $(window).width();
 
 $(document).ready(function() {
+  //Split background fixed image
+  if (bgWidth > 700) {
+    (function() {
+      'use strict';
+
+      var section = document.querySelectorAll(".section");
+      var sections = {};
+      var i = 0;
+
+      Array.prototype.forEach.call(section, function(e) {
+        sections[e.id] = e.offsetTop;
+      });
+
+      window.onscroll = function() {
+        var scrollPosition = document.documentElement.scrollTop - 400 || document.body.scrollTop - 400;
+
+        for (i in sections) {
+          if (sections[i] <= scrollPosition) {
+            document.querySelector('.visible').setAttribute('class', '');
+            document.querySelector('div[href*=' + i + ']').setAttribute('class', 'visible');
+          }
+        }
+      };
+    })();
+  }
+
   var $container = $('#thumbnails');
 
   //Calculate Min and Max for blasting
@@ -26,29 +52,24 @@ $(document).ready(function() {
 
     var image = document.createElement('img');
     image.src = getBgUrl(document.getElementById('journal-cover'));
-
-    // Blast.js separate the characters
-    $('.blastable').blast({
-      delimiter: 'character',
-      tag: 'span',
-    });
-
-    $('.blastable').css('opacity','1');
-
-    //Blast characters randomly
-    $('.blast').each(function() {
-      $(this).delay(rand(100,1500)).fadeTo(1500,1);
-    });
-    //Hide text when scrolling
-    $(window).scroll(function(){
-      $(".blastable").css("opacity", 1 - $(window).scrollTop() / 300);
-    });
   }
 
-  /////Section snap
-  !function(o){o.fn.sectionsnap=function(n){var t,i=o.extend({delay:100,selector:".section",reference:.9,animationTime:400,offsetTop:0,offsetBottom:0},n),e=this,r="down",c=o(window).scrollTop(),s=!1,w=function(){r=o(window).scrollTop()>=c?"down":"up",c=o(window).scrollTop()},f=function(){var n,t=e.find(i.selector),c=o(window).scrollTop(),s=o(window).height(),w=s*i.reference,f=c+w-1;return"down"==r?t.each(function(){var t=o(this).position().top;return t>c&&f>=t?(n=o(this),!1):void 0}):(f=c-w+1,t.each(function(){var t=o(this).position().top;return c>t&&t>=f?(n=o(this),!1):void 0})),n},l=function(){var n=f();n&&(s=!0,o("html, body").animate({scrollTop:n.offset().top},i.animationTime,function(){window.clearTimeout(t),s=!1}))},d=function(){if(!s){var n=o(window).scrollTop();n<i.offsetTop||n>o("html").height()-o(window).height()-i.offsetBottom||(w(),window.clearTimeout(t),t=window.setTimeout(l,i.delay))}};return o(window).scroll(d),this}}(jQuery);
+  // Blast.js separate the characters
+  $('.blastable').blast({
+    delimiter: 'character',
+    tag: 'span',
+  });
 
-  $("body").sectionsnap({delay:100,selector:".snap",reference:.2,animationTime:500});
+  $('.blastable').css('opacity','1');
+
+  //Blast characters randomly
+  $('.blast').each(function() {
+    $(this).delay(rand(100,1500)).fadeTo(1500,1);
+  });
+  //Hide text when scrolling
+  $(window).scroll(function(){
+    $(".blastable").css("opacity", 1 - $(window).scrollTop() / 300);
+  });
 
   /////Parallax effect
   var thumb=$(".thumb img").attr("src");$("#journal-cover").css("background-image","url("+thumb+")"),$(".parallax").each(function(){var a=$(this).find("img").attr("src");$(this).css("background-image","url("+a+")")});
@@ -69,10 +90,10 @@ $(document).ready(function() {
   });
 
   /////Fade
-  $.fn.onscreen=function(){var t=$(window),o={top:t.scrollTop(),left:t.scrollLeft()};o.right=o.left+t.width(),o.bottom=o.top+t.height();var e=this.offset();return e.right=e.left+this.outerWidth(),e.bottom=e.top+this.outerHeight(),!(o.right<e.left||o.left>e.right||o.bottom<e.top||o.top>e.bottom)},$(".module").length>0&&$(".module").each(function(){$(this).onscreen()&&$(this).addClass("already-visible")}),$(".block").length>0&&$(".block").each(function(){$(this).onscreen()&&$(this).addClass("fade-visible")}),$(window).scroll(function(){$.fn.onscreen=function(){var t=$(window),o={top:t.scrollTop(),left:t.scrollLeft()};o.right=o.left+t.width(),o.bottom=o.top+t.height();var e=this.offset();return e.right=e.left+this.outerWidth(),e.bottom=e.top+this.outerHeight(),!(o.right<e.left||o.left>e.right||o.bottom<e.top||o.top>e.bottom)},$(".module").length>0&&$(".module").each(function(){$(this).onscreen()&&$(this).addClass("come-in")}),$(".block").length>0&&$(".block").each(function(){$(this).onscreen()&&$(this).addClass("fade-in")}),$(".opacity").each(function(){if($(this).onscreen()){var t=$(this).height(),o=$(this).parent().offset().top-t,e=$(window).scrollTop(),i=(e-o)/t;$(this).css("opacity",i)}}),$(".volume").each(function(t){var o=$(this).find(".audio").get(0);$(this).onscreen(!0)&&$(".fa-volume-up").length>0?o.play():o.pause()})});
+  $.fn.onscreen=function(){var t=$(window),o={top:t.scrollTop(),left:t.scrollLeft()};o.right=o.left+t.width(),o.bottom=o.top+t.height();var e=this.offset();return e.right=e.left+this.outerWidth(),e.bottom=e.top+this.outerHeight(),!(o.right<e.left||o.left>e.right||o.bottom<e.top||o.top>e.bottom)},$(".module").length>0&&$(".module").each(function(){$(this).onscreen()&&$(this).addClass("already-visible")}),$(".block").length>0&&$(".block").each(function(){$(this).onscreen()&&$(this).addClass("fade-visible")}),$(window).scroll(function(){$.fn.onscreen=function(){var t=$(window),o={top:t.scrollTop(),left:t.scrollLeft()};o.right=o.left+t.width(),o.bottom=o.top+t.height();var e=this.offset();return e.right=e.left+this.outerWidth(),e.bottom=e.top+this.outerHeight(),!(o.right<e.left||o.left>e.right||o.bottom<e.top||o.top>e.bottom)},$(".module").length>0&&$(".module").each(function(){$(this).onscreen()&&$(this).addClass("come-in")}),$(".block").length>0&&$(".block").each(function(){$(this).onscreen()&&$(this).addClass("fade-in")}),$(".opacity").each(function(){if($(this).onscreen()){var t=$(this).height(),o=$(this).parent().offset().top-t,e=$(window).scrollTop(),i=(e-o)/t;$(this).css("opacity",i)}}),$(".volume").each(function(t){var o=$(this).find(".audio").get(0);$(this).onscreen(!0)&&$(".icon-volume-up").length>0?o.play():o.pause()})});
 
   //Audio stop
-  $(".control").click(function(){var o=document.getElementsByTagName("audio")[0];o.paused?(o.play(),$(".control").toggleClass("fa-volume-up fa-volume-off")):(o.pause(),$(".control").toggleClass("fa-volume-up fa-volume-off"))});
+  $(".control").click(function(){var o=document.getElementsByTagName("audio")[0];o.paused?(o.play(),$(".control").toggleClass("icon-volume-up icon-volume-down")):(o.pause(),$(".control").toggleClass("icon-volume-up icon-volume-down"))});
 
   //Light to dark transition
   $(window).scroll(function(){if($("#journal-content").hasClass("transNight")){var o=$(".sunset").offset().top,t=$(".night").offset().top,n=[250,250,250],a=[0,0,0],s=[a[0]-n[0],a[1]-n[1],a[1]-n[0]],r=($(this).scrollTop()-o)/(t-o);r=Math.min(1,Math.max(0,r));var h=[Math.round(n[0]+s[0]*r),Math.round(n[1]+s[1]*r),Math.round(n[2]+s[2]*r)];$("body").css("background-color","rgb("+h.join(",")+")")}});
