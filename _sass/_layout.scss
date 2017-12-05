@@ -52,15 +52,6 @@
     color: $white;
   }
 }
-.posBR { bottom: 25%; right: 10%; width: 40%; }
-.posTM { top: 35%; width: 100%; }
-.posBL { bottom: 25%; left: 10%; width: 40%; }
-.line {
-  border-bottom: 3px darken($white, 80%) solid;
-  width: 7%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 .pagination { display: none; }
 
 .journal-content {

@@ -3,20 +3,24 @@
     <script src="{{site.url}}/js/plugins.min.js"></script>
     <script src="{{site.url}}/js/base.js"></script>
     <script>
-    //On swipright, rotate clockwise
-        $('.circle').on('swiperight', function(e) {
-          $(this).removeClass('pause spin-left');
-          $(this).addClass('spin-right');
-        });
-        $('.circle').on('swipeleft', function(e) {
-          $(this).removeClass('pause spin-right');
-          $(this).addClass('spin-left');
-        });
-         //On tap, pause spinning
-        $('.circle').on('touchstart', function(e){
-        	console.log('yes');
-          $(this).addClass('pause');
-        });
+      // //On swipright, rotate clockwise
+      // $('.circle').on('swiperight', function(e) {
+      //   $(this).removeClass('pause spin-left');
+      //   $(this).addClass('spin-right');
+      // });
+      // $('.circle').on('swipeleft', function(e) {
+      //   $(this).removeClass('pause spin-right');
+      //   $(this).addClass('spin-left');
+      // });
+      //  //On tap, pause spinning
+      // $('.circle').on('vmouseup', function(e){
+      // 	console.log('yes');
+      //   $(this).addClass('pause');
+      // });
+      $('.circle').on('tap', function(e) {
+        console.log('tapped');
+        $(this).find('p').text('pause');
+      });
     </script>
   </body>
 </html>
