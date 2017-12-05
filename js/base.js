@@ -4,6 +4,22 @@ var bgHeight = $(window).height();
 var bgWidth = $(window).width();
 
 $(document).ready(function() {
+
+//On swipright, rotate clockwise
+    $('.circle').bind('swiperight', function(e) {
+      $(this).removeClass('pause spin-left');
+      $(this).addClass('spin-right');
+    });
+    $('.circle').bind('swipeleft', function(e) {
+      $(this).removeClass('pause spin-right');
+      $(this).addClass('spin-left');
+    });
+     //On tap, pause spinning
+    $('div.circle').on('tap', function(e){
+    	console.log('yes');
+      $(this).addClass('pause');
+    });
+
   //Split background fixed image
   if (bgWidth > 700) {
     (function() {

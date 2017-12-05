@@ -1,0 +1,58 @@
+---
+layout: page
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ site.title }}</title>
+
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <style>
+    .circle {
+      background: red;
+      margin: 20% auto;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      position: relative;
+      cursor: pointer;
+      }
+      p {
+      color: white;
+      position: absolute;
+      width: 30px;
+      left: -15px;
+      top: 20%;
+      margin-left: 50%;
+      }
+      .spin-right {
+        animation: spin-right 3s infinite linear;
+      }
+      @keyframes spin-right {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+      }
+      .spin-left {
+        animation: spin-left 3s infinite linear;
+      }
+      @keyframes spin-left {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(-360deg);}
+      }
+      .pause {
+        -webkit-animation-play-state: paused !important;
+        -moz-animation-play-state: paused !important;
+        -o-animation-play-state: paused !important;
+        animation-play-state: paused !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle">
+      <p>top</p>
+    </div>

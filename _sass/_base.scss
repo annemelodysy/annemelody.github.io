@@ -86,10 +86,9 @@ blockquote {
   .social {
     font-family: 'Noto Sans', sans-serif;
     text-transform: uppercase;
-    color: darken($white, 50%);
     font-size: 0.8rem;
-    .contact {
-      color: darken($white, 50%);
+    a {
+      color: darken($white, 80%);
     }
   }
 }
@@ -97,7 +96,6 @@ footer {
   padding: 1rem 0;
   margin-bottom: 1rem;
   background: $white;
-  ul { margin: 0; }
 }
 .related {
   list-style-type: none;

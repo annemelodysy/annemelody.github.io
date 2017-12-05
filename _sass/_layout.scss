@@ -79,15 +79,6 @@
     float: left;
     display: none;
   }
-  .message {
-    color: $white;
-    padding: 0 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    min-height: 350px;
-    width: 300px !important;
-    margin-right: 0;
-  }
 }
 
 /** Parallax **/
@@ -147,69 +138,11 @@
       -ms-animation: fadein 1s forwards 0.3s;
           animation: fadein 1s forwards 0.3s;
 }
-[class^="col-md-"]:nth-child(2) .fade-in img, [class*=" col-md-"]:nth-child(2) .fade-in img {
-  animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-}
-[class^="col-md-"]:nth-child(3) .fade-in img, [class*=" col-md-"]:nth-child(3) .fade-in img {
-  animation-delay: 1.5s;
-  -webkit-animation-delay: 1.5s;
-}
-[class^="col-md-"]:nth-child(4) .fade-in img, [class*=" col-md-"]:nth-child(4) .fade-in img {
-  animation-delay: 2s;
-  -webkit-animation-delay: 2s;
-}
 @keyframes fadein { to { opacity: 1; } }
 @-moz-keyframes fadein { to { opacity: 1; } }
 @-webkit-keyframes fadein { to { opacity: 1; } }
 @-ms-keyframes fadein { to { opacity: 1; } }
 
-/** Contact Page **/
-.contact-page {
-  background: $seafoam;
-  width: 100vw;
-  height: 100vh;
-  z-index: 5;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  input, textarea {
-    width: 100%;
-    border: none;
-    padding: 6px 0;
-    margin-bottom: 1rem;
-    border-bottom: 1px $white solid;
-    background: transparent;
-    color: darken($white, 80%);
-    &:focus { outline: none; }
-  }
-  ::-webkit-input-placeholder { color: lighten($seafoam, 10%); }
-  :-moz-placeholder { color: lighten($seafoam, 10%); }
-  ::-moz-placeholder { color: lighten($seafoam, 10%); }
-  :-ms-input-placeholder { color: lighten($seafoam, 10%); }
-  .btn {
-    background: transparent;
-    border: 1px $white solid;
-    color: $white;
-    padding: 5px 10px;
-  }
-  .social {
-    text-align: right;
-    margin-top: 0;
-    margin-bottom: 0;
-    a {
-      color: $white;
-      margin-left: 0.5rem;
-      font-size: 1.2rem;
-    }
-    li:first-child {
-      margin-first-child: 0;
-    }
-  }
-}
 #thanks {
   background: url('/assets/thanks-bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -230,11 +163,4 @@
     }
     h1 { color: $seafoam; }
   }
-}
-.overlay-close {
-  font-size: 2rem;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  color: $white;
 }
