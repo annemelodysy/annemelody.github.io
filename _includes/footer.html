@@ -1,34 +1,5 @@
     <script src="{{site.url}}/js/jquery.min.js"></script>
-    <script src="http://redesign.test.astrology.com/us/js/jquery.mobile.min-new.js"></script>
     <script src="{{site.url}}/js/plugins.min.js"></script>
     <script src="{{site.url}}/js/base.js"></script>
-    <script>
-      //On swipright, rotate clockwise
-      var deg = 0;
-      $('.circle').on('swiperight', function(e) {
-      	deg = deg + 90;
-        console.log(deg);
-	      $(this).animate({  borderSpacing: deg }, {
-          step: function(now,fx) {
-            $(this).css('-webkit-transform','rotate('+now+'deg)');
-            $(this).css('-moz-transform','rotate('+now+'deg)');
-            $(this).css('transform','rotate('+now+'deg)');
-          },
-          duration:'slow'
-    	  },'linear');
-      });
-      $('.circle').on('swipeleft', function(e) {
-      	deg = deg - 90;
-        console.log(deg);
-	      $(this).animate({  borderSpacing: deg }, {
-          step: function(now,fx) {
-            $(this).css('-webkit-transform','rotate('+now+'deg)');
-            $(this).css('-moz-transform','rotate('+now+'deg)');
-            $(this).css('transform','rotate('+now+'deg)');
-          },
-          duration:'slow'
-    	  },'linear');
-      });
-    </script>
   </body>
 </html>
