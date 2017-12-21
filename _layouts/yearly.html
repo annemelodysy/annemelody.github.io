@@ -1,13 +1,23 @@
 {% include head-post.html %}
 <section id="journal-cover">
-  <div class="title text-center">
+  <div class="title">
     <h1 class="blastable">{{ page.title }}</h1>
   </div>
   <div class="thumb">
     <img class="img-responsive" src="/assets/{{ page.img.large | replace: '!SITE_URL!', site.url }}">
   </div>
 </section> <!-- /#journal-cover -->
-<section class="split">
-  {{content}}
-</section> <!-- /split -->
+<section class="container mbottom15">
+  <div class="grid">
+    <div class="row text-center pink-bg">
+      <div class="span6 offset3">
+        <h5>{{ page.date | date: "%B %-d, %Y" }}</h5>
+        <h2>{{ page.excerpt | replace: '!SITE_URL!', site.url }}</h2>
+        <p>{{ page.short }}</p>
+      </div>
+    </div> <!-- /row -->
+    {{content}}
+  </div> <!-- /grid -->
+</section> <!-- /container -->
+{% include more-stories.html %}
 {% include footer.html %}

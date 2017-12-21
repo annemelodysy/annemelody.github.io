@@ -4,32 +4,6 @@ var bgHeight = $(window).height();
 var bgWidth = $(window).width();
 
 $(document).ready(function() {
-  //Split background fixed image
-  if (bgWidth > 700) {
-    (function() {
-      'use strict';
-
-      var section = document.querySelectorAll(".section");
-      var sections = {};
-      var i = 0;
-
-      Array.prototype.forEach.call(section, function(e) {
-        sections[e.id] = e.offsetTop;
-      });
-
-      window.onscroll = function() {
-        var scrollPosition = document.documentElement.scrollTop - 400 || document.body.scrollTop - 400;
-
-        for (i in sections) {
-          if (sections[i] <= scrollPosition) {
-            document.querySelector('.visible').setAttribute('class', '');
-            document.querySelector('div[href*=' + i + ']').setAttribute('class', 'visible');
-          }
-        }
-      };
-    })();
-  }
-
   var $container = $('#thumbnails');
 
   //Calculate Min and Max for blasting
