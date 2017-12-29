@@ -63,7 +63,6 @@ and (max-width : 767px) {
   #journal-cover {
     height: 250px;
     margin-top: 43px;
-    margin-bottom: 1rem;
     background-attachment: scroll;
     .title {
       width: 90%;
@@ -130,15 +129,24 @@ and (max-width : 767px) {
   .blastable:nth-child(2) { display: none; }
 
   //New
-  .pink-bg {
-    padding: 0 2rem;
-    margin: -1rem -1rem 1rem -1rem;
+  .brown-bg {
+    padding-top: 2rem;
+  }
+  .year {
+    display: block;
+    margin: 2rem 0;
+    .item {
+      .caption {
+        display: block;
+        min-height: auto;
+      }
+    }
   }
   .more-stories {
     padding: 0 1rem;
     .thumbnail {
       width: 100%;
-      margin-bottom: 1rem;
+      padding-bottom: 1rem;
       float: none;
       display: block;
       h1 {
@@ -196,7 +204,6 @@ and (max-width : 1024px) {
   }
   #journal-cover {
     height: 500px;
-    margin-bottom: 1rem;
     background-attachment: scroll;
     .title {
       width: 80%;
@@ -238,6 +245,15 @@ and (max-width : 1024px) {
       }
       img {
         margin-bottom: 0;
+      }
+    }
+  }
+  .year {
+    display: block;
+    .item {
+      .caption {
+        display: block;
+        min-height: auto;
       }
     }
   }

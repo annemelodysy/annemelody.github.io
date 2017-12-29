@@ -71,6 +71,17 @@ $(document).ready(function() {
 
   //Light to dark transition
   $(window).scroll(function(){if($("#journal-content").hasClass("transNight")){var o=$(".sunset").offset().top,t=$(".night").offset().top,n=[250,250,250],a=[0,0,0],s=[a[0]-n[0],a[1]-n[1],a[1]-n[0]],r=($(this).scrollTop()-o)/(t-o);r=Math.min(1,Math.max(0,r));var h=[Math.round(n[0]+s[0]*r),Math.round(n[1]+s[1]*r),Math.round(n[2]+s[2]*r)];$("body").css("background-color","rgb("+h.join(",")+")")}});
+
+  if (bgWidth > 1024) {
+    //yearly
+    $('.year .item').click(function(){
+      $(this).addClass('open');
+      $('.item').not(this).removeClass('open');
+    });
+    $('body').mouseup(function(){
+      $('.item').removeClass('open');
+    });
+  }
 });
 
 //Horizontal Scroll

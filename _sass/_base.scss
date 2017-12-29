@@ -14,15 +14,15 @@ body {
   line-height: 1.9;
   font-size: 1.2rem;
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 h1 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
-  letter-spacing: 1.5rem;
+  letter-spacing: 1rem;
   color: $white;
   text-align: center;
   line-height: 2;
@@ -128,4 +128,237 @@ footer {
 .flex-center {
   display: flex;
   justify-content: center;
+}
+
+
+/** Home **/
+#thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  .item {
+    width: 17rem;
+    padding: 3rem;
+    position: relative;
+    h1 {
+      color: $brown;
+      position: absolute;
+      bottom: 0rem;
+      left: 1rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.4rem;
+      display: none;
+    }
+    &:hover {
+      h1 {
+        display: block;
+      }
+    }
+  }
+}
+.scroll-text {
+  margin: 0;
+  position: absolute;
+  right: -1.7%;
+  top: 45%;
+  transform: rotate(90deg);
+  letter-spacing: 0.05rem;
+  background: darken($white, 1%);
+  i {
+    margin-left: 0.5rem;
+  }
+}
+#journal-cover {
+  @include cover;
+  .title {
+    position: absolute;
+    top: 45%;
+    width: 40%;
+    left: 50%;
+    margin-left: -20%;
+  }
+  h1 {
+    color: $white;
+  }
+}
+.pagination { display: none; }
+
+.journal-content {
+  padding: 0 1rem;
+}
+
+/**Blast **/
+.blastable, .blast {opacity:0;}
+
+/** Horizontal view **/
+.horizontal-outer {
+  overflow: scroll;
+  .horizontal-inner { padding: 0 10px; }
+  img {
+    padding: 0 10px;
+    float: left;
+    display: none;
+  }
+}
+
+/** Parallax **/
+.parallax {
+  @include cover;
+  height: 100vh;
+  -webkit-box-shadow: inset 0px -7px 10px 2px rgba(0,0,0,0.1);
+  -moz-box-shadow: inset 0px -7px 10px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0px -7px 10px 2px rgba(0,0,0,0.1);
+  color: $white;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.invert { color: darken($white, 80%); text-shadow: none; }
+#fog { @include cover; opacity: 0.8; width: 100%; }
+
+/** Loading Infinite Scroll **/
+#infscr-loading {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 1.4rem;
+  img { margin: 10px auto; width: 30px; }
+}
+
+.volume {
+  position: relative;
+  .control {
+    position: absolute;
+    font-size: 20px;
+    right: 5%;
+    top: 5%;
+    color: $white;
+    z-index: 100;
+    cursor: pointer;
+  }
+}
+.module { opacity: 0; }
+.come-in {
+  transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+  animation: come-in 1s ease-in-out forwards;
+  -webkit-animation: come-in 1s ease-in-out forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+}
+.already-visible { transform: translateY(0); -webkit-transform: translateY(0px); animation: none; opacity: 1; }
+@-webkit-keyframes come-in { to { -webkit-transform: translateY(0); opacity: 1; } }
+@keyframes come-in { to { transform: translateY(0); opacity: 1; } }
+
+.fade-in img {
+  -webkit-animation: fadein 1s forwards 0.3s;
+     -moz-animation: fadein 1s forwards 0.3s;
+      -ms-animation: fadein 1s forwards 0.3s;
+          animation: fadein 1s forwards 0.3s;
+}
+@keyframes fadein { to { opacity: 1; } }
+@-moz-keyframes fadein { to { opacity: 1; } }
+@-webkit-keyframes fadein { to { opacity: 1; } }
+@-ms-keyframes fadein { to { opacity: 1; } }
+
+#thanks {
+  background: url('/assets/thanks-bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .message {
+    .logo {
+      display: block;
+      width: 50px;
+      margin: 0 auto;
+      polyline { stroke: $seafoam; stroke-width: 20; stroke-miterlimit: 10; fill: none; }
+    }
+    h1 { color: $seafoam; }
+  }
+}
+#dark-cover {
+  background: darken($white, 100%);
+  h1, h2, h3, h4, h5 { color: $white; }
+  h3 {
+    font-weight: 400;
+  }
+}
+.dark-bg {
+  background: darken($white, 100%);
+  color: $white;
+  h2, h3 { color: $white; }
+}
+
+.more-stories {
+  .thumbnail {
+    width: 33.33333333%;
+    float: left;
+    position: relative;
+    &:hover {
+      opacity: 0.9;
+    }
+    h1 {
+      font-size: 80%;
+      letter-spacing: 1rem;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      width: 80%;
+      margin-left: -40%;
+    }
+  }
+}
+.block {
+  margin-bottom: 1.7rem;
+}
+.brown-bg {
+  background: lighten($brown, 15%);
+  h3 {
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+  }
+  a {
+    color: $pink;
+  }
+  .more-stories {
+    margin-top: 0;
+  }
+}
+.year {
+  display: flex;
+  align-items: center;
+  min-height: 50vh;
+  .item {
+    img {
+      cursor: pointer;
+    }
+    .caption {
+      display: none;
+      z-index: 10;
+      min-height: 200px;
+      p {
+        font-size: 0.9rem;
+      }
+    }
+    &.open {
+      -webkit-transition: width 0.2s;
+      transition: width 0.2s;
+      width: 50%;
+      .caption {
+        display: block;
+      }
+    }
+  }
 }
