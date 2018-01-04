@@ -160,6 +160,20 @@ and (max-width : 767px) {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+  #resume {
+    .spanxs-25 {
+      margin: 0 auto;
+      float: none;
+    }
+  }
+  #projects {
+    .align-center {
+      display: block;
+    }
+    .span4 {
+      padding: 0;
+    }
+  }
 }
 
 /*** Tablet ***/
@@ -255,6 +269,20 @@ and (max-width : 1024px) {
         display: block;
         min-height: auto;
       }
+    }
+  }
+  #resume {
+    .spansm-25 {
+      margin: 0 auto;
+      float: none;
+    }
+  }
+  #projects {
+    .align-center {
+      display: block;
+    }
+    .span4 {
+      padding: 0;
     }
   }
 }
