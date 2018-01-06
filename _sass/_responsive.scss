@@ -22,7 +22,7 @@ and (max-width : 767px) {
   }
   h5 {
     font-size: 0.9rem;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
   }
   p { margin-bottom: 1rem; }
   .mtop2, .mtop4, .mtop15, .mtop8, .mtop30 { margin-top: 0; }
@@ -56,8 +56,6 @@ and (max-width : 767px) {
       }
     }
   }
-  //Contact
-  .contact-page { padding: 0 1rem; }
 
   //Themes
   #journal-cover {
@@ -66,9 +64,6 @@ and (max-width : 767px) {
     background-attachment: scroll;
     .title {
       width: 90%;
-      margin-left: -45%;
-      margin-top: 0;
-      top: 35%;
     }
   }
   #dark-cover {
@@ -144,16 +139,14 @@ and (max-width : 767px) {
   }
   .more-stories {
     padding: 0 1rem;
+    display: block;
     .thumbnail {
+      padding: 0.5rem 3rem;
       width: 100%;
-      padding-bottom: 1rem;
-      float: none;
       display: block;
-      h1 {
-        color: $white;
-        letter-spacing: 0.5rem;
-        top: 35%;
-      }
+    }
+    h5 {
+      margin-top: 1rem;
     }
   }
   .container {
@@ -187,12 +180,9 @@ and (max-width : 1024px) {
   .mtop2, .mtop4, .mtop15, .mtop8, .mtop30 { margin-top: 0; }
   .mbottom2, .mbottom8, .mbottom15 { margin-bottom: 0; }
   img, p { margin-bottom: 1rem; }
+  h1 { font-size: 1.2rem; }
   h2 { font-size: 1.6rem; }
-  h3 {
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
+  h5 { margin-top: 2rem; }
   .text-right { text-align: left; }
   #thumbnails .item {
     width: 18rem;
@@ -220,9 +210,7 @@ and (max-width : 1024px) {
     height: 500px;
     background-attachment: scroll;
     .title {
-      width: 80%;
-      margin-left: -40%;
-      top: 40%;
+      width: 50%;
     }
   }
   .parallax {
@@ -253,13 +241,10 @@ and (max-width : 1024px) {
   @keyframes jump { 0% { bottom: 10px; } 100% { bottom: 20px; } }
   .more-stories {
     .thumbnail {
-      h1 {
-        top: 25%;
-        letter-spacing: 0.5rem;
-      }
-      img {
-        margin-bottom: 0;
-      }
+      padding: 0.5rem;
+    }
+    h5 {
+      margin-top: 1rem;
     }
   }
   .year {
