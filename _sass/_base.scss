@@ -315,7 +315,9 @@ footer {
       opacity: 0.9;
     }
     h1 {
-      text-align: center;
+      color: darken($white, 80%);
+      font-size: 0.8rem;
+      letter-spacing: 0.4rem;
     }
   }
 }
