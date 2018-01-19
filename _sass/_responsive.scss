@@ -160,12 +160,12 @@ and (max-width : 767px) {
     }
   }
   #projects {
-    .align-center {
-      display: block;
-    }
     .span4 {
       padding: 0;
     }
+  }
+  .align-center {
+    display: block;
   }
 }
 
@@ -263,11 +263,11 @@ and (max-width : 1024px) {
     }
   }
   #projects {
-    .align-center {
-      display: block;
-    }
     .span4 {
       padding: 0;
     }
+  }
+  .align-center {
+    display: block;
   }
 }

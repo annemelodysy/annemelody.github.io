@@ -409,8 +409,8 @@ footer {
   img {
     border: 1px darken($white, 10%) solid;
   }
-  .align-center {
-    display: flex;
-    align-items: center;
-  }
+}
+.align-center {
+  display: flex;
+  align-items: center;
 }
