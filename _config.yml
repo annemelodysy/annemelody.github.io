@@ -3,7 +3,7 @@ title:         Anne Melody
 description:   Travels and personal experiences of a human from the sunny island of Cebu.
 email:         annemelodysy@gmail.com
 url:           http://annemelody.com
-base.url:      journal
+base.url:
 site.url:      annemelody.com
 paginate:      240
 paginate_path: "/page:num/"
