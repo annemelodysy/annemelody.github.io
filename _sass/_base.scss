@@ -190,10 +190,6 @@ footer {
 }
 .pagination { display: none; }
 
-.journal-content {
-  padding: 0 1rem;
-}
-
 /**Blast **/
 .blastable, .blast {opacity:0;}
 
@@ -323,6 +319,7 @@ footer {
 }
 .block {
   margin-bottom: 1.7rem;
+  display: inline;
 }
 .brown-bg {
   background: lighten($brown, 18%);
