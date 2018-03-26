@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Time shift demo</title>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+	</head>
+  <body>
+    <section id="today" data-role="page">
+      <h1>Horoscopes</h1>
+      <h2>Aries</h2>
+      <ul class="time-switch">
+        <li><a href="yesterday.html" rel="external">Yesterday</a></li>
+        <li class="active">
+					<a href="#">Today</a>
+				</li>
+        <li><a href="tomorrow.html" rel="external">Tomorrow</a></li>
+				<li class="dropdown show-mobile">
+					<a href="#" class="more">More &#9662;</a>
+					<ul>
+						<li><a href="weekly.html" rel="external">Weekly</a></li>
+		        <li><a href="monthly.html" rel="external">Monthly</a></li>
+		        <li><a href="yearly.html" rel="external">Yearly</a></li>
+					</ul>
+				</li>
+				<li class="show-desktop"><a href="weekly.html" rel="external">Weekly</a></li>
+				<li class="show-desktop"><a href="monthly.html" rel="external">Monthly</a></li>
+				<li class="show-desktop"><a href="yearly.html" rel="external">Yearly</a></li>
+      </ul>
+      <p><span class="date">Mar 23, 2018:</span> You're in the mood to hibernate, big time &mdash; which is quite unusual for you. In fact, it has you worried. Could a permanent change in your personality be coming on? Of course not. Stay snuggled up in those pj's just as long as you want. Soon, you'll be yourself again &mdash; in the mood to wear something red and revealing, and eager to make up for lost time. In fact, expect to be burning the candle at both ends again, as usual, in just a day or so.</p>
+    </section> <!-- /today -->
+
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5.js"></script>
+    <script src="base.js"></script>
+  </body>
+</html>
