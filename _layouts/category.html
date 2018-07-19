@@ -1,6 +1,7 @@
 ---
 ---
 {% include head.html %}
+<h2 class="text-center">thoughts about {{ page.category }}</h2>
 <section id="thumbnails">
   {% for post in site.categories[page.category] %}
   <a href="{{ post.url | prepend: site.baseurl }}" class="item">

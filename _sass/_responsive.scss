@@ -153,13 +153,13 @@ and (max-width : 767px) {
     margin-right: 1rem;
   }
   #resume {
-    .spanxs-25 {
+    .span-xs-3 {
       margin: 0 auto;
       float: none;
     }
   }
   #projects {
-    .span4 {
+    .span-4 {
       padding: 0;
     }
   }
@@ -216,9 +216,6 @@ and (max-width : 1024px) {
     box-shadow: none;
     background-image: none !important;
     height: auto;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
     img {
       display: block !important;
       padding: 0 0.8%;
@@ -234,6 +231,14 @@ and (max-width : 1024px) {
       max-width: 500px;
       margin-left: auto;
       margin-right: auto;
+    }
+    .opacity {
+      position: static !important;
+      text-align: left;
+      transform: rotate(0deg) !important;
+      opacity: 1 !important;
+      color: darken($white, 80%);
+      text-shadow: none;
     }
   }
   .pagination { display: none; }
@@ -256,13 +261,13 @@ and (max-width : 1024px) {
     }
   }
   #resume {
-    .spansm-25 {
+    .span-s-3 {
       margin: 0 auto;
       float: none;
     }
   }
   #projects {
-    .span4 {
+    .span-4 {
       padding: 0;
     }
   }

@@ -7,14 +7,14 @@
 <section class="container mtop4">
   <div class="grid">
     <div class="row">
-      <div class="span6 offset3">
+      <div class="span-6 offset-3">
         <h5>{{ page.date | date: "%B %-d, %Y" }}</h5>
         <h2>{{ page.excerpt | replace: '!SITE_URL!', site.url }}</h2>
       </div>
     </div> <!-- /row -->
     {{content}}
     <div class="row mtop4">
-      <div class="span6 offset3">
+      <div class="span-6 offset-3">
         <div class="fb-comments" data-href="{{ page.url | prepend: site.url }}" data-width="100%" data-numposts="10"></div>
       </div>
     </div> <!-- /row -->
