@@ -14,15 +14,15 @@ img:
     <div class="grid">
       <div class="row">
         <div class="span-6 offset-5 mtop2 mbottom2">
+          <h4><a href="{{ site.baseurl }}/{{ page.categories }}">{{ page.categories }}</a></h4>
           <h2>{{ page.title }}</h2>
           <h3>{{ page.excerpt | replace: '!SITE_URL!', site.url }}</h3>
-          <h5>{{ page.date | date: "%B %-d, %Y" }}</h5>
+          <h4>{{ page.date | date: "%B %-d, %Y" }}</h4>
         </div>
       </div> <!-- /row -->
     </div> <!-- /grid -->
   </div> <!-- /container -->
 </section> <!-- /#dark-cover -->
-
 <section class="dark-bg">
   <div class="container">
     <div class="grid">

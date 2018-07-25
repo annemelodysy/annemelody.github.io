@@ -6,10 +6,11 @@
 </section>
 <section class="container mtop4">
   <div class="grid">
-    <div class="row">
+    <div class="row mbottom2">
       <div class="span-6 offset-3">
-        <h5>{{ page.date | date: "%B %-d, %Y" }}</h5>
+        <h4><a href="{{ site.baseurl }}/{{ page.categories }}">{{ page.categories }}</a></h4>
         <h2>{{ page.excerpt | replace: '!SITE_URL!', site.url }}</h2>
+        <h4>{{ page.date | date: "%B %-d, %Y" }}</h4>
       </div>
     </div> <!-- /row -->
     {{content}}

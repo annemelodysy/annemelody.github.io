@@ -85,6 +85,8 @@
   .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11 {
     @include grid-size(100%);
   }
+  .span-s-4 { @include grid-size(33.333%); }
+  .span-s-6 { @include grid-size(50%); }
   .span-s-3 { @include grid-size(25%); }
   .span-s-9 { @include grid-size(75%); }
   [class^="offset-"], [class*=" offset-"] { margin-left: 0; }

@@ -1,5 +1,5 @@
 @media only screen
-and (min-width : 320px)
+and (min-width : 300px)
 and (max-width : 767px) {
   body { font-size: 1rem; }
   h1 {
@@ -7,23 +7,13 @@ and (max-width : 767px) {
     letter-spacing: 0.5rem;
     color: darken($white, 100%);
   }
-  h2 {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-  }
+  h2, h3, h4 { margin-top: 0.5rem; }
+  h2 { font-size: 1.2rem; }
   h3 {
     font-size: 1.1rem;
-    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
-  h4 {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-  }
-  h5 {
-    font-size: 0.9rem;
-    margin-top: 2rem;
-  }
+  h4 { font-size: 1rem; }
   p { margin-bottom: 1rem; }
   .mtop2, .mtop4, .mtop15, .mtop8, .mtop30 { margin-top: 0; }
   .mbottom2, .mbottom8, .mbottom15 { margin-bottom: 0; }
@@ -71,14 +61,12 @@ and (max-width : 767px) {
     margin-top: 50px;
     color: darken($white, 80%);
     h1 { font-size: 1.2rem; }
-    h1, h2, h3, h4, h5 { color: darken($white, 80%); }
+    h1, h2, h3, h4 { color: darken($white, 80%); }
   }
   .dark-bg {
     background: transparent;
     color: darken($white, 80%);
-    h3 {
-      color: darken($white, 80%);
-    }
+    h3 { color: darken($white, 80%); }
   }
   .social, .related { margin: 0; }
   .full-bleed { padding: 0 1rem; }
@@ -109,25 +97,12 @@ and (max-width : 767px) {
     }
   }
   #fog, .guide { display: none; }
-  .horizontal-outer {
-    margin: 0 auto;
-    max-width: 100%;
-    .horizontal-inner { padding: 0; }
-    img {
-      max-width: 100%;
-      padding: 0;
-      margin-bottom: 1rem;
-    }
-  }
   .volume .control { font-size: 15px; right: 8%; }
   .blastable:nth-child(2) { display: none; }
 
   //New
-  .brown-bg {
-    padding-top: 2rem;
-  }
+  .brown-bg { padding-top: 2rem; }
   .year {
-    display: block;
     margin: 2rem 0;
     .item {
       .caption {
@@ -143,9 +118,6 @@ and (max-width : 767px) {
       padding: 0.5rem 3rem;
       width: 100%;
       display: block;
-    }
-    h5 {
-      margin-top: 1rem;
     }
   }
   .container {
@@ -172,16 +144,13 @@ and (max-width : 767px) {
 @media only screen
 and (min-width : 768px)
 and (max-width : 1024px) {
-  body {
-    font-size: 1rem;
-  }
-  .menu { justify-content: space-between; top: 0; }
-  .mtop2, .mtop4, .mtop15, .mtop8, .mtop30 { margin-top: 0; }
-  .mbottom2, .mbottom8, .mbottom15 { margin-bottom: 0; }
+  body { font-size: 1rem; }
   img, p { margin-bottom: 1rem; }
   h1 { font-size: 1.2rem; }
   h2 { font-size: 1.6rem; }
-  h5 { margin-top: 2rem; }
+  .menu { justify-content: space-between; top: 0; }
+  .mtop2, .mtop4, .mtop15, .mtop8, .mtop30 { margin-top: 0; }
+  .mbottom2, .mbottom8, .mbottom15 { margin-bottom: 0; }
   .text-right { text-align: left; }
   #thumbnails .item {
     width: 18rem;
@@ -196,7 +165,7 @@ and (max-width : 1024px) {
     margin-top: 43px;
     color: darken($white, 80%);
     h1 { font-size: 1.2rem; }
-    h1, h2, h3, h4, h5 { color: darken($white, 80%); }
+    h1, h2, h3, h4 { color: darken($white, 80%); }
   }
   .dark-bg {
     background: $white;
@@ -247,13 +216,11 @@ and (max-width : 1024px) {
     .thumbnail {
       padding: 0.5rem;
     }
-    h5 {
-      margin-top: 1rem;
-    }
   }
   .year {
-    display: block;
+    align-items: flex-start;
     .item {
+      margin-bottom: 2rem;
       .caption {
         display: block;
         min-height: auto;

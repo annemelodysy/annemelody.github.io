@@ -46,13 +46,10 @@ $(document).ready(function() {
     //yearly
     $('.year .item').click(function(){
       $(this).addClass('open');
-      $('.item').not(this).removeClass('open');
+      $('.item').not(this).removeClass('open').addClass('shrink');
     });
     $('body').mouseup(function(){
-      $('.item').removeClass('open');
+      $('.item').removeClass('open shrink');
     });
   }
 });
-
-//Horizontal Scroll
-$(window).on("load",function(){var i=$(window).width();$(".horizontal-inner img").css("display","block"),i>700&&$(".horizontal-inner").each(function(){var i=$(window).height()/2.5,n=23;$(this).find("img").each(function(){$(this).css("height",i),n+=$(this).outerWidth(!0)}),$(this).css("width",n)})});
