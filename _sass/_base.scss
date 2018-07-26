@@ -284,6 +284,11 @@ footer {
 }
 .block {
   margin-bottom: 1.7rem;
+  img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
 }
 .brown-bg {
   background: lighten($brown, 18%);
