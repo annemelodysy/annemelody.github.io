@@ -1,50 +1,38 @@
 ---
-layout:     post
+layout:     post-blocks
 title:      "Two Worlds Collide"
 date:       2013-07-25
 categories: story
 permalink:  /:categories/:title
-excerpt:    There is a glitch in the universe. What you see isn’t really what it is meant to be.
+excerpt:    There is a glitch in the universe. What you see isn’t really what it's meant to be.
+intro:      Glitches have occurred before anyone realizes the songs they heard on the radio came from a parallel universe.
+img-link:   /assets/2013/two-worlds-collide
 img:
   small:    2013/two-worlds-collide/two-worlds-collide-small.jpg
   large:    2013/two-worlds-collide/two-worlds-collide-cover.jpg
 ---
-<div class="row">
-  <div class="span-6 offset-3">
-    <div class="block">
-      <img src="/assets/2013/two-worlds-collide/1.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/two-worlds-collide/2.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/two-worlds-collide/3.jpg" class="img-responsive" />
-    </div>
-    <p>Glitches have occurred before anyone realized the songs they heard on the radio came from a parallel universe.</p>
-    <div class="block">
-      <img src="/assets/2013/two-worlds-collide/4.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/two-worlds-collide/5.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/two-worlds-collide/6.jpg" class="img-responsive" />
-    </div>
-    <p>There is a glitch in the universe. What you see isn’t really what it is meant to be.</p>
-    <div class="block">
-      <img src="/assets/2013/two-worlds-collide/7.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/two-worlds-collide/8.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/two-worlds-collide/9.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/two-worlds-collide/10.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/two-worlds-collide/11.jpg" class="img-responsive" />
-    </div>
-  </div>
-</div> <!-- /row -->
+
+{% include block-img-1.html type="left-6" img="1.jpg" alt="Falling down the hill" %}
+
+{% include block-img-1.html type="right-6" img="2.jpg" alt="Hands" %}
+
+{% include block-img-2.html type="span-4"
+  img="4.jpg" alt="Legs"
+  img2="3.jpg" alt2="Red-head girl peeking"
+%}
+
+{% include block-slim.html type="right"
+  img="5.jpg" alt="Girl sitting on grass"
+  img2="6.jpg" alt2="Girl lying on floor"
+%}
+
+{% include block-img-1.html type="center-6" img="8.jpg" alt="Blurry girl with trees in the background" %}
+
+{% include block-img-2.html type="span-5"
+  img="9.jpg" alt="Girl looking at water fountain"
+  img2="7.jpg" alt2="Fallen girl"
+%}
+
+{% include block-img-1.html type="center-6" img="10.jpg" alt="Girl covering her eyes" %}
+
+{% include block-img-1.html type="center-6" img="11.jpg" alt="Darkness falls" %}

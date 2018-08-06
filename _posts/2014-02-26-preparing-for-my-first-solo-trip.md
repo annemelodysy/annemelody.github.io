@@ -5,15 +5,14 @@ date:       2014-02-26
 categories: travel
 permalink:  /:categories/:title
 excerpt:    Here we go. My first solo trip. Something I’ve been wanting to do for a long time but have been putting off with different excuses.
+img-link:   /assets/2014/bali-trip
 img:
   small:    2014/bali-trip/bali-trip-small.jpg
   large:    2014/bali-trip/bali-trip-cover.jpg
 ---
 It's exciting, unnerving, mind-blowing. Here we go. My first solo trip. Something I’ve been wanting to do for a long time but have been putting off with different excuses. I wanted to do it before turning 30, so this is the perfect opportunity.
 
-<div class="block">
-  <img src="/assets/2014/bali-trip/1.jpg" class="img-responsive" />
-</div>
+{% include img-block.html img="1.jpg" alt="Getting ready for my first solo trip to Bali" %}
 
 I'm going to Bali. I've never been but have heard stories and it seems like my kind of place.
 

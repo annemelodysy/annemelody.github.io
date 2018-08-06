@@ -1,79 +1,50 @@
 ---
-layout:     post
+layout:     post-blocks
 title:      "South but not too South"
 date:       2013-07-25
 categories: travel
 permalink:  /:categories/:title
 excerpt:    I can’t resist invitations concerning long drives away from the city.
+img-link:   /assets/2013/south
 img:
   small:    2013/south/south-small.jpg
   large:    2013/south/south-cover.jpg
 ---
-<div class="row">
-  <div class="span-6 offset-3">
-    <div class="block">
-      <img src="/assets/2013/south/1.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/south/2.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/south/3.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/south/4.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/south/5.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/south/6.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/south/7.jpg" class="img-responsive" />
-    </div>
-  </div>
-</div> <!-- /row -->
-<div class="row">
-  <div class="span-3 offset-3">
-    <div class="block">
-      <img src="/assets/2013/south/13.jpg" class="img-responsive" />
-    </div>
-  </div>
-  <div class="span-3">
-    <div class="block">
-      <img src="/assets/2013/south/8.jpg" class="img-responsive" />
-    </div>
-  </div>
-</div> <!-- /row -->
-<div class="row">
-  <div class="span-6 offset-3">
-    <div class="block">
-      <img src="/assets/2013/south/9.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/south/10.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/south/11.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/south/12.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/south/14.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/south/15.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/south/16.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/south/17.jpg" class="img-responsive" />
-    </div>
-    <div class="block">
-      <img src="/assets/2013/south/18.jpg" class="img-responsive" />
-    </div>
-  </div>
-</div> <!-- /row -->
+{% include block-img-2.html type="span-5"
+  img="1.jpg" alt="Roof structures"
+  img2="2.jpg" alt2="Tower steel structure"
+%}
+
+{% include block-img-1.html type="left-6" img="3.jpg" alt="Lamp posts and cloudy blue sky" %}
+
+{% include block-img-1.html type="center-6" img="4.jpg" alt="Visitor's center" %}
+
+{% include block-img-1.html type="right-5" img="5.jpg" alt="Newspaper on the floor" %}
+
+{% include block-img-1.html type="center-6" img="6.jpg" alt="Giant cloud" %}
+
+{% include block-img-1.html type="left-5" img="7.jpg" alt="House on a hill" %}
+
+{% include block-img-2.html type="span-3"
+  img="13.jpg" alt="Cloudy sky"
+  img2="8.jpg" alt2="Control panel"
+%}
+
+{% include block-img-1.html type="center-6" img="9.jpg" alt="Dry mud" %}
+
+{% include block-img-2.html type="span-4"
+  img="10.jpg" alt="Gero with the vast sky"
+  img2="11.jpg" alt2="Gero standing behind a container van"
+%}
+
+{% include block-img-1.html type="right-6" img="12.jpg" alt="Cloud and houses" %}
+
+{% include block-img-1.html type="center-6" img="14.jpg" alt="Zara walking towards the sea" %}
+
+{% include block-img-3.html type="span-4"
+  img="16.jpg" alt="Mechanical crane"
+  img2="17.jpg" alt2="Blurry dark scene"
+  img3="18.jpg" alt3="Evening shadows"
+%}
+
+{% include block-img-1.html type="center-6" img="15.jpg" alt="Plane in the sky" %}

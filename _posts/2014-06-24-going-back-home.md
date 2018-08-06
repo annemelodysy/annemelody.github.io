@@ -5,11 +5,12 @@ date:       2014-06-24
 categories: life
 permalink:  /:categories/:title
 excerpt:    You might find yourself in a different country as good as yours, but home will always be home.
+img-link:   /assets/2014/going-home
 img:
   small:    2014/going-home/going-home-small.jpg
   large:    2014/going-home/going-home-cover.jpg
 ---
-<i>There is no place like home.</i>
+*There is no place like home.*
 
 After months of traveling and living in temporary homes, I am coming home to Cebu. It’s been 5 months since I stepped foot in this city but being away allowed me to understand myself and figure out what I want to do with my life.
 
@@ -23,6 +24,4 @@ I can’t wait to write about the people, take lovely photographs of my city, ca
 
 You might find yourself in a different country as good as yours, but home will always be home.
 
-<div class="block">
-  <img src="/assets/2014/going-home/1.jpg" class="img-responsive" alt="Mountains of Cebu" />
-</div>
+{% include img-block.html img="1.jpg" alt="Mountains of Cebu" %}
