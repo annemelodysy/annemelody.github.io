@@ -3,31 +3,31 @@
   {% if page.next.next.url %}
   <a href="{{ BASE_PATH }}{{ page.next.next.url }}" class="thumbnail">
     <img src="/assets/{{ page.next.next.img.small | replace: '!SITE_URL!', site.url }}" class="img-responsive" alt="{{ page.next.next.title }}" />
-    <h1>{{ page.next.next.title }}</h1>
+    <h4>{{ page.next.next.title }}</h4>
   </a>
   {% endif %}
   {% if page.next.url %}
     <a href="{{ BASE_PATH }}{{ page.next.url }}" class="thumbnail">
       <img src="/assets/{{ page.next.img.small | replace: '!SITE_URL!', site.url }}" class="img-responsive" alt="{{ page.next.title }}" />
-      <h1>{{ page.next.title }}</h1>
+      <h4>{{ page.next.title }}</h4>
     </a>
   {% endif %}
   {% if page.previous.url %}
     <a href="{{ BASE_PATH }}{{ page.previous.url }}" class="thumbnail">
       <img src="/assets/{{ page.previous.img.small | replace: '!SITE_URL!', site.url }}" class="img-responsive" alt="{{ page.previous.title }}" />
-      <h1>{{ page.previous.title }}</h1>
+      <h4>{{ page.previous.title }}</h4>
     </a>
   {% endif %}
   {% if page.previous.previous.url %}
   <a href="{{ BASE_PATH }}{{ page.previous.previous.url }}" class="thumbnail">
     <img src="/assets/{{ page.previous.previous.img.small | replace: '!SITE_URL!', site.url }}" class="img-responsive" alt="{{ page.previous.previous.title }}" />
-    <h1>{{ page.previous.previous.title }}</h1>
+    <h4>{{ page.previous.previous.title }}</h4>
   </a>
   {% endif %}
   {% if page.previous.previous.previous.url %}
   <a href="{{ BASE_PATH }}{{ page.previous.previous.previous.url }}" class="thumbnail">
     <img src="/assets/{{ page.previous.previous.previous.img.small | replace: '!SITE_URL!', site.url }}" class="img-responsive" alt="{{ page.previous.previous.previous.title }}" />
-    <h1>{{ page.previous.previous.previous.title }}</h1>
+    <h4>{{ page.previous.previous.previous.title }}</h4>
   </a>
   {% endif %}
 </section> <!-- /more-stories -->

@@ -13,130 +13,71 @@ img:
 
 There's no argument that I love the outdoors, so when my aunt asked me to come with her to a launching party up the mountain, I said yes. What I saw up there blew me away. I have never seen Cebu from that perspective. It made me love my city more.
 
-<div class="block">
-<img src="{{ page.img-link }}/1.jpg" />
-</div>
+{% include img-block.html img="1.jpg" alt="steep road" %}
 
 We head up a very steep road.
 
-<div class="block">
-<img src="{{ page.img-link }}/2.jpg" />
-</div>
+{% include img-block.html img="2.jpg" alt="See how steep it is?" %}
 
-See how steep it is?
+{% include img-block.html img="3.jpg" alt="Reaching the top" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/3.jpg" />
-</div>
+{% include img-block.html img="4.jpg" alt="Dreamy grass" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/4.jpg" />
-</div>
+{% include img-block.html img="5.jpg" alt="" %}
 
-Spirited away.
+{% include img-block.html img="6.jpg" alt="Tita virgie" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/5.jpg" />
-</div>
+{% include img-block.html img="7.jpg" alt="Tita virgie and friend" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/6.jpg" />
-</div>
-
-<div class="block">
-<img src="{{ page.img-link }}/7.jpg" />
-</div>
-
-<div class="block">
-<img src="{{ page.img-link }}/8.jpg" />
-</div>
+{% include img-block.html img="8.jpg" alt="Jeremie's candid photo" %}
 
 I love candids.
 
-<div class="block">
-<img src="{{ page.img-link }}/9.jpg" />
-</div>
+{% include img-block.html img="9.jpg" alt="Cebu City" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/10.jpg" />
-</div>
+{% include img-block.html img="10.jpg" alt="Small houses of Cebu" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/11.jpg" />
-</div>
+{% include img-block.html img="11.jpg" alt="Bottom half" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/12.jpg" />
-</div>
+{% include img-block.html img="12.jpg" alt="Too many strange poses in this photo." %}
 
-Too many strange poses in this photo.
+{% include img-block.html img="13.jpg" alt="Cocktail event" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/13.jpg" />
-</div>
+{% include img-block.html img="14.jpg" alt="It felt like we were attending someone's wedding." %}
 
-It felt like we were attending someone's wedding.
-
-<div class="block">
-<img src="{{ page.img-link }}/14.jpg" />
-</div>
-
-<div class="block">
-<img src="{{ page.img-link }}/15.jpg" />
-</div>
+{% include img-block.html img="15.jpg" alt="Sliders" %}
 
 Food from my personal favorite catering service&mdash;Creative Cuisine. Yum!
 
-<div class="block">
-<img src="{{ page.img-link }}/16.jpg" />
-</div>
+{% include img-block.html img="16.jpg" alt="Setting up the stage" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/17.jpg" />
-</div>
+{% include img-block.html img="17.jpg" alt="Danger powerline" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/18.jpg" />
-</div>
+
+{% include img-block.html img="18.jpg" alt="Chef cooking my pasta" %}
 
 Gimme my pasta!
 
-<div class="block">
-<img src="{{ page.img-link }}/19.jpg" />
-</div>
+{% include img-block.html img="19.jpg" alt="Evening drives in Cebu" %}
 
 And then it turned dark.
 
-<div class="block">
-<img src="{{ page.img-link }}/20.jpg" />
-</div>
+{% include img-block.html img="20.jpg" alt="Cebu at twilight" %}
 
 Cebu is just awesome.
 
-<div class="block">
-<img src="{{ page.img-link }}/21.jpg" />
-</div>
+{% include img-block.html img="21.jpg" alt="Getting dark" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/22.jpg" />
-</div>
+{% include img-block.html img="22.jpg" alt="Beautiful view of the city at night" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/23.jpg" />
-</div>
+{% include img-block.html img="23.jpg" alt="The city at night" %}
 
 I'd love to fly here.
 
-<div class="block">
-<img src="{{ page.img-link }}/24.jpg" />
-</div>
+{% include img-block.html img="24.jpg" alt="Stage is ready" %}
 
-The party transitioned into something more formal.
+The day transitioned into something more formal.
 
-<div class="block">
-<img src="{{ page.img-link }}/25.jpg" />
-</div>
+{% include img-block.html img="25.jpg" alt="Beautiful stairway lights" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/26.jpg" />
-</div>
+{% include img-block.html img="26.jpg" alt="Black and white evening" %}

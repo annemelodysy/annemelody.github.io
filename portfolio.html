@@ -24,7 +24,7 @@ layout: page
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Poppins:400,400i,500,500i,700,700i" rel="stylesheet">
     <!-- Google Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -43,35 +43,30 @@ layout: page
           <polyline points="488.7 252.6 652.4 94.5 814.8 248.1 "/>
         </svg>
       </a>
-      <ul class="social">
-        <li><a href="http://www.instagram.com/muji_sky" target="_blank"><i class="icon-instagram"></i></a></li>
-        <li><a href="http://www.twitter.com/annemelodysy" target="_blank"><i class="icon-twitter"></i></a></li>
-        <li><a href="mailto:annemelodysy@gmail.com?Subject=Hello" target="_top">Contact</a></li>
-      </ul>
+      <div class="social">
+        <a href="http://www.instagram.com/muji_sky" target="_blank"><i class="icon-instagram"></i></a>
+        <a href="mailto:annemelodysy@gmail.com?Subject=Hello" target="_top"><h5>Contact</h5></a>
+      </div>
     </div>
     <section id="resume">
       <div class="container">
-        <div class="grid">
-          <div class="row text-center">
-            <div class="span-4 offset-4">
-              <div class="row">
-                <div class="span-4 offset-4 span-xs-3 span-s-3">
-                  <img src="assets/work/profile.jpg" class="img-responsive img-circle">
-                </div>
-              </div> <!-- /row -->
-              <h4>Anne Melody Sy Lim</h4>
-              <h6>Full Stack Designer since 2009</h6>
-              <p class="small">I'm a self-taught designer and front-end engineer based in San Francisco, CA with a curiosity for everyday things and a passion for solving problems.</p>
-            </div>
-          </div> <!-- /row -->
-        </div> <!-- /grid -->
+        <div class="row text-center">
+          <div class="span-6 offset-3">
+            <div class="row">
+              <img src="assets/work/profile.jpg" class="img-circle">
+            </div> <!-- /row -->
+            <h1>Anne Melody Sy Lim</h1>
+            <h2>Full-stack designer since 2009</h2>
+            <p>I'm a self-taught designer and front-end engineer based in San Francisco, CA with a curiosity for everyday things and a passion for solving problems.</p>
+          </div>
+        </div> <!-- /row -->
       </div> <!-- /container -->
     </section> <!-- /resume -->
-    <section id="process" class="container">
-      <div class="grid">
+    <section id="process">
+      <div class="container">
         <div class="row">
           <div class="span-3 offset-3">
-            <h4>Process</h4>
+            <h3>Process</h3>
             <ul>
               <li>Understand current product state and come up with a problem statement</li>
               <li>Conduct competitive analysis</li>
@@ -83,7 +78,7 @@ layout: page
             </ul>
           </div>
           <div class="span-2 offset-1">
-            <h4>Tools</h4>
+            <h3>Tools</h3>
             <ul>
               <li>Sketch</li>
               <li>Adobe Illustrator / Photoshop</li>
@@ -95,335 +90,338 @@ layout: page
             </ul>
           </div>
         </div> <!-- /row -->
-      </div> <!-- /grid -->
+      </div> <!-- /container -->
     </section> <!-- /process -->
     <section id="projects">
       <div class="container">
-        <div class="grid">
-          <div class="row text-center">
-            <div class="span-6 offset-3">
-              <h3>Selected Works</h3>
+        <div class="row text-center">
+          <div class="span-6 offset-3">
+            <h1>Selected Works</h1>
+          </div>
+        </div> <!-- /row -->
+        <div class="row">
+          <div class="span-6 offset-3">
+            <h2>Seek</h2>
+            <ul>
+              <li>UX design</li>
+              <li>UI design</li>
+            </ul>
+            <p>An assignment project I made for our UX class in early 2016. As I was browsing through Facebook, I frequently come across people who complain about planning their trip so I started interviewing a handful of people to determine what was frustrating about this task. After synthesizing all the information, I ended up with the following:</p>
+            <ol>
+              <li>They don't know where to start. There's too much information on the internet.</li>
+              <li>They have a specific travel style (history, foodie, nature) and budget (backpacker, flashpacker, luxury traveller).</li>
+              <li>Travel blogs are too long to read.</li>
+              <li>Authenticity is important. Paid content must be avoided.</li>
+              <li>Sharing their trips to other people is very important. On the other hand, they like to ask tips from friends and family who have visited the destination.</li>
+            </ol>
+            <p>Based on these, I developed a persona of my target user.</p>
+          </div>
+        </div> <!-- /row -->
+        <div class="row align-center mtop4">
+          <div class="span-4 offset-2">
+            <div class="block">
+              <img src="assets/work/seek-persona.png">
             </div>
-          </div> <!-- /row -->
-          <div class="row">
-            <div class="span-6 offset-3">
-              <h2>Seek</h2>
-              <ul>
-                <li>UX design</li>
-                <li>UI design</li>
-              </ul>
-              <p>An assignment project I made for our UX class in early 2016. As I was browsing through Facebook, I frequently come across people who complain about planning their trip so I started interviewing a handful of people to determine what was frustrating about this task. After synthesizing all the information, I ended up with the following:</p>
-              <ol>
-                <li>They don't know where to start. There's too much information on the internet.</li>
-                <li>They have a specific travel style (history, foodie, nature) and budget (backpacker, flashpacker, luxury traveller).</li>
-                <li>Travel blogs are too long to read.</li>
-                <li>Authenticity is important. Paid content must be avoided.</li>
-                <li>Sharing their trips to other people is very important. On the other hand, they like to ask tips from friends and family who have visited the destination.</li>
-              </ol>
-              <p>Based on these, I developed a persona of my target user.</p>
+          </div>
+          <div class="span-4">
+            <div class="block">
+              <img src="assets/work/seek-persona-goals.jpg">
             </div>
-          </div> <!-- /row -->
-          <div class="row align-center mtop4">
-            <div class="span-4 offset-2">
-              <div class="block">
-                <img src="assets/work/seek-persona.png" class="img-responsive">
-              </div>
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-6 offset-3">
+            <p>I also narrowed down the problem I wanted to solve: <i>Sylvia needs to find reliable content that applies to her specific style of traveling without going through too much information.</i></p>
+            <p>Now that I have my problem statement, I started doing competitive analysis.</p>
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-6 offset-3">
+            <div class="block">
+              <img src="assets/work/seek-competitive-analysis.png">
             </div>
-            <div class="span-4">
-              <div class="block">
-                <img src="assets/work/seek-persona-goals.jpg" class="img-responsive">
-              </div>
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-6 offset-3">
+            <p>The next step was to create the user flow, prioritize features for my MVP, then finally create paper prototypes that I can test easily. The insights I gathered from doing the simple paper prototype test are used to come up with the wireframes as seen below. These again are uploaded into Invision as a low-level prototype for testing.</p>
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-8 offset-2">
+            <div class="block">
+              <img src="assets/work/seek-wireframes.png">
             </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-6 offset-3">
-              <p>I also narrowed down the problem I wanted to solve: <i>Sylvia needs to find reliable content that applies to her specific style of traveling without going through too much information.</i></p>
-              <p>Now that I have my problem statement, I started doing competitive analysis.</p>
-            </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-6 offset-3">
-              <div class="block">
-                <img src="assets/work/seek-competitive-analysis.png" class="img-responsive">
-              </div>
-            </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-6 offset-3">
-              <p>The next step was to create the user flow, prioritize features for my MVP, then finally create paper prototypes that I can test easily. The insights I gathered from doing the simple paper prototype test are used to come up with the wireframes as seen below. These again are uploaded into Invision as a low-level prototype for testing.</p>
-            </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-8 offset-2">
-              <div class="block">
-                <img src="assets/work/seek-wireframes.png" class="img-responsive">
-              </div>
-            </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-6 offset-3">
-              <p>I then start building the UI using Sketch and continue to test them once I have gathered enough insights.</p>
-            </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-8 offset-2">
-              <div class="row align-center">
-                <div class="span-4">
-                  <div class="block">
-                    <img src="assets/work/seek-home.jpg" class="img-responsive">
-                  </div>
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-6 offset-3">
+            <p>I then start building the UI using Sketch and continue to test them once I have gathered enough insights.</p>
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-8 offset-2">
+            <div class="align-center">
+              <div class="span-4">
+                <div class="block">
+                  <img src="assets/work/seek-home.jpg">
                 </div>
-                <div class="span-4">
-                  <div class="block">
-                    <img src="assets/work/seek-inner-page.jpg" class="img-responsive">
-                  </div>
+              </div>
+              <div class="span-4">
+                <div class="block">
+                  <img src="assets/work/seek-inner-page.jpg">
                 </div>
-                <div class="span-4">
-                  <div class="block">
-                    <img src="assets/work/seek-filter.jpg" class="img-responsive">
-                  </div>
+              </div>
+              <div class="span-4">
+                <div class="block">
+                  <img src="assets/work/seek-filter.jpg">
                 </div>
-              </div> <!-- /row -->
-            </div>
-          </div> <!-- /row -->
+              </div>
+            </div> <!-- /row -->
+          </div>
+        </div> <!-- /row -->
 
-          <div class="row mtop15">
-            <div class="span-6 offset-3">
-              <h2>Binnacle.io</h2>
-              <ul>
-                <li>Visual design</li>
-                <li>HTML / SASS</li>
-                <li>Jquery</li>
-                <li>Marketing assets</li>
-              </ul>
-              <p>I collaborated with Binnacle Founder <a href="https://twitter.com/bsbodden">Brian</a> to come up with a new logo and branding for Binnacle. After days of picking our brains, we came up with Binny as the Binnacle mascot. We wanted to keep it simple yet fun so I experimented with saturated colors using a nautical theme. I also gave Binny a playful personality.</p>
+        <div class="row mtop15">
+          <div class="span-6 offset-3">
+            <h2>Binnacle.io</h2>
+            <ul>
+              <li>Visual design</li>
+              <li>HTML / SASS</li>
+              <li>Jquery</li>
+              <li>Marketing assets</li>
+            </ul>
+            <p>I collaborated with Binnacle Founder <a href="https://twitter.com/bsbodden">Brian</a> to come up with a new logo and branding for Binnacle. After days of picking our brains, we came up with Binny as the Binnacle mascot. We wanted to keep it simple yet fun so I experimented with saturated colors using a nautical theme. I also gave Binny a playful personality.</p>
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-6 offset-3">
+            <div class="block">
+              <img src="assets/work/binnacle-brand-study.jpg">
             </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-6 offset-3">
-              <div class="block">
-                <img src="assets/work/binnacle-brand-study.jpg" class="img-responsive">
-              </div>
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-6 offset-3">
+            <p>Similarly, the marketing site uses the same nautical theme. The goal was to make it super easy for the users to understand the product by trying it on themselves. Check out Binnacle <a href="https://binnacle.io" target="_blank">here</a>.</p>
+          </div>
+        </div> <!-- /row -->
+        <div class="row align-center mtop4">
+          <div class="span-4 offset-2">
+            <div class="block">
+              <img src="assets/work/binnacle-home.jpg">
             </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-6 offset-3">
-              <p>Similarly, the marketing site uses the same nautical theme. The goal was to make it super easy for the users to understand the product by trying it on themselves. Check out Binnacle <a href="https://binnacle.io" target="_blank">here</a>.</p>
+          </div>
+          <div class="span-4">
+            <div class="block">
+              <img src="assets/work/binnacle-404.jpg">
             </div>
-          </div> <!-- /row -->
-          <div class="row align-center mtop4">
-            <div class="span-4 offset-2">
-              <div class="block">
-                <img src="assets/work/binnacle-home.jpg" class="img-responsive">
-              </div>
-            </div>
-            <div class="span-4">
-              <div class="block">
-                <img src="assets/work/binnacle-404.jpg" class="img-responsive">
-              </div>
-            </div>
-          </div> <!-- /row -->
+          </div>
+        </div> <!-- /row -->
 
-          <div class="row mtop15">
-            <div class="span-6 offset-3">
-              <h2>Horoscope.com</h2>
-              <ul>
-                <li>UX design</li>
-                <li>UI design</li>
-                <li>HTML / SASS</li>
-                <li>Jquery</li>
-              </ul>
-              <p>On my first few days on the team, I conducted research based on existing data. Understanding the demographics, user interest, and daily routines of the audience was the first step in learning about the product. This helped me come up with a persona and understanding their wants and needs. I also dove in on the code to see what else could be improved.</p>
-              <p>With the collaboration of the team, here are things I have accomplished in the first few months:</p>
-              <ol>
-                <li><b>Modernize code.</b> We started using templates instead of static html for pages that use the same design, reduced inline styles, and used SASS for more structured and readable stylesheets. I also converted some images into svgs so they are scalable and easy to tweak. And lastly, we made it responsive (Initially, they had two versions of the site&mdash;desktop and mobile version) which greatly impacted user experience while cutting development time.</li>
-                <li><b>Pagespeed improvements.</b> One of our goals was to improve our ranking in Google so we focused on this simple goal to improve pagespeed. One of the things I did was to optimize images and implement lazyloading so images below the fold not loaded until they come into view.</li>
-                <li><b>User-focused processes.</b> Aside from persona generation, I also contributed in improving the way we understood our users. We started doing user interviews and testing products before we launched them, we used heatmaps to identify important content that needed to be prioritized.</li>
-                <li><b>Refresh site.</b> Reduced visual clutter by hiding content that are deemed insignificant to our users and improving information architecture.</li>
-              </ol>
+        <div class="row mtop15">
+          <div class="span-6 offset-3">
+            <h2>Horoscope.com</h2>
+            <ul>
+              <li>UX design</li>
+              <li>UI design</li>
+              <li>HTML / SASS</li>
+              <li>Jquery</li>
+            </ul>
+            <p>On my first few days on the team, I conducted research based on existing data. Understanding the demographics, user interest, and daily routines of the audience was the first step in learning about the product. This helped me come up with a persona and understanding their wants and needs. I also dove in on the code to see what else could be improved.</p>
+            <p>With the collaboration of the team, here are things I have accomplished in the first few months:</p>
+            <ol>
+              <li><b>Modernize code.</b> We started using templates instead of static html for pages that use the same design, reduced inline styles, and used SASS for more structured and readable stylesheets. I also converted some images into svgs so they are scalable and easy to tweak. And lastly, we made it responsive (Initially, they had two versions of the site&mdash;desktop and mobile version) which greatly impacted user experience while cutting development time.</li>
+              <li><b>Pagespeed improvements.</b> One of our goals was to improve our ranking in Google so we focused on this simple goal to improve pagespeed. One of the things I did was to optimize images and implement lazyloading so images below the fold not loaded until they come into view.</li>
+              <li><b>User-focused processes.</b> Aside from persona generation, I also contributed in improving the way we understood our users. We started doing user interviews and testing products before we launched them, we used heatmaps to identify important content that needed to be prioritized.</li>
+              <li><b>Refresh site.</b> Reduced visual clutter by hiding content that are deemed insignificant to our users and improving information architecture.</li>
+            </ol>
+          </div>
+        </div> <!-- /row -->
+        <div class="row align-center mtop4">
+          <div class="span-4 offset-2">
+            <div class="block">
+              <img src="assets/work/hcom-author.jpg">
             </div>
-          </div> <!-- /row -->
-          <div class="row align-center mtop4">
-            <div class="span-4 offset-2">
-              <div class="block">
-                <img src="assets/work/hcom-author.jpg" class="img-responsive">
-              </div>
+          </div>
+          <div class="span-4">
+            <div class="block">
+              <img src="assets/work/hcom-article.jpg">
             </div>
-            <div class="span-4">
-              <div class="block">
-                <img src="assets/work/hcom-article.jpg" class="img-responsive">
-              </div>
+          </div>
+        </div> <!-- /row -->
+        <div class="row align-center mtop4">
+          <div class="span-3 offset-2">
+            <div class="block">
+              <img src="assets/work/hcom-horoscope.jpg">
             </div>
-          </div> <!-- /row -->
-          <div class="row align-center mtop4">
-            <div class="span-3 offset-2">
-              <div class="block">
-                <img src="assets/work/hcom-horoscope.jpg" class="img-responsive">
-              </div>
+          </div>
+          <div class="span-3 offset-2">
+            <div class="block">
+              <img src="assets/work/hcom-card-swipe.gif">
             </div>
-            <div class="span-3 offset-2">
-              <div class="block">
-                <img src="assets/work/hcom-card-swipe.gif" class="img-responsive">
-              </div>
-            </div>
-          </div> <!-- /row -->
+          </div>
+        </div> <!-- /row -->
 
-          <div class="row mtop15">
-            <div class="span-6 offset-3">
-              <h2>Atypical.us</h2>
-              <ul>
-                <li>UI design</li>
-                <li>HTML / SASS</li>
-                <li>Jquery</li>
-              </ul>
-              <p>Another personal project which was inspired by our travels. Atypical curates unique places and experiences. The goal is to strip out unnecessary text and focus more on the visual aesthetic of each location.</p>
+        <div class="row mtop15">
+          <div class="span-6 offset-3">
+            <h2>Atypical.us</h2>
+            <ul>
+              <li>UI design</li>
+              <li>HTML / SASS</li>
+              <li>Jquery</li>
+            </ul>
+            <p>Another personal project which was inspired by our travels. Atypical curates unique places and experiences. The goal is to strip out unnecessary text and focus more on the visual aesthetic of each location.</p>
+          </div>
+        </div> <!-- /row -->
+        <div class="row align-center mtop4">
+          <div class="span-4 offset-2">
+            <div class="block">
+              <img src="assets/work/atypical-home.png">
             </div>
-          </div> <!-- /row -->
-          <div class="row align-center mtop4">
-            <div class="span-4 offset-2">
-              <div class="block">
-                <img src="assets/work/atypical-home.png" class="img-responsive">
-              </div>
+          </div>
+          <div class="span-4">
+            <div class="block">
+              <img src="assets/work/atypical-inner.jpg">
             </div>
-            <div class="span-4">
-              <div class="block">
-                <img src="assets/work/atypical-inner.jpg" class="img-responsive">
-              </div>
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-6 offset-3">
+            <p>I had so much fun creating custom icons for the site. Right now it is a work in progress but can be viewed <a href="http://atypical.us" target="_blank">here</a>. Next step is to add a search feature for easier navigation.</p>
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-8 offset-2">
+            <div class="block">
+              <img src="assets/work/atypical-icons.png">
             </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-6 offset-3">
-              <p>I had so much fun creating custom icons for the site. Right now it is a work in progress but can be viewed <a href="http://atypical.us" target="_blank">here</a>. Next step is to add a search feature for easier navigation.</p>
-            </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-8 offset-2">
-              <div class="block">
-                <img src="assets/work/atypical-icons.png" class="img-responsive">
-              </div>
-            </div>
-          </div> <!-- /row -->
+          </div>
+        </div> <!-- /row -->
 
-          <div class="row mtop15">
-            <div class="span-6 offset-3">
-              <h2>Annemelody.com</h2>
-              <ul>
-                <li>UI design</li>
-                <li>HTML / SASS</li>
-                <li>Jquery</li>
-              </ul>
-              <p>My personal site where I experiment on custom layouts for each post. I do a lot of my jquery/sass experiments on this site as well as share some of my photographs. My approach is always minimal and subtle.</p>
+        <div class="row mtop15">
+          <div class="span-6 offset-3">
+            <h2>Annemelody.com</h2>
+            <ul>
+              <li>UI design</li>
+              <li>HTML / SASS</li>
+              <li>Jquery</li>
+            </ul>
+            <p>My personal site where I experiment on custom layouts for each post. I do a lot of my jquery/sass experiments on this site as well as share some of my photographs. My approach is always minimal and subtle.</p>
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-8 offset-2">
+            <div class="block">
+              <img src="assets/work/am-home.gif">
             </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-8 offset-2">
-              <div class="block">
-                <img src="assets/work/am-home.gif" class="img-responsive">
-              </div>
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-8 offset-2">
+            <div class="block">
+              <img src="assets/work/am-cover.gif">
             </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-8 offset-2">
-              <div class="block">
-                <img src="assets/work/am-cover.gif" class="img-responsive">
-              </div>
-            </div>
-          </div> <!-- /row -->
+          </div>
+        </div> <!-- /row -->
 
-          <div class="row mtop15">
-            <div class="span-6 offset-3">
-              <h2>Astrology.com</h2>
-              <ul>
-                <li>HTML / SASS</li>
-                <li>Jquery</li>
-                <li>Selected graphic assets</li>
-              </ul>
-              <p>The Astrology team outsourced me to do most of the front-end work. I also created some graphic assets for them that represent their new brand.</p>
-            </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-8 offset-2">
-              <div class="row align-center">
-                <div class="span-4">
-                  <div class="block">
-                    <img src="assets/work/acom-capricorn.jpg" class="img-responsive">
-                  </div>
+        <div class="row mtop15">
+          <div class="span-6 offset-3">
+            <h2>Astrology.com</h2>
+            <ul>
+              <li>HTML / SASS</li>
+              <li>Jquery</li>
+              <li>Selected graphic assets</li>
+            </ul>
+            <p>The Astrology team outsourced me to do most of the front-end work. I also created some graphic assets for them that represent their new brand.</p>
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-8 offset-2">
+            <div class="align-center">
+              <div class="span-4">
+                <div class="block">
+                  <img src="assets/work/acom-capricorn.jpg">
                 </div>
-                <div class="span-4">
-                  <div class="block">
-                    <img src="assets/work/acom-cancer.jpg" class="img-responsive">
-                  </div>
+              </div>
+              <div class="span-4">
+                <div class="block">
+                  <img src="assets/work/acom-cancer.jpg">
                 </div>
-                <div class="span-4">
-                  <div class="block">
-                    <img src="assets/work/acom-taurus.jpg" class="img-responsive">
-                  </div>
+              </div>
+              <div class="span-4">
+                <div class="block">
+                  <img src="assets/work/acom-taurus.jpg">
                 </div>
-              </div> <!-- /row -->
-            </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-6 offset-3">
-              <p>It was launched on schedule and we are currently still working on some of the pages to improve SEO ranking. The site can be viewed <a href="https://www.astrology.com/" target="_blank">here</a>.</p>
-            </div>
-          </div> <!-- /row -->
-          <div class="row align-center mtop4">
-            <div class="span-2 offset-3">
-              <div class="block">
-                <img src="assets/work/acom-mobile-horoscope-1.jpg" class="img-responsive">
               </div>
+            </div> <!-- /row -->
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-6 offset-3">
+            <p>It was launched on schedule and we are currently still working on some of the pages to improve SEO ranking. The site can be viewed <a href="https://www.astrology.com/" target="_blank">here</a>.</p>
+          </div>
+        </div> <!-- /row -->
+        <div class="row align-center mtop4">
+          <div class="span-2 offset-3">
+            <div class="block">
+              <img src="assets/work/acom-mobile-horoscope-1.jpg">
             </div>
-            <div class="span-2 offset-2">
-              <div class="block">
-                <img src="assets/work/acom-mobile-horoscope-2.jpg" class="img-responsive">
-              </div>
+          </div>
+          <div class="span-2 offset-2">
+            <div class="block">
+              <img src="assets/work/acom-mobile-horoscope-2.jpg">
             </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-8 offset-2">
-              <div class="block">
-                <img src="assets/work/acom-tarot.png" class="img-responsive">
-              </div>
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-8 offset-2">
+            <div class="block">
+              <img src="assets/work/acom-tarot.png">
             </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-6 offset-3">
-              <p>I also came up with some graphics for their social media profiles.</p>
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-6 offset-3">
+            <p>I also came up with some graphics for their social media profiles.</p>
+          </div>
+        </div> <!-- /row -->
+        <div class="row mtop4">
+          <div class="span-8 offset-2">
+            <div class="block">
+              <img src="assets/work/acom-cover.jpg">
             </div>
-          </div> <!-- /row -->
-          <div class="row mtop4">
-            <div class="span-8 offset-2">
-              <div class="block">
-                <img src="assets/work/acom-cover.jpg" class="img-responsive">
-              </div>
-            </div>
-          </div> <!-- /row -->
+          </div>
+        </div> <!-- /row -->
 
-          <div class="row mtop15">
-            <div class="span-6 offset-3">
-              <h2>Astrology.com Newsletters</h2>
-              <ul>
-                <li>UX design</li>
-                <li>UI design</li>
-                <li>HTML / SASS</li>
-              </ul>
-              <p>One of the biggest problems with the newsletters were that they were non-responsive. Since a lot of the users are viewing their horoscopes on their phone, it was a no-brainer decision to modernize the old newsletters. We also wanted to see if we could increase the CTRs and CTORs while reducing the unsubscribe rate. With thousands of subscribers, we needed to get this right.</p>
-              <p>My first step was to reduce the clutter. By giving it enough white space and proper content hierarchy, we allowed subscribers to focus on what's important. The new, cleaner design helped reduce the unsubscribe number.</p>
-              <p>My next step was to figure out a way to increase the CTRs and CTORs. Through a series of experiments and testing, we discovered that what worked for this case was having clear and easy to understand links and better clickable images. Narrowing down the content helped direct the users' attention thus increasing click rates.</p>
+        <div class="row mtop15">
+          <div class="span-6 offset-3">
+            <h2>Astrology.com Newsletters</h2>
+            <ul>
+              <li>UX design</li>
+              <li>UI design</li>
+              <li>HTML / SASS</li>
+            </ul>
+            <p>One of the biggest problems with the newsletters were that they were non-responsive. Since a lot of the users are viewing their horoscopes on their phone, it was a no-brainer decision to modernize the old newsletters. We also wanted to see if we could increase the CTRs and CTORs while reducing the unsubscribe rate. With thousands of subscribers, we needed to get this right.</p>
+            <p>My first step was to reduce the clutter. By giving it enough white space and proper content hierarchy, we allowed subscribers to focus on what's important. The new, cleaner design helped reduce the unsubscribe number.</p>
+            <p>My next step was to figure out a way to increase the CTRs and CTORs. Through a series of experiments and testing, we discovered that what worked for this case was having clear and easy to understand links and better clickable images. Narrowing down the content helped direct the users' attention thus increasing click rates.</p>
+          </div>
+        </div> <!-- /row -->
+        <div class="row align-center mtop4">
+          <div class="span-2 offset-2">
+            <div class="block">
+              <img src="assets/work/acom-newsletter-mobile.jpg">
             </div>
-          </div> <!-- /row -->
-          <div class="row align-center mtop4">
-            <div class="span-2 offset-2">
-              <div class="block">
-                <img src="assets/work/acom-newsletter-mobile.jpg" class="img-responsive">
-              </div>
+          </div>
+          <div class="span-5 offset-1">
+            <div class="block">
+              <img src="assets/work/acom-newsletter.jpg">
             </div>
-            <div class="span-5 offset-1">
-              <div class="block">
-                <img src="assets/work/acom-newsletter.jpg" class="img-responsive">
-              </div>
-            </div>
-          </div> <!-- /row -->
-        </div> <!-- /grid -->
+          </div>
+        </div> <!-- /row -->
       </div> <!-- /container -->
     </section>
+    <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/plugins.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/base.js" | prepend: site.baseurl }}"></script>
+  </body>
+</html>

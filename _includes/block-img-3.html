@@ -1,4 +1,4 @@
-<div class="row mtop15 align-center">
+<div class="row mtop15">
   {% if include.type == "span-2" %}
     <div class="span-2 offset-2">
       <div class="block">
@@ -18,17 +18,37 @@
   {% endif %}
 
   {% if include.type == "span-4" %}
-    <div class="span-4">
+    <div class="align-center">
+      <div class="span-4">
+        <div class="block">
+          <img src="{{ page.img-link }}/{{ include.img }}" alt="{{ include.alt }}" title="{{ include.alt }}" />
+        </div>
+      </div>
+      <div class="span-4">
+        <div class="block">
+          <img src="{{ page.img-link }}/{{ include.img2 }}" alt="{{ include.alt2 }}" title="{{ include.alt2 }}" />
+        </div>
+      </div>
+      <div class="span-4">
+        <div class="block">
+          <img src="{{ page.img-link }}/{{ include.img3 }}" alt="{{ include.alt3 }}" title="{{ include.alt3 }}" />
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if include.type == "span-4bleed" %}
+    <div class="span-4 full-bleed">
       <div class="block">
         <img src="{{ page.img-link }}/{{ include.img }}" alt="{{ include.alt }}" title="{{ include.alt }}" />
       </div>
     </div>
-    <div class="span-4">
+    <div class="span-4 full-bleed">
       <div class="block">
         <img src="{{ page.img-link }}/{{ include.img2 }}" alt="{{ include.alt2 }}" title="{{ include.alt2 }}" />
       </div>
     </div>
-    <div class="span-4">
+    <div class="span-4 full-bleed">
       <div class="block">
         <img src="{{ page.img-link }}/{{ include.img3 }}" alt="{{ include.alt3 }}" title="{{ include.alt3 }}" />
       </div>

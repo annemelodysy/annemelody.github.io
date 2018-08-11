@@ -28,27 +28,13 @@ $white: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-close:before {
-  content: "\e909";
-}
-.icon-arrow:before {
-  content: "\e900";
-}
-.icon-instagram:before {
-  content: "\e901";
-}
-.icon-facebook:before {
-  content: "\e902";
-}
-.icon-twitter:before {
-  content: "\e903";
-}
-.icon-volume-up:before {
-  content: "\ea27";
-}
-.icon-volume-down:before {
-  content: "\ea2a";
-}
+.icon-close:before { content: "\e909"; }
+.icon-arrow:before { content: "\e900"; }
+.icon-instagram:before { content: "\e901"; }
+.icon-facebook:before { content: "\e902"; }
+.icon-twitter:before { content: "\e903"; }
+.icon-volume-up:before { content: "\ea27"; }
+.icon-volume-down:before { content: "\ea2a"; }
 
 /** Margins **/
 .mtop30 { margin-top: 30%; }

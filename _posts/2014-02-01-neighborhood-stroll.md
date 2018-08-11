@@ -24,26 +24,14 @@ And the shadows that imprint themselves on our streets creating a preview to a p
 
 All these make me want to take a walk until my feet hurt and my camera runs out of space.
 
-<div class="block">
-<img src="{{ page.img-link }}/1.jpg" />
-</div>
+{% include img-block.html img="1.jpg" alt="Cardboards and machine" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/5.jpg" />
-</div>
+{% include img-block.html img="5.jpg" alt="Singapore houses" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/2.jpg" />
-</div>
+{% include img-block.html img="2.jpg" alt="Cigarette box" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/4.jpg" />
-</div>
+{% include img-block.html img="4.jpg" alt="Work boots" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/3.jpg" />
-</div>
+{% include img-block.html img="3.jpg" alt="Shopping cart" %}
 
-<div class="block">
-<img src="{{ page.img-link }}/6.jpg" />
-</div>
+{% include img-block.html img="6.jpg" alt="Storage space" %}
