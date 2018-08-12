@@ -60,6 +60,18 @@ and (max-width : 767px) {
       position: static;
     }
   }
+  .text-cover {
+    height: 16rem;
+    margin-bottom: 1rem;
+    img {
+      width: 70%;
+      margin-left: 25%;
+    }
+    .title {
+      width: 95%;
+      h1 { font-size: 1.5rem; }
+    }
+  }
   #dark-cover {
     background: transparent;
     margin-top: 50px;
@@ -153,8 +165,6 @@ and (max-width : 1024px) {
   h1 { font-size: 1.2rem; }
   h2 { font-size: 1.6rem; }
   .menu { justify-content: space-between; top: 0; }
-  .mtop2, .mtop4, .mtop15, .mtop8, .mtop30 { margin-top: 0; }
-  .mbottom2, .mbottom8, .mbottom15 { margin-bottom: 0; }
   .text-right { text-align: left; }
   #thumbnails .item {
     width: 18rem;
@@ -185,34 +195,17 @@ and (max-width : 1024px) {
       width: 50%;
     }
   }
+  .text-cover {
+    height: 24rem;
+    .title {
+      width: 70%;
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
   .parallax {
-    box-shadow: none;
-    background-image: none !important;
-    height: auto;
-    img {
-      display: block !important;
-      padding: 0 0.8%;
-    }
-    .caption {
-      position: static;
-      text-align: left;
-      padding: 0 0.8%;
-      transform: rotate(0deg) !important;
-      opacity: 1 !important;
-      text-shadow: none;
-      color: darken($white, 80%);
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .opacity {
-      position: static !important;
-      text-align: left;
-      transform: rotate(0deg) !important;
-      opacity: 1 !important;
-      color: darken($white, 80%);
-      text-shadow: none;
-    }
+    height: 50vh;
   }
   @keyframes jump { 0% { bottom: 10px; } 100% { bottom: 20px; } }
   .more-stories {
@@ -240,8 +233,5 @@ and (max-width : 1024px) {
     .span-4 {
       padding: 0;
     }
-  }
-  .align-center {
-    display: block;
   }
 }

@@ -1,110 +1,64 @@
 ---
-layout:     post
+layout:     post-blocks
 title:      "San Francisco Streets"
 date:       2015-12-04
 categories: travel
 permalink:  /:categories/:title
 excerpt:    The light summer clothes that hung in our closet when we first arrived have now turned into cozy sweaters and thick coats.
+intro: |
+  It's been eight months since we moved into this city. It doesn't feel that long since we unpacked our luggage and called this tiny apartment our new home. But the light summer clothes that hung in our closet when we first arrived have now turned into cozy sweaters and thick coats. It's cold outside. I've never been a cold-weather type of person. I don't get excited by boots and scarves or snow (thankfully, there's no snow in San Francisco). But I'm slowly adjusting. Besides, it gives me an excellent excuse to drink all the hot chocolate I want. Hah!
+
+  These past few months, we've been saving up for our long-overdue honeymoon, so we've held off on some indulgences. San Francisco is expensive, so we thought of ways to entertain ourselves without spending too much. One way to achieve it is to explore the city, taking in all the things that make it beautiful and unique.
+img-link:   /assets/2015/sf-walk
 img:
   small:    2015/sf-walk/sf-walk-small.jpg
   large:    2015/sf-walk/sf-walk-cover.jpg
 ---
-<div class="row">
-  <div class="span-6 offset-3">
-    <p>It's been eight months since we moved into this city. It doesn't feel that long since we unpacked our luggage and called this tiny apartment our new home. But the light summer clothes that hung in our closet when we first arrived have now turned into cozy sweaters and thick coats. It's cold outside. I've never been a cold-weather type of person. I don't get excited by boots and scarves or snow (thankfully, there's no snow in San Francisco). But I'm slowly adjusting. Besides, it gives me an excellent excuse to drink all the hot chocolate I want. Hah!</p>
-    <p>These past few months, we've been saving up for our long-overdue honeymoon, so we've held off on some indulgences. San Francisco is expensive, so we thought of ways to entertain ourselves without spending too much. One way to achieve it is to explore the city, taking in all the things that make it beautiful and unique.</p>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop30">
-  <div class="span-8 offset-2">
-    <div class="block">
-      <img src="/assets/2015/sf-walk/1.jpg" class="img-responsive" />
-    </div>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop30">
-  <div class="span-3 offset-2">
-    <div class="block">
-      <img src="/assets/2015/sf-walk/2.jpg" class="img-responsive" />
-    </div>
-  </div>
-  <div class="span-3 offset-2">
-    <div class="block">
-      <img src="/assets/2015/sf-walk/3.jpg" class="img-responsive" />
-    </div>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop30">
-  <div class="span-8 offset-2">
-    <div class="block">
-      <img src="/assets/2015/sf-walk/7.jpg" class="img-responsive" />
-    </div>
-  </div>
-</div> <!-- /row -->
+
+{% include block-img-1.html type="center-8" img="1.jpg" alt="Red door" %}
+
+{% include block-img-2.html type="span-3"
+  img="2.jpg" alt="Someone's window"
+  img2="3.jpg" alt2="Plants for sale"
+%}
+
+{% include block-img-1.html type="center-8" img="7.jpg" alt="Pigeons hanging out in Van Ness sign" %}
+
 <div class="row mtop30">
   <div class="span-4 offset-1">
-    <div class="block">
-      <img src="/assets/2015/sf-walk/11.jpg" class="img-responsive" />
-    </div>
+    {% include img-block.html img="11.jpg" alt="Hippies on Haight street" %}
   </div>
   <div class="span-5 offset-1">
-    <div class="block">
-      <img src="/assets/2015/sf-walk/5.jpg" class="img-responsive" />
-    </div>
+    {% include img-block.html img="5.jpg" alt="Developments in SF" %}
   </div>
   <div class="span-5 offset-4 mtop8">
-    <div class="block">
-      <img src="/assets/2015/sf-walk/4.jpg" class="img-responsive" />
-    </div>
+    {% include img-block.html img="4.jpg" alt="Plants growing in victorian home" %}
   </div>
 </div> <!-- /row -->
+
+{% include block-img-2.html type="span-6"
+  img="12.jpg" alt="Woman with her dog"
+  img2="8.jpg" alt2="Black and white person"
+%}
+
 <div class="row mtop30">
   <div class="span-6 full-bleed">
-    <div class="block">
-      <img src="/assets/2015/sf-walk/12.jpg" class="img-responsive" />
-    </div>
-  </div>
-  <div class="span-6 full-bleed">
-    <div class="block">
-      <img src="/assets/2015/sf-walk/8.jpg" class="img-responsive" />
-    </div>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop30">
-  <div class="span-6 full-bleed">
-    <div class="block">
-      <img src="/assets/2015/sf-walk/13.jpg" class="img-responsive" />
-    </div>
+    {% include img-block.html img="13.jpg" alt="Performing arts garage" %}
   </div>
   <div class="span-4 offset-1">
-    <div class="block">
-      <img src="/assets/2015/sf-walk/15.jpg" class="img-responsive" />
-    </div>
+    {% include img-block.html img="15.jpg" alt="Man smoking and a view of a building" %}
   </div>
 </div> <!-- /row -->
-<div class="row mtop30">
-  <div class="span-8 offset-2">
-    <div class="block">
-      <img src="/assets/2015/sf-walk/9.jpg" class="img-responsive" />
-    </div>
-  </div>
-</div> <!-- /row -->
+
+{% include block-img-1.html type="center-8" img="9.jpg" alt="Union square statue" %}
+
 <div class="row mtop30">
   <div class="span-4 offset-2">
-    <div class="block">
-      <img src="/assets/2015/sf-walk/10.jpg" class="img-responsive" />
-    </div>
+    {% include img-block.html img="10.jpg" alt="Chihuahua between giraffes" %}
   </div>
   <div class="span-3 offset-1">
-    <div class="block">
-      <img src="/assets/2015/sf-walk/18.jpg" class="img-responsive" />
-    </div>
+    {% include img-block.html img="18.jpg" alt="MJ striking a pose" %}
   </div>
 </div> <!-- /row -->
-<div class="row mtop15 mbottom15">
-  <div class="span-8 offset-2">
-    <div class="block">
-      <img src="/assets/2015/sf-walk/16.jpg" class="img-responsive" />
-    </div>
-  </div>
-</div> <!-- /row -->
+
+{% include block-img-1.html type="center-8" img="16.jpg" alt="Plants sneaking in" %}

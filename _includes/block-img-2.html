@@ -78,4 +78,34 @@
       </div>
     </div>
   {% endif %}
+
+  {% if include.type == "span-46" %}
+    <div class="align-center">
+      <div class="span-4 offset-1">
+        <div class="block">
+          <img src="{{ page.img-link }}/{{ include.img }}" alt="{{ include.alt }}" title="{{ include.alt }}" />
+        </div>
+      </div>
+      <div class="span-6 offset-1">
+        <div class="block">
+          <img src="{{ page.img-link }}/{{ include.img2 }}" alt="{{ include.alt2 }}" title="{{ include.alt2 }}" />
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if include.type == "span-54" %}
+    <div class="align-center">
+      <div class="span-5 offset-1">
+        <div class="block">
+          <img src="{{ page.img-link }}/{{ include.img }}" alt="{{ include.alt }}" title="{{ include.alt }}" />
+        </div>
+      </div>
+      <div class="span-4 offset-1">
+        <div class="block">
+          <img src="{{ page.img-link }}/{{ include.img2 }}" alt="{{ include.alt2 }}" title="{{ include.alt2 }}" />
+        </div>
+      </div>
+    </div>
+  {% endif %}
 </div> <!-- /row -->

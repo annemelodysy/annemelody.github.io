@@ -39,6 +39,14 @@
     </div>
   {% endif %}
 
+  {% if include.type == "center-8" %}
+    <div class="span-8 offset-2">
+      <div class="block">
+        <img src="{{ page.img-link }}/{{ include.img }}" alt="{{ include.alt }}" title="{{ include.alt }}" />
+      </div>
+    </div>
+  {% endif %}
+
   {% if include.type == "left-wtext" %}
     <div class="align-center">
       <div class="span-5 offset-1">

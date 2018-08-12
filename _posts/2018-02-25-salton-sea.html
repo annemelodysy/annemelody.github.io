@@ -1,188 +1,93 @@
 ---
-layout:     post
+layout:     post-blocks
 title:      "Salton Sea"
 date:       2018-02-25
 categories: travel
 permalink:  /:categories/:title
 excerpt:    A closer look revealed that they were, in fact, thousands of fish bone fragments.
+intro: |
+  I stumbled upon an <a href="https://www.vice.com/en_us/article/9bz5b7/i-went-to-californias-post-apocalyptic-beach-town-salton-sea" target="_blank">article</a> one day about a post-apocalyptic town somewhere in South California. The long weekend was approaching and I was looking for an atypical place to practice and come up with four good images for my class. I've always been fascinated by the idea of abandoned places and the stories behind them.
+
+  As the article describes, Salton Sea is the largest lake in California and was created by accident. It was an oasis in the middle of the desert attracting local tourists in the 50's and 60's. Ultimately, the lake became too toxic for people to be around in so they left, abandoning homes and unwanted possessions.
+img-link:   /assets/2018/salton-sea
 img:
   small:    2018/salton-sea/salton-sea-small.jpg
   large:    2018/salton-sea/salton-sea-cover.jpg
 ---
-<div class="row">
-  <div class="span-6 offset-3">
-    <p>I stumbled upon an <a href="https://www.vice.com/en_us/article/9bz5b7/i-went-to-californias-post-apocalyptic-beach-town-salton-sea" target="_blank">article</a> one day about a post-apocalyptic town somewhere in South California. The long weekend was approaching and I was looking for an atypical place to practice and come up with four good images for my class. I've always been fascinated by the idea of abandoned places and the stories behind them.</p>
-    <p>As the article describes, Salton Sea is the largest lake in California and was created by accident. It was an oasis in the middle of the desert attracting local tourists in the 50's and 60's. Ultimately, the lake became too toxic for people to be around in so they left, abandoning homes and unwanted possessions.</p>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop15">
-  <div class="span-3 offset-2">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/lone-lamp.jpg" class="img-responsive">
-    </div>
-  </div>
-  <div class="span-3 offset-2">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/boat-and-bird.jpg" class="img-responsive">
-    </div>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop15">
-  <div class="span-6 offset-3">
-    <p>The first thing I noticed as we stepped out of the car was the smell of rotten fish. It reminded me of visits to fish markets back in the Philippines. The article warned me about this but it still surprised me. I covered my nose and tried to breathe through my mouth which was a bad idea because then I could taste it&mdash;salty and dead.</p>
-    <p>The weather didn't help either. It was pleasantly warm but the wind was blowing so strong that dust and other debris kept getting into my eyes. My pictures look still but trust me, it was not calm at all.</p>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop15">
-  <div class="span-8 offset-2">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/bombay-beach-sign.jpg" class="img-responsive">
-    </div>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop15 align-center">
-  <div class="span-5 offset-1">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/abandoned-car.jpg" class="img-responsive">
-    </div>
-  </div>
-  <div class="span-4 offset-1">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/pink-car.jpg" class="img-responsive">
-    </div>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop15">
-  <div class="span-4 offset-4">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/white-chair.jpg" class="img-responsive">
-    </div>
-  </div>
-</div> <!-- /row -->
+{% include block-img-2.html type="span-3"
+  img="lone-lamp.jpg" alt="lone lamp"
+  img2="boat-and-bird.jpg" alt2="boat and bird"
+%}
+
+{% include block-text.html text="The first thing I noticed as we stepped out of the car was the smell of rotten fish. It reminded me of visits to fish markets back in the Philippines. The article warned me about this but it still surprised me. I covered my nose and tried to breathe through my mouth which was a bad idea because then I could taste it&mdash;salty and dead.
+
+The weather didn't help either. It was pleasantly warm but the wind was blowing so strong that dust and other debris kept getting into my eyes. My pictures look still but trust me, it was not calm at all." %}
+
+{% include block-img-1.html type="center-8" img="bombay-beach-sign.jpg" alt="bombay beach sign" %}
+
+{% include block-img-2.html type="span-54"
+  img="abandoned-car.jpg" alt="abandoned car"
+  img2="pink-car.jpg" alt2="pink car"
+%}
+
+{% include block-slim.html type="centered" img="white-chair.jpg" alt="white chair" %}
+
 <div class="row mtop15">
   <div class="span-4 offset-6">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/carnival-of-dreams.jpg" class="img-responsive">
-    </div>
+    {% include img-block.html img="carnival-of-dreams.jpg" alt="carnival of dreams" %}
   </div>
 </div> <!-- /row -->
+
 <div class="row mtop15">
   <div class="span-6 offset-2">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/broken-home.jpg" class="img-responsive">
-    </div>
+    {% include img-block.html img="broken-home.jpg" alt="broken home" %}
   </div>
 </div> <!-- /row -->
-<div class="row mtop15">
-  <div class="span-6 offset-3">
-    <p>Aging wood creaked and banged against each other as I entered the houses. The wind rushed through the broken windows and doors, echoing within the walls until eventually escaping.</p>
-  </div>
-</div> <!-- /row -->
+
+{% include block-text.html text="Aging wood creaked and banged against each other as I entered the houses. The wind rushed through the broken windows and doors, echoing within the walls until eventually escaping." %}
+
 <div class="row mtop15">
   <div class="span-7 offset-3">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/broken-window.jpg" class="img-responsive">
-    </div>
+    {% include img-block.html img="broken-window.jpg" alt="broken window" %}
   </div>
 </div> <!-- /row -->
-<div class="row mtop15">
-  <div class="span-6 offset-3">
-    <p>I stood silently, taking in the details. I tried to imagine the people who used to live there and the people who came after it was empty: drifters, drug addicts, artists, curious humans. I wondered whether they contributed to the decay or helped preserve it. There were signs of interference: recently-added posters, love letters written on walls, fresh graffiti.</p>
-    <p>Some of them turned into birdhouses. You know because of the distinct smell and the sight of feathers scattered all over the room. I felt them watching over my head. In this world, they are the keepers and I'm just a visitor.</p>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop15">
-  <div class="span-6 offset-3">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/abandoned-tv.jpg" class="img-responsive">
-    </div>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop15 align-center">
-  <div class="span-4 offset-1">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/chair-lighting.jpg" class="img-responsive">
-    </div>
-  </div>
-  <div class="span-6 offset-1">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/broken-chair.jpg" class="img-responsive">
-    </div>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop15">
-  <div class="span-6 offset-3">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/masks.jpg" class="img-responsive">
-    </div>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop15">
-  <div class="span-4 offset-4">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/observer.jpg" class="img-responsive">
-    </div>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop15">
-  <div class="span-6 offset-3">
-    <p>Dead fish preserved by salt spread across the beach. They were introduced to the lake so tourists could fish but died when the water got too salty. It's telling that even one of the most resilient fish couldn't survive the toxicity.</p>
-    <p>Something was unusual about the sand too. It was chunky and oddly-shaped. At first, I thought they were shells but a closer look revealed that they were, in fact, thousands of fish bone fragments pulverized by years of exposure to weather.</p>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop15 align-center">
-  <div class="span-2 offset-2">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/dead-fish-1.jpg" class="img-responsive">
-    </div>
-  </div>
-  <div class="span-2 offset-1">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/dead-fish-2.jpg" class="img-responsive">
-    </div>
-  </div>
-  <div class="span-2 offset-1">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/dead-fish-3.jpg" class="img-responsive">
-    </div>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop15">
-  <div class="span-6 offset-3">
-    <p>As the sun and the temperature went down, we decided it was time to go. We had stayed for almost two hours and still had not explored the whole town.</p>
-    <p>We circled the town for the last time, taking in the apocalyptic scenes before driving back to civilization.</p>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop15">
-  <div class="span-8 offset-2">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/sunset-silhouette.jpg" class="img-responsive">
-    </div>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop15">
-  <div class="span-6">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/sunlight.jpg" class="img-responsive">
-    </div>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop15">
-  <div class="span-5 offset-1">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/lone-trailer.jpg" class="img-responsive">
-    </div>
-  </div>
-  <div class="span-5">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/mailboxes.jpg" class="img-responsive">
-    </div>
-  </div>
-</div> <!-- /row -->
-<div class="row mtop15 mbottom15">
-  <div class="span-8 offset-2">
-    <div class="block">
-      <img src="/assets/2018/salton-sea/church.jpg" class="img-responsive">
-    </div>
-  </div>
-</div> <!-- /row -->
+
+{% include block-text.html text="I stood silently, taking in the details. I tried to imagine the people who used to live there and the people who came after it was empty: drifters, drug addicts, artists, curious humans. I wondered whether they contributed to the decay or helped preserve it. There were signs of interference: recently-added posters, love letters written on walls, fresh graffiti.
+
+Some of them turned into birdhouses. You know because of the distinct smell and the sight of feathers scattered all over the room. I felt them watching over my head. In this world, they are the keepers and I'm just a visitor." %}
+
+{% include block-img-1.html type="center-6" img="abandoned-tv.jpg" alt="abandoned tv" %}
+
+{% include block-img-2.html type="span-46"
+  img="chair-lighting.jpg" alt="chair lighting"
+  img2="broken-chair.jpg" alt2="broken chair"
+%}
+
+{% include block-img-1.html type="center-6" img="masks.jpg" alt="masks" %}
+
+{% include block-slim.html type="centered" img="observer.jpg" alt="observer" %}
+
+{% include block-text.html text="Dead fish preserved by salt spread across the beach. They were introduced to the lake so tourists could fish but died when the water got too salty. It's telling that even one of the most resilient fish couldn't survive the toxicity.
+
+Something was unusual about the sand too. It was chunky and oddly-shaped. At first, I thought they were shells but a closer look revealed that they were, in fact, thousands of fish bone fragments pulverized by years of exposure to weather." %}
+
+{% include block-img-3.html type="span-2"
+  img="dead-fish-1.jpg" alt="dead fish"
+  img2="dead-fish-2.jpg" alt2="dead fish"
+  img3="dead-fish-3.jpg" alt3="dead fish "
+%}
+
+{% include block-text.html text="As the sun and the temperature went down, we decided it was time to go. We had stayed for almost two hours and still had not explored the whole town.
+
+We circled the town for the last time, taking in the apocalyptic scenes before driving back to civilization." %}
+
+{% include block-img-1.html type="center-8" img="sunset-silhouette.jpg" alt="sunset silhouette" %}
+
+{% include block-img-1.html type="left-6" img="sunlight.jpg" alt="sunlight" %}
+
+{% include block-img-2.html type="span-5"
+  img="lone-trailer.jpg" alt="lone trailer"
+  img2="mailboxes.jpg" alt2="mailboxes"
+%}
+
+{% include block-img-1.html type="center-8" img="church.jpg" alt="church" %}
