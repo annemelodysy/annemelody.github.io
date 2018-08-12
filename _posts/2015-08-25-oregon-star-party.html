@@ -1,24 +1,21 @@
 ---
-layout:     post
+layout:     post-blocks
 title:      "Oregon Star Party"
 date:       2015-08-25
 categories: travel
 permalink:  /:categories/:title
 excerpt:    Red glowing lights emerged from the tents as people prepared their telescopes.
+img-link:   /assets/2015/osp
 img:
   small:    2015/osp/osp-small.jpg
   large:    2015/osp/osp-cover.jpg
 ---
 <section id="journal-content" class="transNight">
-  <div class="row mtop15">
-    <div class="span-4 offset-4">
-      <div class="block">
-        <img src="/assets/2015/osp/1.jpg" class="img-responsive" />
-      </div>
-    </div>
-  </div> <!-- /row -->
+  {% include block-slim.html type="centered" img="1.jpg" alt="Mountain from the sky"  %}
+
   <div class="row mtop15">
     <div class="span-6 full-bleed">
+      {% include img-block.html img="3.jpg" alt="Driving between the forests" %}
       <div class="block">
         <img src="/assets/2015/osp/3.jpg" class="img-responsive" />
       </div>
@@ -28,6 +25,7 @@ img:
       <p>Registering online was easy. Figuring out how to get to the remote location proved to be more difficult. Since there were no buses/trains or even an Uber heading up the mountain, our only option was to drive a car. Google maps told me it would take five hours to drive from the airport to Ochoco National Forest. Luckily, our friends MJ and Vern decided to join us! They drove from Utah all the way to Portland the day before we got there.</p>
     </div>
   </div> <!-- /row -->
+
   <div class="row mtop15">
     <div class="parallax para-blast">
       <img src="/assets/2015/osp/2.jpg" class="img-responsive" />
@@ -36,157 +34,93 @@ img:
       </div>
     </div> <!-- /parallax -->
   </div> <!-- /row -->
+
+  {% include block-text.html text="Resting my head on the bags next to me, my mind drifted into an alternating state of consciousness and unconsciousness. I wanted to take in as much of the landscape as possible, but my lack of sleep the night before kept me from being awake.
+
+  I was jolted awake by an unknown force. I had no idea what it was, but I was having a hard time breathing. Everyone in the car didn't seem alarmed. Must have been a bad dream but I could smell smoke in the air. I looked out the window, saw clouds of smoke rising from the trees, and the ground looked brown and burnt.
+
+  <h3>Forest Fire</h3>
+
+  I've read that [forests actually need fires to thrive](http://education.nationalgeographic.com/archive/xpeditions/activities/15/popup/map_index.html). The fire burns twigs and leaves that fall from the trees, allowing forest floors to open up for seedlings to grow. It's amazing how something that seems destructive is actually necessary." %}
+
+  {% include block-img-1.html type="center-6" img="27.jpg" alt="After the forest fire" %}
+
   <div class="row mtop15">
-    <div class="span-6 offset-3">
-      <p>Resting my head on the bags next to me, my mind drifted into an alternating state of consciousness and unconsciousness. I wanted to take in as much of the landscape as possible, but my lack of sleep the night before kept me from being awake.</p>
-      <p>I was jolted awake by an unknown force. I had no idea what it was, but I was having a hard time breathing. Everyone in the car didn't seem alarmed. Must have been a bad dream but I could smell smoke in the air. I looked out the window, saw clouds of smoke rising from the trees, and the ground looked brown and burnt.</p>
-      <h3>Forest Fire</h3>
-      <p>I've read that <a href="http://education.nationalgeographic.com/archive/xpeditions/activities/15/popup/map_index.html" target="_blank">forests actually need fires to thrive</a>. The fire burns twigs and leaves that fall from the trees, allowing forest floors to open up for seedlings to grow. It's amazing how something that seems destructive is actually necessary.</p>
-      <div class="block">
-        <img src="/assets/2015/osp/27.jpg" class="img-responsive" />
-      </div>
-    </div>
+    {% include img-block.html img="5.jpg" alt="Oregon forest" %}
   </div> <!-- /row -->
-  <div class="row mtop15">
-    <div class="block">
-      <img src="/assets/2015/osp/5.jpg" class="img-responsive" />
-    </div>
-  </div> <!-- /full -->
-  <div class="row mtop15">
-    <div class="span-4 offset-1">
-      <div class="block">
-        <img src="/assets/2015/osp/25.jpg" class="img-responsive" />
-      </div>
-    </div>
-    <div class="span-4 offset-2">
-      <div class="block">
-        <img src="/assets/2015/osp/26.jpg" class="img-responsive" />
-      </div>
-    </div>
-  </div> <!-- /row -->
-  <div class="row mtop15">
-    <div class="span-6 offset-3">
-      <p>We arrived at the campsite late in the afternoon. The sun was still high in the sky and dust traveled in the air as we walked among the RVs that arrived before us. At the end of the road, we found a shaded spot near a tree and decided to set up our tent there.</p>
-      <p>The last time I went camping was in Anawangin a few years ago. I was with my dad, brothers, and my younger brother's girlfriend. It was an unforgettable experience and the first camping trip we'd ever done.</p>
-    </div>
-  </div> <!-- /row -->
-  <div class="row mtop15">
-    <div class="span-6 full-bleed">
-      <div class="block">
-        <img src="/assets/2015/osp/6.jpg" class="img-responsive" />
-      </div>
-    </div>
-    <div class="span-6 full-bleed">
-      <div class="block">
-        <img src="/assets/2015/osp/20.jpg" class="img-responsive" />
-      </div>
-    </div>
-  </div> <!-- /row -->
-  <div class="row mtop15">
-    <div class="span-6 offset-3">
-      <p>The next day, we joined a group of people on a hike. It was a short walk that took 30-45 minutes. The best thing about it was learning about the wilderness. It felt like being in a Nat Geo program learning about our surroundings.</p>
-      <p>I made a list of what I've learned:</p>
-      <ul>
-        <li>Snakes usually hide in the shadows when it's too hot. Sometimes they hide under fallen trees so better watch where you step.</li>
-        <li>Trees produce a sticky substance as a defense mechanism (i.e. when it's attacked by bugs). Unfortunately, the sap they produce is highly flammable so the trees burn faster when a wildfire occurs.</li>
-        <li>There's a moss called the "old man's beard" that you can turn into tea to cure lung infections. It actually does look like an old man's beard.</li>
-        <li>The most common way to die in the wilderness is through dehydration.</li>
-        <li>There was a cougar spotted in the forest during the last star party. It seemed to be trailing a family who had a small child with them. To avoid being "hunted", stay in large groups.</li>
-        <li>Grizzly bears are more dangerous than black/brown bears because they usually attack people.</li>
-        <li>Avoid poking large holes unless you want a badger to attack you.</li>
-      </ul>
-    </div>
-  </div> <!-- /row -->
-  <div class="row mtop15">
-    <div class="span-4 offset-1">
-      <div class="block">
-        <img src="/assets/2015/osp/8.jpg" class="img-responsive" />
-      </div>
-    </div>
-    <div class="span-4 offset-2">
-      <div class="block">
-        <img src="/assets/2015/osp/7.jpg" class="img-responsive" />
-      </div>
-    </div>
-  </div> <!-- /row -->
-  <div class="row mtop15">
-    <div class="span-4 offset-4">
-      <div class="block">
-        <img src="/assets/2015/osp/9.jpg" class="img-responsive" />
-      </div>
-    </div>
-  </div> <!-- /row -->
-  <div class="row mtop15">
-    <div class="span-8 offset-2">
-      <div class="block">
-        <img src="/assets/2015/osp/10.jpg" class="img-responsive" />
-      </div>
-    </div>
-  </div> <!-- /row -->
-  <div class="row mtop15">
-    <div class="span-4 offset-1">
-      <div class="block">
-        <img src="/assets/2015/osp/11.jpg" class="img-responsive" />
-      </div>
-    </div>
-    <div class="span-4 offset-2">
-      <div class="block">
-        <img src="/assets/2015/osp/12.jpg" class="img-responsive" />
-      </div>
-    </div>
-  </div> <!-- /row -->
-  <div class="row mtop15">
-    <div class="span-6 offset-3">
-      <div class="block">
-        <img src="/assets/2015/osp/15.jpg" class="img-responsive" />
-      </div>
-    </div>
-  </div> <!-- /row -->
+
+  {% include block-img-2.html type="span-4"
+    img="25.jpg" alt="Trailer"
+    img2="26.jpg" alt2="Cool trailer"
+  %}
+
+  {% include block-text.html text="We arrived at the campsite late in the afternoon. The sun was still high in the sky and dust traveled in the air as we walked among the RVs that arrived before us. At the end of the road, we found a shaded spot near a tree and decided to set up our tent there.
+
+  The last time I went camping was in Anawangin a few years ago. I was with my dad, brothers, and my younger brother's girlfriend. It was an unforgettable experience and the first camping trip we'd ever done." %}
+
+  {% include block-img-2.html type="span-6"
+    img="6.jpg" alt="Jeremie looking at the vast horizon"
+    img2="20.jpg" alt2="Jeremie's silhouette"
+  %}
+
+  {% include block-text.html text="The next day, we joined a group of people on a hike. It was a short walk that took 30-45 minutes. The best thing about it was learning about the wilderness. It felt like being in a Nat Geo program learning about our surroundings.
+
+  Here's what I've learned:
+
+  * Snakes usually hide in the shadows when it's too hot. Sometimes they hide under fallen trees so better watch where you step.
+  * Trees produce a sticky substance as a defense mechanism (i.e. when it's attacked by bugs). Unfortunately, the sap they produce is highly flammable so the trees burn faster when a wildfire occurs.
+  * There's a moss called the 'old man's beard' that you can turn into tea to cure lung infections. It actually does look like an old man's beard.
+  * The most common way to die in the wilderness is through dehydration.
+  * There was a cougar spotted in the forest during the last star party. It seemed to be trailing a family who had a small child with them. To avoid being 'hunted', stay in large groups.
+  * Grizzly bears are more dangerous than black/brown bears because they usually attack people.
+  * Avoid poking large holes unless you want a badger to attack you." %}
+
+  {% include block-img-2.html type="span-4"
+    img="8.jpg" alt="Sunlight casting in tree branches"
+    img2="7.jpg" alt2="Our expert guide"
+  %}
+
+  {% include block-slim.html type="centered" img="9.jpg" alt="Close up of moss growing in bark" %}
+
+  {% include block-img-1.html type="center-8" img="10.jpg" alt="Lone dead tree" %}
+
+  {% include block-img-2.html type="span-4"
+    img="11.jpg" alt="Notes on the desk"
+    img2="12.jpg" alt2="Peeking from our tent"
+  %}
+
+  {% include block-img-1.html type="center-6" img="15.jpg" alt="My new hiking shoes" %}
+
+
   <div class="row mtop15">
     <div class="span-4 offset-1 mtop4">
-      <div class="block">
-        <img src="/assets/2015/osp/13.jpg" class="img-responsive" />
-      </div>
+      {% include img-block.html img="13.jpg" alt="View from inside our tent" %}
     </div>
     <div class="span-6 offset-1 full-bleed">
-      <div class="block">
-        <img src="/assets/2015/osp/14.jpg" class="img-responsive" />
-      </div>
+      {% include img-block.html img="14.jpg" alt="Our tiny tent compared to Vern's and MJ's" %}
     </div>
     <div class="span-6 offset-6 mtop2 full-bleed">
       <p>It was very hot during the day and freezing cold in the evenings. What kept waking me up though wasn't the cold. In fact, my sleeping bag kept me warm and comfortable. It was a rocky patch next to my head that I kept rolling onto that woke me up. Out of laziness, I went back to sleep only to wake up again to the feeling of a sharp rock on my cheek.</p>
       <p>The next day, we moved next to MJ and Vern's soft, grassy spot. Our green tent looked too tiny compared to theirs!</p>
     </div>
   </div> <!-- /row -->
+
   <div class="row mtop15 sunset">
     <div class="span-4 offset-1 mtop8">
       <p>So many friendly people made us feel welcome on our first Star Party. We met Michael when we first arrived at the site. He's passionate about telescopes, outer space, and his kids.</p>
     </div>
     <div class="span-3">
-      <div class="block">
-        <img src="/assets/2015/osp/16.jpg" class="img-responsive" />
-      </div>
+      {% include img-block.html img="16.jpg" alt="Michael from the event" %}
     </div>
     <div class="span-3">
-      <div class="block">
-        <img src="/assets/2015/osp/17.jpg" class="img-responsive" />
-      </div>
+      {% include img-block.html img="17.jpg" alt="Sunset" %}
     </div>
   </div> <!-- /row -->
-  <div class="row mtop15">
-    <div class="span-6 offset-3">
-      <div class="block">
-        <img src="/assets/2015/osp/19.jpg" class="img-responsive" />
-      </div>
-    </div>
-  </div> <!-- /row -->
-  <div class="row mtop15">
-    <div class="span-4 offset-4">
-      <div class="block">
-        <img src="/assets/2015/osp/18.jpg" class="img-responsive" />
-      </div>
-    </div>
-  </div> <!-- /row -->
+
+  {% include block-img-1.html type="center-6" img="19.jpg" alt="Sun looking huge in the sky" %}
+
+  {% include block-slim.html type="centered" img="18.jpg" alt="Orange sun" %}
+
   <div class="row mtop15">
     <div class="parallax">
       <img src="/assets/2015/osp/28.jpg" class="img-responsive" />
@@ -195,32 +129,20 @@ img:
       </div>
     </div> <!-- /parallax -->
   </div> <!-- /row -->
+
   <div class="row mtop15 night">
     <div class="span-6 offset-3">
-      <div class="block">
-        <img src="/assets/2015/osp/21.jpg" class="img-responsive" />
-      </div>
+      {% include img-block.html img="21.jpg" alt="Stars in the sky" %}
     </div>
   </div> <!-- /row -->
-  <div class="row mtop15">
-    <div class="span-4 offset-1">
-      <div class="block">
-        <img src="/assets/2015/osp/22.jpg" class="img-responsive" />
-      </div>
-    </div>
-    <div class="span-4 offset-2">
-      <div class="block">
-        <img src="/assets/2015/osp/23.jpg" class="img-responsive" />
-      </div>
-    </div>
-  </div> <!-- /row -->
-  <div class="row mtop15">
-    <div class="span-6 offset-3">
-      <div class="block">
-        <img src="/assets/2015/osp/24.jpg" class="img-responsive" />
-      </div>
-    </div>
-  </div> <!-- /row -->
+
+  {% include block-img-2.html type="span-34"
+    img="22.jpg" alt="Attempt at a group photo"
+    img2="23.jpg" alt2="Jeremie's glowing ears"
+  %}
+
+  {% include block-img-1.html type="center-6" img="24.jpg" alt="Milky way" %}
+
   <div class="row mtop15" style="color: #fff;">
     <div class="span-6 offset-3">
       <p>It was incredibly surreal. Instead of joining the night sky tour, we stayed in our tent and removed the rain fly to get a clearer view of the stars.</p>
@@ -230,9 +152,7 @@ img:
   </div> <!-- /row -->
   <div class="row mtop15 mbottom15">
     <div class="span-4 offset-4">
-      <div class="block">
-        <img src="/assets/2015/osp/29.jpg" class="img-responsive" />
-      </div>
+      {% include img-block.html img="29.jpg" alt="Milky way" %}
     </div>
   </div> <!-- /row -->
 </section> <!-- /#journal-content -->
