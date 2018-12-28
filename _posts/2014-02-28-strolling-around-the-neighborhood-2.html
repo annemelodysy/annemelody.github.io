@@ -1,76 +1,91 @@
 ---
-layout:     post-blocks
+layout:     post
 title:      "Strolling Around the Neighborhood 2"
 date:       2014-02-28
 categories: travel
 permalink:  /:categories/:title
 excerpt:    As if being pulled by an invisible string, I followed my intuition.
-intro: |
-  I felt like walking today, so I went out and took my camera with me. I didn't know where to start, so as if being pulled by an invisible string, I followed my intuition.
-
-  Without an idea of where I'd end up, I decided not to worry about it. I mean, who cares if I get lost in Singapore? It's such a safe place I could go through dark alleys and not give a damn.
-img-link:   /assets/2014/neighborhood-stroll-2
+img-link:   /assets/2014/neighborhood-stroll-2/
 img:
   small:    2014/neighborhood-stroll-2/neighborhood-stroll-2-small.jpg
   large:    2014/neighborhood-stroll-2/neighborhood-stroll-2-cover.jpg
 ---
-{% include block-img-1.html type="center-6" img="3.jpg" alt="Green door" %}
-
-{% include block-img-2.html type="span-6"
-  img="1.jpg" alt="Joo chiat road"
-  img2="2.jpg" alt2="Joo chiat road"
-%}
-
-{% include block-img-2.html type="span-4"
-  img="4.jpg" alt="Colorful houses of Singapore"
-  img2="5.jpg" alt2="Altar offerings"
-%}
-
-{% include block-img-1.html type="left-6" img="6.jpg" alt="Bicycles for rent" %}
-
-{% include block-img-1.html type="center-6" img="7.jpg" alt="Clothes hangers" %}
-
-<div class="row mtop15">
-  <div class="span-4 offset-1">
-    <div class="block">
-      <img src="{{ page.img-link }}/8.jpg" alt="People at the beach" title="People at the beach" />
-    </div>
+<div class="grid center-6">
+  <p>I felt like walking today, so I went out and took my camera with me. I didn't know where to start, so as if being pulled by an invisible string, I followed my intuition.</p>
+  <p>Without an idea of where I'd end up, I decided not to worry about it. I mean, who cares if I get lost in Singapore? It's such a safe place I could go through dark alleys and not give a damn.</p>
+  <div class="module">
+    <img src="{{ page.img-link }}3.jpg" alt="Green door"  />
   </div>
-  <div class="span-5 offset-1">
-    <div class="block">
-      <img src="{{ page.img-link }}/10.jpg" alt="Man jogging at the beach" title="Man jogging at the beach" />
-    </div>
+</div>
+<div class="grid bleed-2-items">
+  <div class="module">
+    <img src="{{ page.img-link }}1.jpg" alt="Joo chiat road"  />
   </div>
-  <div class="span-4 offset-3 mtop4">
-    <div class="block">
-      <img src="{{ page.img-link }}/9.jpg" alt="Waving to the boats" title="Waving to the boats" />
-    </div>
+  <div class="module">
+    <img src="{{ page.img-link }}2.jpg" alt="Joo chiat road"  />
   </div>
-</div> <!--row -->
-
-{% include block-img-4.html
-  img="11.jpg" alt="Bench"
-  img2="13.jpg" alt2="Man jogging and woman walking her dog"
-  img3="12.jpg" alt3="Encounters"
-  img4="14.jpg" alt4="Missed opportunities"
-%}
-
-{% include block-img-2.html type="span-4"
-  img="15.jpg" alt="Half-naked man doing stretches"
-  img2="16.jpg" alt2="Bright tunnel"
-%}
-
-{% include block-img-1.html type="center-6" img="17.jpg" alt="Ama all alone" %}
-
-<div class="row mtop15">
-  <div class="span-4 offset-1">
-    <div class="block">
-      <img src="{{ page.img-link }}/18.jpg" alt="Hawker restaurants" title="Hawker restaurants" />
-    </div>
+</div>
+<div class="grid spaced-twin-m">
+  <div class="module">
+    <img src="{{ page.img-link }}4.jpg" alt="Colorful houses of Singapore"  />
   </div>
-  <div class="span-5 offset-1">
-    <div class="block">
-      <img src="{{ page.img-link }}/19.jpg" alt="Hawker restaurants" title="Hawker restaurants" />
-    </div>
+  <div class="module">
+    <img src="{{ page.img-link }}5.jpg" alt="Altar offerings"  />
   </div>
-</div> <!-- /row -->
+</div>
+<div class="grid bleed-left-6">
+  <div class="module">
+    <img src="{{ page.img-link }}6.jpg" alt="Bicycles for rent"  />
+  </div>
+</div>
+<div class="grid center-6">
+  <div class="module">
+    <img src="{{ page.img-link }}7.jpg" alt="Clothes hangers"  />
+  </div>
+</div>
+<div class="grid stacked-3-items">
+  <div class="module">
+    <img src="{{ page.img-link }}/8.jpg" alt="People at the beach" title="People at the beach" />
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}/10.jpg" alt="Man jogging at the beach" title="Man jogging at the beach" />
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}/9.jpg" alt="Waving to the boats" title="Waving to the boats" />
+  </div>
+</div>
+<div class="grid spaced-4-items">
+  <div class="module">
+    <img src="{{ page.img-link }}/11.jpg" alt="Bench" />
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}/13.jpg" alt="Man jogging and woman walking her dog" />
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}/12.jpg" alt="Encounters" />
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}/14.jpg" alt="Encounters" />
+  </div>
+</div>
+<div class="grid spaced-twin-sm">
+  <div class="module">
+    <img src="{{ page.img-link }}15.jpg" alt="Half-naked man doing stretches"  />
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}16.jpg" alt="Bright tunnel"  />
+  </div>
+</div>
+<div class="grid center-6">
+  <div class="module">
+    <img src="{{ page.img-link }}17.jpg" alt="Ama all alone"  />
+  </div>
+</div>
+<div class="grid spaced-thin-left">
+  <div class="module">
+    <img src="{{ page.img-link }}18.jpg" alt="Hawker restaurants"  />
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}19.jpg" alt="Hawker restaurants"  />
+  </div>
+</div>

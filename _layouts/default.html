@@ -3,11 +3,10 @@
 {% include head.html %}
 <section id="thumbnails">
   {% for post in site.posts %}
-  <a href="{{ post.url | prepend: site.baseurl }}" class="item">
-    <img src="/assets/{{ post.img.small | replace: '!SITE_URL!', site.url }}" class="img-responsive" />
+  <a href="{{ post.url | prepend: site.baseurl }}" class="item module">
+    <img src="/assets/{{ post.img.small | replace: '!SITE_URL!', site.url }}"  />
     <h1>{{ post.title }}</h1>
   </a>
   {% endfor %}
 </section>
-<h5 class="scroll-text">Scroll this way <i class="icon-arrow"></i></h5>
 {% include footer.html %}

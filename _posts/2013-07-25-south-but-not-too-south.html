@@ -1,50 +1,92 @@
 ---
-layout:     post-blocks
+layout:     post
 title:      "South but not too South"
 date:       2013-07-25
 categories: travel
 permalink:  /:categories/:title
 excerpt:    I can’t resist invitations concerning long drives away from the city.
-img-link:   /assets/2013/south
+img-link:   /assets/2013/south/
 img:
   small:    2013/south/south-small.jpg
   large:    2013/south/south-cover.jpg
 ---
-{% include block-img-2.html type="span-5"
-  img="1.jpg" alt="Roof structures"
-  img2="2.jpg" alt2="Tower steel structure"
-%}
-
-{% include block-img-1.html type="left-6" img="3.jpg" alt="Lamp posts and cloudy blue sky" %}
-
-{% include block-img-1.html type="center-6" img="4.jpg" alt="Visitor's center" %}
-
-{% include block-img-1.html type="right-5" img="5.jpg" alt="Newspaper on the floor" %}
-
-{% include block-img-1.html type="center-6" img="6.jpg" alt="Giant cloud" %}
-
-{% include block-img-1.html type="left-5" img="7.jpg" alt="House on a hill" %}
-
-{% include block-img-2.html type="span-3"
-  img="13.jpg" alt="Cloudy sky"
-  img2="8.jpg" alt2="Control panel"
-%}
-
-{% include block-img-1.html type="center-6" img="9.jpg" alt="Dry mud" %}
-
-{% include block-img-2.html type="span-4"
-  img="10.jpg" alt="Gero with the vast sky"
-  img2="11.jpg" alt2="Gero standing behind a container van"
-%}
-
-{% include block-img-1.html type="right-6" img="12.jpg" alt="Cloud and houses" %}
-
-{% include block-img-1.html type="center-6" img="14.jpg" alt="Zara walking towards the sea" %}
-
-{% include block-img-3.html type="span-4"
-  img="16.jpg" alt="Mechanical crane"
-  img2="17.jpg" alt2="Blurry dark scene"
-  img3="18.jpg" alt3="Evening shadows"
-%}
-
-{% include block-img-1.html type="center-6" img="15.jpg" alt="Plane in the sky" %}
+<div class="grid spaced-twin-m">
+  <div class="module">
+    <img src="{{ page.img-link }}1.jpg" alt="Roof structures" >
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}2.jpg" alt="Tower steel structure" >
+  </div>
+</div>
+<div class="grid bleed-left-6">
+  <div class="module">
+    <img src="{{ page.img-link }}3.jpg" alt="Lamp posts and cloudy blue sky" >
+  </div>
+</div>
+<div class="grid center-6">
+  <div class="module">
+    <img src="{{ page.img-link }}4.jpg" alt="Visitor's center" >
+  </div>
+</div>
+<div class="grid float-right-6">
+  <div class="module">
+    <img src="{{ page.img-link }}5.jpg" alt="Newspaper on the floor" >
+  </div>
+</div>
+<div class="grid center-6">
+  <div class="module">
+    <img src="{{ page.img-link }}6.jpg" alt="Giant cloud" >
+  </div>
+</div>
+<div class="grid float-left-6">
+  <div class="module">
+    <img src="{{ page.img-link }}7.jpg" alt="House on a hill" >
+  </div>
+</div>
+<div class="grid spaced-twin-sm">
+  <div class="module">
+    <img src="{{ page.img-link }}13.jpg" alt="Cloudy sky" >
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}8.jpg" alt="Control panel" >
+  </div>
+</div>
+<div class="grid center-6">
+  <div class="module">
+    <img src="{{ page.img-link }}9.jpg" alt="Dry mud" >
+  </div>
+</div>
+<div class="grid spaced-twin-sm">
+  <div class="module">
+    <img src="{{ page.img-link }}10.jpg" alt="Gero with the vast sky" >
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}11.jpg" alt="Gero standing behind a container van" >
+  </div>
+</div>
+<div class="grid bleed-right-6">
+  <div class="module">
+    <img src="{{ page.img-link }}12.jpg" alt="Cloud and houses" >
+  </div>
+</div>
+<div class="grid center-6">
+  <div class="module">
+    <img src="{{ page.img-link }}14.jpg" alt="Zara walking towards the sea" >
+  </div>
+</div>
+<div class="grid center-3-items">
+  <div class="module">
+    <img src="{{ page.img-link }}16.jpg" alt="Mechanical crane" >
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}17.jpg" alt="Blurry dark scene" >
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}18.jpg" alt3="Evening shadows" >
+  </div>
+</div>
+<div class="grid center-6">
+  <div class="module">
+    <img src="{{ page.img-link }}15.jpg" alt="Plane in the sky" >
+  </div>
+</div>

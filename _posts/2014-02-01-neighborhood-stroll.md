@@ -5,7 +5,7 @@ date:       2014-02-01
 categories: travel
 permalink:  /:categories/:title
 excerpt:    Every brick, every motion or the lack thereof becomes more significant than they are.
-img-link:   /assets/2014/neighborhood-stroll
+img-link:   /assets/2014/neighborhood-stroll/
 img:
   small:    2014/neighborhood-stroll/neighborhood-stroll-small.jpg
   large:    2014/neighborhood-stroll/neighborhood-stroll-cover.jpg
@@ -24,14 +24,21 @@ And the shadows that imprint themselves on our streets creating a preview to a p
 
 All these make me want to take a walk until my feet hurt and my camera runs out of space.
 
-{% include img-block.html img="1.jpg" alt="Cardboards and machine" %}
-
-{% include img-block.html img="5.jpg" alt="Singapore houses" %}
-
-{% include img-block.html img="2.jpg" alt="Cigarette box" %}
-
-{% include img-block.html img="4.jpg" alt="Work boots" %}
-
-{% include img-block.html img="3.jpg" alt="Shopping cart" %}
-
-{% include img-block.html img="6.jpg" alt="Storage space" %}
+<div class="module">
+  <img src="{{ page.img-link }}1.jpg" alt="Cardboards and machine"  />
+</div>
+<div class="module">
+  <img src="{{ page.img-link }}5.jpg" alt="Singapore houses"  />
+</div>
+<div class="module">
+  <img src="{{ page.img-link }}2.jpg" alt="Cigarette box"  />
+</div>
+<div class="module">
+  <img src="{{ page.img-link }}4.jpg" alt="Work boots"  />
+</div>
+<div class="module">
+  <img src="{{ page.img-link }}3.jpg" alt="Shopping cart"  />
+</div>
+<div class="module">
+  <img src="{{ page.img-link }}6.jpg" alt="Storage space"  />
+</div>

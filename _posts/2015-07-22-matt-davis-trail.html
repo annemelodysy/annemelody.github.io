@@ -1,68 +1,121 @@
 ---
-layout:     post-blocks
+layout:     post
 title:      "Matt Davis Trail"
 date:       2015-07-22
 categories: travel
 permalink:  /:categories/:title
 excerpt:    A spontaneous 2-hour hike up a mountain with flip-flops, snacks, and a bottle of water.
-img-link:   /assets/2015/matt-davis
+img-link:   /assets/2015/matt-davis/
 img:
   small:    2015/matt-davis/matt-davis-trail-small.jpg
   large:    2015/matt-davis/matt-davis-trail-cover.jpg
 ---
-
-{% include block-slim.html type="centered" img="1.jpg" alt="Fern on black background" %}
-
-{% include block-img-2.html type="span-4"
-  img="2.jpg" alt="Flora"
-  img2="3.jpg" alt2="Flora"
-%}
-
-{% include block-img-1.html type="center-6" img="4.jpg" alt="Peeking between plants to see Stinson beach" %}
-
-{% include block-slim.html type="centered" img="10.jpg" alt="Red leaves" %}
-
-{% include block-img-2.html type="span-6"
-  img="7.jpg" alt="Stairway path"
-  img2="9.jpg" alt2="View of the beach"
-%}
-
-{% include block-img-1.html type="center-6" img="12.jpg" alt="Dead flower" %}
-
-{% include block-img-1.html type="center-6" img="13.jpg" alt="Hikers in a line" %}
-
-{% include block-img-2.html type="span-3"
-  img="15.jpg" alt="Layers of color"
-  img2="16.jpg" alt2="Cyclist on top of the hike"
-%}
-
-{% include block-img-2.html type="span-6"
-  img="17.jpg" alt="Gathering in Mount Tamalpais"
-  img2="20.jpg" alt2="Kite flying in the blue sky"
-%}
-
-{% include block-img-1.html type="center-6" img="24.jpg" alt="Jeremie my hiking buddy" %}
-
-{% include block-img-2.html type="span-3"
-  img="22.jpg" alt="Cody our other hiking buddy"
-  img2="27.jpg" alt2="No bikes allowed"
-%}
-
-{% include block-img-1.html type="center-6" img="19.jpg" alt="Landscape on top of Mount Tam" %}
-
-{% include block-img-1.html type="center-6" img="25.jpg" alt="Tiny humans in vast landscape" %}
-
-{% include block-img-1.html type="center-6" img="28.jpg" alt="Curvy landscape" %}
-
-{% include block-img-1.html type="center-6" img="30.jpg" alt="Humans that look like ants" %}
-
-{% include block-img-1.html type="center-6" img="31.jpg" alt="Beach view" %}
-
-{% include block-img-2.html type="span-3"
-  img="34.jpg" alt="Zigzag roads"
-  img2="35.jpg" alt2="Sunset view of the water"
-%}
-
-{% include block-img-1.html type="center-6" img="6.jpg" alt="Houses in water" %}
-
-{% include block-img-1.html type="center-6" img="36.jpg" alt="Sunset ending" %}
+<div class="grid center-4">
+  <div class="module">
+    <img src="{{ page.img-link }}1.jpg" alt="Fern on black background" >
+  </div>
+</div>
+<div class="grid spaced-twin-sm">
+  <div class="module">
+    <img src="{{ page.img-link }}2.jpg"  alt="Flora" />
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}3.jpg"  alt="Flora" />
+  </div>
+</div>
+<div class="grid center-6">
+  <div class="module">
+    <img src="{{ page.img-link }}4.jpg" alt="Peeking between plants to see Stinson beach" >
+  </div>
+</div>
+<div class="grid center-4">
+  <div class="module">
+    <img src="{{ page.img-link }}10.jpg" alt="Red leaves" >
+  </div>
+</div>
+<div class="grid bleed-2-items">
+  <div class="module">
+    <img src="{{ page.img-link }}7.jpg"  alt="Stairway path" />
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}9.jpg"  alt="View of the beach" />
+  </div>
+</div>
+<div class="grid center-6">
+  <div class="module">
+    <img src="{{ page.img-link }}12.jpg" alt="Dead flower" >
+  </div>
+</div>
+<div class="grid center-6">
+  <div class="module">
+    <img src="{{ page.img-link }}13.jpg" alt="Hikers in a line" >
+  </div>
+</div>
+<div class="grid spaced-twin-sm">
+  <div class="module">
+    <img src="{{ page.img-link }}15.jpg"  alt="Layers of color" />
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}16.jpg"  alt="Cyclist on top of the hike" />
+  </div>
+</div>
+<div class="grid bleed-2-items">
+  <div class="module">
+    <img src="{{ page.img-link }}17.jpg"  alt="Gathering in Mount Tamalpais" />
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}20.jpg"  alt="Kite flying in the blue sky" />
+  </div>
+</div>
+<div class="grid center-6">
+  <div class="module">
+    <img src="{{ page.img-link }}24.jpg" alt="Jeremie my hiking buddy" >
+  </div>
+</div>
+<div class="grid spaced-twin-sm">
+  <div class="module">
+    <img src="{{ page.img-link }}22.jpg"  alt="Cody our other hiking buddy" />
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}27.jpg"  alt="No bikes allowed" />
+  </div>
+</div>
+<div class="grid float-right-6">
+  <div class="module">
+    <img src="{{ page.img-link }}19.jpg" alt="Landscape on top of Mount Tam" >
+  </div>
+</div>
+<div class="grid spaced-balanced">
+  <div class="module">
+    <img src="{{ page.img-link }}25.jpg" alt="Tiny humans in vast landscape" >
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}28.jpg" alt="Curvy landscape" >
+  </div>
+</div>
+<div class="grid center-6">
+  <div class="module">
+    <img src="{{ page.img-link }}30.jpg" alt="Humans that look like ants" >
+  </div>
+</div>
+<div class="grid float-left-6">
+  <div class="module">
+    <img src="{{ page.img-link }}31.jpg" alt="Beach view" >
+  </div>
+</div>
+<div class="grid spaced-twin-sm">
+  <div class="module">
+    <img src="{{ page.img-link }}34.jpg"  alt="Zigzag roads" />
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}35.jpg"  alt="Sunset view of the water" />
+  </div>
+</div>
+<div class="grid spaced-thin-left">
+  <div class="module">
+    <img src="{{ page.img-link }}6.jpg" alt="Houses in water" >
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}36.jpg" alt="Sunset ending" >
+  </div>
+</div>

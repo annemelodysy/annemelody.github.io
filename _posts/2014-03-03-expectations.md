@@ -5,7 +5,7 @@ date:       2014-03-03
 categories: travel
 permalink:  /:categories/:title
 excerpt:    I drifted in a thought that could pass as a movie trailer complete with a soothing soundtrack and cinematic scenes.
-img-link:   /assets/2014/expectations
+img-link:   /assets/2014/expectations/
 img:
   small:    2014/expectations/expectations-small.jpg
   large:    2014/expectations/expectations-cover.jpg
@@ -19,7 +19,9 @@ As I lay in bed, getting ready for the next day, a roller coaster of excitement,
 
 Paranoia dominated my mood, but this didn't stop me from daydreaming. I drifted in a thought that could pass as a movie trailer complete with a soothing soundtrack and cinematic scenes.
 
-{% include img-block.html img="1.jpg" alt="View of Kuta from above" %}
+<div class="module">
+  <img src="{{ page.img-link }}1.jpg" alt="View of Kuta from above"  />
+</div>
 
 Then the airplane landed and I found myself queueing in a two-hour line at immigration. Our plane arrived on time at three but got stuck in the plane for several minutes because the bus that's supposed to take us to the arrival hall went missing.
 
@@ -29,7 +31,9 @@ When I finally finished the queue, I ended up at the taxi counter where I asked 
 
 My haggling skill was so awful. The driver told me Legian to Ubud cost 300,000 IDR ($26), I asked if 250k was okay, but he said no because it was rush hour blah blah blah…and I gave up and said okay. That was it. I really should learn to negotiate. I give up so easily.
 
-{% include img-block.html img="2.jpg" alt="Taxi ride to Ubud on a rainy day" %}
+<div class="module">
+  <img src="{{ page.img-link }}2.jpg" alt="Taxi ride to Ubud on a rainy day"  />
+</div>
 
 The driver was pretty nice though. He said his name was ‘Boy’ and we talked about his religion, Hinduism (I asked plenty of dumb questions), and about his family and the town he grew up in. The conversation would always get cut off because Boy had a hard time speaking English. You’d know he didn’t understand your question because instead of an answer, he’d just chuckle then change the subject.
 

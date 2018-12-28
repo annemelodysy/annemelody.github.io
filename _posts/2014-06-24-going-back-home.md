@@ -5,7 +5,7 @@ date:       2014-06-24
 categories: life
 permalink:  /:categories/:title
 excerpt:    You might find yourself in a different country as good as yours, but home will always be home.
-img-link:   /assets/2014/going-home
+img-link:   /assets/2014/going-home/
 img:
   small:    2014/going-home/going-home-small.jpg
   large:    2014/going-home/going-home-cover.jpg
@@ -24,4 +24,6 @@ I can’t wait to write about the people, take lovely photographs of my city, ca
 
 You might find yourself in a different country as good as yours, but home will always be home.
 
-{% include img-block.html img="1.jpg" alt="Mountains of Cebu" %}
+<div class="module">
+  <img src="{{ page.img-link }}1.jpg" alt="Mountains of Cebu" title="Mountains of Cebu" />
+</div>

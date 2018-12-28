@@ -1,109 +1,63 @@
 {% include head-post.html %}
-<section id="journal-cover" style="background-image: url('/assets/{{ page.img.large | replace: '!SITE_URL!', site.url }}')">
-  <div class="title">
-    <h1 class="blastable">{{ page.title }}</h1>
+<div class="yearly-bg">
+  <div class="grid center-6 text-center">
+    <h3><a href="{{ site.baseurl }}/{{ page.categories }}">{{ page.categories }}</a></h3>
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.excerpt | replace: '!SITE_URL!', site.url }}</h2>
+    <p>{{ page.short }}</p>
   </div>
-</section> <!-- /#journal-cover -->
-<div class="brown-bg">
-<section class="container mbottom15">
-  <div class="grid">
-    <div class="row text-center">
-      <div class="span-6 offset-3 span-s-8 offset-s-2 mtop8">
-        <h4><a href="{{ site.baseurl }}/{{ page.categories }}">{{ page.categories }}</a></h4>
-        <h2>{{ page.excerpt | replace: '!SITE_URL!', site.url }}</h2>
-        <h4>{{ page.date | date: "%B %-d, %Y" }}</h4>
-        <p>{{ page.short }}</p>
-      </div>
-    </div> <!-- /row -->
-    <div class="row year mtop4 mbottom15">
-      <div class="span-1 span-s-4 item module">
-        <img src="/assets/{{ page.year }}/looking-back/jan.jpg" class="img-responsive" />
-        <h6>01</h6>
-        <div class="caption">
-          <p>{{ page.jan-copy }}</p>
-        </div>
-      </div>
-      <div class="span-1 span-s-4 item module">
-        <img src="/assets/{{ page.year }}/looking-back/feb.jpg" class="img-responsive" />
-        <h6>02</h6>
-        <div class="caption">
-          <p>{{ page.feb-copy }}</p>
-        </div>
-      </div>
-      <div class="span-1 span-s-4 item module">
-        <img src="/assets/{{ page.year }}/looking-back/mar.jpg" class="img-responsive" />
-        <h6>03</h6>
-        <div class="caption">
-          <p>{{ page.mar-copy }}</p>
-        </div>
-      </div>
-      <div class="span-1 span-s-4 item module">
-        <img src="/assets/{{ page.year }}/looking-back/apr.jpg" class="img-responsive" />
-        <h6>04</h6>
-        <div class="caption">
-          <p>{{ page.apr-copy }}</p>
-        </div>
-      </div>
-      <div class="span-1 span-s-4 item module">
-        <img src="/assets/{{ page.year }}/looking-back/may.jpg" class="img-responsive" />
-        <h6>05</h6>
-        <div class="caption">
-          <p>{{ page.may-copy }}</p>
-        </div>
-      </div>
-      <div class="span-1 span-s-4 item module">
-        <img src="/assets/{{ page.year }}/looking-back/jun.jpg" class="img-responsive" />
-        <h6>06</h6>
-        <div class="caption">
-          <p>{{ page.jun-copy }}</p>
-        </div>
-      </div>
-      <div class="span-1 span-s-4 item module">
-        <img src="/assets/{{ page.year }}/looking-back/jul.jpg" class="img-responsive" />
-        <h6>07</h6>
-        <div class="caption">
-          <p>{{ page.jul-copy }}</p>
-        </div>
-      </div>
-      <div class="span-1 span-s-4 item module">
-        <img src="/assets/{{ page.year }}/looking-back/aug.jpg" class="img-responsive" />
-        <h6>08</h6>
-        <div class="caption">
-          <p>{{ page.aug-copy }}</p>
-        </div>
-      </div>
-      <div class="span-1 span-s-4 item module">
-        <img src="/assets/{{ page.year }}/looking-back/sep.jpg" class="img-responsive" />
-        <h6>09</h6>
-        <div class="caption">
-          <p>{{ page.sep-copy }}</p>
-        </div>
-      </div>
-      <div class="span-1 span-s-4 item module">
-        <img src="/assets/{{ page.year }}/looking-back/oct.jpg" class="img-responsive" />
-        <h6>10</h6>
-        <div class="caption">
-          <p>{{ page.oct-copy }}</p>
-        </div>
-      </div>
-      <div class="span-1 span-s-4 item module">
-        <img src="/assets/{{ page.year }}/looking-back/nov.jpg" class="img-responsive" />
-        <h6>11</h6>
-        <div class="caption">
-          <p>{{ page.nov-copy }}</p>
-        </div>
-      </div>
-      <div class="span-1 span-s-4 item module">
-        <img src="/assets/{{ page.year }}/looking-back/dec.jpg" class="img-responsive" />
-        <h6>12</h6>
-        <div class="caption">
-          <p>{{ page.dec-copy }}</p>
-        </div>
-      </div>
-    </div> <!-- /row -->
-  </div> <!-- /grid -->
-</section> <!-- /container -->
-{% include more-stories.html %}
+  <div class="item">
+    <img src="/assets/{{ page.year }}/looking-back/jan.jpg"  />
+    <p>{{ page.jan-copy }}</p>
+  </div>
+  <div class="item">
+    <img src="/assets/{{ page.year }}/looking-back/feb.jpg"  />
+    <p>{{ page.feb-copy }}</p>
+  </div>
+  <div class="item">
+    <img src="/assets/{{ page.year }}/looking-back/mar.jpg"  />
+    <p>{{ page.mar-copy }}</p>
+  </div>
+  <div class="item">
+    <img src="/assets/{{ page.year }}/looking-back/apr.jpg"  />
+    <p>{{ page.apr-copy }}</p>
+  </div>
+  <div class="item">
+    <img src="/assets/{{ page.year }}/looking-back/may.jpg"  />
+    <p>{{ page.may-copy }}</p>
+  </div>
+  <div class="item">
+    <img src="/assets/{{ page.year }}/looking-back/jun.jpg"  />
+    <p>{{ page.jun-copy }}</p>
+  </div>
+  <div class="item">
+    <img src="/assets/{{ page.year }}/looking-back/jul.jpg"  />
+    <p>{{ page.jul-copy }}</p>
+  </div>
+  <div class="item">
+    <img src="/assets/{{ page.year }}/looking-back/aug.jpg"  />
+    <p>{{ page.aug-copy }}</p>
+  </div>
+  <div class="item">
+    <img src="/assets/{{ page.year }}/looking-back/sep.jpg"  />
+    <p>{{ page.sep-copy }}</p>
+  </div>
+  <div class="item">
+    <img src="/assets/{{ page.year }}/looking-back/oct.jpg"  />
+    <p>{{ page.oct-copy }}</p>
+  </div>
+  <div class="item">
+    <img src="/assets/{{ page.year }}/looking-back/nov.jpg"  />
+    <p>{{ page.nov-copy }}</p>
+  </div>
+  <div class="item">
+    <img src="/assets/{{ page.year }}/looking-back/dec.jpg"  />
+    <p>{{ page.dec-copy }}</p>
+  </div>
+</div> <!-- /yearly-bg -->
+
+<div class="yearly-more">
+  {% include more-stories.html %}
 </div>
 
 {% include footer.html %}

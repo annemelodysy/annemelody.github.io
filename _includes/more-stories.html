@@ -1,33 +1,27 @@
-<h2 class="mtop8 text-center">What to read next</h2>
-<section class="more-stories mtop2 text-center">
-  {% if page.next.next.url %}
-  <a href="{{ BASE_PATH }}{{ page.next.next.url }}" class="thumbnail">
-    <img src="/assets/{{ page.next.next.img.small | replace: '!SITE_URL!', site.url }}" class="img-responsive" alt="{{ page.next.next.title }}" />
-    <h4>{{ page.next.next.title }}</h4>
-  </a>
-  {% endif %}
-  {% if page.next.url %}
-    <a href="{{ BASE_PATH }}{{ page.next.url }}" class="thumbnail">
-      <img src="/assets/{{ page.next.img.small | replace: '!SITE_URL!', site.url }}" class="img-responsive" alt="{{ page.next.title }}" />
-      <h4>{{ page.next.title }}</h4>
-    </a>
-  {% endif %}
+<section id="thumbnails">
+  <h2>What to read next</h2>
   {% if page.previous.url %}
-    <a href="{{ BASE_PATH }}{{ page.previous.url }}" class="thumbnail">
-      <img src="/assets/{{ page.previous.img.small | replace: '!SITE_URL!', site.url }}" class="img-responsive" alt="{{ page.previous.title }}" />
+    <a href="{{ BASE_PATH }}{{ page.previous.url }}" class="item">
+      <img src="/assets/{{ page.previous.img.small | replace: '!SITE_URL!', site.url }}"  alt="{{ page.previous.title }}" />
       <h4>{{ page.previous.title }}</h4>
     </a>
   {% endif %}
   {% if page.previous.previous.url %}
-  <a href="{{ BASE_PATH }}{{ page.previous.previous.url }}" class="thumbnail">
-    <img src="/assets/{{ page.previous.previous.img.small | replace: '!SITE_URL!', site.url }}" class="img-responsive" alt="{{ page.previous.previous.title }}" />
+  <a href="{{ BASE_PATH }}{{ page.previous.previous.url }}" class="item">
+    <img src="/assets/{{ page.previous.previous.img.small | replace: '!SITE_URL!', site.url }}"  alt="{{ page.previous.previous.title }}" />
     <h4>{{ page.previous.previous.title }}</h4>
   </a>
   {% endif %}
-  {% if page.previous.previous.previous.url %}
-  <a href="{{ BASE_PATH }}{{ page.previous.previous.previous.url }}" class="thumbnail">
-    <img src="/assets/{{ page.previous.previous.previous.img.small | replace: '!SITE_URL!', site.url }}" class="img-responsive" alt="{{ page.previous.previous.previous.title }}" />
-    <h4>{{ page.previous.previous.previous.title }}</h4>
+  {% if page.next.next.url %}
+  <a href="{{ BASE_PATH }}{{ page.next.next.url }}" class="item">
+    <img src="/assets/{{ page.next.next.img.small | replace: '!SITE_URL!', site.url }}"  alt="{{ page.next.next.title }}" />
+    <h4>{{ page.next.next.title }}</h4>
   </a>
+  {% endif %}
+  {% if page.next.url %}
+    <a href="{{ BASE_PATH }}{{ page.next.url }}" class="item">
+      <img src="/assets/{{ page.next.img.small | replace: '!SITE_URL!', site.url }}"  alt="{{ page.next.title }}" />
+      <h4>{{ page.next.title }}</h4>
+    </a>
   {% endif %}
 </section> <!-- /more-stories -->

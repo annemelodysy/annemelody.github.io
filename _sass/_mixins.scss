@@ -1,7 +1,8 @@
 $seafoam: #a5e1c4;
 $pink: #e1a5a5;
 $brown: #e1caa5;
-$white: #fff;
+$white: darken(#fff, 1%);
+$black: #111;
 
 @font-face {
   font-family: 'icomoon';
@@ -36,34 +37,20 @@ $white: #fff;
 .icon-volume-up:before { content: "\ea27"; }
 .icon-volume-down:before { content: "\ea2a"; }
 
-/** Margins **/
-.mtop30 { margin-top: 30%; }
-.mtop15 { margin-top: 15%; }
-.mbottom15 { margin-bottom: 15%; }
-.mtop8 { margin-top: 8%; }
-.mtop4 { margin-top: 4%; }
-.mtop2 { margin-top: 2%; }
-.mtop0 { margin-top: 0; }
-.mbottom2 { margin-bottom: 2%; }
-.mbottom8 { margin-bottom: 8%; }
-.m0 { margin: 0 !important; }
-.p8 { padding: 8em 0; }
-
 /** Enhancing **/
 .highlight {
   background: $seafoam;
   padding:0 5px;
   text-shadow: none;
-  color: darken($white, 80%);
+  color: $black;
+  display: inline;
 }
-.opacity { opacity: 0; }
 
 /** Blocks **/
 .block {
   background: $seafoam;
   img { opacity: 0; }
 }
-.full-bleed { padding: 0 !important; }
 .fade-visible img { opacity: 1; }
 
 @mixin cover {
@@ -79,4 +66,17 @@ $white: #fff;
   height: 100vh;
   z-index: 5;
 }
-@mixin contain { background-size: contain; background-position: 0 0; }
+@mixin float($varx, $vary) {
+  transform: translate(0, 0);
+  @keyframes float {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate($varx, $vary);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+}

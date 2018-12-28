@@ -1,96 +1,161 @@
 ---
-layout:     post-blocks
+layout:     post
 title:      "Passing by Baguio"
 date:       2013-08-20
 categories: travel
 permalink:  /:categories/:title
 excerpt:    Before heading back to Manila, we took a quick stop in Baguio.
-intro:      I have memories of being there with my family when I was in high school. Those were the days when the family took care of all the planning and spending while we kids follow their lead and enjoy the trip.
-img-link:   /assets/2013/baguio
+img-link:   /assets/2013/baguio/
 img:
   small:    2013/baguio/baguio-small.jpg
   large:    2013/baguio/baguio-cover.jpg
 ---
-
-{% include block-img-3.html type="span-4"
-  img="1.jpg" alt="On our way to Baguio"
-  img2="2.jpg" alt2="Sun beaming in the bus"
-  img3="3.jpg" alt3="Weird guy with a cardboard box head"
-%}
-
-{% include block-text.html text="Nobody told us our driver was a rootin tootin cowboy. Guess that explains the bumpy ride." %}
-
-{% include block-img-1.html type="center-6" img="4.jpg" alt="Bus driver's cowboy hat" %}
-
-{% include block-text.html text="Baguio is overcrowded. The road heading to the city was packed with vehicles. The traffic is comparable to that in Manila." %}
-
-{% include block-img-1.html type="center-6" img="5.jpg" alt="Mountain of houses" %}
-
-{% include block-img-1.html type="right-6" img="6.jpg" alt="Red roofed houses" %}
-
-{% include block-img-1.html type="left-6" img="7.jpg" alt="Clothes line" %}
-
-{% include block-text.html text="Brain and gut-flavored taho. Kidding! It’s strawberry." %}
-
-{% include block-img-2.html type="span-5"
-  img="8.jpg" alt="Strawberry-flavored taho"
-  img2="9.jpg" alt2="Taho served in pink plastic cups"
-%}
-
-{% include block-text.html text="We visited several tourist traps." %}
-
-{% include block-img-2.html type="span-4"
-  img="10.jpg" alt="Baguio park"
-  img2="11.jpg" alt2="Kid looking at wishing well"
-%}
-
-{% include block-text.html text="Japanese-themed structure in the middle of the park." %}
-
-{% include block-img-1.html type="center-6" img="12.jpg" alt="Group photo" %}
-
-{% include block-slim.html type="left-wtext"
-  img="13.jpg" alt="Maiza in the cave"
-  text="We went into a dark cave. Luckily, I have my trusty flashlight with me."
-%}
-
-{% include block-img-2.html type="span-5"
-  img="14.jpg" alt="Just me striking a pose"
-  img2="15.jpg" alt2="Buddhist sculptures"
-%}
-
-{% include block-img-1.html type="center-6" img="16.jpg" alt="Art gallery" %}
-
-{% include block-slim.html type="left-wtext"
-  img="17.jpg" alt="Odd-looking tree"
-  text="Odd-looking tree."
-%}
-
-{% include block-img-3.html type="span-4"
-  img="18.jpg" alt="Vendors selling souvenirs"
-  img2="20.jpg" alt2="Natives posing for the camera"
-  img3="19.jpg" alt3="Cleaning the entrance"
-%}
-
-{% include block-img-1.html type="left-5" img="21.jpg" alt="Horses lining up" %}
-
-{% include block-img-1.html type="right-5" img="22.jpg" alt="Yummy, fresh strawberries" %}
-
-{% include block-img-2.html type="span-3"
-  img="23.jpg" alt="Huge gates"
-  img2="24.jpg" alt2="Another group shot"
-%}
-
-{% include block-img-1.html type="left-5" img="25.jpg" alt="Nuts vendor" %}
-
-{% include block-img-1.html type="center-6" img="26.jpg" alt="Dog sleeping" %}
-
-{% include block-img-1.html type="right-5" img="27.jpg" alt="Mountain view" %}
-
-{% include block-slim.html type="left"
-  img="29.jpg" alt="Adrian looking outside the window"
-  img2="28.jpg" alt2="Maiza looking outside the window"
-%}
-
-{% include block-img-1.html type="center-6" img="30.jpg" alt="Looking down" %}
-
-{% include block-img-1.html type="center-6" img="31.jpg" alt="Magical clouds" %}
+<div class="grid center-6">
+  <p>I have memories of being there with my family when I was in high school. Those were the days when the family took care of all the planning and spending while we kids follow their lead and enjoy the trip.</p>
+</div>
+<div class="grid bleed-3-items">
+  <div class="module">
+    <img src="{{ page.img-link }}1.jpg" alt="On our way to Baguio" >
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}2.jpg" alt="Sun beaming in the bus" >
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}3.jpg" alt3="Weird guy with a cardboard box head" >
+  </div>
+</div>
+<div class="grid center-6">
+  <p>Nobody told us our driver was a rootin tootin cowboy. Guess that explains the bumpy ride.</p>
+  <div class="module">
+    <img src="{{ page.img-link }}4.jpg" alt="Bus driver's cowboy hat" >
+  </div>
+  <p>Baguio is overcrowded. The road heading to the city was packed with vehicles. The traffic is comparable to that in Manila.</p>
+  <div class="module">
+    <img src="{{ page.img-link }}5.jpg" alt="Mountain of houses" >
+  </div>
+</div>
+<div class="grid bleed-right-6">
+  <div class="module">
+    <img src="{{ page.img-link }}6.jpg" alt="Red roofed houses" >
+  </div>
+</div>
+<div class="grid bleed-left-6">
+  <div class="module">
+    <img src="{{ page.img-link }}7.jpg" alt="Clothes line" >
+  </div>
+</div>
+<div class="grid center-6">
+  <p>Brain and gut-flavored taho. Kidding! It’s strawberry.</p>
+</div>
+<div class="grid spaced-twin-m">
+  <div class="module">
+    <img src="{{ page.img-link }}8.jpg" alt="Strawberry-flavored taho" >
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}9.jpg" alt="Taho served in pink plastic cups" >
+  </div>
+</div>
+<div class="grid center-6">
+  <p>We visited several tourist traps.</p>
+</div>
+<div class="grid spaced-twin-sm">
+  <div class="module">
+    <img src="{{ page.img-link }}10.jpg" alt="Baguio park" >
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}11.jpg" alt="Kid looking at wishing well" >
+  </div>
+</div>
+<div class="grid center-6">
+  <p>Japanese-themed structure in the middle of the park.</p>
+  <div class="module">
+    <img src="{{ page.img-link }}12.jpg" alt="Group photo" >
+  </div>
+</div>
+<div class="grid spaced-twin-sm">
+  <div class="module">
+    <img src="{{ page.img-link }}13.jpg" alt="Maiza in the cave" >
+  </div>
+  <p>We went into a dark cave. Luckily, I have my trusty flashlight with me</p>
+</div>
+<div class="grid spaced-twin-m">
+  <div class="module">
+    <img src="{{ page.img-link }}14.jpg" alt="Just me striking a pose" >
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}15.jpg" alt="Buddhist sculptures" >
+  </div>
+</div>
+<div class="grid center-6">
+  <div class="module">
+    <img src="{{ page.img-link }}16.jpg" alt="Art gallery" >
+  </div>
+</div>
+<div class="grid spaced-twin-sm">
+  <div class="module">
+    <img src="{{ page.img-link }}17.jpg" alt="Odd-looking tree" >
+  </div>
+  <p>Odd-looking tree</p>
+</div>
+<div class="grid bleed-3-items">
+  <div class="module">
+    <img src="{{ page.img-link }}18.jpg" alt="Vendors selling souvenirs" >
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}20.jpg" alt="Natives posing for the camera" >
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}19.jpg" alt3="Cleaning the entrance" >
+  </div>
+</div>
+<div class="grid bleed-left-6">
+  <div class="module">
+    <img src="{{ page.img-link }}21.jpg" alt="Horses lining up" >
+  </div>
+</div>
+<div class="grid bleed-right-6">
+  <div class="module">
+    <img src="{{ page.img-link }}22.jpg" alt="Yummy, fresh strawberries" >
+  </div>
+</div>
+<div class="grid spaced-twin-sm">
+  <div class="module">
+    <img src="{{ page.img-link }}23.jpg" alt="Huge gates" >
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}24.jpg" alt="Another group shot" >
+  </div>
+</div>
+<div class="grid bleed-left-6">
+  <div class="module">
+    <img src="{{ page.img-link }}25.jpg" alt="Nuts vendor" >
+  </div>
+</div>
+<div class="grid center-6">
+  <div class="module">
+    <img src="{{ page.img-link }}26.jpg" alt="Dog sleeping" >
+  </div>
+</div>
+<div class="grid bleed-right-6">
+  <div class="module">
+    <img src="{{ page.img-link }}27.jpg" alt="Mountain view" >
+  </div>
+</div>
+<div class="grid spaced-thin-left">
+  <div class="module">
+    <img src="{{ page.img-link }}29.jpg" alt="Adrian looking outside the window" >
+  </div>
+  <div class="module">
+    <img src="{{ page.img-link }}28.jpg" alt="Maiza looking outside the window" >
+  </div>
+</div>
+<div class="grid center-6">
+  <div class="module">
+    <img src="{{ page.img-link }}30.jpg" alt="Looking down" >
+  </div>
+</div>
+<div class="grid center-6">
+  <div class="module">
+    <img src="{{ page.img-link }}31.jpg" alt="Magical clouds" >
+  </div>
+</div>
