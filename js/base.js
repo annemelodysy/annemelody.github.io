@@ -3,7 +3,7 @@ var bgWidth = $(window).width();
 
 $(document).ready(function() {
   //Fade in cover image
-  $(".cover").each(function() {
+  $('.cover').each(function() {
     var src = $(this).data("src");
     if (src) {
       var img = new Image();
