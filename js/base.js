@@ -1,37 +1,30 @@
 var bgHeight = $(window).height();
 var bgWidth = $(window).width();
+$('#journal-cover img').css('display', 'none');
 
 $(document).ready(function() {
   //Fade in cover image
   $('.cover').each(function() {
-    var src = $(this).data("src");
-    if (src) {
-      var img = new Image();
-      img.style.display = "none";
-      img.onload = function() {
-        $(this).fadeIn(800);
+    var img = $(this).find("img");
+    $(img).fadeIn(1000);
 
-        //Calculate Min and Max for blasting
-        function rand(min, max) {
-          return parseInt(Math.round(min + Math.random() * (max - min)));
-        }
-
-        // Blast.js separate the characters
-        $('.blastable').blast({
-          delimiter: 'character',
-          tag: 'span',
-        });
-
-        $('.blastable').css('opacity','1');
-
-        //Blast characters randomly
-        $('.blast').each(function() {
-          $(this).delay(rand(700,2000)).fadeTo(2000,1);
-        });
-      };
-      $(this).append(img);
-      img.src = src;
+    //Calculate Min and Max for blasting
+    function rand(min, max) {
+      return parseInt(Math.round(min + Math.random() * (max - min)));
     }
+
+    // Blast.js separate the characters
+    $('.blastable').blast({
+      delimiter: 'character',
+      tag: 'span',
+    });
+
+    $('.blastable').css('opacity','1');
+
+    //Blast characters randomly
+    $('.blast').each(function() {
+      $(this).delay(rand(900,2000)).fadeTo(2000,1);
+    });
   });
 
   //Hide title when scrolling

@@ -1,9 +1,10 @@
 {% include head-post.html %}
 <section id="journal-cover">
-  <div class="cover" data-src="/assets/{{ page.img.large | replace: '!SITE_URL!', site.url }}">
+  <div class="cover">
   <div class="title">
     <h1 class="blastable">{{ page.title }}</h1>
   </div>
+  <img src="/assets/{{ page.img.large | replace: '!SITE_URL!', site.url }}" alt="{{ page.title }}">
 </section>
 <section class="journal-post">
   <div class="meta center-6">
