@@ -12,16 +12,16 @@
     <h4>{{ page.previous.previous.title }}</h4>
   </a>
   {% endif %}
-  {% if page.next.next.url %}
-  <a href="{{ BASE_PATH }}{{ page.next.next.url }}" class="item">
-    <img src="/assets/{{ page.next.next.img.small | replace: '!SITE_URL!', site.url }}"  alt="{{ page.next.next.title }}" />
-    <h4>{{ page.next.next.title }}</h4>
+  {% if page.previous.previous.previous.url %}
+  <a href="{{ BASE_PATH }}{{ page.previous.previous.previous.url }}" class="item">
+    <img src="/assets/{{ page.previous.previous.previous.img.small | replace: '!SITE_URL!', site.url }}"  alt="{{ page.previous.previous.previous.title }}" />
+    <h4>{{ page.previous.previous.previous.title }}</h4>
   </a>
   {% endif %}
-  {% if page.next.url %}
-    <a href="{{ BASE_PATH }}{{ page.next.url }}" class="item">
-      <img src="/assets/{{ page.next.img.small | replace: '!SITE_URL!', site.url }}"  alt="{{ page.next.title }}" />
-      <h4>{{ page.next.title }}</h4>
+  {% if page.previous.previous.previous.previous.url %}
+    <a href="{{ BASE_PATH }}{{ page.previous.previous.previous.previous.url }}" class="item">
+      <img src="/assets/{{ page.previous.previous.previous.previous.img.small | replace: '!SITE_URL!', site.url }}"  alt="{{ page.previous.previous.previous.previous.title }}" />
+      <h4>{{ page.previous.previous.previous.previous.title }}</h4>
     </a>
   {% endif %}
 </section> <!-- /more-stories -->
