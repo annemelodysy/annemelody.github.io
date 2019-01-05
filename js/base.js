@@ -47,7 +47,7 @@ $(document).ready(function() {
     o.right = o.left + t.width(), o.bottom = o.top + t.height();
     var e = this.offset();
     return e.right = e.left + this.outerWidth(), e.bottom = e.top + this.outerHeight(), !(o.right < e.left || o.left > e.right || o.bottom < e.top || o.top > e.bottom)
-  }, $(".module").length > 0 && $(".module").each(function() {
+  }, $(".module").length > 0 && $(".module img").each(function() {
     $(this).onscreen() && $(this).addClass("already-visible")
   }), $(".block").length > 0 && $(".block").each(function() {
     $(this).onscreen() && $(this).addClass("fade-visible")
@@ -58,7 +58,7 @@ $(document).ready(function() {
       o.right = o.left + t.width(), o.bottom = o.top + t.height();
       var e = this.offset();
       return e.right = e.left + this.outerWidth(), e.bottom = e.top + this.outerHeight(), !(o.right < e.left || o.left > e.right || o.bottom < e.top || o.top > e.bottom)
-    }, $(".module").length > 0 && $(".module").each(function() {
+    }, $(".module").length > 0 && $(".module img").each(function() {
       $(this).onscreen() && $(this).addClass("come-in")
     }), $(".block").length > 0 && $(".block").each(function() {
       $(this).onscreen() && $(this).addClass("fade-in")

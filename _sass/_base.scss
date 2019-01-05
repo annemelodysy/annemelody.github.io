@@ -107,6 +107,7 @@ blockquote {
   left: 50%;
   margin-left: -2rem;
   top: 2rem;
+  z-index: 10;
 }
 
 /** Home **/
@@ -157,8 +158,9 @@ blockquote {
     position: absolute;
     bottom: 20%;
     width: 40%;
-    right: 10%;
+    right: 15%;
     z-index: 10;
+    text-align: right;
   }
 }
 .meta {
@@ -262,7 +264,7 @@ and (min-width : 1025px) {
     cursor: pointer;
   }
 }
-.module { opacity: 0; }
+.module img { opacity: 0; }
 .come-in {
   transform: translateY(100px);
   -webkit-transform: translateY(100px);
@@ -270,10 +272,10 @@ and (min-width : 1025px) {
   -webkit-animation: come-in 1s ease-in-out forwards;
 }
 .come-in:nth-child(odd) {
-  animation-duration: 0.8s;
-  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
 }
-.already-visible { transform: translateY(0); -webkit-transform: translateY(0px); animation: none; opacity: 1; }
+.module .already-visible { transform: translateY(0); -webkit-transform: translateY(0px); animation: none; opacity: 1; }
 @-webkit-keyframes come-in { to { -webkit-transform: translateY(0); opacity: 1; } }
 @keyframes come-in { to { transform: translateY(0); opacity: 1; } }
 

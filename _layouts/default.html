@@ -1,9 +1,9 @@
 ---
 ---
 {% include head.html %}
-<section id="thumbnails">
+<section id="thumbnails" class="module">
   {% for post in site.posts %}
-  <a href="{{ post.url | prepend: site.baseurl }}" class="item module">
+  <a href="{{ post.url | prepend: site.baseurl }}" class="item">
     <img src="/assets/{{ post.img.small | replace: '!SITE_URL!', site.url }}"  />
     <h1>{{ post.title }}</h1>
   </a>

@@ -48,7 +48,6 @@ and (max-width : 767px) {
     }
     .title {
       width: 70%;
-      text-align: right;
     }
   }
   .journal-post {
@@ -193,10 +192,12 @@ and (max-width : 1024px) {
       width: 100%;
       height: auto;
     }
+    .cover {
+      min-height: 60vh;
+    }
     .title {
       width: 55%;
       right: 5%;
-      text-align: right;
     }
   }
   .yearly-bg {
