@@ -143,11 +143,11 @@ blockquote {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+
   .cover {
     position: relative;
-    min-height: 80vh;
   }
+  
   img {
     object-fit: cover;
     width: 80vw;
