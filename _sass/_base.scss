@@ -207,6 +207,11 @@ blockquote {
 .transNight {
   margin-bottom: 2rem;
 }
+.journal-post {
+  h4 {
+    font-weight: 500;
+  }
+}
 
 /** Blast **/
 .blastable, .blast { opacity:0; }
