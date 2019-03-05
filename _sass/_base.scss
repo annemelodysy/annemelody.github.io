@@ -147,7 +147,7 @@ blockquote {
   .cover {
     position: relative;
   }
-  
+
   img {
     object-fit: cover;
     width: 80vw;
@@ -178,9 +178,15 @@ blockquote {
 }
 .text-post {
   display: grid;
+
   .module {
     margin-bottom: 1.7rem;
+
+    img {
+      max-width: 100%;
+    }
   }
+
 }
 .text-cover {
   display: grid;
