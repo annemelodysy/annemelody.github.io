@@ -5,7 +5,7 @@ date:       2014-02-07
 categories: self
 permalink:  /:categories/:title
 excerpt:    There was this invisible fear in me that I never really understood.
-img-link:   /assets/2014/personality
+img-link:   /assets/2014/personality/
 img:
   small:    2014/personality/personality-small.jpg
   large:    2014/personality/personality-cover.jpg
