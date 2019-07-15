@@ -109,6 +109,8 @@
 //1-column grids
 [class^="center-"], [class*=" center-"] {
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .center-6, .bleed-left-6, .bleed-right-6 {
   grid-template-columns: 50%;
