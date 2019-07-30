@@ -9,6 +9,7 @@ img:
   small:    2013/12-month-reset/12-month-reset-small.jpg
   large:    2013/12-month-reset/12-month-reset-cover.jpg
 ---
+
 And as the clock strikes 12 and people in this little city begin to lighten up their houses, head for the streets, and make a lot of noise, part of me goes into a process of resetting. It starts with an emotional shift&mdash;evolving from excitement to anxiety, and finally, warmth. It is followed by vague thoughts of yesterday the week, month, year, even decade before, ending in an afterthought of unanswered questions and senseless episodes.
 
 By morning, my mind begins to visualize the days ahead. My body is refueled with energy, and I feel an utmost need to see the glare of light outside the window. Only then do I realize that yesterday was a dream and reality just begun.

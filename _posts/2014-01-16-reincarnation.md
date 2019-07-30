@@ -9,6 +9,7 @@ img:
   small:    2014/reincarnation/reincarnation-small.jpg
   large:    2014/reincarnation/reincarnation-cover.jpg
 ---
+
 When I was young, we lived in a house on the outskirts of town. It was a part of the country where the trees grew higher than the buildings. People idly spent their days outside. Nature was a big part of our lives, and we treated them as if they were people.
 
 Our house stood on top of a small hill that had a sweeping view of the town. I remember looking out the window at night and seeing hundreds of fireflies glitter with the stars. And on particularly windy days, you'd hear the grass sing and dance with the wind.

@@ -10,6 +10,7 @@ img:
   small:    2012/driving-alone/driving-alone-small.jpg
   large:    2012/driving-alone/driving-alone-cover.jpg
 ---
+
 That thick cloud in the sky swallows me whole as I drive the car towards it. Bright lights envelop the windows and doors, seeping through tiny holes. I've never been this scared and excited at the same time. Two completely different emotions collide towards the moon.
 
 A parallel world has once or twice crossed my mind, but I shudder at the thought of having another me out there living a completely different life. Perhaps the other Melody has figured out what she wants to do in her life and has started living it.

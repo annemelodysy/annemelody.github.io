@@ -1,0 +1,63 @@
+$seafoam: #a5e1c4;
+$pink: #e1a5a5;
+$brown: #e1caa5;
+$white: darken(#fff, 1%);
+$black: #111;
+
+$poppins: 'Poppins', sans-serif;
+$didact: 'Didact Gothic', sans-serif;
+
+.highlight {
+  background: $pink;
+  padding:0 5px;
+  text-shadow: none;
+  color: $black;
+  display: inline;
+}
+
+.uppercase {
+  font-family: $poppins;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.fixed { position: fixed; }
+
+.text-center { text-align: center; }
+
+//Mixins
+@mixin cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100%;
+  height: 100vh;
+  z-index: 5;
+}
+
+@mixin float($x, $y, $speed) {
+  transform: translate(0, 0);
+  animation: float $speed ease-in-out infinite;
+
+  @keyframes float {
+    0% { transform: translate(0, 0); }
+
+    50% { transform: translate($x, $y); }
+
+    100% { transform: translate(0, 0); }
+  }
+}
+
+//Keyframes
+@-webkit-keyframes come-in {
+  to { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); opacity: 1; }
+}

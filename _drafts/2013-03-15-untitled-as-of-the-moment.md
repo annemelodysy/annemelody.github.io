@@ -15,7 +15,7 @@ Last night took most of me. I don't recall the last time my father came over to 
 
 At the corner of my eye, I saw him open his mouth, but pause for a second then continued eating a large chunk of meat. Every now and then, he would look at the empty walls of my apartment as he shook his head in silent disappointment.
 
-“Son, I need you to come home.” Those words floated in my head as I sat uneasily behind the driver’s seat.
+"Son, I need you to come home." Those words floated in my head as I sat uneasily behind the driver’s seat.
 
 The clock flashed 10:33. Just as I looked out the window, I caught a glimpse of a figure moving in the shadows. She stopped to take a breath under a lamp post, staring blankly ahead. It was then that I saw her profile, the outline of her hair glimmered under the moonlight. Her wavy, short hair tucked behind her ears.
 
@@ -37,33 +37,33 @@ My laptop woke up as I opened it and started browsing through some photos. I wor
 
 The phone rang. I picked it up and it’s the office telling me that I had a couple of new projects. Two houses&mdash;one on the upper side of town and the other a few blocks from my apartment. Since I didn’t feel like doing much that day, I decided to work on the nearest one first.
 
-“Why don’t you take pictures of people?” Gary puts down his bottle of beer on the table. It was suddenly Friday night and we were celebrating his latest success of running an advertising firm that was generating more than it had in its first quarter.
+"Why don’t you take pictures of people?" Gary puts down his bottle of beer on the table. It was suddenly Friday night and we were celebrating his latest success of running an advertising firm that was generating more than it had in its first quarter.
 
-“I just don’t.”
+"I just don’t."
 
-“Is this some sort of rebellious-artist-thing you’re doing?”
+"Is this some sort of rebellious-artist-thing you’re doing?"
 
-“What do you mean by rebellious-artist-thing exactly?”
+"What do you mean by rebellious-artist-thing exactly?"
 
-“You know, the kind of people who do their own thing because they don’t like being told to do things. Avoiding something, you know. You get what I mean Levi.”
+"You know, the kind of people who do their own thing because they don’t like being told to do things. Avoiding something, you know. You get what I mean Levi."
 
-“I just prefer houses. What’s wrong with that?”
+"I just prefer houses. What’s wrong with that?"
 
-“Nothing. Let’s leave it at that. Maybe you just haven’t met the right girl to take photos of.”
+"Nothing. Let’s leave it at that. Maybe you just haven’t met the right girl to take photos of."
 
 I smiled wryly, and in a blink of an eye, she’s back in my head flashing that mischievous smirk.
 
-“Listen, don’t you think it’s time you settled with someone Levi?”
+"Listen, don’t you think it’s time you settled with someone Levi?"
 
-“That’s ironic coming from a guy who’s dating two girls at the same time.”
+"That’s ironic coming from a guy who’s dating two girls at the same time."
 
-“Ouch, not cool.” Gary raises his bottle gesturing for me to do the same. “Cheers to a good life.”
+"Ouch, not cool." Gary raises his bottle gesturing for me to do the same. "Cheers to a good life."
 
-“I still think you’re being unfair to Amy,” I mutter after taking a quick sip from my bottle.
+"I still think you’re being unfair to Amy," I mutter after taking a quick sip from my bottle.
 
-“Okay, okay I’m no saint, but I’m not married so what's wrong with that?”
+"Okay, okay I’m no saint, but I’m not married so what's wrong with that?"
 
-“That's a stupid argument.”
+"That's a stupid argument."
 
 Gary laughs shaking his head sideways. I gave up pestering him for the rest of the night. There was no point in arguing with a man convinced of his ideas of how to live life. Who was I to judge him? I wasn’t a saint either. Not that I’d date two girls at the same time. I’ve never even really been in a serious relationship as far as I can remember.
 

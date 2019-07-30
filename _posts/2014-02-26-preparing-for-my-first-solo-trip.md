@@ -4,16 +4,17 @@ title:      "Preparing for my First Solo Trip"
 date:       2014-02-26
 categories: travel
 permalink:  /:categories/:title
-excerpt:    Here we go. My first solo trip. Something I’ve been wanting to do for a long time but have been putting off with different excuses.
+excerpt:    Here we go! My first solo trip. Something I’ve been wanting to do but have been putting off for the longest time.
 img-link:   /assets/2014/bali-trip/
 img:
   small:    2014/bali-trip/bali-trip-small.jpg
   large:    2014/bali-trip/bali-trip-cover.jpg
 ---
+
 It's exciting, unnerving, mind-blowing. Here we go. My first solo trip. Something I’ve been wanting to do for a long time but have been putting off with different excuses. I wanted to do it before turning 30, so this is the perfect opportunity.
 
 <div class="module">
-  <img src="{{ page.img-link }}1.jpg" alt="Getting ready for my first solo trip to Bali"  />
+  <img src="{{ page.img-link }}1.jpg" alt="Getting ready for my first solo trip to Bali" />
 </div>
 
 I'm going to Bali. I've never been but have heard stories and it seems like my kind of place.

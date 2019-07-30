@@ -1,10 +1,9 @@
 {% include head-post.html %}
 
-<section class="journal-post">
-  {{content}}
-</section>
-<div class="comments center-6">
-  <div class="fb-comments" data-href="{{ page.url | prepend: site.url }}" data-width="100%" data-numposts="10"></div>
+{{content}}
+
+<div class="width-half comments">
+  {% include comments.html %}
 </div>
 
 {% include more-stories.html %}

@@ -4,11 +4,12 @@ title:      "Better Days"
 date:       2012-09-03
 categories: life
 permalink:  /:categories/:title
-excerpt:    There is a hole in the sky that sucks people into space.
+excerpt:    There is a hole in the sky that sucks people into space
 img:
   small:    2012/better-days/better-days-small.jpg
   large:    2012/better-days/better-days-cover.jpg
 ---
+
 Here's another fun fact about me: I'm always paranoid. I guess this is one of the reasons why it's hard for me to trust people. I've always wanted to find out how I got into this habit, when it started, and what triggered it.
 
 Was I naturally paranoid as a kid?

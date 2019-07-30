@@ -23,7 +23,7 @@
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Poppins:400,400i,500,500i,700,700i" rel="stylesheet">
@@ -38,23 +38,8 @@
     </script>
   </head>
   <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=853560404725283';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <div class="menu">
-      <a class="logo" href="http://annemelody.com">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 822.6 266" enable-background="new 0 0 822.6 266" xml:space="preserve">
-          <polyline points="9.3 252.6 170.1 14 339.3 252.6 493.7 95.2 652.4 252.6 "/>
-          <polyline points="488.7 252.6 652.4 94.5 814.8 248.1 "/>
-        </svg>
-      </a>
-      <div class="social">
-        <a href="https://www.instagram.com/muji_sky/" target="_blank"><h5><i class="icon-instagram"></i> muji_sky</h5></a>
-        <a href="mailto:annemelodysy@gmail.com?Subject=Hello" target="_top"><h5>say hi!</h5></a>
-      </div>
-    </div>
+    <nav class="flex-center width-max">
+      <a href="{{ site.url }}" class="uppercase">Home</a>
+      <a href="{{ site.url }}/travel" class="uppercase">Travel</a>
+      <a href="{{ site.url }}/thoughts" class="uppercase">Thoughts</a>
+    </nav>

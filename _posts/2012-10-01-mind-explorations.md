@@ -4,11 +4,12 @@ title:      "Mind Explorations"
 date:       2012-10-01
 categories: self
 permalink:  /:categories/:title
-excerpt:    I looked around the room. It was painted blue, like in one of our rooms in our old house. The kind of blue that made you think about the sky or the ocean.
+excerpt:    It was painted blue, like one of the rooms in our old house. The shade of blue that made you think about the sky or the ocean.
 img:
   small:    2012/mind-explorations/mind-explorations-small.jpg
   large:    2012/mind-explorations/mind-explorations-cover.jpg
 ---
+
 I've been feeling more and more detached lately. It's like that feeling you get when you lack sleep and stare out the window seeing nothing but abstract objects moving and twisting.
 
 Hours suddenly feel longer as you stare at the clock. There's a sense of burden in the air like the smell of afternoon sun&mdash;hot and heavy.

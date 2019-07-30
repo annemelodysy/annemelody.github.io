@@ -4,11 +4,12 @@ title:      "Lucid Dreaming"
 date:       2013-09-16
 categories: self
 permalink:  /:categories/:title
-excerpt:    I follow the invisible path that loops around the corner of the universe.
+excerpt:    I follow the invisible path that loops around the corner of the universe
 img:
   small:    2013/lucid-dreaming/lucid-dreaming-small.jpg
   large:    2013/lucid-dreaming/lucid-dreaming-cover.jpg
 ---
+
 It always begins with a leap&mdash;a long, hard leap. And before I know it, I'm floating in an endless sea of stars. For what seems like an eternity, I'm swimming around in the star-field evening hoping never to touch the ground. As I follow the invisible path that loops around the corner of the universe, the dark transitions into clouds and clouds, and blue sky and more fresh, blue sky and I'm still flying. Gliding. Swimming.
 
 The adrenaline feels far too real to be a dream. How could I be asleep when I can feel the air on my face?

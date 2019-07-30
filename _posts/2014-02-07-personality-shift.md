@@ -4,17 +4,18 @@ title:      "Personality Shift"
 date:       2014-02-07
 categories: self
 permalink:  /:categories/:title
-excerpt:    There was this invisible fear in me that I never really understood.
+excerpt:    There was this invisible fear in me that I never really understood
 img-link:   /assets/2014/personality/
 img:
   small:    2014/personality/personality-small.jpg
   large:    2014/personality/personality-cover.jpg
 ---
+
 When I was a kid, I used to be so afraid of adults. When our parents took us to grown-up parties, I found it difficult to stand near them even if they were relatives. I hated being talked to or carried around and asked to sit on their laps. I just wanted to be left alone. My dad told me that I used to hide behind his legs whenever an adult approached me and that as a toddler, I immediately looked away when someone looked me in the eyes.
 
 At times when we had visitors at home, I'd hide in our room and pretend to be busy at something. There was this invisible fear in me that I never really understood.
 
-Growing up, I'd been shifting from being an introvert to an extrovert and back. In 6th grade and the most part of high school, I found myself unafraid of meeting new people. My friends described me as being “friendly”. The proof is on a sheet of paper during an exercise in class where classmates wrote down something about you.
+Growing up, I'd been shifting from being an introvert to an extrovert and back. In 6th grade and the most part of high school, I found myself unafraid of meeting new people. My friends described me as being "friendly". The proof is on a sheet of paper during an exercise in class where classmates wrote down something about you.
 
 <div class="module">
   <img src="{{ page.img-link }}1.jpg" alt="Me and my sister" >

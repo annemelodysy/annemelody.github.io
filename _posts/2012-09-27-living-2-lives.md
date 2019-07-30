@@ -9,6 +9,7 @@ img:
   small:    2012/living-2-lives/living-2-lives-small.jpg
   large:    2012/living-2-lives/living-2-lives-cover.jpg
 ---
+
 I heard a joke on the taxi radio the other day about an American, a Chinese, and a Filipino arguing over a piece of land. I've forgotten about the whole context of the joke but I remembered thinking about my family and how we grew up juggling 2 cultures at home.
 
 You see, I'm *technically* half Chinese and half Filipino. My dad's Chinese and my mom's Filipino. I went to a Chinese school before college and grew up learning to speak Chinese and Tagalog at the same time. It is probably not too obvious that I scored less in the latter but none of that makes any difference now, because about 70% of what I learned in school has jumped out the window and left me.

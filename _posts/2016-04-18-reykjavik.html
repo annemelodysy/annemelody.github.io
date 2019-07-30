@@ -10,52 +10,46 @@ img:
   small:    2016/reykjavik/reykjavik-small.jpg
   large:    2016/reykjavik/reykjavik-cover.jpg
 ---
-<section id="dark-cover">
-  <div>
-    <h2>{{ page.title }}</h2>
-    <h3>{{ page.excerpt | replace: '!SITE_URL!', site.url }}</h3>
-    <h5><a href="{{ site.baseurl }}/{{ page.categories }}">{{ page.categories }}</a> &nbsp; / &nbsp; {{ page.date | date: "%B %-d, %Y" }}</h5>
-  </div>
-</section> <!-- /#dark-cover -->
+
+<h1 class="uppercase title">{{ page.title }}</h1>
+<h5 class="uppercase text-center">{{ page.date | date_to_string }}</h5>
+
 <div class="parallax">
-  <img src="{{ page.img-link }}1.jpg"  />
-  <div class="thin">
+  <img src="{{ page.img-link }}1.jpg" alt="Arrived in Iceland. 8am and it's still dark" />
+  <div class="grid width-thirds">
     <h3>Dark Mornings</h3>
     <p>It was already 8 in the morning when we stepped out of the airport. I remember it was the first time I felt the snow on my face&mdash;cold, soft, and wet. I covered my head with my faux fur hoodie and adjusted the scarf around my neck to help keep me dry.</p>
   </div>
 </div>
+
 <section class="dark-bg">
-  <div class="grid spaced-thin-right">
-    <div>
+  <div class="grid grid-spaced items-2-thin-right">
+    <div class="with-text">
       <p>"We are heading to Half-naf-jor-dour?" I said with uncertainty as we stepped inside the bus. I spent hours watching videos before the trip so I could pronounce it right but I still managed to sound stupid. Suffice it to say, Icelandic words to me are random characters put together to form a word.</p>
       <p>"Hafnarfjörður. Yes, this is the right bus." The driver understood me. Phew. 😅</p>
       <p>All the overhead compartments were full, so we had to put our bags on our laps. There was nothing but the sound of the radio and the noise of the engine in the background.</p>
       <p>Groggy from the lack of sleep, I leaned my head on the window. The time on the digital clock said it was 8:27 in the morning, but it felt more like it was 8:27 at night. Peering outside, all I saw was pitch darkness and occasionally the muted glow of a street lamp. If you gazed up, you'd see the snowflakes dancing, twirling around in circles, before landing on the window. It's true what they say about snowflakes&mdash;they do look unique from each other.</p>
     </div>
-    <div class="module">
-      <img src="{{ page.img-link }}30.jpg"  />
-    </div>
+    <img src="{{ page.img-link }}30.jpg" alt="darkness" />
   </div>
-  <div class="grid center-6">
+
+  <div class="grid grid-center width-half">
     <p>Jeremie rested his head on top of his backpack. He looked tired and had his eyes closed. I don't blame him. We'd been in transit for almost an entire day and were sleep-deprived. As much as I wanted to close my eyes, one of us had to look out for the Viking hotel (cool name right?!) sign which was the landmark closest to the Airbnb we rented.</p>
     <p>The bus driver was kind enough to tell us that we had arrived at our stop. I think he felt sorry for me after hearing me struggle with saying the name of the town.</p>
     <p>One thing I did not expect was the sidewalk to be slippery. We had trouble walking straight on the melted ice despite wearing hiking shoes. So we did our best, laughing our way home as we balanced our bodies by raising both arms to the sides as though walking on a tightrope. From time to time, cursing when we slip.</p>
   </div>
-  <div class="grid center-4">
-    <div class="module">
-      <img src="{{ page.img-link }}2.jpg"  />
-    </div>
+
+  <div class="grid grid-center width-thirds module">
+    <img src="{{ page.img-link }}2.jpg" alt="it's almost noon but it's still dark outside" />
   </div>
-  <div class="grid spaced-thin-left">
-    <div class="module">
-      <img src="{{ page.img-link }}20.jpg"  />
-    </div>
-    <div class="module">
-      <img src="{{ page.img-link }}21.jpg"  />
-    </div>
+
+  <div class="grid grid-spaced items-2-thin-left module">
+    <img src="{{ page.img-link }}20.jpg" alt="our airbnb" />
+    <img src="{{ page.img-link }}21.jpg" alt="leafless trees" />
   </div>
-  <div class="grid spaced-thin-right">
-    <div>
+
+  <div class="grid grid-spaced items-2-thin-right module">
+    <div class="with-text">
       <p>Fortunately, we reached the house unharmed. Red corrugated steel cladding covered the outside of the house. We briefly met one of the guests who was also staying in the same home and showed us our room. Óskar, our host, was still asleep so we did not bother to wake him.</p>
       <p>We peeled our layers of clothing, put on our pajamas, and fell into the bed as it sucked our last remaining energy.</p>
       <p>When I came back to Earth, the sun had begun to rise though it was still dark. My body told me to go back to sleep because it was still 6 AM but my gut told me to reach for my phone.</p>
@@ -63,111 +57,86 @@ img:
       <p>Oh yeah, we're not in San Francisco anymore.</p>
       <p>My brain sometimes forgets where I am when I lack sleep. Like the time when we went to Hong Kong, and all the buses and train stations were out of service. We slept in the airport because we didn't want to spend money on a taxi (we were on a tight budget). Then, we spent the entire day walking around the city until our eyes became heavy. We had no choice but to retreat to our hostel. When I woke up, I was sure I was back home in my bed in Cebu, so I got confused why the windows looked different. It took me about a minute to snap out of that confusion. Temporary amnesia. That's what I call it.</p>
     </div>
-    <div class="module">
-      <img src="{{ page.img-link }}19.jpg"  />
-    </div>
+    <img src="{{ page.img-link }}19.jpg" alt="fairy lights at our airbnb" />
   </div>
-  <div class="grid center-6">
+
+  <div class="grid grid-center width-half">
     <p>Feeling thirsty, I tiptoed down the stairs (hoping nobody was there) to get some water. Small figurines lined the edges of the steps. A red lamp gave the room a surreal and warm feeling. It reminded me of Sunday mornings back home in Cebu. But I'm not entirely sure why.</p>
     <p>Halfway down the stairs, I heard a slow and steady snoring in the living room. Is there someone sleeping on the couch? I quietly finished the rest of the steps and took a peek in the living room.</p>
   </div>
-</section> <!-- /dark-bg -->
+</section>
+
 <div class="parallax">
-  <img src="{{ page.img-link }}17.jpg"  />
+  <img src="{{ page.img-link }}17.jpg" alt="sleeping dog" />
 </div>
-<div class="grid center-4">
-  <div class="module">
-    <img src="{{ page.img-link }}23.jpg"  />
-  </div>
+
+<div class="grid grid-center width-thirds module">
+  <img src="{{ page.img-link }}23.jpg" alt="wooden bathrooms" />
 </div>
-<div class="grid center-6">
-  <div class="module">
-    <img src="{{ page.img-link }}24.jpg"  />
-  </div>
+
+<div class="grid grid-center width-half module">
+  <img src="{{ page.img-link }}24.jpg" alt="airbnb kitchen" />
 </div>
-<div class="grid bleed-left-6">
-  <div class="module">
-    <img src="{{ page.img-link }}25.jpg"  />
-  </div>
+
+<div class="grid width-half module">
+  <img src="{{ page.img-link }}25.jpg" alt="dogo looking at me from window" />
 </div>
-<div class="grid center-6">
-  <div class="module">
-    <img src="{{ page.img-link }}4.jpg"  />
-  </div>
+
+<div class="grid grid-center width-half module">
+  <img src="{{ page.img-link }}4.jpg" alt="old car" />
 </div>
-<div class="grid center-2-items">
-  <div class="module">
-    <img src="{{ page.img-link }}27.jpg"  />
-  </div>
-  <div class="module">
-    <img src="{{ page.img-link }}26.jpg"  />
-  </div>
+
+<div class="grid grid-center items-2-thin module">
+  <img src="{{ page.img-link }}27.jpg" alt="winter homes in iceland" />
+  <img src="{{ page.img-link }}26.jpg" alt="winter homes in iceland" />
 </div>
-<div class="grid center-2-items">
-  <div>
+
+<div class="grid grid-center items-2-thin module">
+  <div class="with-text">
     <h3>Downtown Reykjavík</h3>
     <p>Since we chose a home that's outside the city, we had to take a bus to get to downtown Reykjavík. We found lots of little shops and cafes while Christmas lights and knick-knacks decorated the streets. It resembled a cozy Christmas town.</p>
     <p>For lunch, we tasted Icelandic food at a restaurant called <a href="http://loki.is/" target="_blank">Cafe Loki</a>. My mashed fish was good, but the serving was too much for me.</p>
     <p>With no plans, we wandered around the streets of downtown Reykjavík. Our night ended with a snug hot chocolate and while in a cozy cafe. A perfect way to end the day.</p>
   </div>
-  <div class="module">
-    <img src="{{ page.img-link }}16.jpg"  />
-  </div>
+  <img src="{{ page.img-link }}16.jpg" alt="man dressing up santa kid" />
 </div>
-<div class="grid bleed-2-items">
-  <div class="module">
-    <img src="{{ page.img-link }}6.jpg"  />
-  </div>
-  <div class="module">
-    <img src="{{ page.img-link }}3.jpg"  />
-  </div>
+
+<div class="grid items-2-bleed module">
+  <img src="{{ page.img-link }}6.jpg" alt="more snow" />
+  <img src="{{ page.img-link }}3.jpg" alt="Iceland homes" />
 </div>
-<div class="grid center-4">
-  <div class="module">
-    <img src="{{ page.img-link }}5.jpg"  />
-  </div>
+
+<div class="grid grid-center width-thirds module">
+  <img src="{{ page.img-link }}5.jpg" alt="glass architecture in iceland" />
 </div>
-<div class="grid float-left-6">
-  <div class="module">
-    <img src="{{ page.img-link }}28.jpg"  />
-  </div>
+
+<div class="grid float-left-6 module">
+  <img src="{{ page.img-link }}28.jpg" alt="leaves in bench" />
 </div>
-<div class="grid center-4">
-  <div class="module">
-    <img src="{{ page.img-link }}7.jpg"  />
-  </div>
+
+<div class="grid grid-center width-thirds module">
+  <img src="{{ page.img-link }}7.jpg" alt="iceland shops" />
 </div>
-<div class="grid center-6">
-  <div class="module">
-    <img src="{{ page.img-link }}10.jpg"  />
-  </div>
+
+<div class="grid grid-center width-half module">
+  <img src="{{ page.img-link }}10.jpg" alt="single gloves" />
 </div>
-<div class="grid spaced-balanced">
-  <div class="module">
-    <img src="{{ page.img-link }}9.jpg"  />
-  </div>
-  <div class="module">
-    <img src="{{ page.img-link }}8.jpg"  />
-  </div>
+
+<div class="grid grid-spaced items-2-balanced module">
+  <img src="{{ page.img-link }}9.jpg" alt="troll man" />
+  <img src="{{ page.img-link }}8.jpg" alt="troll woman" />
 </div>
-<div class="grid spaced-twin-sm">
-  <div class="module">
-    <img src="{{ page.img-link }}14.jpg"  />
-  </div>
-  <div class="module">
-    <img src="{{ page.img-link }}11.jpg"  />
-  </div>
+
+<div class="grid grid-spaced items-2-thin module">
+  <img src="{{ page.img-link }}14.jpg" alt="man's back in home" />
+  <img src="{{ page.img-link }}11.jpg" alt="reykjavik church" />
 </div>
-<div class="grid center-6">
-  <div class="module">
-    <img src="{{ page.img-link }}13.jpg"  />
-  </div>
+
+<div class="grid grid-center width-half module">
+  <img src="{{ page.img-link }}13.jpg" alt="grafitti in snow" />
 </div>
-<div class="grid spaced-twin-sm">
-  <div class="module">
-    <img src="{{ page.img-link }}15.jpg"  />
-  </div>
-  <div class="module">
-    <img src="{{ page.img-link }}29.jpg"  />
-  </div>
+
+<div class="grid grid-spaced items-2-thin module">
+  <img src="{{ page.img-link }}15.jpg" alt="under construction" />
+  <img src="{{ page.img-link }}29.jpg" alt="grafitti" />
 </div>

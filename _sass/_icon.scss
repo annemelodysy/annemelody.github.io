@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?i8e61r');
+  src:  url('../fonts/icomoon.eot?i8e61r#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?i8e61r') format('truetype'),
+    url('../fonts/icomoon.woff?i8e61r') format('woff'),
+    url('../fonts/icomoon.svg?i8e61r#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e914";
+}
+
+.icon-menu:before {
+  content: "\e910";
+}
+
+.icon-close:before {
+  content: "\e909";
+}
+
+.icon-sound-on:before {
+  content: "\e900";
+}
+
+.icon-sound-off:before {
+  content: "\e901";
+}
+
+.icon-instagram:before {
+  content: "\e90e";
+}
+
+.icon-facebook:before {
+  content: "\e90b";
+}
+
+.icon-twitter:before {
+  content: "\e916";
+}

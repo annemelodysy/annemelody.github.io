@@ -4,11 +4,12 @@ title:      "Tea Stories on a Warm Afternoon"
 date:       2012-09-20
 categories: story
 permalink:  /:categories/:title
-excerpt:    There I was, sitting in a lonely table, sipping my tea as I continued my work.
+excerpt:    There I was, sitting in a lonely table, sipping my tea as I continued my work
 img:
   small:    2012/tea-stories/tea-stories-small.jpg
   large:    2012/tea-stories/tea-stories-cover.jpg
 ---
+
 There I was, sitting in a lonely table, sipping my tea as I continued my work. It was past 2:00 in the afternoon but I still had the taste of baked scallops from lunch. I was in the midst of finishing a task for a client when a couple of people went inside the shop. They took a seat at one table away from mine.
 
 As I unconsciously looked towards their direction, I caught one of them staring at my monitor. Sure, this could not have been a big deal, but I am terribly conscious about people looking at my work when it's not finished and I swear I quickly pressed command + tab as a reaction. It must have sent the wrong idea because the guy was now looking straight at me in a weird way.

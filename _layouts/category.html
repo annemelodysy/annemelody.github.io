@@ -1,12 +1,13 @@
 ---
 ---
 {% include head.html %}
-<h2 class="text-center">thoughts about {{ page.category }}</h2>
-<section id="thumbnails">
+<h1 class="title uppercase">{{ page.category }}</h1>
+
+<section class="thumbnails module">
   {% for post in site.categories[page.category] %}
-  <a href="{{ post.url | prepend: site.baseurl }}" class="item">
+  <a href="{{ post.url | prepend: site.url }}" class="item">
     <img src="/assets/{{ post.img.small | replace: '!SITE_URL!', site.url }}"  />
-    <h1>{{ post.title }}</h1>
+    <h2 class="uppercase">{{ post.title }}</h2>
   </a>
   {% endfor %}
 </section>

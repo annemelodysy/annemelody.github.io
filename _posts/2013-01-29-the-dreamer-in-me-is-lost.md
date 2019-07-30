@@ -9,6 +9,7 @@ img:
   small:    2013/dreamer-lost/dreamer-lost-small.jpg
   large:    2013/dreamer-lost/dreamer-lost-cover.jpg
 ---
+
 The dreamer in me is lost. I shall go and find it.
 
 I've been staring at the looking glass for far too long now, and I've come to the conclusion that I have lost a part of me that I love&mdash;the part that dreams and do things without much thought or care about what people think.

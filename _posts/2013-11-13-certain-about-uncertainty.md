@@ -4,11 +4,12 @@ title:      "Certain About Uncertainty"
 date:       2013-11-13
 categories: self
 permalink:  /:categories/:title
-excerpt:    Uncertainty is something I’ve certainly struggled with for as long as I can remember.
+excerpt:    Uncertainty is something I’ve certainly struggled with for as long as I can remember
 img:
   small:    2013/certain-uncertainty/certain-uncertainty-small.jpg
   large:    2013/certain-uncertainty/certain-uncertainty-cover.jpg
 ---
+
 In fact, I’ve become too familiar with it. But being familiar doesn’t necessarily mean that you understand it. There are things that are far too complicated to comprehend and I get it; we are human. Or so we all like to conclude when we don’t know something.
 
 My head is a battlefield. I was born with a brain that can't stop debating with itself. It’s like listening to a radio station with overlapping signals&mdash;it’s exhausting. But someone told me once that when there are too many things in your head, write. So here I am at 3 AM rambling nonsense on my computer!

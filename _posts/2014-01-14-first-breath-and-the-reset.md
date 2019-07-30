@@ -9,6 +9,7 @@ img:
   small:    2014/first-breath/first-breath-small.jpg
   large:    2014/first-breath/first-breath-cover.jpg
 ---
+
 The weather was annoyingly cold that day. Keith had thought about bringing a jacket before leaving his house but he had already started the car and was too lazy to get out. He switched on the radio and released a deep sigh. Winter had left a few weeks ago but it was still freezing outside. The sky had been gray for a couple of weeks and it was starting to get to him.
 
 He took out his phone from his pocket. No messages. Switching to his recent call list, one name had engraved itself on all 18 calls he had made the past few hours. **Zoe**.
@@ -202,7 +203,7 @@ When they got home, Zoe was rushing over to their room. She looked like a kid wh
 
 Beep.
 
-**Heather: **Keith, I'm sorry I should have told you earlier. Can you call me?
+**Heather:** Keith, I'm sorry I should have told you earlier. Can you call me?
 
 "So, who's Heather?" Zoe's tone dropped.
 

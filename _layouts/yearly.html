@@ -1,63 +1,72 @@
 {% include head-post.html %}
+
+<div class="curtain"></div>
+
 <div class="yearly-bg">
-  <div class="grid center-6 text-center">
-    <h3><a href="{{ site.baseurl }}/{{ page.categories }}">{{ page.categories }}</a></h3>
-    <h1>{{ page.title }}</h1>
-    <h2>{{ page.excerpt | replace: '!SITE_URL!', site.url }}</h2>
+  <div class="grid grid-center width-half text-center">
+    <h1 class="title uppercase">{{ page.title }}</h1>
     <p>{{ page.short }}</p>
   </div>
-  <div class="item">
-    <img src="/assets/{{ page.year }}/looking-back/jan.jpg"  />
+
+  <div class="js-year-item yearly-item">
+    <img src="/assets/{{ page.year }}/looking-back/jan.jpg" alt="January" />
     <p>{{ page.jan-copy }}</p>
   </div>
-  <div class="item">
-    <img src="/assets/{{ page.year }}/looking-back/feb.jpg"  />
+
+  <div class="js-year-item yearly-item">
+    <img src="/assets/{{ page.year }}/looking-back/feb.jpg" alt="February" />
     <p>{{ page.feb-copy }}</p>
   </div>
-  <div class="item">
-    <img src="/assets/{{ page.year }}/looking-back/mar.jpg"  />
+
+  <div class="js-year-item yearly-item">
+    <img src="/assets/{{ page.year }}/looking-back/mar.jpg" alt="March" />
     <p>{{ page.mar-copy }}</p>
   </div>
-  <div class="item">
-    <img src="/assets/{{ page.year }}/looking-back/apr.jpg"  />
+
+  <div class="js-year-item yearly-item">
+    <img src="/assets/{{ page.year }}/looking-back/apr.jpg" alt="April" />
     <p>{{ page.apr-copy }}</p>
   </div>
-  <div class="item">
-    <img src="/assets/{{ page.year }}/looking-back/may.jpg"  />
+
+  <div class="js-year-item yearly-item">
+    <img src="/assets/{{ page.year }}/looking-back/may.jpg" alt="May" />
     <p>{{ page.may-copy }}</p>
   </div>
-  <div class="item">
-    <img src="/assets/{{ page.year }}/looking-back/jun.jpg"  />
+
+  <div class="js-year-item yearly-item">
+    <img src="/assets/{{ page.year }}/looking-back/jun.jpg" alt="June" />
     <p>{{ page.jun-copy }}</p>
   </div>
-  <div class="item">
-    <img src="/assets/{{ page.year }}/looking-back/jul.jpg"  />
+
+  <div class="js-year-item yearly-item">
+    <img src="/assets/{{ page.year }}/looking-back/jul.jpg" alt="July" />
     <p>{{ page.jul-copy }}</p>
   </div>
-  <div class="item">
-    <img src="/assets/{{ page.year }}/looking-back/aug.jpg"  />
+
+  <div class="js-year-item yearly-item">
+    <img src="/assets/{{ page.year }}/looking-back/aug.jpg" alt="August" />
     <p>{{ page.aug-copy }}</p>
   </div>
-  <div class="item">
-    <img src="/assets/{{ page.year }}/looking-back/sep.jpg"  />
+
+  <div class="js-year-item yearly-item">
+    <img src="/assets/{{ page.year }}/looking-back/sep.jpg" alt="September" />
     <p>{{ page.sep-copy }}</p>
   </div>
-  <div class="item">
-    <img src="/assets/{{ page.year }}/looking-back/oct.jpg"  />
+
+  <div class="js-year-item yearly-item">
+    <img src="/assets/{{ page.year }}/looking-back/oct.jpg" alt="October" />
     <p>{{ page.oct-copy }}</p>
   </div>
-  <div class="item">
-    <img src="/assets/{{ page.year }}/looking-back/nov.jpg"  />
+
+  <div class="js-year-item yearly-item">
+    <img src="/assets/{{ page.year }}/looking-back/nov.jpg" alt="November" />
     <p>{{ page.nov-copy }}</p>
   </div>
-  <div class="item">
-    <img src="/assets/{{ page.year }}/looking-back/dec.jpg"  />
+
+  <div class="js-year-item yearly-item">
+    <img src="/assets/{{ page.year }}/looking-back/dec.jpg" alt="December" />
     <p>{{ page.dec-copy }}</p>
   </div>
-</div> <!-- /yearly-bg -->
-
-<div class="yearly-more">
-  {% include more-stories.html %}
 </div>
 
 {% include footer.html %}

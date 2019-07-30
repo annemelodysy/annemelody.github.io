@@ -12,17 +12,18 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://annemelody.com">
     <meta property="article:author" content="https://www.facebook.com/annemelodysy/">
-    <meta property="og:image" content="http://annemelody.com/assets/2013/city-folks/city-folks-cover.jpg">
+    <meta property="og:image" content="http://annemelody.com/assets/2013/12-month-reset/12-month-reset-cover.jpg">
 
-    <meta name="keywords" content="travel, adventure, asia, philippines, europe, usa, san francisco, road trip, explore, solo travel, surreal, landscape, photography, photographer, nature, storytelling" />
+    <meta name="keywords" content="travel, adventure, asia, philippines, europe, usa, san francisco, road trip, explore, solo travel, surreal, landscape, photography, photographer, nature, storytelling, experiences" />
     <meta name="description" content="Travels and personal experiences of a human from the sunny island of Cebu." />
     <meta property="fb:app_id" content="853560404725283" />
 
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Poppins:400,400i,500,500i,700,700i" rel="stylesheet">
 
@@ -37,15 +38,8 @@
     </script>
   </head>
   <body>
-    <div class="menu">
-      <a class="logo" href="http://annemelody.com">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 822.6 266" enable-background="new 0 0 822.6 266" xml:space="preserve">
-          <polyline points="9.3 252.6 170.1 14 339.3 252.6 493.7 95.2 652.4 252.6 "/>
-          <polyline points="488.7 252.6 652.4 94.5 814.8 248.1 "/>
-        </svg>
-      </a>
-      <div class="social">
-        <a href="https://www.instagram.com/muji_sky/" target="_blank"><h5><i class="icon-instagram"></i> muji_sky</h5></a>
-        <a href="mailto:annemelodysy@gmail.com?Subject=Hello" target="_top"><h5>say hi!</h5></a>
-      </div>
-    </div>
+    <nav class="flex-center">
+      <a href="{{ site.url }}" class="uppercase">Home</a>
+      <a href="{{ site.url }}/travel" class="uppercase">Travel</a>
+      <a href="{{ site.url }}/thoughts" class="uppercase">Thoughts</a>
+    </nav>

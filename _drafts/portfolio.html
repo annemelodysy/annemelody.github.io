@@ -20,7 +20,7 @@ layout: page
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Poppins:400,400i,500,500i,700,700i" rel="stylesheet">
@@ -35,18 +35,18 @@ layout: page
     </script>
   </head>
   <body>
-    <section id="resume">
+    <section class="about">
       <img src="assets/work/profile.jpg" class="img-circle">
-      <h1>Anne Melody Sy Lim</h1>
-      <h2>Full-stack designer</h2>
+      <h1 class="uppercase">Anne Melody Sy Lim</h1>
+      <h3>Full-stack designer</h3>
       <p>I'm a self-taught designer and front-end engineer based in San Francisco with a passion for solving problems and a curiosity for human behavior.</p>
       <div class="social">
-        <a href="https://www.instagram.com/muji_sky/" target="_blank"><h5><i class="icon-instagram"></i> muji_sky</h5></a>
-        <a href="mailto:annemelodysy@gmail.com?Subject=Hello" target="_top"><h5>say hi!</h5></a>
-        <a class="logo" href="http://annemelody.com"><h5>journal</h5></a>
+        <a href="mailto:annemelodysy@gmail.com?Subject=Hello" target="_top"><h5>annemelodysy@gmail.com</h5></a>
+        <a class="logo" href="{{ site.url }}"><h5>journal</h5></a>
       </div>
     </section>
-    <section id="process" class="grid spaced-twin-sm">
+
+    <section class="process grid grid-spaced items-2-thin">
       <div>
         <h2>Process</h2>
         <ul>
@@ -71,9 +71,10 @@ layout: page
           <li>Crazy Egg, Optimizely, Mixpanel</li>
         </ul>
       </div>
-    </section> <!-- /process -->
-    <section id="projects">
-      <div class="grid center-6">
+    </section>
+
+    <section class="projects">
+      <div class="grid grid-center width-half">
         <h2>Selected Works</h2>
         <h3>Seek</h3>
         <ul>
@@ -90,44 +91,30 @@ layout: page
         </ol>
         <p>Based on these, I developed a persona of my target user.</p>
       </div>
-      <div class="grid spaced-twin-m">
-        <div class="module">
-          <img src="assets/work/seek-persona.png" >
-        </div>
-        <div class="module">
-          <img src="assets/work/seek-persona-goals.jpg" >
-        </div>
+      <div class="grid grid-spaced items-2 module">
+        <img src="assets/work/seek-persona.png" >
+        <img src="assets/work/seek-persona-goals.jpg" >
       </div>
-      <div class="grid center-6">
+      <div class="grid grid-center width-half">
         <p>I also narrowed down the problem I wanted to solve: <i>Sylvia needs to find reliable content that applies to her specific style of traveling without going through too much information.</i></p>
         <p>Now that I have my problem statement, I started doing competitive analysis.</p>
-        <div class="module">
-          <img src="assets/work/seek-competitive-analysis.png" >
-        </div>
+        <img src="assets/work/seek-competitive-analysis.png" >
       </div>
-      <div class="grid center-6">
+      <div class="grid grid-center width-half">
         <p>The next step was to create the user flow, prioritize features for my MVP, then finally create paper prototypes that I can test easily. The insights I gathered from doing the simple paper prototype test are used to come up with the wireframes as seen below. These again are uploaded into Invision as a low-level prototype for testing.</p>
       </div>
-      <div class="grid center-8">
-        <div class="module">
-          <img src="assets/work/seek-wireframes.png" >
-        </div>
+      <div class="grid grid-center width-wider module">
+        <img src="assets/work/seek-wireframes.png" >
       </div>
-      <div class="grid center-6">
+      <div class="grid grid-center width-half">
         <p>I then start building the UI using Sketch and continue to test them once I have gathered enough insights.</p>
       </div>
-      <div class="grid spaced-3-items">
-        <div class="module">
-          <img src="assets/work/seek-home.jpg" >
-        </div>
-        <div class="module">
-          <img src="assets/work/seek-inner-page.jpg" >
-        </div>
-        <div class="module">
-          <img src="assets/work/seek-filter.jpg" >
-        </div>
+      <div class="grid grid-spaced items-3 module">
+        <img src="assets/work/seek-home.jpg" >
+        <img src="assets/work/seek-inner-page.jpg" >
+        <img src="assets/work/seek-filter.jpg" >
       </div>
-      <div class="grid center-6">
+      <div class="grid grid-center width-half">
         <h3>Binnacle.io</h3>
         <ul>
           <li>Visual design</li>
@@ -136,20 +123,14 @@ layout: page
           <li>Marketing assets</li>
         </ul>
         <p>I collaborated with Binnacle Founder <a href="https://twitter.com/bsbodden">Brian</a> to come up with a new logo and branding for Binnacle. After days of picking our brains, we came up with Binny as the Binnacle mascot. We wanted to keep it simple yet fun so I experimented with saturated colors using a nautical theme. I also gave Binny a playful personality.</p>
-        <div class="module">
-          <img src="assets/work/binnacle-brand-study.jpg" >
-        </div>
+        <img src="assets/work/binnacle-brand-study.jpg" >
         <p>Similarly, the marketing site uses the same nautical theme. The goal was to make it super easy for the users to understand the product by trying it on themselves. Check out Binnacle <a href="https://binnacle.io" target="_blank">here</a>.</p>
       </div>
-      <div class="grid center-2-items">
-        <div class="module">
-          <img src="assets/work/binnacle-home.jpg" >
-        </div>
-        <div class="module">
-          <img src="assets/work/binnacle-404.jpg" >
-        </div>
+      <div class="grid grid-center items-2-thin module">
+        <img src="assets/work/binnacle-home.jpg" >
+        <img src="assets/work/binnacle-404.jpg" >
       </div>
-      <div class="grid center-6">
+      <div class="grid grid-center width-half">
         <h3>Horoscope.com</h3>
         <ul>
           <li>UX design</li>
@@ -166,23 +147,15 @@ layout: page
           <li><b>Refresh site.</b> Reduced visual clutter by hiding content that are deemed insignificant to our users and improving information architecture.</li>
         </ol>
       </div>
-      <div class="grid center-2-items">
-        <div class="module">
-          <img src="assets/work/hcom-author.jpg" >
-        </div>
-        <div class="module">
-          <img src="assets/work/hcom-article.jpg" >
-        </div>
+      <div class="grid grid-center items-2-thin module">
+        <img src="assets/work/hcom-author.jpg" >
+        <img src="assets/work/hcom-article.jpg" >
       </div>
-      <div class="grid spaced-twin-sm">
-        <div class="module">
-          <img src="assets/work/hcom-horoscope.jpg" >
-        </div>
-        <div class="module">
-          <img src="assets/work/hcom-card-swipe.gif" >
-        </div>
+      <div class="grid grid-spaced items-2-thin module">
+        <img src="assets/work/hcom-horoscope.jpg" >
+        <img src="assets/work/hcom-card-swipe.gif" >
       </div>
-      <div class="grid center-6">
+      <div class="grid grid-center width-half">
         <h3>Atypical.us</h3>
         <ul>
           <li>UI design</li>
@@ -191,23 +164,17 @@ layout: page
         </ul>
         <p>Another personal project which was inspired by our travels. Atypical curates unique places and experiences. The goal is to strip out unnecessary text and focus more on the visual aesthetic of each location.</p>
       </div>
-      <div class="grid center-2-items">
-        <div class="module">
-          <img src="assets/work/atypical-home.png" >
-        </div>
-        <div class="module">
-          <img src="assets/work/atypical-inner.jpg" >
-        </div>
+      <div class="grid grid-center items-2-thin module">
+        <img src="assets/work/atypical-home.png" >
+        <img src="assets/work/atypical-inner.jpg" >
       </div>
-      <div class="grid center-6">
+      <div class="grid grid-center width-half">
         <p>I had so much fun creating custom icons for the site. Right now it is a work in progress but can be viewed <a href="http://atypical.us" target="_blank">here</a>. Next step is to add a search feature for easier navigation.</p>
       </div>
-      <div class="grid center-8">
-        <div class="module">
-          <img src="assets/work/atypical-icons.png" >
-        </div>
+      <div class="grid grid-center width-wider module">
+        <img src="assets/work/atypical-icons.png" >
       </div>
-      <div class="grid center-6">
+      <div class="grid grid-center width-half">
         <h3>Annemelody.com</h3>
         <ul>
           <li>UI design</li>
@@ -216,17 +183,13 @@ layout: page
         </ul>
         <p>My personal site where I experiment on custom layouts for each post. I do a lot of my jquery/sass experiments on this site as well as share some of my photographs. My approach is always minimal and subtle.</p>
       </div>
-      <div class="grid center-8">
-        <div class="module">
-          <img src="assets/work/am-home.gif" >
-        </div>
+      <div class="grid grid-center width-wider module">
+        <img src="assets/work/am-home.gif" >
       </div>
-      <div class="grid center-8">
-        <div class="module">
-          <img src="assets/work/am-cover.gif" >
-        </div>
+      <div class="grid grid-center width-wider module">
+        <img src="assets/work/am-cover.gif" >
       </div>
-      <div class="grid center-6">
+      <div class="grid grid-center width-half">
         <h3>Astrology.com</h3>
         <ul>
           <li>HTML / SASS</li>
@@ -235,42 +198,28 @@ layout: page
         </ul>
         <p>The Astrology team outsourced me to do most of the front-end work. I also created some graphic assets for them that represent their new brand.</p>
       </div>
-      <div class="grid center-3-items">
-        <div class="module">
-          <img src="assets/work/acom-capricorn.jpg" >
-        </div>
-        <div class="module">
-          <img src="assets/work/acom-cancer.jpg" >
-        </div>
-        <div class="module">
-          <img src="assets/work/acom-taurus.jpg" >
-        </div>
+      <div class="grid grid-center items-3 module">
+        <img src="assets/work/acom-capricorn.jpg" >
+        <img src="assets/work/acom-cancer.jpg" >
+        <img src="assets/work/acom-taurus.jpg" >
       </div>
-      <div class="grid center-6">
+      <div class="grid grid-center width-half">
         <p>It was launched on schedule and we are currently still working on some of the pages to improve SEO ranking. The site can be viewed <a href="https://www.astrology.com/" target="_blank">here</a>.</p>
       </div>
-      <div class="grid spaced-twin-sm">
-        <div class="module">
-          <img src="assets/work/acom-mobile-horoscope-1.jpg" >
-        </div>
-        <div class="module">
-          <img src="assets/work/acom-mobile-horoscope-2.jpg" >
-        </div>
+      <div class="grid grid-spaced items-2-thin module">
+        <img src="assets/work/acom-mobile-horoscope-1.jpg" >
+        <img src="assets/work/acom-mobile-horoscope-2.jpg" >
       </div>
-      <div class="grid center-8">
-        <div class="module">
-          <img src="assets/work/acom-tarot.png" >
-        </div>
+      <div class="grid grid-center width-wider module">
+        <img src="assets/work/acom-tarot.png" >
       </div>
-      <div class="grid center-6">
+      <div class="grid grid-center width-half">
         <p>I also came up with some graphics for their social media profiles.</p>
       </div>
-      <div class="grid center-8">
-        <div class="module">
-          <img src="assets/work/acom-cover.jpg" >
-        </div>
+      <div class="grid grid-center width-wider module">
+        <img src="assets/work/acom-cover.jpg" >
       </div>
-      <div class="grid center-6">
+      <div class="grid grid-center width-half">
         <h3>Astrology.com Newsletters</h3>
         <ul>
           <li>UX design</li>
@@ -281,15 +230,11 @@ layout: page
         <p>My first step was to reduce the clutter. By giving it enough white space and proper content hierarchy, we allowed subscribers to focus on what's important. The new, cleaner design helped reduce the unsubscribe number.</p>
         <p>My next step was to figure out a way to increase the CTRs and CTORs. Through a series of experiments and testing, we discovered that what worked for this case was having clear and easy to understand links and better clickable images. Narrowing down the content helped direct the users' attention thus increasing click rates.</p>
       </div>
-      <div class="grid spaced-thin-left">
-        <div class="module">
-          <img src="assets/work/acom-newsletter-mobile.jpg" >
-        </div>
-        <div class="module">
-          <img src="assets/work/acom-newsletter.jpg" >
-        </div>
+      <div class="grid grid-spaced items-2-thin-left module">
+        <img src="assets/work/acom-newsletter-mobile.jpg" >
+        <img src="assets/work/acom-newsletter.jpg" >
       </div>
-      <div class="grid center-6 text-center">
+      <div class="grid grid-center width-half text-center">
         <div class="social">
           <a href="https://www.instagram.com/muji_sky/" target="_blank"><h5><i class="icon-instagram"></i> muji_sky</h5></a>
           <a href="mailto:annemelodysy@gmail.com?Subject=Hello" target="_top"><h5>say hi!</h5></a>
@@ -297,8 +242,9 @@ layout: page
         </div>
       </div>
     </section>
-    <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/plugins.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/base.js" | prepend: site.baseurl }}"></script>
+
+    <script src="{{ "/js/jquery.min.js" | prepend: site.url }}"></script>
+    <script src="{{ "/js/plugins.min.js" | prepend: site.url }}"></script>
+    <script src="{{ "/js/base.js" | prepend: site.url }}"></script>
   </body>
 </html>

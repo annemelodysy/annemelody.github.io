@@ -4,7 +4,7 @@ title:      "Expectations"
 date:       2014-03-03
 categories: travel
 permalink:  /:categories/:title
-excerpt:    I drifted in a thought that could pass as a movie trailer complete with a soothing soundtrack and cinematic scenes.
+excerpt:    I drifted in a thought that could pass as a movie trailer&mdash;complete with a soothing soundtrack
 img-link:   /assets/2014/expectations/
 img:
   small:    2014/expectations/expectations-small.jpg
@@ -32,7 +32,7 @@ When I finally finished the queue, I ended up at the taxi counter where I asked 
 My haggling skill was so awful. The driver told me Legian to Ubud cost 300,000 IDR ($26), I asked if 250k was okay, but he said no because it was rush hour blah blah blah…and I gave up and said okay. That was it. I really should learn to negotiate. I give up so easily.
 
 <div class="module">
-  <img src="{{ page.img-link }}2.jpg" alt="Taxi ride to Ubud on a rainy day"  />
+  <img src="{{ page.img-link }}2.jpg" alt="Taxi ride to Ubud on a rainy day" />
 </div>
 
 The driver was pretty nice though. He said his name was ‘Boy’ and we talked about his religion, Hinduism (I asked plenty of dumb questions), and about his family and the town he grew up in. The conversation would always get cut off because Boy had a hard time speaking English. You’d know he didn’t understand your question because instead of an answer, he’d just chuckle then change the subject.
