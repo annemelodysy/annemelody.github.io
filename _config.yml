@@ -19,4 +19,3 @@ exclude:
                - Gemfile.lock
 future:        true
 repository:    annemelodysy/annemelodysy.github.io
-comments:      true
