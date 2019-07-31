@@ -4,14 +4,14 @@ title:      "Looking Back at 2013"
 date:       2014-01-01
 categories: life
 permalink:  /:categories/:title
-excerpt:    A summary of my 2013 Highlights
+excerpt:    So much has happened in a span of one year, and I’ve learned many things as the months went by. Here’s a summary of my 2013.
 img-link:   /assets/2014/looking-back/
 img:
   small:    2014/looking-back/looking-back-at-2013-small.jpg
   large:    2014/looking-back/looking-back-at-2013-cover.jpg
 ---
 
-I’m exercising my memory, checking to see how the previous year went for me. So much has happened in a span of one year, and I’ve learned many things as the months went by. Here’s a summary of my 2013.
+I’m exercising my memory, checking to see how the previous year went for me.
 
 ### January
 
