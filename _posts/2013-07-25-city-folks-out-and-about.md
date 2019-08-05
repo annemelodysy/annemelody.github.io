@@ -11,9 +11,9 @@ img:
   large:    2013/city-folks/city-folks-cover.jpg
 ---
 
-When we were kids, I didn’t think much about our visits to Surigao (my mother’s hometown). The only excitement I remember about traveling was when we were on the boat. I’d stay up all night staring at the bubbles in the dark water.
+When we were kids, I didn't think much about our visits to Surigao (my mother's hometown). I remember being excited about traveling on a boat. I'd stay up all night staring at the bubbles forming in the dark water.
 
-There were things that I never got to see. The only time my mom wanted to take me to our ancestral home, I was sick with a fever. They went without me as I slept in my aunt’s house in the city. Only now that it’s swallowed back into the forest do I wish I saw it when it was alive.
+There were things that I never got to see. The only time I had a chance to visit our ancestral home, I was sick with a fever. They went without me as I slept in my aunt's house in the city. Only now that it's swallowed back into the forest do I wish I saw it when it was alive.
 
 <div class="module">
   <img src="{{ page.img-link }}1.jpg" alt="Ancestral home swallowed by the forest" >

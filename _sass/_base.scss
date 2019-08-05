@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5 {
   font-weight: 500;
 }
 
+h1 {
+  line-height: 1.5;
+}
+
 h2 {
   font-size: 2rem;
   line-height: 1.7;
@@ -81,12 +85,12 @@ nav {
 .come-in {
   transform: translateY(100px);
   -webkit-transform: translateY(100px);
-  animation: come-in 1s ease-in-out forwards;
-  -webkit-animation: come-in 1s ease-in-out forwards;
+  animation: come-in 1s ease-out forwards;
+  -webkit-animation: come-in 1s ease-out forwards;
 
   &:nth-child(odd) {
-    animation-duration: 0.5s;
-    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.7s;
+    -webkit-animation-duration: 0.7s;
   }
 }
 

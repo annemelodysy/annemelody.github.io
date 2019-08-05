@@ -4,14 +4,14 @@ title:      "Third World"
 date:       2013-07-25
 categories: travel
 permalink:  /:categories/:title
-excerpt:    How people see the Philippines as a third world country is beyond me
+excerpt:    A pile of sand, kids, and their boards
 img-link:   /assets/2013/third-world/
 img:
   small:    2013/third-world/third-world-small.jpg
   large:    2013/third-world/third-world-cover.jpg
 ---
 
-It was a wonderful sight. We watched until the sun went down, sitting on a pile of sand. The local kids ran around excited to sand-board despite probably doing it a million times.
+We watched until the sun went down, sitting on a pile of sand. The local kids ran around excited to sand-board despite probably doing it a million times.
 
 <div class="module">
   <img src="{{ page.img-link }}1.jpg" alt="Silhouette of boys playing" >

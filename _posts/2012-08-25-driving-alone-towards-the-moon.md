@@ -4,7 +4,7 @@ title:      "Driving Alone Towards the Moon"
 date:       2012-08-25
 categories: life
 permalink:  /:categories/:title
-excerpt:    A parallel world has once or twice crossed my mind, but I shudder at the thought of having another me out there.
+excerpt:    A parallel world has once or twice crossed my mind, but I shudder at the thought of having another me out there
 img-link:   /assets/2012/driving-alone/
 img:
   small:    2012/driving-alone/driving-alone-small.jpg
@@ -19,9 +19,9 @@ A parallel world has once or twice crossed my mind, but I shudder at the thought
   <img src="{{ page.img-link }}1.jpg" alt="Driving alone" >
 </div>
 
-Too many decisions to make every day and each one depends on the other. Each question provides an opportunity to continue living.
+Too many decisions to make and each one depends on the other. Each question provides an opportunity to continue living.
 
-I went back into writing because I wanted to document the new things I discover about myself. Sounds too egotistic, but the goal is to fully understand how I have become the person I am today.
+I went back into writing because I wanted to document the new things I discover about myself. The goal is to fully understand how I've become the person I am today.
 
 <div class="module">
   <img src="{{ page.img-link }}2.jpg" alt="Driving alone" >
