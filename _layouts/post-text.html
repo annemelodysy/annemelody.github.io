@@ -11,12 +11,15 @@
     <h2>{{ page.excerpt | replace: '!SITE_URL!', site.url }}</h2>
 
     {{ content }}
-  </section>
 
-  <div class="grid grid-center width-half comments">
+    {% include more-stories.html %}
+  </section>
+</div>
+
+<div class="comments">
+  <div class="grid grid-center width-half">
     {% include comments.html %}
   </div>
 </div>
 
-{% include more-stories.html %}
 {% include footer.html %}

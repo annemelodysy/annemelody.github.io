@@ -1,27 +1,11 @@
-<section class="thumbnails module">
-  <h2>What to read next</h2>
+<div class="flex-spaced suggested">
   {% if page.previous.url %}
-    <a href="{{ BASE_PATH }}{{ page.previous.url }}" class="item">
-      <img src="/assets/{{ page.previous.img.small | replace: '!SITE_URL!', site.url }}"  alt="{{ page.previous.title }}" />
-      <h3 class="uppercase">{{ page.previous.title }}</h3>
-    </a>
+    <a href="{{page.previous.url}}" class="uppercase"><small>&#8604; Older</small> <span>{{page.previous.title}}</span></a>
   {% endif %}
-  {% if page.previous.previous.url %}
-  <a href="{{ BASE_PATH }}{{ page.previous.previous.url }}" class="item">
-    <img src="/assets/{{ page.previous.previous.img.small | replace: '!SITE_URL!', site.url }}"  alt="{{ page.previous.previous.title }}" />
-    <h3 class="uppercase">{{ page.previous.previous.title }}</h3>
-  </a>
+
+  <a href="{{ site.url }}" class="uppercase"><small>All stories</small></a>
+
+  {% if page.next.url %}
+    <a href="{{page.next.url}}" class="uppercase"><small>Newer &#8605;</small> <span>{{page.next.title}}</span></a>
   {% endif %}
-  {% if page.previous.previous.previous.url %}
-  <a href="{{ BASE_PATH }}{{ page.previous.previous.previous.url }}" class="item">
-    <img src="/assets/{{ page.previous.previous.previous.img.small | replace: '!SITE_URL!', site.url }}"  alt="{{ page.previous.previous.previous.title }}" />
-    <h3 class="uppercase">{{ page.previous.previous.previous.title }}</h3>
-  </a>
-  {% endif %}
-  {% if page.previous.previous.previous.previous.url %}
-    <a href="{{ BASE_PATH }}{{ page.previous.previous.previous.previous.url }}" class="item">
-      <img src="/assets/{{ page.previous.previous.previous.previous.img.small | replace: '!SITE_URL!', site.url }}"  alt="{{ page.previous.previous.previous.previous.title }}" />
-      <h3 class="uppercase">{{ page.previous.previous.previous.previous.title }}</h3>
-    </a>
-  {% endif %}
-</section>
+</div>

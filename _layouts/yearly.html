@@ -69,9 +69,14 @@
   </div>
 </div>
 
-<div class="grid grid-center width-half comments">
-  {% include comments.html %}
+<div class="width-max">
+  {% include more-stories.html %}
 </div>
 
-{% include more-stories.html %}
+<div class="comments">
+  <div class="grid grid-center width-half">
+    {% include comments.html %}
+  </div>
+</div>
+
 {% include footer.html %}

@@ -54,8 +54,13 @@
 }
 
 .comments {
-  margin: 2rem 0;
-  min-height: auto;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  background: darken($white, 2%);
+
+  .grid {
+    min-height: auto;
+  }
 }
 
 //Yearly layout
@@ -230,6 +235,24 @@
   }
 }
 
+.suggested {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  a {
+    color: $black;
+    font-size: 1rem;
+    max-width: 40%;
+
+    &:hover {
+      color: darken($pink, 10%);
+    }
+  }
+
+  span {
+    display: block;
+  }
+}
 
 //Resume stuff
 .resume {
@@ -344,6 +367,19 @@
 
     .text-center {
       text-align: left;
+    }
+  }
+
+  .suggested {
+    margin: 0;
+
+    a {
+      max-width: 48%;
+      padding: 0.5rem 1rem;
+    }
+
+    span {
+      display: none;
     }
   }
 }

@@ -56,6 +56,12 @@ blockquote {
   flex-wrap: wrap;
 }
 
+.flex-spaced {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 //Navigation
 nav {
   a {
