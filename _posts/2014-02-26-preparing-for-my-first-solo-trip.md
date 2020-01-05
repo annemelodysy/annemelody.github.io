@@ -13,19 +13,17 @@ img:
 
 It's exciting, unnerving, mind-blowing. Here we go. My first solo trip. Something I’ve been wanting to do for a long time but have been putting off with different excuses. I wanted to do it before turning 30, so this is the perfect opportunity.
 
-<div class="module">
-  <img src="{{ page.img-link }}1.jpg" alt="Getting ready for my first solo trip to Bali" />
-</div>
+{% include 0.html type="block" img="1" alt="Getting ready for my first solo trip to Bali" %}
 
 I'm going to Bali. I've never been but have heard stories and it seems like my kind of place.
 
 So acting with impulse, I booked my tickets a week ago, and it looks like I ran out of excuses not to go. I spent hours browsing through the internet, researching about what to do and came up with a list.
 
 ### Yoga and meditation
-Bali is a spiritual place. By chance, I booked a b&b near a place called [The Yoga Barn](http://www.theyogabarn.com/ "The Yoga Barn"). I'm hoping to experience solitude and peace throughout my days there.
+Bali is a spiritual place. By chance, I booked a b&b near a place called [The Yoga Barn](http://www.theyogabarn.com/ "The Yoga Barn"){:target='_blank'}. I'm hoping to experience solitude and peace throughout my days there.
 
 ### Organic market
-Saw this [website](http://www.ubudorganicmarket.com/ "Ubud Organic Market") about a local market in Ubud and thought I'd drop by to taste the fresh local produce.
+Saw this [website](http://www.ubudorganicmarket.com/ "Ubud Organic Market"){:target='_blank'} about a local market in Ubud and thought I'd drop by to taste the fresh local produce.
 
 ### Temples, temples, and temples
 Curious about the local culture, I'm hoping to visit a few temples and learn about them while there. I'm particularly interested in Hinduism and understanding its significance to the locals.

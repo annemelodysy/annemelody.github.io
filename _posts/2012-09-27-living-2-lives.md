@@ -4,7 +4,7 @@ title:      "Living 2 Lives"
 date:       2012-09-27
 categories: self
 permalink:  /:categories/:title
-excerpt:    hat I find difficult though is that feeling of not having my own identity
+excerpt:    What I find difficult is that feeling of not having my own identity
 img:
   small:    2012/living-2-lives/living-2-lives-small.jpg
   large:    2012/living-2-lives/living-2-lives-cover.jpg
@@ -16,7 +16,7 @@ You see, I'm *technically* half Chinese and half Filipino. My dad's Chinese and 
 
 There were days when being a *halfling* was a good thing like being able to blend in both sides easily or get away with a reason as to why I can't speak Chinese or Tagalog well. We also enjoy both traditions and hear a lot of interesting superstitious stories.
 
-What I find difficult though is that feeling of not having my own **identity**.
+What I find difficult is that feeling of not having my own **identity**.
 
 For example, I've encountered being outcast in a group because I was "too Chinese" for them. On the other hand, some Chinese acquaintances don't fully accept me for being "too Filipino". I keep asking myself, which is it? That I'm too Chinese or too Filipino? There is a sense of not belonging to either group.
 

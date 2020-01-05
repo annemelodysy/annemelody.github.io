@@ -10,81 +10,66 @@ img:
   small:    2018/tokyo-walks/tokyo-walks-small.jpg
   large:    2018/tokyo-walks/tokyo-walks-cover.jpg
 ---
-<div class="grid grid-center width-half">
-  <p>There's not a whole lot of words in this post. I think I lost a lot of brain cells writing my last one. 😂</p>
-  <p>Our eight days walking around the city made me remember how much I love photography. It seems the older I get, the more critical I am of my work. I've been consistently inconsistent with this hobby and I think it's because I'm not sure what to make of it.</p>
-</div>
+{% include 1.html text="
+  There's not a whole lot of words in this post. I think I lost a lot of brain cells writing my last one. 😂
 
-<div class="grid float-left-6 module">
-  <img src="{{ page.img-link }}cemetery.jpg" alt="Cemetery" >
-</div>
+  Our eight days walking around the city made me remember how much I love photography. It seems the older I get, the more critical I am of my work. I've been consistently inconsistent with this hobby and I think it's because I'm not sure what to make of it.
+" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}knick-knacks-and-us.jpg" alt="Jeremie and myself framed between knick knacks" >
-</div>
+{% include 1.html type="left" img="cemetery" alt="cemetery" %}
 
-<div class="grid grid-spaced items-3 module">
-  <img src="{{ page.img-link }}spider-plant.jpg" alt="Spider plant" >
-  <img src="{{ page.img-link }}religious-sculpture.jpg" alt="Sculpture with coins" >
-  <img src="{{ page.img-link }}piney-leaves.jpg" alt="Plants" >
-</div>
+{% include 1.html type="ctr" img="knick-knacks-and-us" alt="Jeremie and myself framed between knick knacks" %}
 
-<div class="grid bleed-left-thin-right module">
-  <img src="{{ page.img-link }}underwater-tree.jpg" alt="Tree that looks like it's submerged underwater" >
-  <img src="{{ page.img-link }}jeremie-sketching.jpg" alt="Jeremie sketching" >
-</div>
+{% include 3.html type="sp"
+  img1="spider-plant" alt1="spider plant"
+  img2="religious-sculpture" alt2="Sculpture with coins"
+  img3="piney-leaves" alt3="Plants"
+%}
 
-<div class="grid grid-center width-quarter module">
-  <img src="{{ page.img-link }}building-peeking.jpg" alt="Building peeking" >
-</div>
+{% include 2.html type="r-thin"
+  img1="underwater-tree" alt1="Tree that looks like it's submerged underwater"
+  img2="jeremie-sketching" alt2="Jeremie sketching"
+%}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}cute-building-in-tokyo.jpg" alt="Cute building in Tokyo" >
-  <img src="{{ page.img-link }}cool-building-in-tokyo.jpg" alt="Cool building in Tokyo" >
-</div>
+{% include 1.html type="ctr-sm" img="building-peeking" alt="building peeking" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}look-up-train.jpg" alt="Look up at the train" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="cute-building-in-tokyo" alt1="cute building in tokyo"
+  img2="cool-building-in-tokyo" alt2="cool building in tokyo"
+%}
 
-<div class="grid grid-spaced items-2-thin-left module">
-  <img src="{{ page.img-link }}vending-machine-pink.jpg" alt="Pink vending machine" >
-  <img src="{{ page.img-link }}plants-with-shadows.jpg" alt="Plants with shadows" >
-</div>
+{% include 1.html type="ctr" img="look-up-train" alt="Look up at the train" %}
 
-<div class="grid grid-center width-quarter module">
-  <img src="{{ page.img-link }}glowing-door-light.jpg" alt="Glowing light with door" >
-</div>
+{% include 2.html type="l-thin"
+  img1="vending-machine-pink" alt1="Pink vending machine"
+  img2="plants-with-shadows" alt2="plants with shadows"
+%}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}doughnut-conversations.jpg" alt="Doughnut conversations in Tokyo" >
-  <img src="{{ page.img-link }}koffee-mameya.jpg" alt="Koffee Mameya entrance" >
-</div>
+{% include 1.html type="ctr-sm" img="glowing-door-light" alt="glowing door light" %}
 
-<div class="grid grid-center width-quarter module">
-  <img src="{{ page.img-link }}geometric-building.jpg" alt="Geometric shapes architecture" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="doughnut-conversations" alt1="Doughnut conversations in Tokyo"
+  img2="koffee-mameya" alt2="Koffee Mameya entrance"
+%}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}hokusai-museum.jpg" alt="Hokusai museum" >
-  <img src="{{ page.img-link }}tokyo-building.jpg" alt="Tokyo building" >
-</div>
+{% include 1.html type="ctr-sm" img="geometric-building" alt="Geometric shapes architecture" %}
 
-<div class="grid grid-center width-quarter module">
-  <img src="{{ page.img-link }}man-between-autumn-leaves.jpg" alt="Man framed between autumn leaves" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="hokusai-museum" alt1="hokusai museum"
+  img2="tokyo-building" alt2="tokyo building"
+%}
 
-<div class="grid stacked-3-items-sm module">
-  <img src="{{ page.img-link }}bike-devoured-by-plants.jpg" alt="Bike devoured by plants" >
-  <img src="{{ page.img-link }}clothes-hanging-to-dry.jpg" alt="Clothes hanging to dry" >
-  <img src="{{ page.img-link }}little-monster.jpg" alt="Little monster in someone's garage" >
-</div>
+{% include 1.html type="ctr-sm" img="man-between-autumn-leaves" alt="Man framed between autumn leaves" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}post-office-building.jpg" alt="Post office building" >
-  <img src="{{ page.img-link }}why-did-the-chicken-cross-the-road.jpg" alt="Chicken sculpture crossing the road" >
-</div>
+{% include 3.html type="st-sm"
+  img1="bike-devoured-by-plants" alt1="bike devoured by plants"
+  img2="clothes-hanging-to-dry" alt2="clothes hanging to dry"
+  img3="little-monster" alt3="Little monster in someone's garage"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}studio-ghibli-inspired-building.jpg" alt="Studio Ghibli inspired building" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="post-office-building" alt1="Post office building"
+  img2="why-did-the-chicken-cross-the-road" alt2="Chicken sculpture crossing the road"
+%}
+
+{% include 1.html type="ctr" img="studio-ghibli-inspired-building" alt="Studio Ghibli inspired building" %}

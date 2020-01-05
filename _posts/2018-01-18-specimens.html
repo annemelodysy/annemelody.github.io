@@ -10,51 +10,40 @@ img:
   small:    2018/specimens/specimens-small.jpg
   large:    2018/specimens/specimens-cover.jpg
 ---
-<div class="grid grid-center width-half module">
-  <p>It was deserted and quiet except for the distant sound of birds and insects. The ground was damp and you could still see tiny droplets of water on the moss. Since it was a long weekend, we went on a quick hike at Big Basin Park where the tallest tree reached a height of 293 feet!</p>
-  <p>We wanted to celebrate our 3rd wedding anniversary somewhere special but not too far from home so I opened Google maps and picked a random spot. The great thing about San Francisco is that it's close to national and state parks to visit. You could drive an hour outside of the city and find yourself in the middle of a forest.</p>
-</div>
+{% include 1.html text="
+  It was deserted and quiet except for the distant sound of birds and insects. The ground was damp and you could still see tiny droplets of water on the moss. Since it was a long weekend, we went on a quick hike at Big Basin Park where the tallest tree reached a height of 293 feet!
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}yellow-mushroom.jpg" alt="yellow mushroom" >
-  <img src="{{ page.img-link }}yellow-mushrooms.jpg" alt="yellow mushrooms" >
-</div>
+  We wanted to celebrate our 3rd wedding anniversary somewhere special but not too far from home so I opened Google maps and picked a random spot. The great thing about San Francisco is that it's close to national and state parks to visit. You could drive an hour outside of the city and find yourself in the middle of a forest.
+" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}mushroom.jpg" alt="mushroom" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="yellow-mushroom" alt1="yellow mushroom"
+  img2="yellow-mushrooms" alt2="yellow mushrooms"
+%}
 
-<div class="grid grid-center width-half module">
-  <p>I've seen mushrooms in the wild before but not as diverse as it was there. I have no idea what they're called but made a mental note to take a foraging class one of these days. Every few feet, we'd stop and see a fresh group of mushrooms growing on the side of a fallen tree. It reminded me so much of this game called <a href="http://samorost3.net/" target="_blank" rel="nofollow">Samorost</a>&mdash;otherworldly and surreal.</p>
-</div>
+{% include 1.html type="ctr" img="mushroom" alt="mushroom" %}
 
-<div class="grid grid-spaced items-2-balanced module">
-  <img src="{{ page.img-link }}green-and-red-moss.jpg" alt="green and red moss" >
-  <img src="{{ page.img-link }}thin-mushrooms.jpg" alt="thin mushrooms" >
-</div>
+{% include 1.html text="I've seen mushrooms in the wild before but not as diverse as it was there. I have no idea what they're called but made a mental note to take a foraging class one of these days. Every few feet, we'd stop and see a fresh group of mushrooms growing on the side of a fallen tree. It reminded me so much of this game called [Samorost](http://samorost3.net/){:target='_blank'}&mdash;otherworldly and surreal." %}
 
-<div class="grid grid-center width-thirds module">
-  <img src="{{ page.img-link }}moss.jpg" alt="moss" >
-</div>
+{% include 2.html type="sp-balanced"
+  img1="green-and-red-moss" alt1="green and red moss"
+  img2="thin-mushrooms" alt2="thin mushrooms"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}leafy-mushroom.jpg" alt="leafy mushroom" >
-</div>
+{% include 1.html type="ctr-sm" img="moss" alt="moss" %}
 
-<div class="grid grid-spaced items-2-balanced module">
-  <img src="{{ page.img-link }}world-tree.jpg" alt="world tree" >
-  <img src="{{ page.img-link }}world-tree-zoom-out.jpg" alt="world tree zoom out" >
-</div>
+{% include 1.html type="ctr" img="leafy-mushroom" alt="leafy mushroom" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}tree-watcher.jpg" alt="tree watcher" >
-</div>
+{% include 2.html type="sp-balanced"
+  img1="world-tree" alt1="world tree"
+  img2="world-tree-zoom-out" alt2="world tree zoom out"
+%}
 
-<div class="grid grid-center width-half module">
-  <p>I was surprised that we almost had the place to ourselves despite it being a national holiday. The stars have aligned for us.</p>
-</div>
+{% include 1.html type="ctr" img="tree-watcher" alt="tree watcher" %}
 
-<div class="grid grid-spaced items-2-balanced module">
-  <img src="{{ page.img-link }}walking-down-the-forest.jpg" alt="walking down the forest" >
-  <img src="{{ page.img-link }}giant-redwoods.jpg" alt="giant redwoods" >
-</div>
+{% include 1.html text="I was surprised that we almost had the place to ourselves despite it being a national holiday. The stars have aligned for us." %}
+
+{% include 2.html type="sp-balanced"
+  img1="walking-down-the-forest" alt1="walking down the forest"
+  img2="giant-redwoods" alt2="giant redwoods"
+%}

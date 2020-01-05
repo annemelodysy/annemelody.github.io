@@ -10,82 +10,67 @@ img:
   small:    2013/storm-comes/storm-comes-small.jpg
   large:    2013/storm-comes/storm-comes-cover.jpg
 ---
-<div class="grid grid-center width-half">
-  <p>Jeremie smiled as he saw the trees twist and turn outside the window.</p>
-  <p>"Surf!" he exclaimed excitedly as I paused and struggled to understand what he meant by that. "Let’s go!"</p>
-  <p>I watched&mdash;still dazed&mdash;as he moved around the room gathering a bunch of things and stuffing them inside his bag. Seriously? We're driving down South on a weekday? I hesitated at first, but the idea of going to a random place seemed enticing. It'd been a while since I went on a spontaneous trip.</p>
-  <p>"Let’s go!" I said grabbing the only thing I needed to bring&mdash;a camera.</p>
-</div>
+{% include 1.html text="
+  Jeremie smiled as he saw the trees twist and turn outside the window.
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}24.jpg" alt="Leaves swaying" >
-</div>
+  *Surf!* he exclaimed excitedly as I paused and struggled to understand what he meant by that. *Let's go!*
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}4.jpg" alt="Surfer" >
-  <img src="{{ page.img-link }}3.jpg" alt="Surfer" >
-</div>
+  I watched&mdash;still dazed&mdash;as he moved around the room gathering a bunch of things and stuffing them inside his bag. Seriously? We're driving down South on a weekday? I hesitated at first, but the idea of going to a random place seemed enticing. It'd been a while since I went on a spontaneous trip.
 
-<div class="grid width-half module">
-  <img src="{{ page.img-link }}1.jpg" alt="Waves crashing on rocks" >
-</div>
+  *Let's go!* I said grabbing the only thing I needed to bring&mdash;a camera.
+" %}
 
-<div class="grid grid-right width-half module">
-  <img src="{{ page.img-link }}2.jpg" alt="Minglanilla store" >
-</div>
+{% include 1.html type="ctr" img="24" alt="Leaves swaying" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}7.jpg" alt="Industrial setting" >
-  <img src="{{ page.img-link }}16.jpg" alt="Industrial setting" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="4" alt1="Surfer"
+  img2="3" alt2="Surfer"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}5.jpg" alt="Surfer" >
-</div>
+{% include 1.html type="left" img="1" alt="Waves crashing on rocks" %}
 
-<div class="grid grid-spaced items-2-thin-right module">
-  <img src="{{ page.img-link }}10.jpg" alt="Man surfing" >
-  <img src="{{ page.img-link }}18.jpg" alt="Man surfing" >
-</div>
+{% include 1.html type="right" img="2" alt="Minglanilla store" %}
 
-<div class="grid grid-right width-half module">
-  <img src="{{ page.img-link }}15.jpg" alt="Brown sand beach" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="7" alt1="Industrial setting"
+  img2="16" alt2="Industrial setting"
+%}
 
-<div class="grid grid-spaced items-2-thin-left module">
-  <img src="{{ page.img-link }}23.jpg" alt="Lookout" >
-  <img src="{{ page.img-link }}6.jpg" alt="Minglanilla mountains and trees" >
-</div>
+{% include 1.html type="ctr" img="5" alt="Surfer" %}
 
-<div class="grid grid-center items-3 module">
-  <img src="{{ page.img-link }}13.jpg" alt="Old man walking the beach" >
-  <img src="{{ page.img-link }}11.jpg" alt="Kid playing in the water" >
-  <img src="{{ page.img-link }}17.jpg" alt="Observing the rocks" >
-</div>
+{% include 2.html type="r-thin"
+  img1="10" alt1="Man surfing"
+  img2="18" alt2="Man surfing"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}25.jpg" alt="Children playing in the water" >
-</div>
+{% include 1.html type="right" img="15" alt="Brown sand beach" %}
 
-<div class="grid grid-center items-3 module">
-  <img src="{{ page.img-link }}19.jpg" alt="Boy looking at me from the water" >
-  <img src="{{ page.img-link }}20.jpg" alt="Boy looking away" >
-  <img src="{{ page.img-link }}21.jpg" alt="Boy playing with waves" >
-</div>
+{% include 2.html type="l-thin"
+  img1="23" alt1="Lookout"
+  img2="6" alt2="Minglanilla mountains and trees"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}9.jpg" alt="Two boys in the water" >
-</div>
+{% include 3.html type="ctr"
+  img1="13" alt1="Old man walking the beach"
+  img2="11" alt2="Kid playing in the water"
+  img3="17" alt3="Observing the rocks"
+%}
 
-<div class="grid grid-spaced items-2-thin-left module">
-  <img src="{{ page.img-link }}22.jpg" alt="Child and sky" >
-  <img src="{{ page.img-link }}8.jpg" alt="Old man on the beach" >
-</div>
+{% include 1.html type="ctr" img="25" alt="Children playing in the water" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}12.jpg" alt="Kids playing during sunset" >
-</div>
+{% include 3.html type="ctr"
+  img1="13" alt1="Boy looking at me from the water"
+  img2="11" alt2="Boy looking away"
+  img3="17" alt3="Boy playing with waves"
+%}
 
-<div class="grid grid-right width-half module">
-  <img src="{{ page.img-link }}14.jpg" alt="Sunset in the beach" >
-</div>
+{% include 1.html type="ctr" img="9" alt="Two boys in the water" %}
+
+{% include 2.html type="l-thin"
+  img1="22" alt1="Child and sky"
+  img2="8" alt2="Old man on the beach"
+%}
+
+{% include 1.html type="ctr" img="12" alt="Kids playing during sunset" %}
+
+{% include 1.html type="right" img="14" alt="Sunset in the beach" %}

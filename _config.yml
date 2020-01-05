@@ -11,7 +11,7 @@ sass:
   style:       compressed
 sass_dir:      _sass
 markdown:      kramdown
-gems:
+plugins:
                - jekyll-feed
                - jekyll-paginate
 exclude:

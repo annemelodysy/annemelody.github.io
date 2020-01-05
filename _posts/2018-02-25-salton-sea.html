@@ -10,101 +10,82 @@ img:
   small:    2018/salton-sea/salton-sea-small.jpg
   large:    2018/salton-sea/salton-sea-cover.jpg
 ---
-<div class="grid grid-center width-half">
-  <p>I stumbled upon an <a href="https://www.vice.com/en_us/article/9bz5b7/i-went-to-californias-post-apocalyptic-beach-town-salton-sea" target="_blank" rel="nofollow">article</a> one day about a post-apocalyptic town somewhere in South California. The long weekend was approaching and I was looking for an atypical place to practice and come up with four good images for my class. I've always been fascinated with the idea of abandoned places and the stories behind them.</p>
-  <p>As the article describes, Salton Sea is the largest lake in California and was created by accident. In the fifties and sixties, it was an oasis in the middle of the desert attracting local tourists, but ultimately, the lake became too toxic for people to be around in so they left, abandoning homes and unwanted possessions.</p>
-</div>
+{% include 1.html text="
+  I stumbled upon an [article](https://www.vice.com/en_us/article/9bz5b7/i-went-to-californias-post-apocalyptic-beach-town-salton-sea){:target='_blank'} one day about a post-apocalyptic town somewhere in South California. The long weekend was approaching and I was looking for an atypical place to practice and come up with four good images for my class. I've always been fascinated with the idea of abandoned places and the stories behind them.
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}lone-lamp.jpg" alt="lone lamp" >
-  <img src="{{ page.img-link }}boat-and-bird.jpg" alt="boat and bird" >
-</div>
+  As the article describes, Salton Sea is the largest lake in California and was created by accident. In the fifties and sixties, it was an oasis in the middle of the desert attracting local tourists, but ultimately, the lake became too toxic for people to be around in so they left, abandoning homes and unwanted possessions.
+" %}
 
-<div class="grid grid-center width-half">
-  <p>The first thing I noticed as we stepped out of the car was the smell of rotten fish. It reminded me of visits to fish markets back in the Philippines. The article warned me about this but it still surprised me. I covered my nose and tried to breathe through my mouth which was a bad idea because then I could taste it&mdash;salty and dead.</p>
-  <p>The weather didn't help either. It was pleasantly warm but the wind was blowing so strong that dust and other debris kept getting into my eyes. My pictures look still but trust me, it was not calm at all.</p>
-</div>
+{% include 2.html type="sp-sm"
+  img1="lone-lamp" alt1="lone lamp"
+  img2="boat-and-bird" alt2="boat and bird"
+%}
 
-<div class="grid grid-center width-wider module">
-  <img src="{{ page.img-link }}bombay-beach-sign.jpg" alt="bombay beach sign" >
-</div>
+{% include 1.html text="
+  The first thing I noticed as we stepped out of the car was the smell of rotten fish. It reminded me of visits to fish markets back in the Philippines. The article warned me about this but it still surprised me. I covered my nose and tried to breathe through my mouth which was a bad idea because then I could taste it&mdash;salty and dead.
 
-<div class="grid grid-spaced items-2-balanced module">
-  <img src="{{ page.img-link }}abandoned-car.jpg" alt="abandoned car" >
-  <img src="{{ page.img-link }}pink-car.jpg" alt="pink car" >
-</div>
+  The weather didn't help either. It was pleasantly warm but the wind was blowing so strong that dust and other debris kept getting into my eyes. My pictures look still but trust me, it was not calm at all.
+" %}
 
-<div class="grid grid-center width-thirds module">
-  <img src="{{ page.img-link }}white-chair.jpg" alt="white chair" >
-</div>
+{% include 1.html type="ctr" img="bombay-beach-sign" alt="bombay beach sign" %}
 
-<div class="grid float-right-4 module">
-  <img src="{{ page.img-link }}carnival-of-dreams.jpg" alt="carnival of dreams" >
-</div>
+{% include 2.html type="sp-balanced"
+  img1="abandoned-car" alt1="abandoned car"
+  img2="pink-car" alt2="pink car"
+%}
 
-<div class="grid float-left-6 module">
-  <img src="{{ page.img-link }}broken-home.jpg" alt="broken home" >
-</div>
+{% include 1.html type="ctr" img="white-chair" alt="white chair" %}
 
-<div class="grid grid-center width-half">
-  <p>Aging wood creaked and banged against each other as I entered the houses. The wind rushed through the broken windows and doors, echoing within the walls until eventually escaping.</p>
-</div>
+{% include 1.html type="fl-right" img="carnival-of-dreams" alt="carnival of dreams" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}broken-window.jpg" alt="broken window" >
-</div>
+{% include 1.html type="fl-left" img="broken-home" alt="broken home" %}
 
-<div class="grid grid-center width-half">
-  <p>I stood silently, taking in the details. I tried to imagine the people who used to live there and the people who came after it was empty: drifters, drug addicts, artists, curious folks like us. I wondered whether they contributed to the decay or helped preserve it. There were signs of interference: recently-added posters, love letters plastered on the walls, fresh graffiti.</p>
-  <p>Some of them turned into bird <s>houses</s> mansions. You know because of the distinct smell and the appearance of feathers scattered all over the room. I felt them watching over my head. In this parallel world, they are the keepers and I'm only a visitor.</p>
-</div>
+{% include 1.html text="Aging wood creaked and banged against each other as I entered the houses. The wind rushed through the broken windows and doors, echoing within the walls until eventually escaping." %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}abandoned-tv.jpg" alt="abandoned tv" >
-</div>
+{% include 1.html type="ctr" img="broken-window" alt="broken window" %}
 
-<div class="grid bleed-right-thin-left module">
-  <img src="{{ page.img-link }}chair-lighting.jpg" alt="chair lighting" >
-  <img src="{{ page.img-link }}broken-chair.jpg" alt="broken chair" >
-</div>
+{% include 1.html text="
+  I stood silently, taking in the details. I tried to imagine the people who used to live there and the people who came after it was empty: drifters, drug addicts, artists, curious folks like us. I wondered whether they contributed to the decay or helped preserve it. There were signs of interference: recently-added posters, love letters plastered on the walls, fresh graffiti.
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}masks.jpg" alt="masks" >
-</div>
+  Some of them turned into bird <s>houses</s> mansions. You know because of the distinct smell and the appearance of feathers scattered all over the room. I felt them watching over my head. In this parallel world, they are the keepers and I'm only a visitor.
+" %}
 
-<div class="grid grid-center width-thirds module">
-  <img src="{{ page.img-link }}observer.jpg" alt="observer" >
-</div>
+{% include 1.html type="ctr" img="abandoned-tv" alt="abandoned tv" %}
 
-<div class="grid grid-center width-half">
-  <p>Dead fish preserved by salt scattered all over the beach. They were introduced to the lake so tourists could fish but met their demise when the water got too salty. It's telling that even one of the most resilient fish in the world couldn't survive the toxicity.</p>
-  <p>Something was unusual about the sand too. It was chunky and oddly-shaped. At first, I thought they were shells but a closer inspection revealed that they were, in fact, thousands of fish bone fragments pulverized by years of exposure to weather.</p>
-</div>
+{% include 2.html type="l-thin"
+  img1="chair-lighting" alt1="chair lighting"
+  img2="broken-chair" alt2="broken chair"
+%}
 
-<div class="grid grid-spaced items-3 module">
-  <img src="{{ page.img-link }}dead-fish-1.jpg" alt="dead fish" >
-  <img src="{{ page.img-link }}dead-fish-2.jpg" alt="dead fish" >
-  <img src="{{ page.img-link }}dead-fish-3.jpg" alt="dead fish" >
-</div>
+{% include 1.html type="ctr" img="masks" alt="masks" %}
 
-<div class="grid grid-center width-half">
-  <p>As the sun and the temperature went down, we decided it was time to go. We walked for almost two hours and still had not explored the whole town.</p>
-  <p>We circled the town for the last time, taking in the apocalyptic scenes before driving back to civilization.</p>
-</div>
+{% include 1.html type="ctr-sm" img="observer" alt="observer" %}
 
-<div class="grid grid-center width-wider module">
-  <img src="{{ page.img-link }}sunset-silhouette.jpg" alt="sunset silhouette" >
-</div>
+{% include 1.html text="
+  Dead fish preserved by salt scattered all over the beach. They were introduced to the lake so tourists could fish but met their demise when the water got too salty. It's telling that even one of the most resilient fish in the world couldn't survive the toxicity.
 
-<div class="grid width-half module">
-  <img src="{{ page.img-link }}sunlight.jpg" alt="sunlight" >
-</div>
+  Something was unusual about the sand too. It was chunky and oddly-shaped. At first, I thought they were shells but a closer inspection revealed that they were, in fact, thousands of fish bone fragments pulverized by years of exposure to weather.
+" %}
 
-<div class="grid items-2-bleed module">
-  <img src="{{ page.img-link }}lone-trailer.jpg" alt="lone trailer" >
-  <img src="{{ page.img-link }}mailboxes.jpg" alt="mailboxes" >
-</div>
+{% include 3.html type="sp"
+  img1="dead-fish-1" alt1="dead fish"
+  img2="dead-fish-2" alt2="dead fish"
+  img3="dead-fish-3" alt3="dead fish"
+%}
 
-<div class="grid grid-center width-wider module">
-  <img src="{{ page.img-link }}church.jpg" alt="church" >
-</div>
+{% include 1.html text="
+  As the sun and the temperature went down, we decided it was time to go. We walked for almost two hours and still had not explored the whole town.
+
+  We circled the town for the last time, taking in the apocalyptic scenes before driving back to civilization.
+" %}
+
+{% include 1.html type="ctr" img="sunset-silhouette" alt="sunset silhouette" %}
+
+{% include 1.html type="left" img="sunlight" alt="sunlight" %}
+
+{% include 2.html type="bleed"
+  img1="lone-trailer" alt1="lone trailer"
+  img2="mailboxes" alt2="mailboxes"
+%}
+
+{% include 1.html type="ctr" img="church" alt="church" %}

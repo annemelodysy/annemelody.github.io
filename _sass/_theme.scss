@@ -14,7 +14,9 @@
     margin-bottom: 1rem;
   }
 
-  .uppercase { font-size: 0.875rem; }
+  .uppercase {
+    font-size: 0.875rem; 
+  }
 
   .item {
     transition: transform .8s;
@@ -40,11 +42,15 @@
   a {
     color: darken($seafoam, 25%);
 
-    &:hover { color: darken($brown, 25%); }
+    &:hover {
+      color: darken($brown, 25%);
+    }
   }
 }
 
-.cover-container { margin: 1.5rem auto; }
+.cover-container {
+  margin: 1.5rem auto 12rem auto;
+}
 
 .post-cover {
   object-fit: cover;
@@ -54,13 +60,9 @@
 }
 
 .comments {
-  margin-top: 2rem;
-  padding: 2rem 0;
+  margin-top: 4rem;
+  padding: 4rem 0;
   background: darken($white, 2%);
-
-  .grid {
-    min-height: auto;
-  }
 }
 
 //Yearly layout
@@ -75,14 +77,21 @@
     height: auto;
   }
 
-  .title { width: 100%; }
-
-  .grid { grid-gap: 0; }
-
   a {
     color: darken($seafoam, 25%);
 
-    &:hover { color: darken($brown, 25%); }
+    &:hover {
+      color: darken($brown, 25%);
+    }
+  }
+
+  .title {
+    width: 100%;
+  }
+
+  .grid {
+    grid-gap: 0;
+    min-height: 100vh;
   }
 }
 
@@ -192,6 +201,7 @@
   p {
     display: none;
     width: 28vw;
+    font-size: 1rem;
   }
 }
 
@@ -222,17 +232,13 @@
   }
 }
 
-.transnight { margin-bottom: 2rem; }
+.transnight {
+  margin-bottom: 2rem;
+}
 
 .dark-bg {
   background: $black;
   color: $white;
-}
-
-.with-text {
-  p {
-    margin-bottom: 1.5rem;
-  }
 }
 
 .suggested {
@@ -242,10 +248,18 @@
   a {
     color: $black;
     font-size: 1rem;
-    max-width: 40%;
+    width: 33.3333%;
 
     &:hover {
       color: darken($pink, 10%);
+    }
+
+    &:nth-child(2) {
+      text-align: center;
+    }
+
+    &:last-child {
+      text-align: right;
     }
   }
 
@@ -255,9 +269,6 @@
 }
 
 //Resume stuff
-.resume {
-}
-
 .process {
   padding: 4rem 0;
 }
@@ -265,9 +276,13 @@
 
 //Large screens only
 @media only screen and (min-width : 768px) {
-  .blastable, .blast { opacity: 0; }
+  .blastable, .blast {
+    opacity: 0;
+  }
 
-  .cover-container { height: 44rem; }
+  .cover-container {
+    height: 44rem;
+  }
 
   .post-cover {
     height: 44rem;
@@ -288,24 +303,37 @@
     box-shadow: inset 0px -7px 10px 2px rgba(0,0,0,0.1);
     color: $white;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 12rem;
 
-    img { display: none; }
+    img {
+      display: none;
+    }
 
     div {
       opacity: 0;
       padding: 4rem;
     }
 
-    p { font-size: 1.5rem; }
+    p {
+      font-size: 1.5rem;
+    }
 
     .invert {
       color: $black;
       text-shadow: none;
     }
 
-    .text-start { align-content: start; }
+    .text-start {
+      align-content: start;
+    }
 
-    .text-bottom { align-content: end; }
+    .text-bottom {
+      align-content: end;
+    }
+  }
+
+  .no-margin {
+    margin-bottom: 0;
   }
 }
 
@@ -323,7 +351,10 @@
     font-size: 1.25rem;
   }
 
-  .cover-container { margin-top: 0.5rem; }
+  .cover-container {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
 
   .post-cover {
     height: 16rem;
@@ -337,6 +368,7 @@
 
     .grid, .title {
       padding: 0;
+      min-height: auto;
     }
   }
 
@@ -351,36 +383,47 @@
       margin-bottom: 1.5rem;
     }
 
-    img { margin-bottom: 1rem; }
+    img {
+      margin-bottom: 1rem;
+    }
   }
 
   //Parallax
   .parallax {
     flex-direction: column;
+    padding: 0 1.5rem;
 
     img {
       display: block;
       width: 100%;
       height: auto;
-      margin-bottom: 1.5rem;
     }
 
     .text-center {
       text-align: left;
     }
+
+    .grid {
+      padding: 0;
+    }
   }
 
   .suggested {
     margin: 0;
+    padding: 0 1rem;
 
     a {
-      max-width: 48%;
-      padding: 0.5rem 1rem;
+      padding: 0.5rem;
     }
 
     span {
       display: none;
     }
+  }
+
+  .comments {
+    margin-top: 2rem;
+    padding: 2rem 0;
   }
 }
 
@@ -396,11 +439,15 @@
     height: 28rem;
   }
 
-  //Yearly
-  .yearly-bg {
-    .grid { min-height: 100vh; }
+  .suggested {
+    margin: 0;
+
+    a {
+      padding: 0.5rem 1rem;
+    }
   }
 
+  //Yearly
   .yearly-item {
     &:nth-child(2) {
       left: 4rem;
@@ -472,6 +519,8 @@
       bottom: unset;
     }
 
-    p { width: 28rem; }
+    p {
+      width: 28rem;
+    }
   }
 }

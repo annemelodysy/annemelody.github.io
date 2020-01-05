@@ -10,162 +10,133 @@ img:
   small:    2015/chiang-mai/chiang-mai-small.jpg
   large:    2015/chiang-mai/chiang-mai-cover.jpg
 ---
+{% include 1.html text="
+  Home means different things to different people. In the most literal sense of the word, it's defined as the place where you were born or the place where you grew up. Home is also defined as a roof over one's head, or that it's family.
 
-<div class="grid grid-center width-half">
-  <p>Home means different things to different people. In the most literal sense of the word, it's defined as the place where you were born or the place where you grew up. Home is also defined as a roof over one's head, or that it's family.</p>
-  <p>No matter what it means, they all have one thing in common&mdash;a feeling of warmth. That sense of belonging, of knowing, and remembering.</p>
-  <p>That's how I felt when I woke up that morning on the train to Chiang Mai. I spent the night reading a book before bed and committed to finishing at least one chapter. But the sound of the train and the gentle rocking was enough to send me to sleep.</p>
-</div>
+  No matter what it means, they all have one thing in common&mdash;a feeling of warmth. That sense of belonging, of knowing, and remembering.
 
-<div class="grid bleed-left-thin-right module">
-  <img src="{{ page.img-link }}1.jpg" alt="my bed inside the train" />
-  <img src="{{ page.img-link }}2.jpg" alt="trees outside the train" />
-</div>
+  That's how I felt when I woke up that morning on the train to Chiang Mai. I spent the night reading a book before bed and committed to finishing at least one chapter. But the sound of the train and the gentle rocking was enough to send me to sleep.
+" %}
 
-<div class="grid grid-spaced items-3 module">
-  <img src="{{ page.img-link }}6.jpg" alt="plains and sunrise" />
-  <img src="{{ page.img-link }}5.jpg" alt="people having breakfast inside the train" />
-  <img src="{{ page.img-link }}7.jpg" alt="my sunburnt feet" />
-</div>
+{% include 2.html type="r-thin"
+  img1="1" alt1="my bed inside the train"
+  img2="2" alt2="trees outside the train"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}8.jpg" alt="logo of the train" />
-</div>
+{% include 3.html type="sp"
+  img1="6" alt1="plains and sunrise"
+  img2="5" alt2="people having breakfast inside the train"
+  img3="7" alt3="my sunburnt feet"
+%}
 
-<div class="grid grid-center items-2-thin module">
-  <img src="{{ page.img-link }}46.jpg" alt="old lady sitting across me" />
-  <img src="{{ page.img-link }}3.jpg" alt="old lady looking outside the window" />
-</div>
+{% include 1.html type="ctr" img="8" alt="logo of the train" %}
 
-<div class="grid grid-center width-wider module">
-  <p>This misty landscape dominated my window all morning, and it bore a resemblance to the mountains back home.</p>
-  <img src="{{ page.img-link }}4.jpg" alt="Misty landscape outside my window" />
-</div>
+{% include 2.html type="ctr-sm"
+  img1="46" alt1="old lady sitting across me"
+  img2="3" alt2="old lady looking outside the window"
+%}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}9.jpg" alt="Beatles-inspired hostel" />
-  <div>
-    <p>I stayed in a Beatles-inspired hostel ran by a young artist couple. They worked together as an independent photographer-stylist team outside the business.</p>
-  </div>
-</div>
+{% include 2.html type="ctr"
+  text1="This misty landscape dominated my window all morning, and it bore a resemblance to the mountains back home."
+  img2="4" alt2="Misty landscape outside my window"
+%}
 
-<div class="grid grid-spaced items-2 module">
-  <div>
-    <p>Small coffee shops and street food scattered the neighborhood. I saw a couple of food trucks parked on the streets but didn't have the chance to taste them. I was too full stuffing my face with small bites I came across.</p>
-  </div>
+{% include 2.html type="sp-sm"
+  img1="9" alt1="Beatles-inspired hostel"
+  text1="I stayed in a Beatles-inspired hostel ran by a young artist couple. They worked together as an independent photographer-stylist team outside the business."
+%}
 
-  <img src="{{ page.img-link }}15.jpg" alt="Streets of Chiang Mai" />
-</div>
+{% include 2.html type="sp"
+  text1="Small coffee shops and street food scattered the neighborhood. I saw a couple of food trucks parked on the streets but didn't have the chance to taste them. I was too full stuffing my face with small bites I came across."
+  img2="15" alt2="Streets of Chiang Mai"
+%}
 
-<div class="grid grid-spaced items-3 module">
-  <img src="{{ page.img-link }}11.jpg" alt="Coffee shops" />
-  <img src="{{ page.img-link }}12.jpg" alt="Friendly barista" />
-  <img src="{{ page.img-link }}10.jpg" alt="coffee shop signs" />
-</div>
+{% include 3.html type="sp"
+  img1="11" alt1="Coffee shops"
+  img2="12" alt2="Friendly barista"
+  img3="10" alt3="coffee shop signs"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}16.jpg" alt="Temple and sun rays" />
-</div>
+{% include 1.html type="ctr" img="16" alt="Temple and sun rays" %}
 
-<div class="grid grid-center items-4 module">
-  <img src="{{ page.img-link }}17.jpg" alt="Kids on their tablet" />
-  <img src="{{ page.img-link }}14.jpg" alt="black and white bird" />
-  <img src="{{ page.img-link }}13.jpg" alt="Woman in mirror" />
-  <img src="{{ page.img-link }}18.jpg" alt="Two dogs roaming the streets of Chiang Mai" />
-</div>
+{% include 4.html type="ctr"
+  img1="17" alt1="Kids on their tablet"
+  img2="14" alt2="black and white bird"
+  img3="13" alt3="Woman in mirror"
+  img4="18" alt4="Two dogs roaming the streets of Chiang Mai"
+%}
 
-<div class="grid grid-center width-half module">
-  <p>Chiang Mai is also known for its night markets.</p>
-  <img src="{{ page.img-link }}21.jpg" alt="Night markets - a seller with his wooden craft" />
-</div>
+{% include 2.html type="sp"
+  text="Chiang Mai is also known for its night markets."
+  img="21" alt="Night markets - a seller with his wooden craft"
+%}
 
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}19.jpg" alt="night market artwork" />
-  <img src="{{ page.img-link }}22.jpg" alt="elephant crafts" />
-</div>
+{% include 2.html type="sp"
+  img1="19" alt1="night market artwork"
+  img2="22" alt2="elephant crafts"
+%}
 
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}23.jpg" alt="weird artsy bags" />
-  <img src="{{ page.img-link }}24.jpg" alt="grafitti on the wall" />
-</div>
+{% include 2.html type="sp"
+  img1="23" alt1="weird artsy bags"
+  img2="24" alt2="grafitti on the wall"
+%}
 
-<div class="grid grid-center width-half">
-  <h3>Wat Doi Suthep</h3>
-  <p>There is a Buddhist temple in the mountains with an <a href="http://en.wikipedia.org/wiki/Wat_Phra_That_Doi_Suthep" target="_blank">enthralling legend</a>. Even though it's a popular tourist spot, I still wanted to see it for myself. Plus, it was in the mountains, and I love mountains.</p>
-</div>
+{% include 1.html text="
+### Wat Doi Suthep
+  There is a Buddhist temple in the mountains with an [enthralling legend](http://en.wikipedia.org/wiki/Wat_Phra_That_Doi_Suthep){:target='_blank'}. Even though it's a popular tourist spot, I still wanted to see it for myself. Plus, it was in the mountains, and I love mountains.
+" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}25.jpg" alt="Wat Doi Suthep buddhist temple" />
-</div>
+{% include 1.html type="ctr" img="25" alt="Wat Doi Suthep buddhist temple" %}
 
-<div class="grid grid-center items-4 module">
-  <img src="{{ page.img-link }}26.jpg" alt="temple art" />
-  <img src="{{ page.img-link }}27.jpg" alt="temple art" />
-  <img src="{{ page.img-link }}31.jpg" alt="temple art" />
-  <img src="{{ page.img-link }}28.jpg" alt="temple bells" />
-</div>
+{% include 4.html type="ctr"
+  img1="26" alt1="temple art"
+  img2="27" alt2="temple art"
+  img3="31" alt3="temple art"
+  img4="28" alt4="temple bells"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}29.jpg" alt="buddhist monk blessing the visitors" />
-</div>
+{% include 1.html type="ctr" img="29" alt="buddhist monk blessing the visitors" %}
 
-<div class="grid grid-center width-half">
-  <p>In one of the rooms, we knelt in front of a monk so he could give us his blessings. I had no idea what he was chanting. Everyone in the room was clueless and had to be instructed by the temple staff of what to do next.</p>
-  <p>I remember a time when my family and I visited one of the Buddhist temples in Cebu. We sat in a room while a monk shared a story, sort of like when a priest preaching a sermon. My siblings and I would pretend we understood what the monk was saying. And once it was over, we'd ask our dad to translate the whole thing for us. After the mass, there was a free vegetarian lunch, which I wasn't so happy about. Especially the ones that were made to look and taste like meat.</p>
-</div>
+{% include 1.html text="
+  In one of the rooms, we knelt in front of a monk so he could give us his blessings. I had no idea what he was chanting. Everyone in the room was clueless and had to be instructed by the temple staff of what to do next.
 
-<div class="grid float-left-6 module">
-  <img src="{{ page.img-link }}30.jpg" alt="blessing visitors" />
-</div>
+  I remember a time when my family and I visited one of the Buddhist temples in Cebu. We sat in a room while a monk shared a story, sort of like when a priest preaching a sermon. My siblings and I would pretend we understood what the monk was saying. And once it was over, we'd ask our dad to translate the whole thing for us. After the mass, there was a free vegetarian lunch, which I wasn't so happy about. Especially the ones that were made to look and taste like meat.
+" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}32.jpg" alt="statues in the temple" />
-</div>
+{% include 1.html type="fl-left" img="30" alt="blessing visitors" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}33.jpg" alt="steps back to parking lot" />
-  <img src="{{ page.img-link }}34.jpg" alt="temple statue" />
-</div>
+{% include 1.html type="ctr" img="32" alt="statues in the temple" %}
 
-<div class="grid grid-center width-half">
-  <h3>Stumbled upon</h3>
-  <p>The day before I left Chiang Mai, I wandered upon a haven of hipster shops and small cafes. <i>Think Park</i> was obscurely hiding behind a mall. I was bummed that I found it on my last day, but was also happy that I now had a reason to come back to this city.</p>
-</div>
+{% include 2.html type="sp-sm"
+  img1="33" alt1="steps back to parking lot"
+  img2="34" alt2="temple statue"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}35.jpg" alt="little cozy shops" />
-</div>
+{% include 1.html text="
+### Stumbled upon
+  The day before I left Chiang Mai, I wandered upon a haven of hipster shops and small cafes. *Think Park* was obscurely hiding behind a mall. I was bummed that I found it on my last day, but was also happy that I now had a reason to come back to this city.
+" %}
 
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}36.jpg" alt="man cave rules poster" />
-  <img src="{{ page.img-link }}37.jpg" alt="shop with cute bags" />
-</div>
+{% include 1.html type="ctr" img="35" alt="little cozy shops" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}39.jpg" alt="more shops" />
-</div>
+{% include 2.html type="sp"
+  img1="36" alt1="man cave rules poster"
+  img2="37" alt2="shop with cute bags"
+%}
 
-<div class="grid width-half module">
-  <img src="{{ page.img-link }}40.jpg" alt="cozy shop" />
-</div>
+{% include 1.html type="ctr" img="39" alt="more shops" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}41.jpg" alt="hipster bike" />
-</div>
+{% include 1.html type="ctr" img="40" alt="cozy shop" %}
 
-<div class="grid grid-right width-half module">
-  <img src="{{ page.img-link }}42.jpg" alt="postcards" />
-</div>
+{% include 1.html type="ctr" img="41" alt="hipster bike" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}43.jpg" alt="crafty things" />
-</div>
+{% include 1.html type="ctr" img="42" alt="postcards" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}38.jpg" alt="cool pottery" />
-  <img src="{{ page.img-link }}45.jpg" alt="dessert time" />
-</div>
+{% include 1.html type="ctr" img="43" alt="crafty things" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}44.jpg" alt="little truck converted into a shop" />
-</div>
+{% include 2.html type="sp-sm"
+  img1="38" alt1="cool pottery"
+  img2="45" alt2="dessert time"
+%}
+
+{% include 1.html type="ctr" img="44" alt="little truck converted into a shop" %}

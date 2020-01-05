@@ -10,121 +10,100 @@ img:
   small:    2016/golden-circle/white-spaces-small.jpg
   large:    2016/golden-circle/white-spaces-cover.jpg
 ---
-<div class="grid grid-center width-half">
-  <p>I've been procrastinating with this story for the longest time. I struggled with this because winter makes me sad, and looking at pictures of cold, dark places makes me sad.</p>
-</div>
+{% include 1.html text="I've been procrastinating with this story for the longest time. I struggled with this because winter makes me sad, and looking at pictures of cold, dark places makes me sad." %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}3.jpg" alt="Snow-capped mountains" >
-  <img src="{{ page.img-link }}16.jpg" alt="Pathway" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="3" alt1="Snow-capped mountains"
+  img2="16" alt2="Pathway"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}19.jpg" alt="Inside the bus" >
-</div>
+{% include 1.html type="ctr" img="19" alt="Inside the bus" %}
 
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}1.jpg" alt="Driving through Iceland's landscape" >
-  <img src="{{ page.img-link }}2.jpg" alt="Empty road" >
-</div>
+{% include 2.html type="sp"
+  img1="1" alt1="Driving through Iceland's landscape"
+  img2="2" alt2="Empty road"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}17.jpg" alt="Evening falls" >
-</div>
+{% include 1.html type="ctr" img="17" alt="Evening falls" %}
 
-<div class="grid grid-center width-half">
-  <p>Our visa was valid for only twenty-one days and we had four countries to visit. To save time, we joined several small group tours to get an overview of Iceland. Renting a car and driving around the country would have been ideal but we just didn't have the time.</p>
-  <p>We left early in the morning to save daylight. It was already dark at three in the afternoon so we had very little time to check out the sites. Being on a tight schedule was exhausting though we were able to see snippets of the country.</p>
-  <p>Many wild horses roamed free in the fields. They were short and stout, had thick hair and fat hooves, unlike the horses I've seen. They didn't seem to mind interacting with humans as well.</p>
-  <p>"Don't take long. This is just a quick stopover." the guide said. I watched as the rest of the group walked with ease while I helplessly flailed my arms and scuffled my feet on the frozen grass. The ground was very slippery and full of horse shit so we had to watch over where we stepped. One of the horses saw me and headed in my direction. <i>Good horse. Come to me, horse.</i> I reached out to touch its head but it was only interested in my pink gloves.</p>
-</div>
+{% include 1.html text="
+  Our visa was valid for only twenty-one days and we had four countries to visit. To save time, we joined several small group tours to get an overview of Iceland. Renting a car and driving around the country would have been ideal but we just didn't have the time.
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}8.jpg" alt="Jeremie and one of the horses" >
-  <img src="{{ page.img-link }}7.jpg" alt="Horse hair" >
-</div>
+  We left early in the morning to save daylight. It was already dark at three in the afternoon so we had very little time to check out the sites. Being on a tight schedule was exhausting though we were able to see snippets of the country.
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}6.jpg" alt="Icelandci horses looking away" >
-</div>
+  Many wild horses roamed free in the fields. They were short and stout, had thick hair and fat hooves, unlike the horses I've seen. They didn't seem to mind interacting with humans as well.
 
-<div class="grid grid-spaced items-3 module">
-  <img src="{{ page.img-link }}11.jpg" alt="Compass" >
-  <img src="{{ page.img-link }}40.jpg" alt="Jeremie and the giant troll" >
-  <img src="{{ page.img-link }}12.jpg" alt="Rift in the earth" >
-</div>
+  'Don't take long. This is just a quick stopover.' the guide said. I watched as the rest of the group walked with ease while I helplessly flailed my arms and scuffled my feet on the frozen grass. The ground was very slippery and full of horse shit so we had to watch over where we stepped. One of the horses saw me and headed in my direction. *Good horse. Come to me, horse.* I reached out to touch its head but it was only interested in my pink gloves.
+" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}15.jpg" alt="Gullfoss" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="8" alt1="Jeremie and one of the horses"
+  img2="7" alt2="Horse hair"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}22.jpg" alt="Beautiful houses line up in hill" >
-</div>
+{% include 1.html type="ctr" img="6" alt="Icelandic horses looking away" %}
 
-<div class="grid grid-center items-2-thin module">
-  <img src="{{ page.img-link }}20.jpg" alt="Distant mountains" >
-  <img src="{{ page.img-link }}21.jpg" alt="Red house in front of mountains" >
-</div>
+{% include 3.html type="st"
+  img1="11" alt1="Compass"
+  img2="40" alt2="Jeremie and the giant troll"
+  img3="12" alt3="Rift in the earth"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}18.jpg" alt="Giant cave formation" >
-</div>
+{% include 1.html type="ctr" img="15" alt="Gullfoss" %}
 
-<div class="grid grid-center width-half">
-  <p>Reynisfjara is a black pebble beach in the town of Vík. According to folklore, two trolls were dragging a ship to shore when daybreak came and turned them into stone.</p>
-  <p>I also learned that during summer, puffins nest on the rock cliffs. Apparently, these perpetually-sad-looking birds are loyal to one partner their entire lives. You wonder what the evolutionary purpose of being monogamous is for these birds.</p>
-</div>
+{% include 1.html type="ctr" img="22" alt="Beautiful houses line up in hill" %}
 
-<div class="grid grid-center items-2-thin module">
-  <img src="{{ page.img-link }}29.jpg" alt="Yellow fields" >
-  <img src="{{ page.img-link }}28.jpg" alt="High waves" >
-</div>
+{% include 2.html type="ctr-sm"
+  img1="20" alt1="Distant mountains"
+  img2="21" alt2="Red house in front of mountains"
+%}
 
-<div class="grid items-3-bleed module">
-  <img src="{{ page.img-link }}27.jpg" alt="Watching waves" >
-  <img src="{{ page.img-link }}25.jpg" alt="Watching waves" >
-  <img src="{{ page.img-link }}26.jpg" alt="Watching waves" >
-</div>
+{% include 1.html type="ctr" img="18" alt="Giant cave formation" %}
 
-<div class="grid grid-center width-thirds module">
-  <img src="{{ page.img-link }}30.jpg" alt="Jeremie walking on snow" >
-</div>
+{% include 1.html text="
+  Reynisfjara is a black pebble beach in the town of Vík. According to folklore, two trolls were dragging a ship to shore when daybreak came and turned them into stone.
 
-<div class="grid grid-center width-half">
-  <p>Later on, we took a short hike to see the glaciers. We walked through a vast pebbled valley with a frozen lake in between. The gigantic mountains made the people look like ants.</p>
-  <p>A sign stood on one of the paths to discourage people from getting too close to the water. There was no way to know if the ice was rigid or fragile so this helped prevent accidents. Our guide told us about how a group of Americans had a picnic on a glacier and had to be <a href="http://www.dailymail.co.uk/news/article-2329403/American-tourists-picnic-glacier-Iceland-iceberg-floats-away.html" target="_blank" rel="nofollow">rescued after it started floating away</a>. The funny part was that the guide kept several photos from the news articles on her tablet like she was waiting to show it to everyone she met.</p>
-</div>
+  I also learned that during summer, puffins nest on the rock cliffs. Apparently, these perpetually-sad-looking birds are loyal to one partner their entire lives. You wonder what the evolutionary purpose of being monogamous is for these birds.
+" %}
 
-<div class="grid width-half module">
-  <img src="{{ page.img-link }}39.jpg" alt="Tiny humans in a vast icy landscape" >
-</div>
+{% include 2.html type="ctr-sm"
+  img1="29" alt1="Yellow fields"
+  img2="28" alt2="High waves"
+%}
 
-<div class="grid grid-right width-half module">
-  <img src="{{ page.img-link }}31.jpg" alt="Glaciers and tiny humans" >
-</div>
+{% include 3.html type="bleed"
+  img1="27" alt1="Watching waves"
+  img2="25" alt2="Watching waves"
+  img3="26" alt3="Watching waves"
+%}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}32.jpg" alt="Glaciers" >
-  <img src="{{ page.img-link }}36.jpg" alt="House in front of mountains" >
-</div>
+{% include 1.html type="ctr-sm" img="30" alt="Jeremie walking on snow" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}37.jpg" alt="Old icelandic houses" >
-</div>
+{% include 1.html text="
+  Later on, we took a short hike to see the glaciers. We walked through a vast pebbled valley with a frozen lake in between. The gigantic mountains made the people look like ants.
 
-<div class="grid float-right-6 module">
-  <img src="{{ page.img-link }}38.jpg" alt="Skógafoss" >
-</div>
+  A sign stood on one of the paths to discourage people from getting too close to the water. There was no way to know if the ice was rigid or fragile so this helped prevent accidents. Our guide told us about how a group of Americans had a picnic on a glacier and had to be [rescued after it started floating away](http://www.dailymail.co.uk/news/article-2329403/American-tourists-picnic-glacier-Iceland-iceberg-floats-away.html){:target='_blank'}. The funny part was that the guide kept several photos from the news articles on her tablet like she was waiting to show it to everyone she met.
+" %}
 
-<div class="grid grid-center width-half">
-  <p>At the Skógar Folk Museum, we listened to Icelandic Sagas and stories of what life was like hundreds (or maybe thousands?) of years ago. The museum is found in the middle of nowhere. We didn't get a chance to learn about the exhibits in the museum because of time constraints but it gave us reason to return.</p>
-</div>
+{% include 1.html type="left" img="39" alt="Tiny humans in a vast icy landscape" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}34.jpg" alt="Viking ship" >
-  <img src="{{ page.img-link }}35.jpg" alt="Portraits" >
-</div>
+{% include 1.html type="right" img="31" alt="Glaciers and tiny humans" %}
+
+{% include 2.html type="sp-sm"
+  img1="32" alt1="Glaciers"
+  img2="36" alt2="House in front of mountains"
+%}
+
+{% include 1.html type="ctr" img="37" alt="Old icelandic houses" %}
+
+{% include 1.html type="fl-right" img="38" alt="Skógafoss" %}
+
+{% include 1.html text="At the Skógar Folk Museum, we listened to Icelandic Sagas and stories of what life was like hundreds (or maybe thousands?) of years ago. The museum is found in the middle of nowhere. We didn't get a chance to learn about the exhibits in the museum because of time constraints but it gave us reason to return." %}
+
+{% include 2.html type="sp-sm"
+  img1="34" alt1="Viking ship"
+  img2="35" alt2="Portraits"
+%}
 
 <div class="grid grid-center width-thirds text-center module">
   <h3>'Till next time, Iceland!</h3>

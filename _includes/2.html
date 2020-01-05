@@ -1,0 +1,48 @@
+<div class="grid module
+  {% if include.type == "ctr" %}grid-center items-2
+  {% elsif include.type == "ctr-sm" %}grid-center items-2-thin
+  {% elsif include.type == "sp-sm" %}grid-spaced items-2-thin
+  {% elsif include.type == "sp" %}grid-spaced items-2
+  {% elsif include.type == "bleed" %}items-2-bleed
+  {% elsif include.type == "bleed-uneven" %}items-2-bleed-balanced
+  {% elsif include.type == "sp-balanced" %}grid-spaced items-2-balanced
+  {% elsif include.type == "r-thin" %}grid-spaced items-2-thin-right
+  {% elsif include.type == "l-thin" %}grid-spaced items-2-thin-left
+  {% endif %}
+">
+  {% if include.img1 %}
+    <img src="{{ page.img-link }}{{ include.img1 }}.jpg" alt="{{ include.alt1 }}" >
+  {% endif %}
+
+  {% if include.text1 %}
+    {{ include.text1 | markdownify }}
+  {% endif %}
+
+  {% if include.img2 %}
+    <img src="{{ page.img-link }}{{ include.img2 }}.jpg" alt="{{ include.alt2 }}" >
+  {% endif %}
+
+  {% if include.text2 %}
+    {{ include.text2 | markdownify }}
+  {% endif %}
+
+  {% if include.img3 %}
+    <img src="{{ page.img-link }}{{ include.img3 }}.jpg" alt="{{ include.alt3 }}" >
+  {% endif %}
+
+  {% if include.img4 %}
+    <img src="{{ page.img-link }}{{ include.img4 }}.jpg" alt="{{ include.alt4 }}" >
+  {% endif %}
+
+  {% if include.img5 %}
+    <img src="{{ page.img-link }}{{ include.img5 }}.jpg" alt="{{ include.alt5 }}" >
+  {% endif %}
+
+  {% if include.img6 %}
+    <img src="{{ page.img-link }}{{ include.img6 }}.jpg" alt="{{ include.alt6 }}" >
+  {% endif %}
+
+  {% if include.img7 %}
+    <img src="{{ page.img-link }}{{ include.img7 }}.jpg" alt="{{ include.alt7 }}" >
+  {% endif %}
+</div>

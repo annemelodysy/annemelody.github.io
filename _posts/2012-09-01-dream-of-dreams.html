@@ -10,57 +10,37 @@ img:
   small:    2012/dreams/dreams-small.jpg
   large:    2012/dreams/dreams-cover.jpg
 ---
-<div class="grid grid-center width-half">
-  <p>I took a step back and stared at the sky. The clouds sit on top of each other, moving ever so slowly away from where I was standing. I look at my feet. They take me to places I’ve traveled far across the sea.</p>
-</div>
+{% include 1.html text="I took a step back and stared at the sky. The clouds sit on top of each other, moving ever so slowly away from where I was standing. I look at my feet. They take me to places I’ve traveled far across the sea." %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}1.jpg" alt="Construction outposts" >
-</div>
+{% include 1.html type="ctr" img="1" alt="Construction outposts" %}
 
-<div class="grid grid-center width-half">
-  <p>An afternoon spent under the sun is always a pleasure especially when there's a lot of space to move in. My eyes trail the wires and wires connected by wooden posts. It's like walking over a thin rope, you concentrate on your path until you reach your destination satisfied, safe, sound.</p>
-</div>
+{% include 1.html text="An afternoon spent under the sun is always a pleasure especially when there's a lot of space to move in. My eyes trail the wires and wires connected by wooden posts. It's like walking over a thin rope, you concentrate on your path until you reach your destination satisfied, safe, sound." %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}2.jpg" alt="Crane, posts, and vast sky" >
-</div>
+{% include 1.html type="ctr" img="2" alt="Crane, posts, and vast sky" %}
 
-<div class="grid grid-center width-half">
-  <p>What is it about the motion and silence that brings us towards this similar interest of our world?</p>
-</div>
+{% include 1.html text="What is it about the motion and silence that brings us towards this similar interest of our world?" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}3.jpg" alt="Dreamy clouds" >
-  <img src="{{ page.img-link }}4.jpg" alt="Giant cranes" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="3" alt1="Dreamy clouds"
+  img2="4" alt2="Giant cranes"
+%}
 
-<div class="grid grid-center width-half">
-  <p>These "Flightless birds" as described by my friend John, stood a few meters from us. These mechanical creatures seemed to be resting from a day of heavy work.</p>
-</div>
+{% include 1.html text="These *Flightless birds* as described by my friend John, stood a few meters from us. These mechanical creatures seemed to be resting from a day of heavy work." %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}5.jpg" alt="Srp baywalk sign" >
-  <img src="{{ page.img-link }}6.jpg" alt="Gero standing in front of a container van" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="5" alt1="SRP baywalk sign"
+  img2="6" alt2="Gero standing in front of a container van"
+%}
 
-<div class="grid grid-center width-half">
-  <p>Yes it led me, it led me to infinity. Infinity is where the sky collides with the ocean. If we traveled at the speed of light, would we realize that infinity has an end? We'll never know so enjoy the journey and take in as much as you can.</p>
-</div>
+{% include 1.html text="Yes it led me, it led me to infinity. Infinity is where the sky collides with the ocean. If we traveled at the speed of light, would we realize that infinity has an end? We'll never know so enjoy the journey and take in as much as you can." %}
 
-<div class="grid width-half module">
-  <img src="{{ page.img-link }}7.jpg" alt="Control panel" >
-</div>
+{% include 1.html type="ctr" img="7" alt="Control panel" %}
 
-<div class="grid grid-center width-half">
-  <p>A set of colored buttons lie motionless in the middle of the fields. We examined it, looking at every angle to determine what they were for. The curious side of me reached out and pressed one of the buttons. To our surprise, it triggered a gentle hum in the air, followed by a gush of wind that made the newspapers dance in the air. One in particular fell on my feet.</p>
-</div>
+{% include 1.html text="A set of colored buttons lie motionless in the middle of the fields. We examined it, looking at every angle to determine what they were for. The curious side of me reached out and pressed one of the buttons. To our surprise, it triggered a gentle hum in the air, followed by a gush of wind that made the newspapers dance in the air. One in particular fell on my feet." %}
 
-<div class="grid grid-right width-half module">
-  <img src="{{ page.img-link }}8.jpg" alt="Newspaper on the floor" >
-</div>
+{% include 1.html type="ctr" img="8" alt="Newspaper on the floor" %}
 
-<div class="grid grid-spaced items-3 module">
+<div class="grid grid-center items-3 module">
   <img src="{{ page.img-link }}9.jpg" alt="More skies" >
   <img src="{{ page.img-link }}10.jpg" alt="Vast land" >
   <img src="{{ page.img-link }}11.jpg" alt="Criss cross of steel" >
@@ -68,19 +48,13 @@ img:
   <img src="{{ page.img-link }}13.jpg" alt="Cebu city" >
 </div>
 
-<div class="grid grid-center width-half">
-  <p>The city I live in is beautiful. It's not the richest in the world, but it's beautiful. Who wouldn't love the close proximity to the water? Or the gentle mountains, even the cozy little shops that hide in the corners?</p>
-</div>
+{% include 1.html text="The city I live in is beautiful. It's not the richest in the world, but it's beautiful. Who wouldn't love the close proximity to the water? Or the gentle mountains, even the cozy little shops that hide in the corners?" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}14.jpg" alt="Parkmall" >
-</div>
+{% include 1.html type="ctr" img="14" alt="Parkmall" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}15.jpg" alt="KM-24 sign" >
-  <img src="{{ page.img-link }}16.jpg" alt="Light and shadows on chair" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="15" alt1="KM-24 sign"
+  img2="16" alt2="Light and shadows on chair"
+%}
 
-<div class="grid grid-center width-half">
-  <p><i>These photos are taken using my Zorki 4k rangefinder camera paired with an old Kodak Ultima film (ISO 400). I've posted similar photos from my Panasonic Lumix GF1 <a href="/travel/south-but-not-too-south" target="_blank">here &#8605;</a>.</i></p>
-</div>
+{% include 1.html text="*These photos are taken using my Zorki 4k rangefinder camera paired with an old Kodak Ultima film (ISO 400). I've posted similar photos from my Panasonic Lumix GF1 [here &#8605;](/travel/south-but-not-too-south)*" %}

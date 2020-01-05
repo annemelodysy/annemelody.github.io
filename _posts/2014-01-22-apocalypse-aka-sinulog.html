@@ -10,73 +10,69 @@ img:
   small:    2014/sinulog/sinulog-small.jpg
   large:    2014/sinulog/sinulog-cover.jpg
 ---
-<div class="grid grid-center width-half">
-  <p>It's a thing for people to go crazy during the annual Sinulog festival in Cebu. It's like having a full moon. I even saw a "werewolf" (see proof below).</p>
-  <p>For the most part, I walked around the city snapping random interesting things. I mean, this was probably the only time I could do that without fear of getting robbed.</p>
-  <img src="{{ page.img-link }}1.jpg" alt="kids with masks" />
-</div>
+{% include 1.html text="
+  Once a year, Cebuanos gather in the streets to enjoy a celebrated event called Sinulog. Students parade the street in costumes as they dance to the familiar beat that has played every year since I could remember.
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}2.jpg" alt="Discarded couch" />
-  <img src="{{ page.img-link }}3.jpg" alt="Electrical chaos" />
-</div>
+  *Prii-ti-tit! Priii-ti-tiiit!*
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}5.jpg" alt="People selling things on the streets" />
-</div>
+  ![kids with masks](/assets/2014/sinulog/1.jpg)
 
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}4.jpg" alt="Hanging plants" />
-  <img src="{{ page.img-link }}6.jpg" alt="People and trash don't go well together" />
-</div>
+  Locals recognize the festival as a celebration for Santo Niño (Baby Jesus). But in recent years, it has evolved into a big party that tourists and young people alike take as an opportunity to have fun, go crazy, and get drunk. I take it as an opportunity to walk around the city without any fear of getting mugged. Of course, you do have to deal with gropers if you end up in the parts of the city where the parties are happening. So you're not completely safe.
+" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}9.jpg" alt="Man playing music in the streets" />
-</div>
+{% include 2.html type="sp-sm"
+  img1="2" alt1="Discarded couch"
+  img2="3" alt2="Electrical chaos"
+%}
 
-<div class="grid grid-spaced items-2-thin-right module">
-  <img src="{{ page.img-link }}7.jpg" alt="Trapo" />
-  <img src="{{ page.img-link }}8.jpg" alt="Trash collector" />
-</div>
+{% include 1.html type="ctr" img="5" alt="People selling things on the streets" %}
 
-<div class="grid grid-center width-half module">
-  <img src="/assets/2014/sinulog/10.jpg" alt="You are being watched" />
-  <p>You are being watched.</p>
-  <img src="/assets/2014/sinulog/11.jpg" alt="Don't pee in public" />
-  <p>So you won't have to pee in the sidewalk. Please don't. Also, stop spitting in public. It's gross.</p>
-</div>
+{% include 2.html type="sp"
+  img1="4" alt1="Hanging plants"
+  img2="6" alt2="People and trash don't go well together"
+%}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}12.jpg" alt="Children sitting on railings" />
-  <img src="{{ page.img-link }}13.jpg" alt="A spiritual shift" />
-</div>
+{% include 1.html type="ctr" img="9" alt="Man playing music in the streets" %}
 
-<div class="grid grid-center width-half module">
-  <p>For a brief second, I experienced a spiritual shift.</p>
-  <img src="/assets/2014/sinulog/16.jpg" alt="Children playing in the streets" />
-</div>
+{% include 2.html type="r-thin"
+  img1="7" alt1="Trapo"
+  img2="8" alt2="Trash collector"
+%}
 
-<div class="grid grid-spaced items-2-thin-right module">
-  <img src="{{ page.img-link }}14.jpg" alt="Headless boy" />
-  <img src="{{ page.img-link }}15.jpg" alt="Hat vendor" />
-</div>
+{% include 1.html text="
+  ![You are being watched](/assets/2014/sinulog/10.jpg)
+  ![Don't pee in public](/assets/2014/sinulog/11.jpg)
+" %}
 
-<div class="grid grid-center width-half">
-  <p>My friend Joan with her boyfriend and family selling sweets and treats.</p>
-</div>
+{% include 2.html type="sp-sm"
+  img1="12" alt1="Children sitting on railings"
+  img2="13" alt2="A spiritual shift"
+%}
 
-<div class="grid grid-spaced items-2-thin-right module">
-  <img src="{{ page.img-link }}17.jpg" alt="Joan and family selling food" />
-  <img src="{{ page.img-link }}18.jpg" alt="And then it turned dark" />
-</div>
+{% include 1.html type="ctr" img="16" alt="Children playing in the streets" %}
 
-<div class="grid grid-center width-half module">
-  <p>When it was dark, we began our hike to Ayala. Short distance, but the crowd was definitely a challenge. I think I might've stepped on a few humans, but I'm not 100% sure.</p>
-  <img src="{{ page.img-link }}19.jpg" alt="Victory" />
-  <img src="{{ page.img-link }}20.jpg" alt="Meeting up with our friend Annie" />
-  <p>Meeting up with Annie to watch fireworks.</p>
-  <img src="{{ page.img-link }}21.jpg" alt="The group" />
-  <img src="{{ page.img-link }}22.jpg" alt="Fireworks" />
-  <p>We ended our night with a spectacular fireworks display. It's been a while since I've experienced something like it. It was breathtaking!</p>
-  <img src="{{ page.img-link }}23.jpg" alt="Fireworks" />
-</div>
+{% include 2.html type="r-thin"
+  img1="14" alt1="Headless boy"
+  img2="15" alt2="Hat vendor"
+%}
+
+{% include 2.html type="r-thin"
+  img1="17" alt1="Joan and family selling food"
+  img2="18" alt2="And then it turned dark"
+%}
+
+{% include 1.html text="
+  When it became dark, we began our hike to Ayala. Short distance, but the crowd was definitely a challenge.
+
+  ![Victory](/assets/2014/sinulog/19.jpg)
+  ![Meeting up with our friend Annie](/assets/2014/sinulog/20.jpg)
+
+  Meeting up with Annie to watch fireworks.
+
+  ![The group](/assets/2014/sinulog/21.jpg)
+  ![Fireworks](/assets/2014/sinulog/22.jpg)
+
+  We ended our night with a spectacular fireworks display. It's been a while since I've experienced something like it. It was breathtaking!
+
+  ![Fireworks](/assets/2014/sinulog/23.jpg)
+" %}

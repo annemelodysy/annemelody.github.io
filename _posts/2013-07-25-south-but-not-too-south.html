@@ -10,59 +10,41 @@ img:
   small:    2013/south/south-small.jpg
   large:    2013/south/south-cover.jpg
 ---
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}1.jpg" alt="Roof structures" >
-  <img src="{{ page.img-link }}2.jpg" alt="Tower steel structure" >
-</div>
+{% include 2.html type="sp"
+  img1="1" alt1="Roof structures"
+  img2="2" alt2="Tower steel structure"
+%}
 
-<div class="grid width-half module">
-  <img src="{{ page.img-link }}3.jpg" alt="Lamp posts and cloudy blue sky" >
-</div>
+{% include 1.html type="left" img="3" alt="Lamp posts and cloudy blue sky" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}4.jpg" alt="Visitor's center" >
-</div>
+{% include 1.html type="ctr" img="4" alt="Visitor's center" %}
 
-<div class="grid float-right-6 module">
-  <img src="{{ page.img-link }}5.jpg" alt="Newspaper on the floor" >
-</div>
+{% include 1.html type="right" img="5" alt="Newspaper on the floor" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}6.jpg" alt="Giant cloud" >
-</div>
+{% include 1.html type="ctr" img="6" alt="Giant cloud" %}
 
-<div class="grid float-left-6 module">
-  <img src="{{ page.img-link }}7.jpg" alt="House on a hill" >
-</div>
+{% include 1.html type="left" img="7" alt="House on a hill" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}13.jpg" alt="Cloudy sky" >
-  <img src="{{ page.img-link }}8.jpg" alt="Control panel" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="13" alt1="Cloudy sky"
+  img2="8" alt2="Control panel"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}9.jpg" alt="Dry mud" >
-</div>
+{% include 1.html type="ctr" img="9" alt="Dry mud" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}10.jpg" alt="Gero with the vast sky" >
-  <img src="{{ page.img-link }}11.jpg" alt="Gero standing behind a container van" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="10" alt1="Gero with the vast sky"
+  img2="11" alt2="Gero standing behind a container van"
+%}
 
-<div class="grid grid-right width-half module">
-  <img src="{{ page.img-link }}12.jpg" alt="Cloud and houses" >
-</div>
+{% include 1.html type="right" img="12" alt="Cloud and houses" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}14.jpg" alt="Zara walking towards the sea" >
-</div>
+{% include 1.html type="ctr" img="14" alt="Zara walking towards the sea" %}
 
-<div class="grid grid-center items-3 module">
-  <img src="{{ page.img-link }}16.jpg" alt="Mechanical crane" >
-  <img src="{{ page.img-link }}17.jpg" alt="Blurry dark scene" >
-  <img src="{{ page.img-link }}18.jpg" alt3="Evening shadows" >
-</div>
+{% include 3.html type="sp"
+  img1="16" alt1="Mechanical crane"
+  img2="17" alt2="Blurry dark scene"
+  img3="18" alt3="Evening shadows"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}15.jpg" alt="Plane in the sky" >
-</div>
+{% include 1.html type="ctr" img="15" alt="Plane in the sky" %}

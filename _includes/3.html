@@ -1,0 +1,12 @@
+<div class="grid module
+  {% if include.type == "ctr" %}grid-center items-3
+  {% elsif include.type == "bleed" %}items-3-bleed
+  {% elsif include.type == "sp" %}grid-spaced items-3
+  {% elsif include.type == "st-sm" %}stacked-3-items-sm
+  {% elsif include.type == "st" %}stacked-3-items
+  {% endif %}
+">
+  <img src="{{ page.img-link }}{{ include.img1 }}.jpg" alt="{{ include.alt1 }}" >
+  <img src="{{ page.img-link }}{{ include.img2 }}.jpg" alt2="{{ include.alt2 }}" >
+  <img src="{{ page.img-link }}{{ include.img3 }}.jpg" alt3="{{ include.alt3 }}" >
+</div>

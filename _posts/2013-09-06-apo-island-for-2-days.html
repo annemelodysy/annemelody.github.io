@@ -10,71 +10,68 @@ img:
   small:    2013/apo-island/apo-island-small.jpg
   large:    2013/apo-island/apo-island-cover.jpg
 ---
+{% include 1.html text="
+  There's a volcanic island near Dumaguete that we've wanted to visit for some time. Apo island which (according to Wikipedia) is derived from the Filipino word for grandchild. We were all there for one reason&mdash;to witness sea turtles in the wild! Unfortunately, I don't have an underwater camera, so I don't have pictures of the turtles.
 
-<div class="grid grid-center width-half module">
-  <p>There's a volcanic island near Dumaguete that we've wanted to visit for some time. Apo island which (according to Wikipedia) is derived from the Filipino word for grandchild. We were all there for one reason&mdash;to witness sea turtles in the wild! Unfortunately, I don't have an underwater camera, so I don't have pictures of the turtles.</p>
-  <p>We took a bus at around 3 am at the South Bus Terminal. Jeremie, Vince, and I stayed up all night at Starbucks talking about outer space, games, parallel universe, and other far-fetched stories.</p>
-  <p>When we boarded the bus, it was freezing, and I immediately regret not bringing a jacket with me. I eventually dozed off. All night, I shifted on my seat to avoid getting a stiff neck, adjusted my legs so it wouldn't go numb, and woke up every now and then to see where we were.</p>
-  <img src="{{ page.img-link }}1.jpg" alt="Waking up in side the bus" />
-  <p>Sunlight woke me that morning. The scene on the bus looked unreal partly because it was too quiet and everyone was asleep, and because I was reeling from the lack of sleep. Outside, the sea merged seamlessly with the sky. The water was calm, there were no waves in sight, making the horizon look infinite.</p>
-  <p>At the southern tip of Cebu, we boarded a ferry, then rode a tricycle, transferred to a jeep that took us to a port where we waited for a small boat.</p>
-</div>
+  We took a bus at around 3 am at the South Bus Terminal. Jeremie, Vince, and I stayed up all night at Starbucks talking about outer space, games, parallel universe, and other far-fetched stories.
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}2.jpg" alt="In the boat with Jeremie" />
-  <img src="{{ page.img-link }}3.jpg" alt="In the boat with the guys" />
-</div>
+  When we boarded the bus, it was freezing, and I immediately regret not bringing a jacket with me. I eventually dozed off. All night, I shifted on my seat to avoid getting a stiff neck, adjusted my legs so it wouldn't go numb, and woke up every now and then to see where we were.
 
-<div class="grid grid-center width-half module">
-  <p>Rock formed by years of waves crashing into it. It seems as though the island used to be submerged in water.</p>
-  <img src="{{ page.img-link }}5.jpg" alt="Rock formations" />
-</div>
+  ![Waking up in side the bus](/assets/2013/sagada-1/1.jpg)
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}6.jpg" alt="Staircase that leads to a cave-like path" />
-  <p>A staircase led to a narrow, cave-like path where it revealed the resort where we were staying. It was tucked on one side of the island hidden behind rocks.</p>
-</div>
+  Sunlight woke me that morning. The scene on the bus looked unreal partly because it was too quiet and everyone was asleep, and because I was reeling from the lack of sleep. Outside, the sea merged seamlessly with the sky. The water was calm, there were no waves in sight, making the horizon look infinite.
 
-<div class="grid grid-center width-half module">
-  <p>The small bar/restaurant was too pricey for me, but we had no choice since there are only two resorts on the island.</p>
-</div>
+  At the southern tip of Cebu, we boarded a ferry, then rode a tricycle, transferred to a jeep that took us to a port where we waited for a small boat.
+" %}
 
-<div class="grid grid-spaced items-2-thin-right module">
-  <img src="{{ page.img-link }}7.jpg" alt="Resort bar" />
-  <img src="{{ page.img-link }}11.jpg" alt="Mango shake" />
-</div>
+{% include 2.html type="sp-sm"
+  img1="2" alt1="In the boat with Jeremie"
+  img2="3" alt2="In the boat with the guys"
+%}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}8.jpg" alt="The dive shop" />
-  <img src="{{ page.img-link }}9.jpg" alt="Our room was on top of the dive shop" />
-</div>
+{% include 2.html type="l-thin"
+  text1="Rock formed by years of waves crashing into it. It seems as though the island used to be submerged in water."
+  img2="5" alt2="Rock formations"
+%}
 
-<div class="grid grid-center width-thirds module">
-  <img src="{{ page.img-link }}10.jpg" alt="Our cozy room" />
-</div>
+{% include 2.html type="sp-sm"
+  img1="6" alt1="Staircase that leads to a cave-like path"
+  text2="A staircase led to a narrow, cave-like path where it revealed the resort where we were staying. It was tucked on one side of the island hidden behind rocks."
+%}
 
-<div class="grid grid-center width-half module">
-  <p>View of Dumaguete's peaks from the island.</p>
-  <img src="{{ page.img-link }}12.jpg" alt="View of Dumaguete" />
-</div>
+{% include 1.html text="The small bar/restaurant was too pricey for me, but we had no choice since there are only two resorts on the island." %}
 
-<div class="grid grid-spaced items-2-thin-right module">
-  <img src="{{ page.img-link }}14.jpg" alt="Inviting waters" />
-  <img src="{{ page.img-link }}13.jpg" alt="Ladder on the beach" />
-</div>
+{% include 2.html type="sp-sm"
+  img1="7" alt1="Resort bar"
+  img2="11" alt2="Mango shake"
+%}
 
-<div class="grid grid-center width-half module">
-  <p>The water was inviting if it weren't for the venomous sea snakes and lionfish swimming around. We took a swim and were surprised that the water was deep despite the low tide. It was fun snorkeling all day, watching the corals underwater. There were air bubbles coming out from the rocks. The corals and fish looked pretty healthy.</p>
-</div>
+{% include 2.html type="sp-sm"
+  img1="8" alt1="The dive shop"
+  img2="9" alt2="Our room was on top of the dive shop"
+%}
 
-<div class="grid grid-spaced items-2-thin-right module">
-  <img src="{{ page.img-link }}15.jpg" alt="Hanging out by the beach" />
-  <img src="{{ page.img-link }}16.jpg" alt="Coconut trees outside our room" />
-</div>
+{% include 1.html type="ctr-sm" img="10" alt="Our cozy room" %}
 
-<div class="grid grid-center width-half module">
-  <p>When the sun wasn't too hot anymore, we went for a walk around the island.</p>
-</div>
+{% include 1.html text="
+  View of Dumaguete's peaks from the island.
+
+  ![View of Dumaguete](/assets/2013/sagada-1/12.jpg)
+" %}
+
+{% include 2.html type="r-thin"
+  img1="14" alt1="Inviting waters"
+  img2="13" alt2="Ladder on the beach"
+%}
+
+{% include 1.html text="The water was inviting if it weren't for the venomous sea snakes and lionfish swimming around. We took a swim and were surprised that the water was deep despite the low tide. It was fun snorkeling all day, watching the corals underwater. There were air bubbles coming out from the rocks. The corals and fish looked pretty healthy." %}
+
+{% include 2.html type="r-thin"
+  img1="15" alt1="Hanging out by the beach"
+  img2="16" alt2="Coconut trees outside our room"
+%}
+
+{% include 1.html text="When the sun wasn't too hot anymore, we went for a walk around the island." %}
 
 <div class="grid grid-spaced items-3 module">
   <img src="{{ page.img-link }}17.jpg" alt="Sun peeking behind a rock" />
@@ -85,116 +82,112 @@ img:
   <p>Our brave guide was a dog who went with us during the hike. When he saw that we were lagging behind, he stopped and waited for us before moving on.</p>
 </div>
 
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}22.jpg" alt="Dayon kamo sign in the village entrance" />
-  <img src="{{ page.img-link }}23.jpg" alt="Hiking through the village" />
-</div>
+{% include 2.html type="sp"
+  img1="22" alt1="Dayon kamo sign in the village entrance"
+  img2="23" alt2="Hiking through the village"
+%}
 
-<div class="grid grid-spaced items-2-thin-right module">
-  <img src="{{ page.img-link }}25.jpg" alt="Temporary closure due to storm" />
-  <img src="{{ page.img-link }}24.jpg" alt="Water reflection of the local houses" />
-</div>
+{% include 2.html type="r-thin"
+  img1="25" alt1="Temporary closure due to storm"
+  img2="24" alt2="Water reflection of the local houses"
+%}
 
-<div class="grid grid-center width-half module">
-  <p>The marine sanctuary that's been temporarily closed due to damages caused by a storm that passed a few months ago.</p>
-  <img src="{{ page.img-link }}26.jpg" alt="Other side of the island" />
-</div>
+{% include 1.html type="ctr"
+  img="26" alt="Other side of the island"
+  text="The marine sanctuary that's been temporarily closed due to damages caused by a storm that passed a few months ago."
+%}
 
-<div class="grid grid-center items-3 module">
-  <img src="{{ page.img-link }}27.jpg" alt="Looking down from the cliff" />
-  <img src="{{ page.img-link }}28.jpg" alt="Rest area up the mountain" />
-  <img src="{{ page.img-link }}29.jpg" alt="Fishermen down below" />
-</div>
+{% include 3.html type="bleed"
+  img1="27" alt1="Looking down from the cliff"
+  img2="28" alt2="Rest area up the mountain"
+  img3="29" alt3="Fishermen down below"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}30.jpg" alt="Sunset + insects" />
-  <p>We reached the top!</p>
-</div>
+{% include 1.html type="ctr"
+  img="30" alt="Sunset + insects"
+  text="We reached the top!"
+%}
 
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}31.jpg" alt="Mr. dog who took us up there safely" />
-  <img src="{{ page.img-link }}32.jpg" alt="Group photo" />
-</div>
+{% include 2.html type="sp"
+  img1="31" alt1="Mr. dog who took us up there safely"
+  img2="32" alt2="Group photo"
+%}
 
-<div class="grid grid-center width-half module">
-  <p>How lovely it looked from up there. I wanted to stay longer but it was getting dark and we had to navigate through the trail quickly before it was too late.</p>
-  <img src="{{ page.img-link }}33.jpg" alt="Turquoise waters" />
-</div>
+{% include 1.html type="ctr"
+  img="33" alt="Turquoise waters"
+  text="How lovely it looked from up there. I wanted to stay longer but it was getting dark and we had to navigate through the trail quickly before it was too late."
+%}
 
-<div class="grid grid-spaced items-2-thin-right module">
-  <img src="{{ page.img-link }}34.jpg" alt="Pink cloudy skies" />
-  <img src="{{ page.img-link }}35.jpg" alt="Hiking back to the resort before dark" />
-</div>
+{% include 2.html type="r-thin"
+  img1="34" alt1="Pink cloudy skies"
+  img2="35" alt2="Hiking back to the resort before dark"
+%}
 
-<div class="grid grid-center width-half module">
-  <p>The next day, we set off to see the turtles. I don't have proof, but we saw several of them&mdash;probably 5 or 6 swimming in the shallow water and eating seaweed. They were very gentle and seemed unafraid of humans. We maintained a safe distance to avoid scaring them off.</p>
-</div>
+{% include 1.html text="The next day, we set off to see the turtles. I don't have proof, but we saw several of them&mdash;probably 5 or 6 swimming in the shallow water and eating seaweed. They were very gentle and seemed unafraid of humans. We maintained a safe distance to avoid scaring them off." %}
 
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}36.jpg" alt="Rock formations" />
-  <img src="{{ page.img-link }}37.jpg" alt="Rock formations" />
-</div>
+{% include 2.html type="sp"
+  img1="36" alt1="Rock formations"
+  img2="37" alt2="Rock formations"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}38.jpg" alt="Island">
-  <p>Locals catching fish in the early morning.</p>
-</div>
+{% include 1.html type="ctr"
+  img="38" alt="Island"
+  text="Locals catching fish in the early morning."
+%}
 
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}39.jpg" alt="Fishermen on their boats" >
-  <img src="{{ page.img-link }}40.jpg" alt2="Fishermen on their boats" >
-</div>
+{% include 2.html type="sp"
+  img1="39" alt1="Fishermen on their boats"
+  img2="40" alt2="Fishermen on their boats"
+%}
 
-<div class="grid grid-spaced items-2-thin-right module">
-  <img src="{{ page.img-link }}41.jpg" alt="More fishermen" >
-  <img src="{{ page.img-link }}42.jpg" alt2="Our boatman" >
-</div>
+{% include 2.html type="r-thin"
+  img1="41" alt1="More fishermen"
+  img2="42" alt2="Our boatman"
+%}
 
-<div class="grid grid-center width-half module">
-  <p>They gave us one of their catch! It was still alive when it boarded the boat.</p>
-  <img src="{{ page.img-link }}43.jpg" alt="Fresh catch" >
-</div>
+{% include 1.html type="ctr"
+  img="43" alt="Fresh catch"
+  text="They gave us one of their catch! It was still alive when it boarded the boat."
+%}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}44.jpg" alt="Vince swimming in the emerald sea" >
-  <img src="{{ page.img-link }}45.jpg" alt2="Life savers in the boat" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="44" alt1="Vince swimming in the emerald sea"
+  img2="45" alt2="Life savers in the boat"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}46.jpg" alt="Boulders in the sea" >
-</div>
+{% include 1.html type="ctr" img="46" alt="Boulders in the sea" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}47.jpg" alt="The resort from the waters" >
-  <img src="{{ page.img-link }}48.jpg" alt2="Group photo" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="47" alt1="The resort from the waters"
+  img2="48" alt2="Group photo"
+%}
 
-<div class="grid grid-center width-half module">
-  <p>Lunch was lovely. Nothing like freshly grilled fish while enjoying the beach.</p>
-  <img src="{{ page.img-link }}49.jpg" alt="Grilled fresh fish" >
-</div>
+{% include 1.html type="ctr"
+  img="49" alt="Grilled fresh fish"
+  text="Lunch was lovely. Nothing like freshly grilled fish while enjoying the beach."
+%}
 
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}50.jpg" alt="Pig peeking in a window" >
-  <p>And while we were talking with the locals who cooked for us, this pig was making a lot of noise. He looked funny peeking from his little window. He eventually calmed down after someone gave him some water.</p>
-</div>
+{% include 2.html type="sp"
+  img1="50" alt1="Pig peeking in a window"
+  text2="And while we were talking with the locals who cooked for us, this pig was making a lot of noise. He looked funny peeking from his little window. He eventually calmed down after someone gave him some water."
+%}
 
-<div class="grid grid-center width-half module">
-  <p>Back in the mainland, we enjoyed lovely fresh mango and banana shakes.</p>
-  <img src="{{ page.img-link }}51.jpg" alt="Eating lunch in the mainland" >
-</div>
+{% include 1.html type="ctr"
+  img="51" alt="Eating lunch in the mainland"
+  text="Back in the mainland, we enjoyed lovely fresh mango and banana shakes."
+%}
 
-<div class="grid grid-right width-half module">
-  <p>Waiting for a bus to take us back to the city.</p>
-  <img src="{{ page.img-link }}52.jpg" alt="Waiting for the bus" >
-</div>
+{% include 1.html type="right"
+  img="52" alt="Waiting for the bus"
+  text="Waiting for a bus to take us back to the city."
+%}
 
-<div class="grid grid-center width-half module">
-  <p>And the day ended with a gorgeous view of the sun setting.</p>
-  <img src="{{ page.img-link }}54.jpg" alt="Sunset" >
-</div>
+{% include 1.html type="ctr"
+  img="54" alt="Sunset"
+  text="And the day ended with a gorgeous view of the sun setting."
+%}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}53.jpg" alt="At the port" >
-  <img src="{{ page.img-link }}55.jpg" alt2="At the port" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="53" alt1="At the port"
+  img2="55" alt2="At the port"
+%}

@@ -4,8 +4,8 @@
   grid-gap: 1.5rem;
   align-items: center;
   align-content: center;
-  min-height: 100vh;
   word-wrap: break-word;
+  margin-bottom: 12rem;
 
   img {
     width: 100%;
@@ -85,9 +85,13 @@
 }
 
 //3-column grids
-.items-3 { grid-template-columns: repeat(3, minmax(auto, 28rem)); }
+.items-3 {
+  grid-template-columns: repeat(3, minmax(auto, 28rem)); 
+}
 
-.items-3-bleed { grid-template-columns: 1fr 1fr 1fr; }
+.items-3-bleed {
+  grid-template-columns: 1fr 1fr 1fr; 
+}
 
 .stacked-3-items {
   grid-template-columns: repeat(12, 1fr);
@@ -108,23 +112,21 @@
 }
 
 //4-column grids
-.items-4 { grid-template-columns: repeat(4, minmax(auto, 20%)); }
+.items-4 {
+  grid-template-columns: repeat(4, minmax(auto, 20%));
+}
 
 //Mobile
 @media only screen and (min-width : 300px) and (max-width : 767px) {
   .grid {
     grid-template-columns: 1fr;
-    min-height: auto;
     grid-gap: 0;
     padding: 0 1.5rem;
+    margin-bottom: 0;
 
     > :nth-child(odd),
     :nth-child(even) {
       grid-column: auto;
-    }
-
-    img {
-      margin-bottom: 1.5rem;
     }
   }
 }
@@ -132,7 +134,6 @@
 //Tablet
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
   .grid {
-    min-height: auto;
     margin: 4rem 0;
   }
 

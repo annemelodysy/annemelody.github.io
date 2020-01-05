@@ -10,49 +10,35 @@ img:
   small:    2014/around-bangkok/walking-around-bangkok-small.jpg
   large:    2014/around-bangkok/walking-around-bangkok-cover.jpg
 ---
-<div class="grid grid-center width-half">
-  <p>The city gave me a hard time. Getting lost seemed like a daily habit. Getting lost in Bangkok was not fun at all especially with the scorching heat.</p>
-</div>
+{% include 1.html text="The city gave me a hard time. Getting lost seemed like a daily habit. Getting lost in Bangkok was not fun at all especially with the scorching heat." %}
 
-<div class="grid grid-center width-wider module">
-  <img src="{{ page.img-link }}1.jpg" alt="plants in rooftop" />
-</div>
+{% include 1.html type="ctr" img="1" alt="plants in rooftop" %}
 
-<div class="grid grid-center width-half">
-  <p>But then, I saw these small details in the alleys, and I remembered why I chose to go for a walk rather than conveniently take a tuk-tuk. At first glance, Bangkok looks chaotic. But once you get to know it, you realize it's not that bad.</p>
-</div>
+{% include 1.html text="But then, I saw these small details in the alleys, and I remembered why I chose to go for a walk rather than conveniently take a tuk-tuk. At first glance, Bangkok looks chaotic. But once you get to know it, you realize it's not that bad." %}
 
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}2.jpg" alt="building" />
-  <img src="{{ page.img-link }}7.jpg" alt="red balloon" />
-</div>
+{% include 2.html type="sp"
+  img1="2" alt1="building"
+  img2="7" alt2="red balloon"
+%}
 
-<div class="grid grid-spaced items-3 module">
-  <img src="{{ page.img-link }}5.jpg" alt="rugged aesthetic" />
-  <img src="{{ page.img-link }}6.jpg" alt="rugged aesthetic" />
-  <img src="{{ page.img-link }}4.jpg" alt="rugged aesthetic" />
-</div>
+{% include 3.html type="sp"
+  img1="5" alt1="rugged aesthetic"
+  img2="6" alt2="rugged aesthetic"
+  img3="4" alt3="rugged aesthetic"
+%}
 
-<div class="parallax">
-  <img src="{{ page.img-link }}10.jpg" alt="photo of thailand's king" />
-</div>
+{% include 0.html type="parallax" img="10" alt="photo of thailand's king" %}
 
-<div class="grid grid-center width-half">
-  <p>I approached the bottom of the train station and saw a peculiar scene. The world stopped moving and everyone was frozen. My first thought was that there was an accident. But then I heard their national anthem play in the background and realized what was happening. It reminded me of times when my family went to the supermarket and our national anthem played in the speakers. With an unspoken rule, everyone stopped what they were doing to pay their respects.</p>
-</div>
+{% include 1.html text="I approached the bottom of the train station and saw a peculiar scene. The world stopped moving and everyone was frozen. My first thought was that there was an accident. But then I heard their national anthem play in the background and realized what was happening. It reminded me of times when my family went to the supermarket and our national anthem played in the speakers. With an unspoken rule, everyone stopped what they were doing to pay their respects." %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}11.jpg" alt="train station" />
-</div>
+{% include 1.html type="ctr" img="11" alt="train station" %}
 
-<div class="grid grid-center width-half">
-  <h3>Feung Nakorn Dorm</h3>
-  <p>The next day, I moved to a new place so I could be closer to the temples. It was my first time sleeping in a shared room, and I couldn’t have picked a better place. It was perfect. Contrary to my expectations, the room was cozy, and the bathroom was well-maintained. There was a locker for my things, so I didn’t have to worry about losing them while I was asleep.</p>
-</div>
+{% include 1.html text="
+### Feung Nakorn Dorm
+  The next day, I moved to a new place so I could be closer to the temples. It was my first time sleeping in a shared room, and I couldn’t have picked a better place. It was perfect. Contrary to my expectations, the room was cozy, and the bathroom was well-maintained. There was a locker for my things, so I didn’t have to worry about losing them while I was asleep.
+" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}12.jpg" alt="Feung Nakorn Dorm" />
-</div>
+{% include 1.html type="ctr" img="12" alt="Feung Nakorn Dorm" %}
 
 <div class="parallax bottom-left">
   <img src="{{ page.img-link }}13.jpg" alt="map of bangkok" />
@@ -61,14 +47,12 @@ img:
   </div>
 </div>
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}16.jpg" alt="bodega vibes" />
-</div>
+{% include 1.html type="ctr" img="16" alt="bodega vibes" %}
 
-<div class="grid bleed-left-thin-right module">
-  <img src="{{ page.img-link }}14.jpg" alt="temple" />
-  <img src="{{ page.img-link }}15.jpg" alt="temple" />
-</div>
+{% include 2.html type="r-thin"
+  img1="14" alt1="temple"
+  img2="15" alt2="temple"
+%}
 
 <div class="parallax">
   <img src="{{ page.img-link }}18.jpg" alt="textured wall" />
@@ -77,28 +61,24 @@ img:
   </div>
 </div>
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}19.jpg" alt="shakes" />
-  <img src="{{ page.img-link }}20.jpg" alt="pizza" />
-</div>
+{% include 2.html type="sp-sm"
+  img1="19" alt1="shakes"
+  img2="20" alt2="pizza"
+%}
 
-<div class="grid grid-center items-2-thin module">
-  <img src="{{ page.img-link }}21.jpg" alt="lunch with zar" />
-  <p>The restaurant was alright despite not being our first choice. It had a quirky aesthetic plus it overlooked the <i>Wat Arun temple</i>.</p>
-</div>
+{% include 2.html type="ctr-sm"
+  img1="21" alt1="lunch with zar"
+  text1="The restaurant was alright despite not being our first choice. It had a quirky aesthetic plus it overlooked the *Wat Arun temple*."
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}17.jpg" alt="Wat Arun temple" />
-</div>
+{% include 1.html type="ctr" img="17" alt="Wat Arun temple" %}
 
-<div class="grid float-left-6 module">
-  <img src="{{ page.img-link }}22.jpg" alt="port where you take a boat to get to the temples" />
-  <p>I took a boat that crossed the river every few minutes. The ride took about 2 minutes and cost 3 baht each way.</p>
-</div>
+{% include 1.html type="fl-left"
+  img="22" alt="port where you take a boat to get to the temples"
+  text="I took a boat that crossed the river every few minutes. The ride took about 2 minutes and cost 3 baht each way."
+%}
 
-<div class="grid grid-center width-thirds module">
-  <img src="{{ page.img-link }}23.jpg" alt="streets of Bangkok" />
-</div>
+{% include 1.html type="ctr" img="23" alt="streets of Bangkok" %}
 
 <div class="grid grid-spaced items-3 module">
   <img src="{{ page.img-link }}26.jpg" alt="Wat Arun (Temple of Dawn)" />
@@ -109,59 +89,41 @@ img:
   <img src="{{ page.img-link }}27.jpg" alt="doors" />
 </div>
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}30.jpg" alt="climbing the steep stairs" />
-</div>
+{% include 1.html type="ctr" img="30" alt="climbing the steep stairs" %}
 
-<div class="grid float-left-6 module">
-  <img src="{{ page.img-link }}31.jpg" alt="the climb down is scarier" />
-</div>
+{% include 1.html type="fl-left" img="31" alt="the climb down is scarier" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}28.jpg" alt="ceiling prints" />
-</div>
+{% include 1.html type="ctr" img="28" alt="ceiling prints" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}34.jpg" alt="woman sleeping inside temple" />
-</div>
+{% include 1.html type="ctr" img="34" alt="woman sleeping inside temple" %}
 
-<div class="grid float-right-6 module">
-  <img src="{{ page.img-link }}35.jpg" alt="graves" />
-</div>
+{% include 1.html type="fl-right" img="35" alt="graves" %}
 
 <div class="grid grid-spaced items-3 module">
   <img src="{{ page.img-link }}37.jpg" alt="cat sculpture" />
   <div class="text-center">
     <h4 class="uppercase">Wat Pho <small>(Temple of the Reclining Buddha)</small></h4>
-
     <img src="{{ page.img-link }}32.jpg" alt="Touching Buddhas's belly for good luck" />
   </div>
-
   <img src="{{ page.img-link }}41.jpg" alt="paintings on the wall" />
 </div>
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}36.jpg" alt="entrance to Wat Pho" />
-</div>
+{% include 1.html type="ctr" img="36" alt="entrance to Wat Pho" %}
 
-<div class="grid grid-center items-2 module">
-  <img src="{{ page.img-link }}39.jpg" alt="reclining buddha head" />
-  <img src="{{ page.img-link }}40.jpg" alt="paintings on the wall" />
-</div>
+{% include 2.html type="ctr"
+  img1="39" alt1="reclining buddha head"
+  img2="40" alt2="paintings on the wall"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}38.jpg" alt="narrow hallway" />
-</div>
+{% include 1.html type="ctr" img="38" alt="narrow hallway" %}
 
-<div class="grid grid-center items-3 module">
-  <img src="{{ page.img-link }}42.jpg" alt="temple architecture" />
-  <img src="{{ page.img-link }}44.jpg" alt="temple architecture" />
-  <img src="{{ page.img-link }}33.jpg" alt="temple architecture" />
-</div>
+{% include 3.html type="ctr"
+  img1="42" alt1="temple architecture"
+  img2="44" alt2="temple architecture"
+  img3="33" alt3="temple architecture"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}46.jpg" alt="monk and pigeons" />
-</div>
+{% include 1.html type="ctr" img="46" alt="monk and pigeons" %}
 
 <div class="parallax">
   <img src="{{ page.img-link }}47.jpg" alt="Tuktuk ride to khao san" />
@@ -171,10 +133,10 @@ img:
   </div>
 </div>
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}50.jpg" alt="thai ice tea" />
-  <img src="{{ page.img-link }}51.jpg" alt="pasta meal" />
-</div>
+{% include 2.html type="sp-sm"
+  img1="50" alt1="thai ice tea"
+  img2="51" alt2="pasta meal"
+%}
 
 <div class="grid grid-center width-wider text-center">
   <p>Satisfied and full, always a great way to end the day.</p>

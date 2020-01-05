@@ -10,10 +10,11 @@ img:
   small:    2015/ghostly-monks/ghostly-monks-small.jpg
   large:    2015/ghostly-monks/ghostly-monks-cover.jpg
 ---
-<div class="grid grid-center width-half">
-  <p>I can't remember if I had my alarm on that particular morning or that something else woke me. All I can remember is that I was half-asleep and half-awake standing on a terrace. For me, early mornings are the best time of the day. No matter how tired I am, I always try to wake up early when I'm traveling.</p>
-  <p>A mist concealed some of the wooden houses in the distance. It was hot, sticky, and humid.</p>
-</div>
+{% include 1.html text="
+  I can't remember if I had my alarm on that particular morning or that something else woke me. All I can remember is that I was half-asleep and half-awake standing on a terrace. For me, early mornings are the best time of the day. No matter how tired I am, I always try to wake up early when I'm traveling.
+
+  A mist concealed some of the wooden houses in the distance. It was hot, sticky, and humid.
+" %}
 
 <div class="parallax">
   <img src="{{ page.img-link }}1.jpg" alt="monk silhouette at sunrise in the canal" />
@@ -23,37 +24,28 @@ img:
   </div>
 </div>
 
-<div class="grid grid-center width-half">
-  <p>A closer inspection revealed a distinct orange robe coming into focus. The silhouette turned out to be that of a monk. He was alone at first, but several more arrived just moments after him. </p>
-  <p>I watched in wonderment as they parked their boats and as groups of people approached them. In exchange for prayers, the locals provided them with food. Hanging loosely on their shoulders were drum-shaped containers used to store food. Every morning, the monks visited the towns, filling up their bags with food, then went back to the temple to share it with the rest.</p>
-</div>
+{% include 1.html text="
+  A closer inspection revealed a distinct orange robe coming into focus. The silhouette turned out to be that of a monk. He was alone at first, but several more arrived just moments after him.
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}5.jpg" alt="monk bringing plates and bowls" />
-  <img src="{{ page.img-link }}6.jpg" alt="monk bringing plates and bowls" />
-</div>
+  I watched in wonderment as they parked their boats and as groups of people approached them. In exchange for prayers, the locals provided them with food. Hanging loosely on their shoulders were drum-shaped containers used to store food. Every morning, the monks visited the towns, filling up their bags with food, then went back to the temple to share it with the rest.
+" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}2.jpg" alt="speeding boat" />
-</div>
+{% include 2.html type="sp-sm"
+  img1="5" alt1="monk bringing plates and bowls"
+  img2="6" alt2="monk bringing plates and bowls"
+%}
 
-<div class="grid grid-spaced items-2-thin-left module">
-  <img src="{{ page.img-link }}8.jpg" alt="hanging shirt in window" />
-  <img src="{{ page.img-link }}3.jpg" alt="antennas" />
-</div>
+{% include 1.html type="ctr" img="2" alt="speeding boat" %}
 
-<div class="grid grid-center width-half">
-  <p>Sometimes, they walked a considerable amount of distance just to get food. The act of trading goods is so primal that I wonder why it's not as common today. I found it refreshing how these gentle souls interact with their environment. They moved so gracefully and quietly that just by observing them, I felt a sense of calm.</p>
-</div>
+{% include 2.html type="l-thin"
+  img1="8" alt1="hanging shirt in window"
+  img2="3" alt2="antennas"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}7.jpg" alt="monk walking barefoot in streets" />
-</div>
+{% include 1.html text="Sometimes, they walked a considerable amount of distance just to get food. The act of trading goods is so primal that I wonder why it's not as common today. I found it refreshing how these gentle souls interact with their environment. They moved so gracefully and quietly that just by observing them, I felt a sense of calm." %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}9.jpg" alt="monk in the market" />
-</div>
+{% include 1.html type="ctr" img="7" alt="monk walking barefoot in streets" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}4.jpg" alt="blue towels hanged" />
-</div>
+{% include 1.html type="ctr" img="9" alt="monk in the market" %}
+
+{% include 1.html type="ctr" img="4" alt="blue towels hanged" %}

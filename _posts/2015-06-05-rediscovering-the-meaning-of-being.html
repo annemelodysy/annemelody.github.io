@@ -10,29 +10,34 @@ img:
   small:    2015/sf/sf-streets-small.jpg
   large:    2015/sf/sf-streets-cover.jpg
 ---
-<div class="grid grid-center width-half">
-  <p>I've never been afraid of leaving, in fact, I've always felt the opposite; constantly looking at what's ahead of me&mdash;exploring the unknown, seeking answers to unspoken questions, discovering the things that make life more interesting.</p>
-  <p>Two bags&mdash;no more, no less. There they were, standing in front of me: my entire life packed in a medium grey luggage and a sturdy backpack. After hours of carefully choosing what to bring and what to leave behind, I was ready to go.</p>
-  <p>I looked at the remaining books on the table. It's a shame I couldn't bring them all with me. If I was going to start over, I had to be assertive. I had to know what was worth taking and what wasn't. In the end, I ended up with these books:</p>
-  <ol>
-    <li><a href="http://www.shauntan.net/books.html" target="_blank" rel="nofollow">Shaun Tan's</a> Tales from Outer Suburbia</li>
-    <li><a href="http://en.wikipedia.org/wiki/Sj%C3%B3n" target="_blank" rel="nofollow">Sjón's</a> The Whispering Muse</li>
-    <li><a href="http://karenjoyfowler.com/" target="_blank" rel="nofollow">Karen Joy Fowler's</a> We are all Completely Beside Ourselves</li>
-    <li><i>and</i> <a href="http://en.wikipedia.org/wiki/How_to_Live_Safely_in_a_Science_Fictional_Universe" target="_blank" rel="nofollow">Charles Yu's</a> How to Live Safely in a Science Fictional Universe</li>
-  </ol>
-</div>
+{% include 1.html text="
+  I've never been afraid of leaving, in fact, I've always felt the opposite; constantly looking at what's ahead of me&mdash;exploring the unknown, seeking answers to unspoken questions, discovering the things that make life more interesting.
 
-<div class="grid grid-center width-half">
-  <h3>The Arrival</h3>
-  <p>One of the books I wanted to bring was Shaun Tan's <i><a href="http://www.shauntan.net/books/the-arrival.html" target="_blank" rel="nofollow">The Arrival</a></i> but it refused to get inside my luggage, so with a heavy heart, I left it behind.</p>
-  <p>I imprinted the wordless images in my brain as I scanned through the pages one last time. I tried to imagine how the protagonist felt when he left his family to work in a strange, faraway land. The scene when he arrives on a ship in the new world blew me away!</p>
-  <p>My arrival wasn't as extraordinary as the story, but seeing Jeremie's grinning face at the airport was enough to put that warmth back in me.</p>
-  <p>The arrival. Home at last.</p>
-  <h3>Oh, hai!</h3>
-  <p>One of the things that amused me about this city is that people love to interact with strangers. On my first week, I was sitting in the lobby of our apartment, when a stranger passed by the full-length glass windows and waved his hand. Then, there was the time I was standing on the sidewalk when an old couple walking towards me paused to smile and say hi. Back home, the only strangers who said hi to you in the streets were half-naked cat-callers who had nothing better to do with their lives.</p>
-  <p>In shops, I wondered whether they were asking a rhetorical question when they said, <i>How are you?</i> My response is always the same: Good.</p>
-  <p>It took a while for me to get used to it, but eventually, I added two more words to my reply:</p>
-</div>
+  Two bags&mdash;no more, no less. There they were, standing in front of me: my entire life packed in a medium grey luggage and a sturdy backpack. After hours of carefully choosing what to bring and what to leave behind, I was ready to go.
+
+  I looked at the remaining books on the table. It's a shame I couldn't bring them all with me. If I was going to start over, I had to be assertive. I had to know what was worth taking and what wasn't. In the end, I ended up with these books:
+
+  1. [Shaun Tan's](http://www.shauntan.net/books.html){:target='_blank'} Tales from Outer Suburbia
+  2. [Sjón's](http://en.wikipedia.org/wiki/Sj%C3%B3n){:target='_blank'} The Whispering Muse
+  3. [Karen Joy Fowler's](http://karenjoyfowler.com/){:target='_blank'} We are all Completely Beside Ourselves
+  4. *and* [Charles Yu's](http://en.wikipedia.org/wiki/How_to_Live_Safely_in_a_Science_Fictional_Universe){:target='_blank'} How to Live Safely in a Science Fictional Universe
+
+### The Arrival
+  One of the books I wanted to bring was Shaun Tan's *[The Arrival](http://www.shauntan.net/books/the-arrival.html){:target='_blank'}* but it refused to get inside my luggage, so with a heavy heart, I left it behind.
+
+  I imprinted the wordless images in my brain as I scanned through the pages one last time. I tried to imagine how the protagonist felt when he left his family to work in a strange, faraway land. The scene when he arrives on a ship in the new world blew me away!
+
+  My arrival wasn't as extraordinary as the story, but seeing Jeremie's grinning face at the airport was enough to put that warmth back in me.
+
+  The arrival. Home at last.
+
+### Oh, hai!
+  One of the things that amused me about this city is that people love to interact with strangers. On my first week, I was sitting in the lobby of our apartment, when a stranger passed by the full-length glass windows and waved his hand. Then, there was the time I was standing on the sidewalk when an old couple walking towards me paused to smile and say hi. Back home, the only strangers who said hi to you in the streets were half-naked cat-callers who had nothing better to do with their lives.
+
+  In shops, I wondered whether they were asking a rhetorical question when they said, *How are you?* My response is always the same: Good.
+
+  It took a while for me to get used to it, but eventually, I added two more words to my reply:
+" %}
 
 <div class="parallax">
   <img src="{{ page.img-link }}19.jpg" alt="Hey, how are ya?" >
@@ -45,75 +50,51 @@ img:
   </div>
 </div>
 
-<div class="grid float-left-6 module">
-  <img src="{{ page.img-link }}8.jpg" alt="Jeremie climbing a steep hill" >
-</div>
+{% include 1.html type="fl-left" img="8" alt="Jeremie climbing a steep hill" %}
 
 <div class="grid float-right-6 module">
   <img src="{{ page.img-link }}18.jpg" alt="San Francisco grid" >
   <p>I fell in love with San Francisco. From the hilly, winding roads to the infinite cozy shops. It's a breath-taking city packed with surprises.</p>
 </div>
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}2.jpg" alt="Domo restaurant" >
-</div>
+{% include 1.html type="ctr" img="2" alt="Domo restaurant" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}3.jpg" alt="Domo restaurant" >
-  <img src="{{ page.img-link }}4.jpg" alt="Cool neon lights" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="3" alt1="Domo restaurant"
+  img2="4" alt2="Cool neon lights"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}12.jpg" alt="Street musician" >
-</div>
+{% include 1.html type="ctr" img="12" alt="Street musician" %}
 
-<div class="grid grid-center width-half">
-  <p>One Sunday, Jeremie and I spontaneously walked through Valencia Street and found ourselves in the middle of a party. There was a Mariachi band playing in one corner while people danced along with the music. The food stalls were bursting with activity. The end of the street led to the start of a new one, so we just kept walking until we were hungry and ready to go home.</p>
-</div>
+{% include 1.html text="One Sunday, Jeremie and I spontaneously walked through Valencia Street and found ourselves in the middle of a party. There was a Mariachi band playing in one corner while people danced along with the music. The food stalls were bursting with activity. The end of the street led to the start of a new one, so we just kept walking until we were hungry and ready to go home." %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}9.jpg" alt="Downtown San Francisco" >
-</div>
+{% include 1.html type="ctr" img="9" alt="Downtown San Francisco" %}
 
-<div class="grid grid-center width-half">
-  <p>Our weekends were spent getting to know the city and what better way to see it than to be five hundred feet above sea level. With our hands tucked inside our coats, we marched up the steep road towards the famous Coit Tower. The higher we climbed, the colder it got.</p>
-</div>
+{% include 1.html text="Our weekends were spent getting to know the city and what better way to see it than to be five hundred feet above sea level. With our hands tucked inside our coats, we marched up the steep road towards the famous Coit Tower. The higher we climbed, the colder it got." %}
 
-<div class="grid items-2-bleed module">
-  <img src="{{ page.img-link }}10.jpg" alt="San Francisco top view" >
-  <img src="{{ page.img-link }}14.jpg" alt="San Francisco top view" >
-</div>
+{% include 2.html type="bleed"
+  img1="10" alt1="San Francisco top view"
+  img2="14" alt2="San Francisco top view"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}11.jpg" alt="Downtown San Francisco" >
-</div>
+{% include 1.html type="ctr" img="11" alt="Downtown San Francisco" %}
 
-<div class="grid grid-spaced items-2-thin-right module">
-  <img src="{{ page.img-link }}13.jpg" alt="San Francisco top view" >
-  <p>I am beyond speechless.</p>
-</div>
+{% include 2.html type="bleed"
+  img1="13" alt1="San Francisco top view"
+  text1="I am beyond speechless."
+%}
 
-<div class="grid items-2-bleed module">
-  <img src="{{ page.img-link }}5.jpg" alt="San Francisco cable car" >
-  <img src="{{ page.img-link }}1.jpg" alt="San Francisco cable car" >
-</div>
+{% include 2.html type="bleed"
+  img1="5" alt1="San Francisco cable car"
+  img2="1" alt2="San Francisco cable car"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}6.jpg" alt="Downtown San Francisco" >
-</div>
+{% include 1.html type="ctr" img="6" alt="Downtown San Francisco" %}
 
-<div class="grid grid-right width-half module">
-  <img src="{{ page.img-link }}7.jpg" alt="San Francisco downtown alley" >
-</div>
+{% include 1.html type="right" img="7" alt="San Francisco downtown alley" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}15.jpg" alt="Man and purple balloons behind him" >
-</div>
+{% include 1.html type="ctr" img="15" alt="Man and purple balloons behind him" %}
 
-<div class="grid float-left-6 module">
-  <img src="{{ page.img-link }}17.jpg" alt="Street musician" >
-</div>
+{% include 1.html type="fl-left" img="17" alt="Street musician" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}16.jpg" alt="Golden gate bridge" >
-</div>
+{% include 1.html type="ctr" img="16" alt="Golden gate bridge" %}

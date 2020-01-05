@@ -1,0 +1,19 @@
+<div class="grid module
+  {% if include.text or include.type == "ctr" %}grid-center width-half
+  {% elsif include.type == "ctr-sm" %}grid-center width-quarter
+  {% elsif include.type == "left" %}width-half
+  {% elsif include.type == "right" %}grid-right width-half
+  {% elsif include.type == "fl-left" %}float-left-6
+  {% elsif include.type == "fl-right" %}float-right-6
+  {% elsif include.type == "fl-left-sm" %}float-left-4
+  {% elsif include.type == "fl-right-sm" %}float-right-4
+  {% endif %}
+">
+  {% if include.img %}
+    <img src="{{ page.img-link }}{{ include.img }}.jpg" alt="{{ include.alt }}" >
+  {% endif %}
+
+  {% if include.text %}
+    {{ include.text | markdownify }}
+  {% endif %}
+</div>

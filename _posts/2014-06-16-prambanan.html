@@ -10,54 +10,57 @@ img:
   small:    2014/prambanan/prambanan-small.jpg
   large:    2014/prambanan/prambanan-cover.jpg
 ---
-<div class="grid grid-center width-half">
-  <p>I would be lying if I said I was excited to see this temple.</p>
-  <p>No disrespect, they are all impressive and beautiful, but after visiting many Hindu temples in Bali, it was starting to feel like they all looked the same. But I came here for the legend which I read in the internet.</p>
-  <img src="{{ page.img-link }}1.jpg" alt="prambanan temple" />
-</div>
+{% include 1.html text="
+  I would be lying if I said I was excited to see this temple.
 
-<div class="grid grid-spaced items-3 module">
-  <img src="{{ page.img-link }}3.jpg" alt="Ruins" />
-  <img src="{{ page.img-link }}8.jpg" alt="Mouth opening" />
-  <img src="{{ page.img-link }}4.jpg" alt="carvings" />
-</div>
+  No disrespect, they are all impressive and beautiful, but after visiting many Hindu temples in Bali, it was starting to feel like they all looked the same. But I came here for the legend which I read in the internet.
 
-<div class="grid grid-center width-half module">
-  <h3>The Legend</h3>
-  <p>Bndawasa, a strong warrior from Pengging was tasked by the King of Pegging to conquer a nearby kingdom called Prambanan.</p>
-  <p>Armed with a Bandung (club) and an army, he set out to attack the troops in Prambanan, killing their King in the process. After achieving victory, the King rewarded Bandawasa with the kingdom he had conquered.</p>
-  <p>He fell in love with the princess named Rara Jonggrang, the daughter of the late King of Prambanan. He asked for her hand in marriage, but she wasn't happy about him killing her father.</p>
-  <p>Knowing he was far stronger, she came up with a plan. She gave him a condition to build a thousand temples and two wells in one night. If he succeeded, she would accept the marriage.</p>
-  <p>Bandawasa summoned spirits to help him build the temples. And soon the night was nearly over. The princess, who was quietly observing his progress, became worried that her plan wouldn't work.</p>
-  <p>She came up with another idea, asking her maids to burn some hay. From a distance, the glow of the fire imitated the rising sun, and this tricked the roosters into crowing.</p>
-  <p>The spirits, who feared sunlight, hastily vanished leaving the pile of rocks unfinished. Bandawasa sought to build the last temple on his own but failed when morning came.</p>
-  <p>Jonggrang rejoiced in her victory, but it wasn't long before he figured out her deceit. Bandawasa cursed the princess by turning her into stone and placing her inside one of the temples in Prambanan.</p>
-</div>
+  ![prambanan temple](/assets/2014/prambanan/1.jpg)
+" %}
 
-<div class="grid grid-spaced items-3 module">
-  <img src="{{ page.img-link }}7.jpg" alt="statue inside temple" />
-  <img src="{{ page.img-link }}2.jpg" alt="Prambanan temple" />
-  <img src="{{ page.img-link }}9.jpg" alt="silhouette of visitors" />
-</div>
+{% include 3.html type="sp"
+  img1="3" alt1="Ruins"
+  img2="8" alt2="Mouth opening"
+  img3="4" alt3="carvings"
+%}
 
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}6.jpg" alt="Prambanan temple" />
-  <img src="{{ page.img-link }}20.jpg" alt="Prambanan temple" />
-</div>
+{% include 1.html text="
+### The Legend
+  Bndawasa, a strong warrior from Pengging was tasked by the King of Pegging to conquer a nearby kingdom called Prambanan.
 
-<div class="grid items-3-bleed module">
-  <img src="{{ page.img-link }}10.jpg" alt="temple cleaners" />
-  <div class="text-center">
-    <img src="{{ page.img-link }}11.jpg" alt="temple cleaners" />
-  </div>
-  <div>
-    <img src="{{ page.img-link }}12.jpg" alt="temple cleaners" />
-  </div>
-</div>
+  Armed with a Bandung (club) and an army, he set out to attack the troops in Prambanan, killing their King in the process. After achieving victory, the King rewarded Bandawasa with the kingdom he had conquered.
 
-<div class="grid grid-center width-wider module">
-  <img src="{{ page.img-link }}13.jpg" alt="woman in sarong" />
-</div>
+  He fell in love with the princess named Rara Jonggrang, the daughter of the late King of Prambanan. He asked for her hand in marriage, but she wasn't happy about him killing her father.
+
+  Knowing he was far stronger, she came up with a plan. She gave him a condition to build a thousand temples and two wells in one night. If he succeeded, she would accept the marriage.
+
+  Bandawasa summoned spirits to help him build the temples. And soon the night was nearly over. The princess, who was quietly observing his progress, became worried that her plan wouldn't work.
+
+  She came up with another idea, asking her maids to burn some hay. From a distance, the glow of the fire imitated the rising sun, and this tricked the roosters into crowing.
+
+  The spirits, who feared sunlight, hastily vanished leaving the pile of rocks unfinished. Bandawasa sought to build the last temple on his own but failed when morning came.
+
+  Jonggrang rejoiced in her victory, but it wasn't long before he figured out her deceit. Bandawasa cursed the princess by turning her into stone and placing her inside one of the temples in Prambanan.
+" %}
+
+{% include 3.html type="sp"
+  img1="7" alt1="statue inside temple"
+  img2="2" alt2="Prambanan temple"
+  img3="9" alt3="silhouette of visitors"
+%}
+
+{% include 2.html type="sp"
+  img1="6" alt1="Prambanan temple"
+  img2="20" alt2="Prambanan temple"
+%}
+
+{% include 3.html type="bleed"
+  img1="10" alt1="temple cleaners"
+  img2="11" alt2="temple cleaners"
+  img3="12" alt3="temple cleaners"
+%}
+
+{% include 1.html type="ctr" img="13" alt="woman in sarong" %}
 
 <div class="grid grid-center items-2-thin module">
   <img src="{{ page.img-link }}14.jpg" alt="steep stairs" />
@@ -67,42 +70,38 @@ img:
   </div>
 </div>
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}16.jpg" alt="look down" />
-  <img src="{{ page.img-link }}17.jpg" alt="bird human hybrid" />
-</div>
+{% include 2.html type="ctr"
+  img1="16" alt1="look down"
+  img2="17" alt2="bird human hybrid"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}18.jpg" alt="teenager texting" />
-</div>
+{% include 1.html type="ctr" img="18" alt="teenager texting" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}19.jpg" alt="tourists being swarmed by local teenagers" />
-  <p>The local teenagers huddled around the white tourists, asking to have a photo with them or to sign their notebooks. I watched as the passersby noticed the small gathering and promptly joined in.</p>
-</div>
+{% include 1.html type="ctr"
+  img="19" alt="tourists being swarmed by local teenagers"
+  text="The local teenagers huddled around the white tourists, asking to have a photo with them or to sign their notebooks. I watched as the passersby noticed the small gathering and promptly joined in."
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}21.jpg" alt="more ruins" />
-</div>
+{% include 1.html type="ctr" img="21" alt="more ruins" %}
 
-<div class="grid grid-center width-half">
-  <h3>Ratu Boko</h3>
-  <p>I found a free shuttle inside the park that transported visitors to a nearby temple called Ratu Boko.</p>
-  <p>With lots of spare time and boredom sinking in, I decided to check it out since it was free. Being less popular, I thought that the entrance fee would be affordable, but when I got there, I found out that it was way more than I could afford.</p>
-  <p>Not a problem, I'll take the shuttle back. As I approached the van, the driver insisted that I pay the entrance fee. He said that since the shuttle was free, I had to go inside the temple. I didn't see that coming. What a scam!</p>
-  <p>The driver accompanied me to the ticket booth and insisted on waiting until I paid it. I surrendered my money. It was daylight robbery!</p>
-  <p>I made a mental note to never accept anything free next time.</p>
-</div>
+{% include 1.html text="
+### Ratu Boko
+  I found a free shuttle inside the park that transported visitors to a nearby temple called Ratu Boko.
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}24.jpg" alt="screaming goat" />
-  <img src="{{ page.img-link }}25.jpg" alt="chicken and her babies" />
-</div>
+  With lots of spare time and boredom sinking in, I decided to check it out since it was free. Being less popular, I thought that the entrance fee would be affordable, but when I got there, I found out that it was way more than I could afford.
 
-<div class="grid float-left-6 module">
-  <img src="{{ page.img-link }}23.jpg" alt="smokey" />
-</div>
+  Not a problem, I'll take the shuttle back. As I approached the van, the driver insisted that I pay the entrance fee. He said that since the shuttle was free, I had to go inside the temple. I didn't see that coming. What a scam!
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}22.jpg" alt="not worth going temple" />
-</div>
+  The driver accompanied me to the ticket booth and insisted on waiting until I paid it. I surrendered my money. It was daylight robbery!
+
+  I made a mental note to never accept anything free next time.
+" %}
+
+{% include 2.html type="sp-sm"
+  img1="24" alt1="screaming goat"
+  img2="25" alt2="chicken and her babies"
+%}
+
+{% include 1.html type="float-6" img="23" alt="smokey" %}
+
+{% include 1.html type="ctr" img="22" alt="not worth going temple" %}

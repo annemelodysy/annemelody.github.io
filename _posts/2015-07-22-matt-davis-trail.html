@@ -10,78 +10,60 @@ img:
   small:    2015/matt-davis/matt-davis-trail-small.jpg
   large:    2015/matt-davis/matt-davis-trail-cover.jpg
 ---
-<div class="grid grid-center width-thirds module">
-  <img src="{{ page.img-link }}1.jpg" alt="Fern on black background" >
-</div>
+{% include 1.html type="ctr-sm" img="1" alt="Fern on black background" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}2.jpg" alt="Flora" />
-  <img src="{{ page.img-link }}3.jpg" alt="Flora" />
-</div>
+{% include 2.html type="sp-sm"
+  img1="2" alt1="Flora"
+  img2="3" alt2="Flora"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}4.jpg" alt="Peeking between plants to see Stinson beach" >
-</div>
+{% include 1.html type="ctr" img="4" alt="Peeking between plants to see Stinson beach" %}
 
-<div class="grid grid-center width-thirds module">
-  <img src="{{ page.img-link }}10.jpg" alt="Red leaves" >
-</div>
+{% include 1.html type="ctr-sm" img="10" alt="Red leaves" %}
 
-<div class="grid items-2-bleed module">
-  <img src="{{ page.img-link }}7.jpg" alt="Stairway path" />
-  <img src="{{ page.img-link }}9.jpg" alt="View of the beach" />
-</div>
+{% include 2.html type="bleed"
+  img1="7" alt1="Stairway path"
+  img2="9" alt2="View of the beach"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}12.jpg" alt="Dead flower" >
-</div>
+{% include 1.html type="ctr" img="12" alt="Dead flower" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}13.jpg" alt="Hikers in a line" >
-</div>
+{% include 1.html type="ctr" img="13" alt="Hikers in a line" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}15.jpg" alt="Layers of color" />
-  <img src="{{ page.img-link }}16.jpg" alt="Cyclist on top of the hike" />
-</div>
+{% include 2.html type="sp-sm"
+  img1="15" alt1="Layers of color"
+  img2="16" alt2="Cyclist on top of the hike"
+%}
 
-<div class="grid items-2-bleed module">
-  <img src="{{ page.img-link }}17.jpg" alt="Gathering in Mount Tamalpais" />
-  <img src="{{ page.img-link }}20.jpg" alt="Kite flying in the blue sky" />
-</div>
+{% include 2.html type="bleed"
+  img1="17" alt1="Gathering in Mount Tamalpais"
+  img2="20" alt2="Kite flying in the blue sky"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}24.jpg" alt="Jeremie my hiking buddy" >
-</div>
+{% include 1.html type="ctr" img="24" alt="Jeremie my hiking buddy" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}22.jpg" alt="Cody our other hiking buddy" />
-  <img src="{{ page.img-link }}27.jpg" alt="No bikes allowed" />
-</div>
+{% include 2.html type="sp-sm"
+  img1="22" alt1="Cody our other hiking buddy"
+  img2="27" alt2="No bikes allowed"
+%}
 
-<div class="grid float-right-6 module">
-  <img src="{{ page.img-link }}19.jpg" alt="Landscape on top of Mount Tam" >
-</div>
+{% include 1.html type="fl-right" img="19" alt="Landscape on top of Mount Tam" %}
 
-<div class="grid grid-spaced items-2-balanced module">
-  <img src="{{ page.img-link }}25.jpg" alt="Tiny humans in vast landscape" >
-  <img src="{{ page.img-link }}28.jpg" alt="Curvy landscape" >
-</div>
+{% include 2.html type="bleed-uneven"
+  img1="25" alt1="Tiny humans in vast landscape"
+  img2="28" alt2="Curvy landscape"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}30.jpg" alt="Humans that look like ants" >
-</div>
+{% include 1.html type="ctr" img="30" alt="Humans that look like ants" %}
 
-<div class="grid float-left-6 module">
-  <img src="{{ page.img-link }}31.jpg" alt="Beach view" >
-</div>
+{% include 1.html type="fl-left" img="31" alt="Beach view" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}34.jpg" alt="Zigzag roads" />
-  <img src="{{ page.img-link }}35.jpg" alt="Sunset view of the water" />
-</div>
+{% include 2.html type="sp-sm"
+  img1="34" alt1="Zigzag roads"
+  img2="35" alt2="Sunset view of the water"
+%}
 
-<div class="grid grid-spaced items-2-thin-left module">
-  <img src="{{ page.img-link }}6.jpg" alt="Houses in water" >
-  <img src="{{ page.img-link }}36.jpg" alt="Sunset ending" >
-</div>
+{% include 2.html type="l-thin"
+  img1="6" alt1="Houses in water"
+  img2="36" alt2="Sunset ending"
+%}

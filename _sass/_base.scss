@@ -2,7 +2,7 @@ body {
   background: $white;
   color: $black;
   font-family: $didact;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   line-height: 1.7;
 }
 
@@ -20,16 +20,24 @@ h2 {
   line-height: 1.7;
 }
 
-h3 { font-size: 1.215rem; }
+h3 {
+  font-size: 1.215rem;
+}
 
-h4 { font-size: 1.138rem; }
+h4 {
+  font-size: 1.138rem;
+}
 
-a { color: $black; }
+a {
+  color: $black;
+}
 
-svg { width: 100%; }
+svg {
+  width: 100%;
+}
 
 blockquote {
-  font-family: 'Georgia', serif;
+  font-family: $georgia;
   font-style: italic;
   margin: 1.5rem;
   text-align: center;
@@ -102,9 +110,13 @@ nav {
 
 //Shared between mobile and tablet
 @media only screen and (min-width : 300px) and (max-width : 1024px) {
-  body { font-size: 1.125rem; }
+  body {
+    font-size: 1.125rem;
+  }
 
-  h5 { font-size: 0.875rem; }
+  h5 {
+    font-size: 0.875rem;
+  }
 
   nav {
     a {
@@ -113,27 +125,43 @@ nav {
       padding: 1rem 0.7rem;
     }
   }
+
+  img, p {
+    margin-bottom: 1rem;
+  }
 }
 
 //Mobile
 @media only screen and (min-width : 300px) and (max-width : 767px) {
+  body {
+    line-height: 1.5;
+  }
+
   h2 {
     font-size: 1.125rem;
     margin-bottom: 1rem;
 
-    &.text-center { text-align: left; }
+    &.text-center {
+      text-align: left;
+    }
   }
 
-  h3 { font-size: 1.1rem; }
+  h3 {
+    font-size: 1.1rem;
+  }
 
-  h4 { font-size: 1rem; }
+  h4 {
+    font-size: 1rem;
+  }
 
-  h5 { margin: 0.5rem 0 1rem 0; }
-
-  p { margin-bottom: 1rem; }
+  h5 {
+    margin: 0.5rem 0 1rem 0;
+  }
 }
 
 //Tablet
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
-  h2 { font-size: 1.5rem; }
+  h2 {
+    font-size: 1.5rem;
+  }
 }

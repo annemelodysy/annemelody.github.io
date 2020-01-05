@@ -10,193 +10,165 @@ img:
   small:    2019/kyoto/kyoto-small.jpg
   large:    2019/kyoto/kyoto-cover.jpg
 ---
-<div class="grid grid-center width-half">
-  <p>Something didn't seem right the morning we left Tokyo. In the last few days, I developed a habit of looking out our room window to observe the construction workers perform their morning calisthenics.</p>
-  <p>That morning, the construction site was empty and quiet.</p>
-  <p>When we got to Naka-Meguro station&mdash;a place usually packed with people&mdash;we discovered that it was also deserted. Nobody was rushing to get to work on a Friday morning.</p>
-</div>
+{% include 1.html text="
+  Something didn't seem right the morning we left Tokyo. In the last few days, I developed a habit of looking out our room window to observe the construction workers perform their morning calisthenics.
 
-<div class="grid grid-right width-half module">
-  <img src="{{ page.img-link }}exercise-man.jpg" alt="Man exercising" >
-</div>
+  That morning, the construction site was empty and quiet.
 
-<div class="grid grid-center width-half">
-  <p>It wasn't until we reached the last station when we finally had our answer. Turns out it was a national holiday (Labor Thanksgiving day), and every one&mdash;all the humans in Tokyo&mdash;decided to converge in the same station to catch a Shinkansen (bullet train) out of the city.</p>
-  <p>The good news was that we could still board our train despite not having reservations. The bad news: it was going to be packed. We spent half of our 2.5-hour trip to Kyoto standing in the aisle with other passengers.</p>
-  <p>It sounds unbearable but it wasn't so bad. For a train that traveled at a speed of 320 km/h, it was surprisingly a very smooth trip. I even managed to eat my onigiri while standing up.</p>
-  <p>Though we were trying to escape the crowds of Tokyo, we found ourselves trapped in the same situation when we arrived in Kyoto.</p>
-</div>
+  When we got to Naka-Meguro station&mdash;a place usually packed with people&mdash;we discovered that it was also deserted. Nobody was rushing to get to work on a Friday morning.
+" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}overcrowding.jpg" alt="overcrowding in the main kyoto bridge" >
-</div>
+{% include 1.html type="right" img="exercise-man" alt="Man exercising" %}
 
-<div class="grid grid-spaced items-2-thin-right module">
-  <img src="{{ page.img-link }}couple.jpg" alt="Couple" >
-  <img src="{{ page.img-link }}dogo.jpg" alt="Dogo the shiba" >
-</div>
+{% include 1.html text="
+  It wasn't until we reached the last station when we finally had our answer. Turns out it was a national holiday (Labor Thanksgiving day), and every one&mdash;all the humans in Tokyo&mdash;decided to converge in the same station to catch a Shinkansen (bullet train) out of the city.
 
-<div class="grid grid-center width-quarter module">
-  <img src="{{ page.img-link }}crowded-temples.jpg" alt="Crowded temples" >
-</div>
+  The good news was that we could still board our train despite not having reservations. The bad news: it was going to be packed. We spent half of our 2.5-hour trip to Kyoto standing in the aisle with other passengers.
 
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}light-reflections-kyoto-bridge.jpg" alt="Light reflections in Kyoto bridge" >
-  <img src="{{ page.img-link }}bird-in-rooftop.jpg" alt="Bird in rooftop" >
-</div>
+  It sounds unbearable but it wasn't so bad. For a train that traveled at a speed of 320 km/h, it was surprisingly a very smooth trip. I even managed to eat my onigiri while standing up.
 
-<div class="grid grid-center width-half">
-  <p>Finally the holiday was over and the crowds evaporated with it. Now we were able to appreciate the city better. Our days were mostly spent walking the streets and observing shrines and temples.</p>
-</div>
+  Though we were trying to escape the crowds of Tokyo, we found ourselves trapped in the same situation when we arrived in Kyoto.
+" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}fushimi-inari-taisha.jpg" alt="Fushimi Inari Taisha" >
-  <img src="{{ page.img-link }}headless-man-in-shrine.jpg" alt="Fushimi Inari Taisha" >
-</div>
+{% include 1.html type="ctr" img="overcrowding" alt="overcrowding in the main kyoto bridge" %}
 
-<div class="grid float-left-6 module">
-  <img src="{{ page.img-link }}shrine-dogs.jpg" alt="Shrine dogs" >
-</div>
+{% include 2.html type="r-thin"
+  img1="couple" alt1="couple"
+  img2="dogo" alt2="Dogo the shiba"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}boars.jpg" alt="Boars" >
-</div>
+{% include 1.html type="ctr-sm" img="crowded-temples" alt="Crowded temples" %}
 
-<div class="grid grid-spaced items-3 module">
-  <img src="{{ page.img-link }}temple-light.jpg" alt="Temple light" >
-  <img src="{{ page.img-link }}writings.jpg" alt="Scriptures" >
-  <img src="{{ page.img-link }}jeremie-posing.jpg" alt="Jeremie posing" >
-</div>
+{% include 2.html type="sp"
+  img1="light-reflections-kyoto-bridge" alt1="Light reflections in Kyoto bridge"
+  img2="bird-in-rooftop" alt2="Bird in rooftop"
+%}
 
-<div class="grid float-right-4 module">
-  <img src="{{ page.img-link }}dragon-painting.jpg" alt="Dragon painting in roof" >
-</div>
+{% include 1.html text="Finally the holiday was over and the crowds evaporated with it. Now we were able to appreciate the city better. Our days were mostly spent walking the streets and observing shrines and temples." %}
 
-<div class="grid grid-spaced items-4 module">
-  <img src="{{ page.img-link }}temple-at-night.jpg" alt="Temple at night" >
-  <img src="{{ page.img-link }}temple-at-night-with-foliage.jpg" alt="Temple at night" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="fushimi-inari-taisha" alt1="Fushimi Inari Taisha"
+  img2="headless-man-in-shrine" alt2="Fushimi Inari Taisha"
+%}
 
-<div class="grid items-3-bleed module">
-  <img src="{{ page.img-link }}kimono-women-talking.jpg" alt="Women in Kimonos" >
-  <img src="{{ page.img-link }}women-in-kimono.jpg" alt="Women in Kimonos" >
-  <img src="{{ page.img-link }}kimono-women.jpg" alt="Women in Kimonos" >
-</div>
+{% include 1.html type="fl-left" img="shrine-dogs" alt="shrine dogs" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}traditional-house.jpg" alt="Traditional house" >
-  <img src="{{ page.img-link }}sculpture-with-big-balls.jpg" alt="Sculpture with gigantic balls" >
-</div>
+{% include 1.html type="ctr" img="boars" alt="boars" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}autumn-boat-river.jpg" alt="Boats in the river with autumn leaves" >
-  <img src="{{ page.img-link }}autumn-foliage.jpg" alt="Boats in the river with autumn leaves" >
-</div>
+{% include 3.html type="sp"
+  img1="temple-light" alt1="Temple light"
+  img2="writings" alt2="Scriptures"
+  img3="jeremie-posing" alt3="Jeremie posing"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}striped-lighting.jpg" alt="People in train" >
-</div>
+{% include 1.html type="fl-right-sm" img="dragon-painting" alt="Dragon painting in roof" %}
 
-<div class="grid float-left-6 module">
-  <img src="{{ page.img-link }}people-in-train.jpg" alt="People in train" >
-</div>
+{% include 2.html type="sp"
+  img1="temple-at-night" alt1="Temple at night"
+  img2="temple-at-night-with-foliage" alt2="Temple at night"
+%}
 
-<div class="grid bleed-right-thin-left module">
-  <img src="{{ page.img-link }}peeking-through-train-windows.jpg" alt="Peeking through train windows" >
-  <img src="{{ page.img-link }}kyoto-buildings.jpg" alt="Kyoto old buildings" >
-</div>
+{% include 3.html type="bleed"
+  img1="kimono-women-talking" alt1="Women in Kimonos"
+  img2="women-in-kimono" alt2="women in kimono"
+  img3="kimono-women" alt3="Women in Kimonos"
+%}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}bike-and-japanese-text.jpg" alt="Bike in front of wall with japanese text" >
-  <img src="{{ page.img-link }}building-facade.jpg" alt="Building facade" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="traditional-house" alt1="traditional house"
+  img2="sculpture-with-big-balls" alt2="sculpture with big balls"
+%}
 
-<div class="grid grid-center width-half">
-  <h3>Street food and ramen</h3>
-  <p>My favorite part of the trip was walking through the rows of food stalls outside the temple grounds and sampling every street food. Among all that we tried, I became addicted to dango! Small glutinous rice balls (like mochi but without the filling) are skewered on bamboo sticks and grilled to achieve a charred outer layer. Then it's covered with a soy-based sweet sauce that gives it a sweet and slightly salty taste.</p>
-  <p>It's so good that as I'm writing this, the walls of my mouth is starting to secrete saliva. Jeremie and I took every opportunity to eat dango while we were in Kyoto and had it almost every day.</p>
-</div>
+{% include 2.html type="sp-sm"
+  img1="autumn-boat-river" alt1="Boats in the river with autumn leaves"
+  img2="autumn-foliage" alt2="Boats in the river with autumn leaves"
+%}
 
-<div class="grid stacked-3-items-sm module">
-  <img src="{{ page.img-link }}food-stall.jpg" alt="Food stall" >
-  <img src="{{ page.img-link }}dango.jpg" alt="Dango" >
-  <img src="{{ page.img-link }}kyoto-temple.jpg" alt="Kyoto temple" >
-</div>
+{% include 1.html type="ctr" img="striped-lighting" alt="People in train" %}
 
-<div class="grid grid-center width-half">
-  <p>There's an underground ramen spot that operates without a signboard. It gets busy at certain hours, but the trick is to go there as soon as they opened for dinner so you don't have to wait in line. They even let us in a few minutes before they opened.</p>
-  <p>The ramen broth was really thick, and I love that you can add seasonal vegetables. I've never had ramen with baby corn in it. It was so good.</p>
-</div>
+{% include 1.html type="fl-left" img="people-in-train" alt="People in train" %}
 
-<div class="grid grid-spaced items-2-thin-left module">
-  <img src="{{ page.img-link }}no-name-ramen-underground-entrance.jpg" alt="No name ramen underground entrance" >
-</div>
+{% include 2.html type="l-thin"
+  img1="peeking-through-train-windows" alt1="peeking through train windows"
+  img2="kyoto-buildings" alt2="Kyoto old buildings"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}no-name-ramen.jpg" alt="No name ramen" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="bike-and-japanese-text" alt1="Bike in front of wall with japanese text"
+  img2="building-facade" alt2="Building facade"
+%}
 
-<div class="grid float-right-4 module">
-  <img src="{{ page.img-link }}ramen.jpg" alt="No name ramen dish" >
-</div>
+{% include 1.html text="
+### Street food and ramen
+  My favorite part of the trip was walking through the rows of food stalls outside the temple grounds and sampling every street food. Among all that we tried, I became addicted to dango! Small glutinous rice balls (like mochi but without the filling) are skewered on bamboo sticks and grilled to achieve a charred outer layer. Then it's covered with a soy-based sweet sauce that gives it a sweet and slightly salty taste.
 
-<div class="grid grid-center width-half">
-  <h3>Staying in a Traditional Ryokan</h3>
-  <p>A book I'd been reading before the trip encouraged visitors to experience staying in a traditional Japanese inn called a ryokan. What caught my interest was a photo of a room that opened up to a private zen garden. I imagine waking up in the morning, sipping warm tea while staring out at the garden, lost in a trance.</p>
-  <p>Our biggest obstacle was the cost, which, on average was at around $1,000 per night. On top of that, the ones we liked the most were fully booked and slow to respond via email. 🙄</p>
-</div>
+  It's so good that as I'm writing this, the walls of my mouth is starting to secrete saliva. Jeremie and I took every opportunity to eat dango while we were in Kyoto and had it almost every day.
+" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}traditional-ryokan.jpg" alt="traditional ryokan" >
-</div>
+{% include 3.html type="st-sm"
+  img1="food-stall" alt1="food stall"
+  img2="dango" alt2="dango"
+  img3="kyoto-temple" alt3="kyoto temple"
+%}
 
-<div class="grid float-left-6 module">
-  <img src="{{ page.img-link }}hallway-to-onsen.jpg" alt="Hallway to onsen" >
-</div>
+{% include 1.html text="
+  There's an underground ramen spot that operates without a signboard. It gets busy at certain hours, but the trick is to go there as soon as they opened for dinner so you don't have to wait in line. They even let us in a few minutes before they opened.
 
-<div class="grid grid-center width-half">
-  <p>I persisted in my research until I found one in Gion&mdash;a neighborhood known for traditional shops. The only available room came without a zen garden, but it cost a few hundred bucks less than most in the area.</p>
-  <p>It was like being transported back in time. A staff wearing a traditional Kimono escorted us to our room where we were each provided with a yukata to wear inside or outside the ryokan. They also provided us with wooden slippers.</p>
-  <p>At night, our living/dining room was converted into a bedroom with comfortable futons. The transformation happened while we were out exploring the city. So by the time we got back, everything was all set for sleeping.</p>
-</div>
+  The ramen broth was really thick, and I love that you can add seasonal vegetables. I've never had ramen with baby corn in it. It was so good.
+" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}indoor-slippers.jpg" alt="Indoor slippers" >
-  <img src="{{ page.img-link }}our-futons.jpg" alt="Our futons" >
-</div>
+{% include 2.html type="l-thin" img1="no-name-ramen-underground-entrance" alt1="no name ramen underground entrance" %}
 
-<div class="grid grid-center width-half">
-  <p>Breakfast was provided the next morning as soon as we woke up and once again, our bedroom transformed back to a dining room. Our meal consisted of rice, miso soup, tofu, grilled fish, pickled vegetables, and other unfamiliar food. Dessert came after in the form of fresh matcha tea and mochi made to look like a peach.</p>
-</div>
+{% include 1.html type="ctr" img="no-name-ramen" alt="no name ramen" %}
 
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}ryokan-me-and-jeremie.jpg" alt="Me and jeremie in a ryokan" >
-  <img src="{{ page.img-link }}ryokan-breakfast.jpg" alt="Our ryokan breakfast" >
-</div>
+{% include 1.html type="fl-right-sm" img="ramen" alt="No name ramen dish" %}
 
-<div class="grid grid-center width-quarter module">
-  <img src="{{ page.img-link }}matcha-and-peach.jpg" alt="Matcha and peach for dessert" >
-</div>
+{% include 1.html text="
+### Staying in a Traditional Ryokan
+  A book I'd been reading before the trip encouraged visitors to experience staying in a traditional Japanese inn called a ryokan. What caught my interest was a photo of a room that opened up to a private zen garden. I imagine waking up in the morning, sipping warm tea while staring out at the garden, lost in a trance.
 
-<div class="grid float-left-6 module">
-  <img src="{{ page.img-link }}jeremie-in-ryokan.jpg" alt="Jeremie looking at the view" >
-</div>
+  Our biggest obstacle was the cost, which, on average was at around $1,000 per night. On top of that, the ones we liked the most were fully booked and slow to respond via email. 🙄
+" %}
 
-<div class="grid grid-center width-half">
-  <p>Our brief stay at the ryokan was over before we knew it. And though it gobbled a huge chunk of our budget, it was a unique experience and something I'll remember for a long time.</p>
-</div>
+{% include 1.html type="ctr" img="traditional-ryokan" alt="traditional ryokan" %}
 
-<div class="grid stacked-3-items-sm module">
-  <img src="{{ page.img-link }}small-japanese-garden.jpg" alt="Small japanese garden" >
-  <img src="{{ page.img-link }}specks.jpg" alt="Specks" >
-  <img src="{{ page.img-link }}temple-behind-trees.jpg" alt="Temple behind trees" >
-</div>
+{% include 1.html type="fl-left" img="hallway-to-onsen" alt="hallway to onsen" %}
 
-<div class="grid grid-spaced items-2-thin-left module">
-  <img src="{{ page.img-link }}traditional-japanese-home-2.jpg" alt="Tradtional japanese home" >
-  <img src="{{ page.img-link }}traditional-japanese-home.jpg" alt="Tradtional japanese home" >
-</div>
+{% include 1.html text="
+  I persisted in my research until I found one in Gion&mdash;a neighborhood known for traditional shops. The only available room came without a zen garden, but it cost a few hundred bucks less than most in the area.
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}sunset-rooftops.jpg" alt="Sunset rooftops" >
-</div>
+  It was like being transported back in time. A staff wearing a traditional Kimono escorted us to our room where we were each provided with a yukata to wear inside or outside the ryokan. They also provided us with wooden slippers.
+
+  At night, our living/dining room was converted into a bedroom with comfortable futons. The transformation happened while we were out exploring the city. So by the time we got back, everything was all set for sleeping.
+" %}
+
+{% include 2.html type="sp-sm"
+  img1="indoor-slippers" alt1="indoor slippers"
+  img2="our-futons" alt2="our futons"
+%}
+
+{% include 1.html text="Breakfast was provided the next morning as soon as we woke up and once again, our bedroom transformed back to a dining room. Our meal consisted of rice, miso soup, tofu, grilled fish, pickled vegetables, and other unfamiliar food. Dessert came after in the form of fresh matcha tea and mochi made to look like a peach." %}
+
+{% include 2.html type="sp"
+  img1="ryokan-me-and-jeremie" alt1="Me and jeremie in a ryokan"
+  img2="ryokan-breakfast" alt2="Our ryokan breakfast"
+%}
+
+{% include 1.html type="ctr" img="matcha-and-peach" alt="Matcha and peach for dessert" %}
+
+{% include 1.html type="fl-left" img="jeremie-in-ryokan" alt="Jeremie looking at the view" %}
+
+{% include 1.html text="Our brief stay at the ryokan was over before we knew it. And though it gobbled a huge chunk of our budget, it was a unique experience and something I'll remember for a long time." %}
+
+{% include 3.html type="st-sm"
+  img1="small-japanese-garden" alt1="small japanese garden"
+  img2="specks" alt2="specks"
+  img3="temple-behind-trees" alt3="temple behind trees"
+%}
+
+{% include 2.html type="l-thin"
+  img1="traditional-japanese-home-2" alt1="traditional japanese home"
+  img2="traditional-japanese-home" alt2="traditional japanese home"
+%}
+
+{% include 1.html type="ctr" img="sunset-rooftops" alt="sunset rooftops" %}

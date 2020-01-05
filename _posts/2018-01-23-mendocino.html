@@ -10,64 +10,58 @@ img:
   small:    2018/mendocino/mendocino-small.jpg
   large:    2018/mendocino/mendocino-cover.jpg
 ---
-<div class="grid grid-center width-half">
-  <p>I was sifting through photos from last year when I came across our Mendocino trip. It's a charming suburban town north of San Francisco that had an old-fashioned feel to it. Despite not having grown up in this country, I was overcome with a feeling of nostalgia. I must've read about it in books or saw scenes in films, I'm not sure but it felt so familiar.</p>
-  <p>We rented a canoe and paddled our way up the Mendocino river. We've never been in a canoe before but it was easy to get the hang of it. As long as we synchronized our movements and agreed to a direction, we were pretty much on our way. Give it a few minutes, and it will feel like second nature.</p>
-</div>
+{% include 1.html text="
+  I was sifting through photos from last year when I came across our Mendocino trip. It's a charming suburban town north of San Francisco that had an old-fashioned feel to it. Despite not having grown up in this country, I was overcome with a feeling of nostalgia. I must've read about it in books or saw scenes in films, I'm not sure but it felt so familiar.
 
-<div class="grid items-2-bleed module">
-  <img src="{{ page.img-link }}catch-a-canoe.jpg" alt="catch a canoe" >
-  <img src="{{ page.img-link }}kayaking-folks.jpg" alt="kayaking folks" >
-</div>
+  We rented a canoe and paddled our way up the Mendocino river. We've never been in a canoe before but it was easy to get the hang of it. As long as we synchronized our movements and agreed to a direction, we were pretty much on our way. Give it a few minutes, and it will feel like second nature.
+" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}mendocino-sign.jpg" alt="mendocino sign" >
-  <img src="{{ page.img-link }}chair.jpg" alt="chair" >
-</div>
+{% include 2.html type="bleed"
+  img1="catch-a-canoe" alt1="catch a canoe"
+  img2="kayaking-folks" alt2="kayaking folks"
+%}
 
-<div class="grid items-2-bleed-balanced module">
-  <img src="{{ page.img-link }}trees.jpg" alt="trees" >
-  <img src="{{ page.img-link }}mendocino-shore.jpg" alt="mendocino shore" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="mendocino-sign" alt1="mendocino sign"
+  img2="chair" alt2="chair"
+%}
 
-<div class="grid grid-right width-half module">
-  <img src="{{ page.img-link }}sun-and-trees.jpg" alt="sun and trees" >
-</div>
+{% include 2.html type="bleed-uneven"
+  img1="trees" alt1="trees"
+  img2="mendocino-shore" alt2="mendocino shore"
+%}
 
-<div class="grid grid-center width-half">
-  <p>When our arms became too tired, we'd draw our paddles in and let the slow current carry us.</p>
-  <p>We ate fresh strawberries and sat in silence for the next few minutes. This gave us a chance to appreciate the plants growing on the edges of the river and say hi to other folks drifting in the water along with us.</p>
-</div>
+{% include 1.html type="ctr" img="sun-and-trees" alt="sun and trees" %}
 
-<div class="grid grid-spaced items-2-thin-right module">
-  <img src="{{ page.img-link }}ferns.jpg" alt="ferns" >
-  <img src="{{ page.img-link }}man-swimming.jpg" alt="man swimming" >
-</div>
+{% include 1.html text="
+  When our arms became too tired, we'd draw our paddles in and let the slow current carry us.
 
-<div class="grid grid-center width-thirds module">
-  <img src="{{ page.img-link }}human-from-high-up.jpg" alt="human from high up" >
-</div>
+  We ate fresh strawberries and sat in silence for the next few minutes. This gave us a chance to appreciate the plants growing on the edges of the river and say hi to other folks drifting in the water along with us.
+" %}
 
-<div class="grid grid-spaced items-2-thin-left module">
-  <img src="{{ page.img-link }}cliff-sunset.jpg" alt="cliff sunset" >
-  <img src="{{ page.img-link }}pink-flowers.jpg" alt="pink flowers" >
-</div>
+{% include 2.html type="r-thin"
+  img1="ferns" alt1="ferns"
+  img2="man-swimming" alt2="man swimming"
+%}
 
-<div class="grid grid-center width-half">
-  <p>I think about California and this is what I always have in mind. A coastal town with an easy-going vibe; with pastel orange and yellow skies and sunsets so beautiful, it's hard to keep your eyes off of it.</p>
-</div>
+{% include 1.html type="ctr-sm" img="human-from-high-up" alt="human from high up" %}
 
-<div class="grid grid-center items-3 module">
-  <img src="{{ page.img-link }}cliff-people.jpg" alt="cliff people" >
-  <img src="{{ page.img-link }}rocky.jpg" alt="rocky" >
-  <img src="{{ page.img-link }}boats.jpg" alt="boats" >
-</div>
+{% include 2.html type="l-thin"
+  img1="cliff-sunset" alt1="cliff sunset"
+  img2="pink-flowers" alt2="pink flowers"
+%}
 
-<div class="grid grid-center width-thirds module">
-  <img src="{{ page.img-link }}skull.jpg" alt="skull" >
-</div>
+{% include 1.html text="I think about California and this is what I always have in mind. A coastal town with an easy-going vibe; with pastel orange and yellow skies and sunsets so beautiful, it's hard to keep your eyes off of it." %}
 
-<div class="grid grid-center items-2-thin module">
-  <img src="{{ page.img-link }}deer.jpg" alt="deer" >
-  <img src="{{ page.img-link }}yellow-van.jpg" alt="yellow van" >
-</div>
+{% include 3.html type="ctr"
+  img1="cliff-people" alt1="cliff people"
+  img2="rocky" alt2="rocky"
+  img3="boats" alt3="boats"
+%}
+
+{% include 1.html type="ctr-sm" img="skull" alt="skull" %}
+
+{% include 2.html type="ctr-sm"
+  img1="deer" alt1="deer"
+  img2="yellow-van" alt2="yellow van"
+%}

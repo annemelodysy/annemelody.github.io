@@ -17,14 +17,10 @@ At times when we had visitors at home, I'd hide in our room and pretend to be bu
 
 Growing up, I'd been shifting from being an introvert to an extrovert and back. In 6th grade and the most part of high school, I found myself unafraid of meeting new people. My friends described me as being "friendly". The proof is on a sheet of paper during an exercise in class where classmates wrote down something about you.
 
-<div class="module">
-  <img src="{{ page.img-link }}1.jpg" alt="Me and my sister" >
-</div>
+{% include 0.html type="block" img="1" alt="Me and my sister" %}
 
 But then, after college, I quickly turned back into my old self: the girl who doesn’t mind being alone and gets tired of being around strangers. Don’t get me wrong&mdash;I like my friends. It’s just meeting new people drains me.
 
 Sometimes, I’m excited to meet someone especially if they're easy to befriend, but other times it’s a drag. I wonder if, in the next few years, I’d shift into this completely different person, look back and think of how different I used to be. Or maybe I’d just be the same person.
 
-<div class="module">
-  <img src="{{ page.img-link }}2.jpg" alt="My weird self" >
-</div>
+{% include 0.html type="block" img="2" alt="My weird self" %}

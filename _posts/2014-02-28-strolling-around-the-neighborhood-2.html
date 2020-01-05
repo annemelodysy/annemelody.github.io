@@ -10,54 +10,49 @@ img:
   small:    2014/neighborhood-stroll-2/neighborhood-stroll-2-small.jpg
   large:    2014/neighborhood-stroll-2/neighborhood-stroll-2-cover.jpg
 ---
+{% include 1.html text="
+  I felt like walking today, so I went out and took my camera with me. I didn't know where to start, so as if being pulled by an invisible string, I followed my intuition.
 
-<div class="grid grid-center width-half module">
-  <p>I felt like walking today, so I went out and took my camera with me. I didn't know where to start, so as if being pulled by an invisible string, I followed my intuition.</p>
-  <p>Without an idea of where I'd end up, I decided not to worry about it. I mean, who cares if I get lost in Singapore? It's such a safe place I could go through dark alleys and not give a damn.</p>
-  <img src="{{ page.img-link }}3.jpg" alt="Green door"  />
-</div>
+  Without an idea of where I'd end up, I decided not to worry about it. I mean, who cares if I get lost in Singapore? It's such a safe place I could go through dark alleys and not give a damn.
 
-<div class="grid items-2-bleed module">
-  <img src="{{ page.img-link }}1.jpg" alt="Joo chiat road"  />
-  <img src="{{ page.img-link }}2.jpg" alt="Joo chiat road"  />
-</div>
+  ![Green door](/assets/2014/neighborhood-stroll-2/3.jpg)
+" %}
 
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}4.jpg" alt="Colorful houses of Singapore"  />
-  <img src="{{ page.img-link }}5.jpg" alt="Altar offerings"  />
-</div>
+{% include 2.html type="bleed"
+  img1="1" alt1="Joo chiat road"
+  img2="2" alt2="Joo chiat road"
+%}
 
-<div class="grid width-half module">
-  <img src="{{ page.img-link }}6.jpg" alt="Bicycles for rent"  />
-</div>
+{% include 2.html type="sp"
+  img1="4" alt1="Colorful houses of Singapore"
+  img2="5" alt2="Altar offerings"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}7.jpg" alt="Clothes hangers"  />
-</div>
+{% include 1.html type="ctr" img="6" alt="Bicycles for rent" %}
 
-<div class="grid stacked-3-items module">
-  <img src="{{ page.img-link }}/8.jpg" alt="People at the beach" title="People at the beach" />
-  <img src="{{ page.img-link }}/10.jpg" alt="Man jogging at the beach" title="Man jogging at the beach" />
-  <img src="{{ page.img-link }}/9.jpg" alt="Waving to the boats" title="Waving to the boats" />
-</div>
+{% include 1.html type="ctr" img="7" alt="Clothes hangers" %}
 
-<div class="grid grid-spaced items-4 module">
-  <img src="{{ page.img-link }}/11.jpg" alt="Bench" />
-  <img src="{{ page.img-link }}/13.jpg" alt="Man jogging and woman walking her dog" />
-  <img src="{{ page.img-link }}/12.jpg" alt="Encounters" />
-  <img src="{{ page.img-link }}/14.jpg" alt="Encounters" />
-</div>
+{% include 3.html type="st"
+  img1="8" alt1="People at the beach"
+  img2="10" alt2="Man jogging at the beach"
+  img3="9" alt3="Waving to the boats"
+%}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}15.jpg" alt="Half-naked man doing stretches"  />
-  <img src="{{ page.img-link }}16.jpg" alt="Bright tunnel"  />
-</div>
+{% include 4.html type="sp"
+  img1="11" alt1="Bench"
+  img2="13" alt2="Man jogging and woman walking her dog"
+  img3="12" alt3="Encounters"
+  img4="14" alt4="Encounters"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}17.jpg" alt="Ama all alone"  />
-</div>
+{% include 2.html type="sp-sm"
+  img1="15" alt1="Half-naked man doing stretches"
+  img2="16" alt2="Bright tunnel"
+%}
 
-<div class="grid grid-spaced items-2-thin-left module">
-  <img src="{{ page.img-link }}18.jpg" alt="Hawker restaurants"  />
-  <img src="{{ page.img-link }}19.jpg" alt="Hawker restaurants"  />
-</div>
+{% include 1.html type="ctr" img="17" alt="Ama all alone" %}
+
+{% include 2.html type="l-thin"
+  img1="18" alt1="Hawker restaurants"
+  img2="19" alt2="Hawker restaurants"
+%}

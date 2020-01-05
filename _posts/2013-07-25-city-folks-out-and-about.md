@@ -15,50 +15,15 @@ When we were kids, I didn't think much about our visits to Surigao (my mother's 
 
 There were things that I never got to see. The only time I had a chance to visit our ancestral home, I was sick with a fever. They went without me as I slept in my aunt's house in the city. Only now that it's swallowed back into the forest do I wish I saw it when it was alive.
 
-<div class="module">
-  <img src="{{ page.img-link }}1.jpg" alt="Ancestral home swallowed by the forest" >
-</div>
-
-<div class="module">
-  <img src="{{ page.img-link }}2.jpg" alt="Ampalaya in a box" >
-</div>
-
-<div class="module">
-  <img src="{{ page.img-link }}3.jpg" alt="Sunset" >
-</div>
-
-<div class="module">
-  <img src="{{ page.img-link }}4.jpg" alt="Bohol ancestral home" >
-</div>
-
-<div class="module">
-  <img src="{{ page.img-link }}5.jpg" alt="Highway" >
-</div>
-
-<div class="module">
-  <img src="{{ page.img-link }}6.jpg" alt="Ancestral home front view" >
-</div>
-
-<div class="module">
-  <img src="{{ page.img-link }}7.jpg" alt="Feet submerged in water" >
-</div>
-
-<div class="module">
-  <img src="{{ page.img-link }}8.jpg" alt="Rocky stream" >
-</div>
-
-<div class="module">
-  <img src="{{ page.img-link }}9.jpg" alt="Tita Marilyn and Tita Virgie" >
-</div>
-
-<div class="module">
-  <img src="{{ page.img-link }}10.jpg" alt="Tita Virgie blending in the vegetation" >
-</div>
-
-<div class="module">
-  <img src="{{ page.img-link }}11.jpg" alt="Little brother standing in front of boulders" >
-</div>
-
-<div class="module">
-  <img src="{{ page.img-link }}12.jpg" alt="Ocean and silhouettes" >
-</div>
+{% include 0.html type="block" img="2" alt="Ampalaya in a box" %}
+{% include 0.html type="block" img="3" alt="Sunset" %}
+{% include 0.html type="block" img="1" alt="Ancestral home swallowed by the forest" %}
+{% include 0.html type="block" img="4" alt="Bohol ancestral home" %}
+{% include 0.html type="block" img="5" alt="Highway" %}
+{% include 0.html type="block" img="6" alt="Ancestral home front view" %}
+{% include 0.html type="block" img="7" alt="Feet submerged in water" %}
+{% include 0.html type="block" img="8" alt="Rocky stream" %}
+{% include 0.html type="block" img="9" alt="Tita Marilyn and Tita Virgie" %}
+{% include 0.html type="block" img="10" alt="Tita Virgie blending in the vegetation" %}
+{% include 0.html type="block" img="11" alt="Little brother standing in front of boulders" %}
+{% include 0.html type="block" img="12" alt="Ocean and silhouettes" %}

@@ -11,18 +11,15 @@ img:
   large:    2015/osp/osp-cover.jpg
 ---
 <div class="js-transnight transnight">
-  <div class="grid grid-center width-thirds module">
-    <img src="{{ page.img-link }}1.jpg" alt="Mountain from the sky" >
-  </div>
+  {% include 1.html type="ctr-sm" img="1" alt="Mountain from the sky" %}
 
-  <div class="grid width-half module">
-    <img src="{{ page.img-link }}3.jpg" alt="Driving between the forests" >
-  </div>
+  {% include 1.html type="left" img="3" alt="Driving between the forests" %}
 
-  <div class="grid grid-center width-half">
-    <p>MJ, a friend who loves amateur astronomy, told me about a star party happening in Oregon. Despite having very little knowledge of astronomy, the thought of camping outdoors and looking at the universe without light/sound pollution was intriguing.</p>
-    <p>Registering online was easy. Figuring out how to get to the remote location proved to be more difficult. Since there were no buses/trains or even an Uber heading up the mountain, our only option was to drive a car. Google maps told me it would take five hours to drive from the airport to Ochoco National Forest. Luckily, our friends MJ and Vern was with us! They drove from Utah all the way to Portland the day before and met us in Oregon.</p>
-  </div>
+  {% include 1.html text="
+  MJ, a friend who loves amateur astronomy, told me about a star party happening in Oregon. Despite having very little knowledge of astronomy, the thought of camping outdoors and looking at the universe without light/sound pollution was intriguing.
+
+  Registering online was easy. Figuring out how to get to the remote location proved to be more difficult. Since there were no buses/trains or even an Uber heading up the mountain, our only option was to drive a car. Google maps told me it would take five hours to drive from the airport to Ochoco National Forest. Luckily, our friends MJ and Vern was with us! They drove from Utah all the way to Portland the day before and met us in Oregon.
+  " %}
 
   <div class="parallax">
     <img src="{{ page.img-link }}2.jpg" alt="Scenic Oregon drive">
@@ -31,100 +28,86 @@ img:
     </div>
   </div>
 
-  <div class="grid grid-center width-half">
-    <p>Resting my head on the bags next to me, my mind drifted into an alternating state of consciousness and unconsciousness. I wanted to take in as much of the landscape as possible, but my lack of sleep the night before kept me from being alert.</p>
-    <p>As I was napping, I suddenly had a hard time breathing. Everyone in the car didn't seem alarmed so I thought it must've been a bad dream. I looked out the window and saw clouds of smoke rising from the trees.</p>
-    <h3>Forest Fire</h3>
-    <p>It alarms you at first&mdash;the idea of a forest fire. But I've read that <a href="http://education.nationalgeographic.com/archive/xpeditions/activities/15/popup/map_index.html" target="_blank" rel="nofollow">forests do need fires to thrive</a>. The fire burns twigs and leaves that fall from the trees, allowing forest floors to open up for seedlings to grow. It's amazing how something that seems destructive is actually necessary.</p>
-  </div>
+  {% include 1.html text="
+  Resting my head on the bags next to me, my mind drifted into an alternating state of consciousness and unconsciousness. I wanted to take in as much of the landscape as possible, but my lack of sleep the night before kept me from being alert.
 
-  <div class="grid grid-center width-half module">
-    <img src="{{ page.img-link }}27.jpg" alt="After the forest fire" />
-  </div>
+  As I was napping, I suddenly had a hard time breathing. Everyone in the car didn't seem alarmed so I thought it must've been a bad dream. I looked out the window and saw clouds of smoke rising from the trees.
 
-  <div class="grid grid-center module">
-    <img src="{{ page.img-link }}5.jpg" alt="Oregon forest" />
-  </div>
+### Forest Fire
+  It alarms you at first&mdash;the idea of a forest fire. But I've read that [forests do need fires to thrive](http://education.nationalgeographic.com/archive/xpeditions/activities/15/popup/map_index.html){:target='_blank'}. The fire burns twigs and leaves that fall from the trees, allowing forest floors to open up for seedlings to grow. It's amazing how something that seems destructive is actually necessary.
+  " %}
 
-  <div class="grid grid-spaced items-2-thin module">
-    <img src="{{ page.img-link }}25.jpg" alt="Trailer" />
-    <img src="{{ page.img-link }}26.jpg" alt="Cool trailer" />
-  </div>
+  {% include 1.html type="ctr" img="27" alt="After the forest fire" %}
 
-  <div class="grid grid-center width-half">
-    <p>We arrived at the campsite late in the afternoon. The sun was still high in the sky and dust traveled in the air as we walked among the RVs that arrived before us. At the end of the road, we found a shaded spot near a tree and decided to set up our tent there.</p>
-    <p>The last time I went camping was in Anawangin a few years ago. I was with my dad, brothers, and my younger brother's girlfriend. It was the first camping trip I'd ever been in and I enjoyed it.</p>
-  </div>
+  {% include 1.html type="ctr" img="5" alt="Oregon forest" %}
 
-  <div class="grid grid-spaced items-2 module">
-    <img src="{{ page.img-link }}6.jpg" alt="Jeremie looking at the vast horizon" />
-    <img src="{{ page.img-link }}20.jpg" alt="Jeremie's silhouette" />
-  </div>
+  {% include 2.html type="sp-sm"
+    img1="25" alt1="Trailer"
+    img2="26" alt2="Cool trailer"
+  %}
 
-  <div class="grid grid-center width-half">
-    <p>The next day, we joined a group of people for a hike. It was a short, education hike with a guide sharing information about the forest.</p>
-    <p>Here's what I've learned:</p>
-    <ol>
-      <li>Snakes usually hide in the shadows when it's too hot. Sometimes they hide under fallen trees so always watch where you step.</li>
-      <li>Trees produce a sticky substance as a defense mechanism (i.e. when it's attacked by bugs). Unfortunately, the sap they produce is highly flammable so the trees burn faster when a wildfire occurs.</li>
-      <li>There's a moss called the 'old man's beard' that you can turn into tea to cure lung infections. It actually does look like an old man's beard.</li>
-      <li>The most common way to die in the wilderness is dehydration.</li>
-      <li>There was a cougar spotted in the forest during the last star party. It trailed a family who had a small child with them. To avoid being 'hunted', stay in large groups.</li>
-      <li>Grizzly bears are more dangerous than black/brown bears because they most likely will attack people.</li>
-      <li>Avoid poking large holes unless you want a badger to attack you.</li>
-    </ol>
-  </div>
+  {% include 1.html text="
+  We arrived at the campsite late in the afternoon. The sun was still high in the sky and dust traveled in the air as we walked among the RVs that arrived before us. At the end of the road, we found a shaded spot near a tree and decided to set up our tent there.
 
-  <div class="grid grid-spaced items-2-thin module">
-    <img src="{{ page.img-link }}8.jpg" alt="Sunlight casting in tree branches" />
-    <img src="{{ page.img-link }}7.jpg" alt="Our expert guide" />
-  </div>
+  The last time I went camping was in Anawangin a few years ago. I was with my dad, brothers, and my younger brother's girlfriend. It was the first camping trip I'd ever been in and I enjoyed it.
+  " %}
 
-  <div class="grid grid-center width-thirds module">
-    <img src="{{ page.img-link }}9.jpg" alt="Close up of moss growing in bark" />
-  </div>
+  {% include 2.html type="sp"
+    img1="6" alt1="Jeremie looking at the vast horizon"
+    img2="20" alt2="Jeremie's silhouette"
+  %}
 
-  <div class="grid grid-center width-wider module">
-    <img src="{{ page.img-link }}10.jpg" alt="Lone dead tree" />
-  </div>
+  {% include 1.html text="
+  The next day, we joined a group of people for a hike. It was a short, education hike with a guide sharing information about the forest.
 
-  <div class="grid grid-spaced items-2-thin module">
-    <img src="{{ page.img-link }}11.jpg" alt="Notes on the desk" />
-    <img src="{{ page.img-link }}12.jpg" alt="Peeking from our tent" />
-  </div>
+  Here's what I've learned:
 
-  <div class="grid grid-center width-half module">
-    <img src="{{ page.img-link }}15.jpg" alt="My new hiking shoes" />
-  </div>
+  1. Snakes usually hide in the shadows when it's too hot. Sometimes they hide under fallen trees so always watch where you step.
+  2. Trees produce a sticky substance as a defense mechanism (i.e. when it's attacked by bugs). Unfortunately, the sap they produce is highly flammable so the trees burn faster when a wildfire occurs.
+  3. There's a moss called the 'old man's beard' that you can turn into tea to cure lung infections. It actually does look like an old man's beard.
+  4. The most common way to die in the wilderness is dehydration.
+  5. There was a cougar spotted in the forest during the last star party. It trailed a family who had a small child with them. To avoid being 'hunted', stay in large groups.
+  6. Grizzly bears are more dangerous than black/brown bears because they most likely will attack people.
+  7. Avoid poking large holes unless you want a badger to attack you.
+  " %}
 
-  <div class="grid bleed-right-thin-left">
-    <img src="{{ page.img-link }}13.jpg" alt="View from inside our tent" />
-    <div>
-      <img src="{{ page.img-link }}14.jpg" alt="Our tiny tent compared to Vern's and MJ's" />
-    </div>
-  </div>
+  {% include 2.html type="sp-sm"
+    img1="8" alt1="Sunlight casting in tree branches"
+    img2="7" alt2="Our expert guide"
+  %}
 
-  <div class="grid grid-center width-half">
-    <p>It was very hot during the day and freezing cold at night. What kept waking me up though wasn't the cold. In fact, my sleeping bag kept me warm and comfortable. It was a rocky patch next to my head that I kept rolling on to that disrupted my sleep. Out of laziness, I went back to sleep only to wake up again to the feeling of a sharp rock on my cheek.</p>
-    <p>The next day, we moved next to MJ and Vern's soft, grassy spot. Our green tent looked tiny compared to theirs!</p>
-  </div>
+  {% include 1.html type="ctr-sm" img="9" alt="Close up of moss growing in bark" %}
+
+  {% include 1.html type="ctr" img="10" alt="Lone dead tree" %}
+
+  {% include 2.html type="sp-sm"
+    img1="11" alt1="Notes on the desk"
+    img2="12" alt2="Peeking from our tent"
+  %}
+
+  {% include 1.html type="ctr" img="15" alt="My new hiking shoes" %}
+
+  {% include 2.html type="l-thin"
+    img1="13" alt1="View from inside our tent"
+    img2="14" alt2="Our tiny tent compared to Vern and MJ's"
+  %}
+
+  {% include 1.html text="
+  It was very hot during the day and freezing cold at night. What kept waking me up though wasn't the cold. In fact, my sleeping bag kept me warm and comfortable. It was a rocky patch next to my head that I kept rolling on to that disrupted my sleep. Out of laziness, I went back to sleep only to wake up again to the feeling of a sharp rock on my cheek.
+
+  The next day, we moved next to MJ and Vern's soft, grassy spot. Our green tent looked tiny compared to theirs!
+  " %}
 
   <div class="grid grid-center items-3 module sunset">
-    <div>
-      <p>So many nice people made us feel welcome on our first star party. We met Michael when we first arrived at the site. He's passionate about telescopes, outer space, and his kids.</p>
-    </div>
+    <p>So many nice people made us feel welcome on our first star party. We met Michael when we first arrived at the site. He's passionate about telescopes, outer space, and his kids.</p>
 
     <img src="{{ page.img-link }}16.jpg" alt="Michael from the event" />
     <img src="{{ page.img-link }}17.jpg" alt="Sunset" />
   </div>
 
-  <div class="grid grid-center width-half module">
-    <img src="{{ page.img-link }}19.jpg" alt="Sun looking huge in the sky" />
-  </div>
+  {% include 1.html type="ctr" img="19" alt="Sun looking huge in the sky" %}
 
-  <div class="grid grid-center width-thirds module">
-    <img src="{{ page.img-link }}18.jpg" alt="Orange sun" />
-  </div>
+  {% include 1.html type="ctr-sm" img="18" alt="Orange sun" %}
 
   <div class="parallax">
     <img src="/assets/2015/osp/28.jpg" alt="Night time" />
@@ -133,25 +116,21 @@ img:
     </div>
   </div>
 
-  <div class="grid grid-center width-half night">
-    <img src="{{ page.img-link }}21.jpg" alt="Stars in the sky" />
+  <div class="night">
+    {% include 1.html type="ctr" img="21" alt="Stars in the sky" %}
   </div>
 
-  <div class="grid grid-spaced items-2-thin module">
-    <img src="{{ page.img-link }}22.jpg" alt="Attempt at a group photo" />
-    <img src="{{ page.img-link }}23.jpg" alt="Jeremie's glowing ears" />
-  </div>
+  {% include 2.html type="sp-sm"
+    img1="22" alt1="Attempt at a group photo"
+    img2="23" alt2="Jeremie's glowing ears"
+  %}
 
-  <div class="grid grid-center width-half module">
-    <img src="{{ page.img-link }}24.jpg" alt="Milky way" />
-  </div>
+  {% include 1.html type="ctr" img="24" alt="Milky way" %}
 
   <div class="grid grid-center width-half" style="color: #fafafa;">
     <p>It was incredibly surreal. Instead of joining the night sky tour, we stayed in our tent and removed the rain fly to get a clearer view of the stars.</p>
     <p>"Falling star!" we'd exclaim every time we saw something move. It was exciting. I had never seen so many stars in my life.</p>
   </div>
 
-  <div class="grid grid-center width-thirds module">
-    <img src="{{ page.img-link }}29.jpg" alt="Milky way" />
-  </div>
+  {% include 1.html type="ctr-sm" img="29" alt="Milky way" %}
 </div>

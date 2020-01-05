@@ -10,41 +10,29 @@ img:
   small:    2013/two-worlds-collide/two-worlds-collide-small.jpg
   large:    2013/two-worlds-collide/two-worlds-collide-cover.jpg
 ---
-<div class="grid grid-center width-half">
-  <p>Glitches had occurred before anyone realized the songs they heard on the radio came from a parallel universe.</p>
-</div>
+{% include 1.html text="Glitches occurred before anyone realized the songs they heard on the radio came from a parallel universe." %}
 
-<div class="grid width-half module">
-  <img src="{{ page.img-link }}1.jpg" alt="Falling down the hill" >
-</div>
+{% include 1.html type="left" img="1" alt="Falling down the hill" %}
 
-<div class="grid grid-right width-half module">
-  <img src="{{ page.img-link }}2.jpg" alt="Hands" >
-</div>
+{% include 1.html type="ctr" img="2" alt="Hands" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}4.jpg" alt="Legs" >
-  <img src="{{ page.img-link }}3.jpg" alt2="Red-head girl peeking" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="4" alt1="Legs"
+  img2="3" alt2="Red-head girl peeking"
+%}
 
-<div class="grid grid-spaced items-2-thin-right module">
-  <img src="{{ page.img-link }}5.jpg" alt="Girl sitting on grass" >
-  <img src="{{ page.img-link }}6.jpg" alt2="Girl lying on floor" >
-</div>
+{% include 2.html type="r-thin"
+  img1="5" alt1="Girl sitting on grass"
+  img2="6" alt2="Girl lying on floor"
+%}
 
-<div class="grid grid-center width-half">
-  <img src="{{ page.img-link }}8.jpg" alt="Blurry girl with trees in the background" >
-</div>
+{% include 1.html type="ctr" img="8" alt="Blurry girl with trees in the background" %}
 
-<div class="grid grid-spaced items-2 module">
-  <img src="{{ page.img-link }}9.jpg" alt="Girl looking at water fountain" >
-  <img src="{{ page.img-link }}7.jpg" alt2="Fallen girl" >
-</div>
+{% include 2.html type="sp"
+  img1="9" alt1="Girl looking at water fountain"
+  img2="7" alt2="Fallen girl"
+%}
 
-<div class="grid grid-center width-half">
-  <img src="{{ page.img-link }}10.jpg" alt="Girl covering her eyes" >
-</div>
+{% include 1.html type="ctr" img="10" alt="Girl covering her eyes" %}
 
-<div class="grid grid-center width-half">
-  <img src="{{ page.img-link }}11.jpg" alt="Darkness falls" >
-</div>
+{% include 1.html type="ctr" img="11" alt="Darkness falls" %}

@@ -25,6 +25,4 @@ I can’t wait to write about the people, take lovely photographs of my city, ca
 
 You might find yourself in another country that's better than yours, but home will always be home.
 
-<div class="module">
-  <img src="{{ page.img-link }}1.jpg" alt="Mountains of Cebu" title="Mountains of Cebu" />
-</div>
+{% include 0.html type="block" img="1" alt="Mountains of Cebu" %}

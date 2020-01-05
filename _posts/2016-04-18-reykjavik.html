@@ -14,15 +14,15 @@ img:
 <h1 class="uppercase title">{{ page.title }}</h1>
 <h5 class="uppercase text-center">{{ page.date | date_to_string }}</h5>
 
-<div class="parallax">
-  <img src="{{ page.img-link }}1.jpg" alt="Arrived in Iceland. 8am and it's still dark" />
-  <div class="grid width-thirds">
-    <h3>Dark Mornings</h3>
-    <p>It was already 8 in the morning when we stepped out of the airport. I remember it was the first time I felt snow on my face&mdash;cold, soft, and wet. I covered my head with my faux fur hoodie and adjusted the scarf around my neck to help keep me dry.</p>
-  </div>
-</div>
-
 <section class="dark-bg">
+  <div class="parallax">
+    <img src="{{ page.img-link }}1.jpg" alt="Arrived in Iceland. 8am and it's still dark" />
+    <div class="grid width-thirds">
+      <h3>Dark Mornings</h3>
+      <p>It was already 8 in the morning when we stepped out of the airport. I remember it was the first time I felt snow on my face&mdash;cold, soft, and wet. I covered my head with my faux fur hoodie and adjusted the scarf around my neck to help keep me dry.</p>
+    </div>
+  </div>
+
   <div class="grid grid-spaced items-2-thin-right">
     <div class="with-text">
       <p>"We are heading to Half-naf-jor-dour?" I said with uncertainty as we stepped inside the bus. I spent hours watching videos before the trip so I could pronounce it right but I still managed to sound stupid.</p>
@@ -33,110 +33,103 @@ img:
     <img src="{{ page.img-link }}30.jpg" alt="darkness" />
   </div>
 
-  <div class="grid grid-center width-half">
-    <p>Jeremie rested his head on top of his backpack. He looked tired and had his eyes closed. I don't blame him. We'd been in transit for almost an entire day and were sleep-deprived. As much as I wanted to close my eyes, one of us had to look out for the Viking hotel sign (no actual vikings were visible though) which was the landmark closest to the Airbnb we rented.</p>
-    <p>The bus driver was kind enough to tell us that we had arrived at our stop. I think he felt sorry for me after hearing me struggle with saying the name of the town.</p>
-    <p>One thing I did not expect was the sidewalk to be slippery. We had trouble walking straight on the melted ice despite wearing hiking shoes. So we did our best, laughing our way home as we balanced our bodies by raising both arms to the sides as though walking on a tightrope. From time to time, cursing when we slipped.</p>
-  </div>
+  {% include 1.html text="
+Jeremie rested his head on top of his backpack. He looked tired and had his eyes closed. I don't blame him. We'd been in transit for almost an entire day and were sleep-deprived. As much as I wanted to close my eyes, one of us had to look out for the Viking hotel sign (no actual vikings were visible though) which was the landmark closest to the Airbnb we rented.
 
-  <div class="grid grid-center width-thirds module">
-    <img src="{{ page.img-link }}2.jpg" alt="it's almost noon but it's still dark outside" />
-  </div>
+The bus driver was kind enough to tell us that we had arrived at our stop. I think he felt sorry for me after hearing me struggle with saying the name of the town.
 
-  <div class="grid grid-spaced items-2-thin-left module">
-    <img src="{{ page.img-link }}20.jpg" alt="our airbnb" />
-    <img src="{{ page.img-link }}21.jpg" alt="leafless trees" />
-  </div>
+One thing I did not expect was the sidewalk to be slippery. We had trouble walking straight on the melted ice despite wearing hiking shoes. So we did our best, laughing our way home as we balanced our bodies by raising both arms to the sides as though walking on a tightrope. From time to time, cursing when we slipped.
+  " %}
 
-  <div class="grid grid-spaced items-2-thin-right module">
-    <div class="with-text">
-      <p>Fortunately, we reached the house unharmed. Red corrugated steel cladding covered the outside of the house. We briefly met one of the guests who was also staying in the same home and showed us our room. Óskar, our host, was still asleep so we did not bother to wake him.</p>
-      <p>We peeled our layers of clothing, put on our pajamas, and fell into the bed as it sucked our last remaining energy.</p>
-      <p>When I came back to Earth, the sun had begun to rise though it was still dark. My body told me to go back to sleep because it was still 6 AM but my gut told me to reach for my phone.</p>
-      <p>11 AM</p>
-      <p>Oh yeah, we're not in San Francisco anymore.</p>
-      <p>My brain sometimes forgets where I am when I lack sleep. Like the time when we arrived in Hong Kong, and all the buses and train stations were out of service. We slept in the airport because we didn't want to spend money on a taxi. Then, we spent the entire day walking around the city until our eyes became heavy. We had no choice but to retreat to our hostel. When I woke up, I was sure I was back home in my bed in Cebu, so I got confused why the windows looked different. It took me about a minute to snap out of that confusion.</p>
-    </div>
-    <img src="{{ page.img-link }}19.jpg" alt="fairy lights at our airbnb" />
-  </div>
+  {% include 1.html type="ctr-sm" img="2" alt="it's almost noon but it's still dark outside" %}
 
-  <div class="grid grid-center width-half">
-    <p>Feeling thirsty, I tiptoed down the stairs (hoping nobody was there) to get some water. Small figurines lined the edges of the steps. A red lamp gave the room a surreal and warm feeling. It reminded me of Sunday mornings back home in Cebu. But I'm not entirely sure why.</p>
-    <p>Halfway down the stairs, I heard a slow and steady snoring in the living room. Is there someone sleeping on the couch? I quietly finished the rest of the steps and took a peek in the living room.</p>
-  </div>
+  {% include 2.html type="l-thin"
+    img1="20" alt1="our airbnb"
+    img2="21" alt2="leafless trees"
+  %}
+
+  {% include 2.html type="r-thin"
+    text1="
+<div>
+Fortunately, we reached the house unharmed. Red corrugated steel cladding covered the outside of the house. We briefly met one of the guests who was also staying in the same home and showed us our room. Óskar, our host, was still asleep so we did not bother to wake him.
+
+We peeled our layers of clothing, put on our pajamas, and fell into the bed as it sucked our last remaining energy.
+
+When I came back to Earth, the sun had begun to rise though it was still dark. My body told me to go back to sleep because it was still 6 AM but my gut told me to reach for my phone.
+
+11 AM
+
+Oh yeah, we're not in San Francisco anymore.
+
+My brain sometimes forgets where I am when I lack sleep. Like the time when we arrived in Hong Kong, and all the buses and train stations were out of service. We slept in the airport because we didn't want to spend money on a taxi. Then, we spent the entire day walking around the city until our eyes became heavy. We had no choice but to retreat to our hostel. When I woke up, I was sure I was back home in my bed in Cebu, so I got confused why the windows looked different. It took me about a minute to snap out of that confusion.
+</div>
+    "
+    img2="19" alt2="fairy lights at our airbnb"
+  %}
+
+  {% include 1.html text="
+Feeling thirsty, I tiptoed down the stairs (hoping nobody was there) to get some water. Small figurines lined the edges of the steps. A red lamp gave the room a surreal and warm feeling. It reminded me of Sunday mornings back home in Cebu. But I'm not entirely sure why.
+
+Halfway down the stairs, I heard a slow and steady snoring in the living room. Is there someone sleeping on the couch? I quietly finished the rest of the steps and took a peek in the living room.
+  " %}
+
+  {% include 0.html type="parallax" img="17" alt="sleeping dog" %}
 </section>
 
-<div class="parallax">
-  <img src="{{ page.img-link }}17.jpg" alt="sleeping dog" />
-</div>
+{% include 1.html type="ctr" img="23" alt="wooden bathrooms" %}
 
-<div class="grid grid-center width-thirds module">
-  <img src="{{ page.img-link }}23.jpg" alt="wooden bathrooms" />
-</div>
+{% include 1.html type="ctr" img="24" alt="airbnb kitchen" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}24.jpg" alt="airbnb kitchen" />
-</div>
+{% include 1.html type="ctr" img="25" alt="dogo looking at me from window" %}
 
-<div class="grid width-half module">
-  <img src="{{ page.img-link }}25.jpg" alt="dogo looking at me from window" />
-</div>
+{% include 1.html type="ctr" img="4" alt="old car" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}4.jpg" alt="old car" />
-</div>
+{% include 2.html type="ctr-sm"
+  img1="27" alt1="winter homes in iceland"
+  img2="26" alt2="winter homes in iceland"
+%}
 
-<div class="grid grid-center items-2-thin module">
-  <img src="{{ page.img-link }}27.jpg" alt="winter homes in iceland" />
-  <img src="{{ page.img-link }}26.jpg" alt="winter homes in iceland" />
-</div>
+{% include 2.html type="ctr-sm"
+  text1="
+<div>
+<h3>Downtown Reykjavík</h3>
 
-<div class="grid grid-center items-2-thin module">
-  <div class="with-text">
-    <h3>Downtown Reykjavík</h3>
-    <p>Since we chose a home that's outside the city, we had to take a bus to get to downtown Reykjavík. We found lots of little shops, cafes and Christmas lights decorated the streets. It resembled a cozy Christmas town.</p>
-    <p>For lunch, we tasted Icelandic food at a restaurant called <a href="http://loki.is/" target="_blank" rel="nofollow">Cafe Loki</a>. My mashed fish was good, but the serving was too much for me.</p>
-    <p>With no other plans, we wandered around the streets of downtown Reykjavík. Our night ended with a lovely hot chocolate. A perfect way to end the day.</p>
-  </div>
-  <img src="{{ page.img-link }}16.jpg" alt="man dressing up santa kid" />
-</div>
+Since we chose a home that's outside the city, we had to take a bus to get to downtown Reykjavík. We found lots of little shops, cafes and Christmas lights decorated the streets. It resembled a cozy Christmas town.
 
-<div class="grid items-2-bleed module">
-  <img src="{{ page.img-link }}6.jpg" alt="more snow" />
-  <img src="{{ page.img-link }}3.jpg" alt="Iceland homes" />
-</div>
+For lunch, we tasted Icelandic food at a restaurant called <a href='http://loki.is/' target='_blank'>Cafe Loki</a>. My mashed fish was good, but the serving was too much for me.
 
-<div class="grid grid-center width-thirds module">
-  <img src="{{ page.img-link }}5.jpg" alt="glass architecture in iceland" />
+With no other plans, we wandered around the streets of downtown Reykjavík. Our night ended with a lovely hot chocolate. A perfect way to end the day.
 </div>
+  "
+  img2="16" alt2="man dressing up santa kid"
+%}
 
-<div class="grid float-left-6 module">
-  <img src="{{ page.img-link }}28.jpg" alt="leaves in bench" />
-</div>
+{% include 2.html type="bleed"
+  img1="6" alt1="more snow"
+  img2="3" alt2="Iceland homes"
+%}
 
-<div class="grid grid-center width-thirds module">
-  <img src="{{ page.img-link }}7.jpg" alt="iceland shops" />
-</div>
+{% include 1.html type="ctr-sm" img="5" alt="glass architecture in iceland" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}10.jpg" alt="single gloves" />
-</div>
+{% include 1.html type="fl-left" img="28" alt="leaves in bench" %}
 
-<div class="grid grid-spaced items-2-balanced module">
-  <img src="{{ page.img-link }}9.jpg" alt="troll man" />
-  <img src="{{ page.img-link }}8.jpg" alt="troll woman" />
-</div>
+{% include 1.html type="ctr" img="7" alt="iceland shops" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}14.jpg" alt="man's back in home" />
-  <img src="{{ page.img-link }}11.jpg" alt="reykjavik church" />
-</div>
+{% include 1.html type="ctr" img="10" alt="single gloves" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}13.jpg" alt="grafitti in snow" />
-</div>
+{% include 2.html type="sp-balanced"
+  img1="9" alt1="troll man"
+  img2="8" alt2="troll woman"
+%}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}15.jpg" alt="under construction" />
-  <img src="{{ page.img-link }}29.jpg" alt="grafitti" />
-</div>
+{% include 2.html type="sp-sm"
+  img1="14" alt1="man's back in home"
+  img2="11" alt2="reykjavik church"
+%}
+
+{% include 1.html type="ctr" img="13" alt="grafitti in snow" %}
+
+{% include 2.html type="sp-sm"
+  img1="15" alt1="under construction"
+  img2="29" alt2="grafitti"
+%}

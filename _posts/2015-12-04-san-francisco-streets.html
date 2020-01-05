@@ -10,50 +10,44 @@ img:
   small:    2015/sf-walk/sf-walk-small.jpg
   large:    2015/sf-walk/sf-walk-cover.jpg
 ---
-<div class="grid grid-center width-half">
-  <p>It's been eight months since we moved into this city. It doesn't feel that long since we unpacked our luggage and called this tiny apartment our new home. The light summer clothes that we're used to wearing have now transformed into cozy sweaters and thick coats.</p>
-  <p>I've never been a cold-weather type of person. I don't get excited by boots and scarves or snow (thankfully, there's no snow in San Francisco). But I'm slowly adjusting. The one good thing about this weather is that it gives me an excellent excuse to drink all the hot chocolate I want. Hah!</p>
-  <p>These past few months, we've been saving up for our long-overdue honeymoon, so we've held off on some indulgences. San Francisco is expensive, so we thought of ways to entertain ourselves without spending too much. One way is to explore the city on foot, taking in all the things that make it beautiful and unique.</p>
-</div>
+{% include 1.html text="
+  It's been eight months since we moved into this city. It doesn't feel that long since we unpacked our luggage and called this tiny apartment our new home. The light summer clothes that we're used to wearing have now transformed into cozy sweaters and thick coats.
 
-<div class="grid grid-center width-wider module">
-  <img src="{{ page.img-link }}1.jpg" alt="Red door" >
-</div>
+  I've never been a cold-weather type of person. I don't get excited by boots and scarves or snow (thankfully, there's no snow in San Francisco). But I'm slowly adjusting. The one good thing about this weather is that it gives me an excellent excuse to drink all the hot chocolate I want. Hah!
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}2.jpg" alt="Someone's window" >
-  <img src="{{ page.img-link }}3.jpg" alt="Plants for sale" >
-</div>
+  These past few months, we've been saving up for our long-overdue honeymoon, so we've held off on some indulgences. San Francisco is expensive, so we thought of ways to entertain ourselves without spending too much. One way is to explore the city on foot, taking in all the things that make it beautiful and unique.
+" %}
 
-<div class="grid grid-center width-wider module">
-  <img src="{{ page.img-link }}7.jpg" alt="Pigeons hanging out in Van Ness sign" >
-</div>
+{% include 1.html type="ctr" img="1" alt="Red door" %}
 
-<div class="grid stacked-3-items module">
-  <img src="{{ page.img-link }}11.jpg" alt="Hippies on Haight street" >
-  <img src="{{ page.img-link }}5.jpg" alt="Developments in SF" >
-  <img src="{{ page.img-link }}4.jpg" alt="Plants growing in victorian home" >
-</div>
+{% include 2.html type="sp-sm"
+  img1="2" alt1="Someone's window"
+  img2="3" alt2="Plants for sale"
+%}
 
-<div class="grid items-2-bleed module">
-  <img src="{{ page.img-link }}12.jpg" alt="Woman with her dog" >
-  <img src="{{ page.img-link }}8.jpg" alt="Black and white person" >
-</div>
+{% include 1.html type="ctr" img="7" alt="Pigeons hanging out in Van Ness sign" %}
 
-<div class="grid bleed-left-thin-right module">
-  <img src="{{ page.img-link }}13.jpg" alt="Performing arts garage" >
-  <img src="{{ page.img-link }}15.jpg" alt="Man smoking and a view of a building" >
-</div>
+{% include 3.html type="st"
+  img1="11" alt1="Hippies on Haight street"
+  img2="5" alt2="Developments in SF"
+  img3="4" alt3="Plants growing in victorian home"
+%}
 
-<div class="grid grid-center width-wider module">
-  <img src="{{ page.img-link }}9.jpg" alt="Union square statue" >
-</div>
+{% include 2.html type="bleed"
+  img1="12" alt1="Woman with her dog"
+  img2="8" alt2="Black and white person"
+%}
 
-<div class="grid grid-spaced items-2-thin-right module">
-  <img src="{{ page.img-link }}10.jpg" alt="Chihuahua between giraffes" >
-  <img src="{{ page.img-link }}18.jpg" alt="MJ striking a pose" >
-</div>
+{% include 2.html type="r-thin"
+  img1="13" alt1="Performing arts garage"
+  img2="15" alt2="Man smoking and a view of a building"
+%}
 
-<div class="grid grid-center width-wider module">
-  <img src="{{ page.img-link }}16.jpg" alt="Plants sneaking in" >
-</div>
+{% include 1.html type="ctr" img="9" alt="Union square statue" %}
+
+{% include 2.html type="sp-sm"
+  img1="10" alt1="Chihuahua between giraffes"
+  img2="18" alt2="MJ striking a pose"
+%}
+
+{% include 1.html type="ctr" img="16" alt="Plants sneaking in" %}

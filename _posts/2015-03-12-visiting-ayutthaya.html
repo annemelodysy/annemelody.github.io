@@ -10,98 +10,78 @@ img:
   small:    2015/visiting-ayutthaya/visiting-ayutthaya-small.jpg
   large:    2015/visiting-ayutthaya/visiting-ayutthaya-cover.jpg
 ---
-<div class="grid grid-center width-half">
-  <p>What brought me to this city? I realize I have few memories of it. After seeing countless temples, my brain turned passive and ignored details. Ayutthaya is a lovely place if only I'd paid more attention to it.</p>
-  <p>To explore the city, you can either rent a bike or hire a tuk-tuk, which is more expensive if you're traveling alone. I attempted to get on a bike, but my lack of experience betrayed me. I ended up walking around the city under the scorching heat.</p>
-  <p>Hours later, I met a man driving a tuk-tuk who offered to take me to the temples. My budget was tight, so I negotiated the price until we came to an agreement.</p>
-  <p>He told me he used to work in Singapore as a driver but missed Thailand so much that he decided to come home. The intolerable heat made it difficult to focus on our conversation, so I only remember pieces of it.</p>
-</div>
+{% include 1.html text="
+  What brought me to this city? I realize I have few memories of it. After seeing countless temples, my brain turned passive and ignored details. Ayutthaya is a lovely place if only I'd paid more attention to it.
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}1.jpg" alt="Temple ruins" />
-</div>
+  To explore the city, you can either rent a bike or hire a tuk-tuk, which is more expensive if you're traveling alone. I attempted to get on a bike, but my lack of experience betrayed me. I ended up walking around the city under the scorching heat.
 
-<div class="grid grid-center items-3 module">
-  <img src="{{ page.img-link }}3.jpg" alt="Man swimming in lake" />
-  <img src="{{ page.img-link }}2.jpg" alt="temple ornaments" />
-  <img src="{{ page.img-link }}4.jpg" alt="tree with a hole in its trunk" />
-</div>
+  Hours later, I met a man driving a tuk-tuk who offered to take me to the temples. My budget was tight, so I negotiated the price until we came to an agreement.
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}5.jpg" alt="brick path" />
-</div>
+  He told me he used to work in Singapore as a driver but missed Thailand so much that he decided to come home. The intolerable heat made it difficult to focus on our conversation, so I only remember pieces of it.
+" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}7.jpg" alt="night market vendor" />
-  <img src="{{ page.img-link }}8.jpg" alt="preparing food" />
-</div>
+{% include 1.html type="ctr" img="1" alt="Temple ruins" %}
 
-<div class="grid grid-center width-half">
-  <p>There weren't a lot of things to do at night. The house I stayed was two minutes from one of the famous evening markets in Ayutthaya. The smell of fried fish and spices filled the air. I bounced from one stall to the next, nibbling on bite-sized food until I was satisfied.</p>
-</div>
+{% include 3.html type="st"
+  img1="3" alt1="Man swimming in lake"
+  img2="2" alt2="temple ornaments"
+  img3="4" alt3="tree with a hole in its trunk"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}6.jpg" alt="fish vendor" />
-</div>
+{% include 1.html type="ctr" img="5" alt="brick path" %}
 
-<div class="grid items-2-bleed module">
-  <img src="{{ page.img-link }}9.jpg" alt="night market stalls" />
-  <img src="{{ page.img-link }}10.jpg" alt="night market stalls" />
-</div>
+{% include 2.html type="sp-sm"
+  img1="7" alt1="night market vendor"
+  img2="8" alt2="preparing food"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}13.jpg" alt="waiting for the boat to take us to the other side" />
-</div>
+{% include 1.html text="There weren't a lot of things to do at night. The house I stayed was two minutes from one of the famous evening markets in Ayutthaya. The smell of fried fish and spices filled the air. I bounced from one stall to the next, nibbling on bite-sized food until I was satisfied." %}
 
-<div class="grid float-left-6 module">
-  <img src="{{ page.img-link }}12.jpg" alt="brick temple" />
-</div>
+{% include 1.html type="ctr" img="6" alt="fish vendor" %}
 
-<div class="grid float-right-6 module">
-  <img src="{{ page.img-link }}11.jpg" alt="buddhist carving in tree" />
-</div>
+{% include 2.html type="bleed"
+  img1="9" alt1="night market stalls"
+  img2="10" alt2="night market stalls"
+%}
 
-<div class="grid items-2-bleed module">
-  <img src="{{ page.img-link }}17.jpg" alt="giant buddha" />
-  <img src="{{ page.img-link }}15.jpg" alt="giant buddha and staff cleaning it" />
-</div>
+{% include 1.html type="ctr" img="13" alt="waiting for the boat to take us to the other side" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}16.jpg" alt="lining up for the blessings" />
-</div>
+{% include 1.html type="fl-left" img="12" alt="brick temple" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}14.jpg" alt="kid playing while parents pray" />
-</div>
+{% include 1.html type="fl-right" img="11" alt="buddhist carving in tree" %}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}19.jpg" alt="temple buildings" />
-  <img src="{{ page.img-link }}18.jpg" alt="temple buildings" />
-</div>
+{% include 2.html type="bleed"
+  img1="17" alt1="giant buddha"
+  img2="15" alt2="giant buddha and staff cleaning it"
+%}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}20.jpg" alt="my airbnb deck" />
-</div>
+{% include 1.html type="ctr" img="16" alt="lining up for the blessings" %}
 
-<div class="grid width-half module">
-  <img src="{{ page.img-link }}21.jpg" alt="waiting for the train" />
-</div>
+{% include 1.html type="ctr" img="14" alt="kid playing while parents pray" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}24.jpg" alt="train station" />
-  <img src="{{ page.img-link }}22.jpg" alt="train station" />
-</div>
+{% include 2.html type="sp-sm"
+  img1="19" alt1="temple buildings"
+  img2="18" alt2="temple buildings"
+%}
 
-<div class="grid grid-spaced items-2-thin module">
-  <img src="{{ page.img-link }}26.jpg" alt="train arriving" />
-  <img src="{{ page.img-link }}25.jpg" alt="kid peeking outside from train window" />
-</div>
+{% include 1.html type="ctr" img="20" alt="my airbnb deck" %}
 
-<div class="grid grid-center width-half">
-  <p>When it was time to go, the owner of the house drove me to the train station. She didn't ask me money for the ride. Everyone I encountered in Thailand seemed nice: they smiled a lot, were curious, and always wanted to help when needed.</p>
-  <p>The train arrived, and I said goodbye to the city as quickly as I said hello.</p>
-</div>
+{% include 1.html type="left" img="21" alt="waiting for the train" %}
 
-<div class="grid grid-center width-half module">
-  <img src="{{ page.img-link }}23.jpg" alt="train arriving" />
-</div>
+{% include 2.html type="sp"
+  img1="24" alt1="train station"
+  img2="22" alt2="train station"
+%}
+
+{% include 2.html type="sp-sm"
+  img1="26" alt1="train arriving"
+  img2="25" alt2="kid peeking outside from train window"
+%}
+
+{% include 1.html text="
+  When it was time to go, the owner of the house drove me to the train station. She didn't ask me money for the ride. Everyone I encountered in Thailand seemed nice: they smiled a lot, were curious, and always wanted to help when needed.
+
+  The train arrived, and I said goodbye to the city as quickly as I said hello.
+" %}
+
+{% include 1.html type="ctr" img="23" alt="train arriving" %}
