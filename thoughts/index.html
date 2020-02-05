@@ -4,13 +4,6 @@
 <h1 class="title uppercase">Weird thoughts & life updates</h1>
 
 <section class="thumbnails module">
-  {% for post in site.categories.people %}
-  <a href="{{ post.url | prepend: site.url }}" class="item">
-    <img src="/assets/{{ post.img.small | replace: '!SITE_URL!', site.url }}"  />
-    <h2 class="uppercase">{{ post.title }}</h2>
-  </a>
-  {% endfor %}
-
   {% for post in site.categories.life %}
   <a href="{{ post.url | prepend: site.url }}" class="item">
     <img src="/assets/{{ post.img.small | replace: '!SITE_URL!', site.url }}"  />
@@ -26,6 +19,13 @@
   {% endfor %}
 
   {% for post in site.categories.event %}
+  <a href="{{ post.url | prepend: site.url }}" class="item">
+    <img src="/assets/{{ post.img.small | replace: '!SITE_URL!', site.url }}"  />
+    <h2 class="uppercase">{{ post.title }}</h2>
+  </a>
+  {% endfor %}
+
+  {% for post in site.categories.people %}
   <a href="{{ post.url | prepend: site.url }}" class="item">
     <img src="/assets/{{ post.img.small | replace: '!SITE_URL!', site.url }}"  />
     <h2 class="uppercase">{{ post.title }}</h2>
