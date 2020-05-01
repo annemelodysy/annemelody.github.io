@@ -11,7 +11,7 @@ img:
 ---
 I found this on my notes app this morning. It was written on May 2017, a year and a half before I turned 30. It's strange reading my own thoughts from the past, but it's also amusing. Like finding a stash of cash inside a book after forgetting about them.
 
-These thoughts are unfiltered and unedited. Also spoilers: not much has changed, my thoughts are still kind of the same now. I'll check back in a year or two and see if things change.
+This is unedited to preserve my thought process during that period in my life.
 
 *May 22, 2017*
 
