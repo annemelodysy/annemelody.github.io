@@ -7,7 +7,7 @@
   word-wrap: break-word;
   margin-bottom: 12rem;
 
-  img {
+  img, video {
     width: 100%;
     display: block;
     height: auto;
@@ -86,11 +86,11 @@
 
 //3-column grids
 .items-3 {
-  grid-template-columns: repeat(3, minmax(auto, 28rem)); 
+  grid-template-columns: repeat(3, minmax(auto, 28rem));
 }
 
 .items-3-bleed {
-  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .stacked-3-items {

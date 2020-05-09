@@ -86,7 +86,9 @@ nav {
 
 //Effects
 .module  {
-  img { opacity: 0; }
+  img {
+    opacity: 0;
+  }
 
   .already-visible {
     transform: translateY(0);
@@ -126,7 +128,7 @@ nav {
     }
   }
 
-  img, p {
+  img, video, p {
     margin-bottom: 1rem;
   }
 }

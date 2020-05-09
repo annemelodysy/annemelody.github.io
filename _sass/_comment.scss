@@ -1,0 +1,75 @@
+.comments {
+  h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+
+  input, textarea {
+    border: 1px lighten($black, 70%) solid;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .btn {
+    background-color: $seafoam;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .comment {
+    padding: 1rem 0;
+    border-bottom: 1px lighten($black, 80%) solid;
+    font-size: 1rem;
+  }
+
+  .author {
+    color: darken($brown, 40%);
+  }
+
+  .date {
+    color: lighten($black, 60%);
+  }
+
+  form a, .home-desc {
+    display: none;
+  }
+}
+
+.hcb-comment-tb {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.8rem;
+  width: 100%;
+
+  a {
+    margin: 0 0.5rem;
+    opacity: 0.5;
+  }
+}
+
+#HCB_comment_box blockquote {
+  font-family: $didact;
+  font-style: normal;
+  font-size: 1rem;
+  text-align: left;
+
+  &:before, &:after {
+    display: none;
+  }
+}
+
+#hcb_msg, #no_comments {
+  font-family: $didact;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hcb-link.del img {
+  width: auto;
+}
