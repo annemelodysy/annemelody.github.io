@@ -1,6 +1,7 @@
 <div class="grid module
   {% if include.text or include.type == "ctr" %}grid-center width-half
   {% elsif include.type == "ctr-sm" %}grid-center width-quarter
+  {% elsif include.type == "ctr-lg" %}grid-center width-wider
   {% elsif include.type == "left" %}width-half
   {% elsif include.type == "right" %}grid-right width-half
   {% elsif include.type == "fl-left" %}float-left-6
