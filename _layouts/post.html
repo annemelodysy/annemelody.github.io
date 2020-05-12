@@ -8,7 +8,9 @@
     <img src="/assets/{{ page.img.large | replace: '!SITE_URL!', site.url }}" alt="{{ page.title }}" title="{{ page.title }}" class="post-cover">
   </div>
 
-  <h2 class="grid grid-center width-half text-center">{{ page.excerpt | replace: '!SITE_URL!', site.url }}</h2>
+  <div class="grid grid-center width-half">
+    <h2 class="text-center">{{ page.excerpt | replace: '!SITE_URL!', site.url }}</h2>
+  </div>
 </div>
 
 <div class="post">

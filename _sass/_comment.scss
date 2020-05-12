@@ -4,23 +4,6 @@
     letter-spacing: 0.2rem;
   }
 
-  input, textarea {
-    border: 1px lighten($black, 70%) solid;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-    font-size: 1rem;
-  }
-
-  .btn {
-    background-color: $seafoam;
-    border: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-    padding: 0.5rem 1rem;
-  }
-
   .comment {
     padding: 1rem 0;
     border-bottom: 1px lighten($black, 80%) solid;
@@ -70,6 +53,23 @@
   margin-bottom: 1rem;
 }
 
-.hcb-link.del img {
-  width: auto;
+.hcb-link.del {
+  display: inline-block;
+
+  img {
+    width: auto;
+  }
+}
+
+#HCB_comment_box .comment .hcb-comment-tb a {
+  visibility: visible !important;
+}
+
+
+//Mobile
+@media only screen and (min-width : 300px) and (max-width : 767px) {
+  .comments {
+    margin-top: 0;
+    padding: 2rem 0;
+  }
 }

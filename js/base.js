@@ -2,6 +2,15 @@ var screenHeight = $(window).height();
 var screenWidth = $(window).width();
 
 $(document).ready(function() {
+  //Subscribe
+  $('.subscribe-link').click(function(){
+    $('.subscribe-box').slideToggle('fast');
+  });
+
+  $('.js-subscribe-close').click(function(){
+    $('.subscribe-box').slideUp('fast');
+  });
+
   if (screenWidth > 767) {
     //Fade in cover image
     $('.post-cover').each(function() {

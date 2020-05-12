@@ -251,7 +251,12 @@
     width: 33.3333%;
 
     &:hover {
-      color: darken($pink, 10%);
+      color: $black;
+
+      small {
+        text-decoration: line-through;
+        text-decoration-color: $seafoam;
+      }
     }
 
     &:nth-child(2) {
@@ -418,11 +423,6 @@
     span {
       display: none;
     }
-  }
-
-  .comments {
-    margin-top: 2rem;
-    padding: 2rem 0;
   }
 }
 
