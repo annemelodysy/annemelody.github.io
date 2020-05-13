@@ -24,27 +24,30 @@
   }
 }
 
-.hcb-comment-tb {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  font-size: 0.8rem;
-  width: 100%;
-
-  a {
-    margin: 0 0.5rem;
-    opacity: 0.5;
+#HCB_comment_box {
+  p {
+    font-size: 1rem;
+    color: lighten($black, 50%);
   }
-}
 
-#HCB_comment_box blockquote {
-  font-family: $didact;
-  font-style: normal;
-  font-size: 1rem;
-  text-align: left;
+  blockquote {
+    font-family: $didact;
+    font-style: normal;
+    font-size: 1rem;
+    text-align: left;
 
-  &:before, &:after {
-    display: none;
+    &:before, &:after {
+      display: none;
+    }
+  }
+
+  .hcb-comment-tb a {
+    visibility: visible !important;
+  }
+
+  .hcb-link {
+    font-size: 1rem;
+    color: $black;
   }
 }
 
@@ -62,10 +65,18 @@
   }
 }
 
-#HCB_comment_box .comment .hcb-comment-tb a {
-  visibility: visible !important;
-}
+.hcb-comment-tb {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.8rem;
+  width: 100%;
 
+  a {
+    margin: 0 0.5rem;
+    opacity: 0.5;
+  }
+}
 
 //Mobile
 @media only screen and (min-width : 300px) and (max-width : 767px) {
