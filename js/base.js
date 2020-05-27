@@ -105,9 +105,9 @@ $(document).ready(function() {
           $(this).css("opacity", i)
         }
       }
-    }), $(".play-sound").each(function(t) {
+    }), $(".autoplay-sound").each(function(t) {
       var o = $(this).find(".audio").get(0);
-      $(this).onscreen(!0) && $(".icon-sound-on").length > 0 ? o.play() : o.pause()
+      $(this).onscreen(!0) && $(".icon-sound-off").length > 0 ? o.play() : o.pause()
     })
   });
 

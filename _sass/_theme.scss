@@ -217,19 +217,18 @@
 }
 
 //Audio
-.play-sound {
+.autoplay-sound, .play-sound {
   position: relative;
+}
 
-  .control {
-    position: absolute;
-    font-weight: bold;
-    font-size: 1.5rem;
-    right: 1.5rem;
-    top: 1.5rem;
-    color: $white;
-    z-index: 100;
-    cursor: pointer;
-  }
+.control {
+  position: absolute;
+  font-size: 3rem;
+  right: 1.5rem;
+  top: 1.5rem;
+  color: $white;
+  z-index: 100;
+  cursor: pointer;
 }
 
 .transnight {
