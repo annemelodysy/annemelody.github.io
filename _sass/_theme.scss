@@ -332,6 +332,7 @@
 
     .text-bottom {
       align-content: end;
+      height: 100vh;
     }
   }
 
@@ -422,6 +423,11 @@
     span {
       display: none;
     }
+  }
+
+  .control {
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 }
 
